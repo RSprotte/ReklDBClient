@@ -1,0 +1,334 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8390
+    DatasheetFontHeight =10
+    ItemSuffix =38
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[Kürzel] = 'DOG'"
+    RecSrcDt = Begin
+        0x804e69bc6f52e440
+    End
+    RecordSource ="Mastertab-DSBerechtigungTemp"
+    Caption ="MaßnahmenTempDruck"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =935
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Top =56
+                    Width =4815
+                    Height =450
+                    FontSize =20
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld30"
+                    Caption ="Vorgänge Freigeben"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Top =675
+                    Width =675
+                    Height =255
+                    Name ="MaßnahmeID_Bezeichnungsfeld"
+                    Caption ="Vorgang"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =793
+                    Top =680
+                    Width =1026
+                    Height =255
+                    Name ="Maßnahme_Bezeichnungsfeld"
+                    Caption ="Maßnahme"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3401
+                    Top =680
+                    Width =1026
+                    Height =255
+                    Name ="Druck_Bezeichnungsfeld"
+                    Caption ="Freigeben"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6916
+                    Top =226
+                    Width =1131
+                    Height =576
+                    Name ="Freigeben"
+                    Caption ="Freigeben"
+                    OnClick ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular drucken"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =2040
+                    Top =680
+                    Width =1026
+                    Height =255
+                    Name ="Bezeichnungsfeld32"
+                    Caption ="Kürzel"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =1440
+                    Left =5102
+                    Top =396
+                    Width =1644
+                    Height =397
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="KFKürzel"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Mastertab-DSBerechtigungTemp].Kürzel FROM [Mastertab-DSBerechtigungTemp]"
+                        " GROUP BY [Mastertab-DSBerechtigungTemp].Kürzel ORDER BY [Mastertab-DSBerechtigu"
+                        "ngTemp].Kürzel; "
+                    ColumnWidths ="1441"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5102
+                            Top =53
+                            Width =855
+                            Height =305
+                            FontSize =12
+                            FontWeight =700
+                            Name ="Kürzel1_Bezeichnungsfeld"
+                            Caption ="Kürzel1"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =453
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Width =711
+                    Height =345
+                    ColumnWidth =1701
+                    FontSize =10
+                    FontWeight =700
+                    Name ="ID"
+                    ControlSource ="ID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =793
+                    Width =1125
+                    Height =345
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Zustand"
+                    ControlSource ="Zustand"
+                    StatusBarText ="Kurzbeschreibung Maßnahme"
+                    FontName ="Arial"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3458
+                    Top =113
+                    TabIndex =2
+                    Name ="Löschen"
+                    ControlSource ="Löschen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2040
+                    Width =1125
+                    Height =345
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Text33"
+                    ControlSource ="Kürzel"
+                    StatusBarText ="Kurzbeschreibung Maßnahme"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =453
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3458
+                    Top =86
+                    Name ="Alle"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="False"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =3688
+                            Top =56
+                            Width =1440
+                            Height =240
+                            Name ="AlleText"
+                            Caption ="Alle"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "MastertabDSBerechtigungFreigeben.cls"

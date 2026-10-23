@@ -1,0 +1,142 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Kopie von Mastertab_Erweiterung"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Expr1076": {
+        "ColumnWidth": 1890,
+        "AggregateType": -1
+      },
+      "Expr1080": {
+        "ColumnWidth": 1245,
+        "AggregateType": -1
+      },
+      "Mastertab.[Belastungsbetrag Kunde]": {
+        "ColumnWidth": 1890,
+        "AggregateType": -1
+      },
+      "Mastertab.[Belastungsbetrag LQ]": {
+        "ColumnWidth": 2010,
+        "AggregateType": -1
+      },
+      "Mastertab.[Fracht-Kosten]": {
+        "ColumnWidth": 1710,
+        "AggregateType": -1
+      },
+      "Mastertab.[Herstellernummer - BG]": {
+        "ColumnWidth": 2565,
+        "AggregateType": -1
+      },
+      "Mastertab.[Herstellernummer - UBG]": {
+        "ColumnWidth": 2700,
+        "AggregateType": -1
+      },
+      "Mastertab.[Herstellungsdatum - BG]": {
+        "ColumnWidth": 2610,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1290,
+        "AggregateType": -1
+      },
+      "Mastertab.Prüfkosten": {
+        "ColumnWidth": 1995,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Kunde_Ist": {
+        "ColumnWidth": 2715,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Lieferant_Soll": {
+        "ColumnWidth": 3075,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 670
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 335,
+          "Bottom": 596,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 385,
+          "Top": 14,
+          "Right": 597,
+          "Bottom": 498,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ROS_Daten_Einkauf",
+          "Alias": "",
+          "Left": 644,
+          "Top": 158,
+          "Right": 844,
+          "Bottom": 574,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 624,
+          "Top": 12,
+          "Right": 768,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 816,
+          "Top": 12,
+          "Right": 960,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Taetigkeiten",
+          "Alias": "",
+          "Left": 1008,
+          "Top": 12,
+          "Right": 1152,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungDefTaetigkeit",
+          "Alias": "",
+          "Left": 903,
+          "Top": 200,
+          "Right": 1047,
+          "Bottom": 344,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

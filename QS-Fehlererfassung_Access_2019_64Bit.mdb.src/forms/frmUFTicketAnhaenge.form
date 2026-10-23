@@ -1,0 +1,162 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9751
+    DatasheetFontHeight =11
+    ItemSuffix =9
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    Filter =" TicketID = 16203"
+    RecSrcDt = Begin
+        0x8560a4c98beae440
+    End
+    RecordSource ="SELECT tblTicketAnhaenge.* FROM tblTicketAnhaenge; "
+    Caption ="frmUFTicketAnhaenge"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =315
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Width =783
+                    Height =315
+                    Name ="BezAnhaengeTicketID"
+                    Caption ="An.ID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =861
+                    Width =783
+                    Height =315
+                    Name ="BezTicketID"
+                    Caption ="Tick.ID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =1722
+                    Width =783
+                    Height =315
+                    Name ="BezReklID"
+                    Caption ="ReklID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2583
+                    Width =6034
+                    Height =315
+                    Name ="BezAnhangPfad"
+                    Caption ="Anhang-Pfad"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =340
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Width =783
+                    Height =315
+                    ColumnWidth =1701
+                    FontSize =10
+                    Name ="AnhaengeTicketID"
+                    ControlSource ="AnhaengeTicketID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =861
+                    Width =783
+                    Height =330
+                    ColumnWidth =1530
+                    FontSize =10
+                    TabIndex =1
+                    Name ="TicketID"
+                    ControlSource ="TicketID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =1722
+                    Width =783
+                    Height =330
+                    ColumnWidth =1530
+                    FontSize =10
+                    TabIndex =2
+                    Name ="ReklID"
+                    ControlSource ="ReklID"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2583
+                    Width =7129
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =3
+                    Name ="AnhangPfad"
+                    ControlSource ="AnhangPfad"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End

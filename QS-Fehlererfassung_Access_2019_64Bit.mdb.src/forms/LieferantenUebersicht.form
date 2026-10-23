@@ -1,0 +1,481 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    TabularFamily =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =13020
+    DatasheetFontHeight =10
+    ItemSuffix =33
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[Lieferant-ID] = 347"
+    RecSrcDt = Begin
+        0x0d7ee1f8aa5fe540
+    End
+    RecordSource ="SELECT Lieferanten.* FROM Lieferanten WHERE (((Lieferanten.GESPERRT)=False)) ORD"
+        "ER BY Lieferanten.Lieferantenname; "
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnMouseMove ="[Event Procedure]"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =1850
+            BackColor =14211288
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =120
+                    Top =225
+                    Width =4140
+                    Height =1260
+                    FontSize =16
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Übersicht aller nicht gesperrten Lieferanten"
+                    FontName ="Arial"
+                End
+                Begin Rectangle
+                    OverlapFlags =93
+                    Left =4425
+                    Top =226
+                    Width =6988
+                    Height =1297
+                    Name ="Rechteck5"
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ListWidth =1440
+                    Left =5786
+                    Top =396
+                    ColumnOrder =0
+                    Name ="FilterLKategorie"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Lieferanten.[L-Kategorie] FROM Lieferanten GROUP BY Lieferanten.[L-Katego"
+                        "rie] HAVING (((Lieferanten.[L-Kategorie]) Like \"L*\")) ORDER BY Lieferanten.[L-"
+                        "Kategorie]; "
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =4766
+                            Top =396
+                            Width =930
+                            Height =245
+                            Name ="L-Kategorie_Bezeichnungsfeld"
+                            Caption ="L-Kategorie"
+                            EventProcPrefix ="L_Kategorie_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11565
+                    Top =1133
+                    Width =1455
+                    Height =390
+                    TabIndex =1
+                    Name ="FilterLöschen"
+                    Caption ="Filter löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5732
+                    Top =1193
+                    ColumnOrder =1
+                    TabIndex =2
+                    Name ="FilterLieferant"
+                    OnChange ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =4606
+                            Top =1190
+                            Width =1050
+                            Height =240
+                            Name ="Bezeichnungsfeld12"
+                            Caption ="Lieferant"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ListWidth =1440
+                    Left =9188
+                    Top =402
+                    ColumnOrder =2
+                    TabIndex =3
+                    Name ="FilterESachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Lieferanten.VerantwortlichEinkauf FROM Lieferanten GROUP BY Lieferanten.V"
+                        "erantwortlichEinkauf HAVING (((Lieferanten.VerantwortlichEinkauf)<>\"\")); "
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            TextAlign =3
+                            Left =7545
+                            Top =396
+                            Width =1590
+                            Height =255
+                            Name ="Bezeichnungsfeld14"
+                            Caption ="Sachb. Einkauf"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =4483
+                    Top =60
+                    Width =435
+                    Height =210
+                    Name ="Bezeichnungsfeld15"
+                    Caption ="Filter"
+                End
+                Begin OptionGroup
+                    OverlapFlags =215
+                    Left =6637
+                    Top =743
+                    Width =2946
+                    Height =388
+                    ColumnOrder =3
+                    TabIndex =4
+                    Name ="FilterLiefVerantwortung"
+                    DefaultValue ="3"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =215
+                            Left =4596
+                            Top =737
+                            Width =2010
+                            Height =240
+                            BackColor =-2147483633
+                            Name ="Bezeichnungsfeld17"
+                            Caption ="Lieferantenverantwortung"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =6807
+                            Top =821
+                            OptionValue =1
+                            Name ="Option19"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =7037
+                                    Top =793
+                                    Width =270
+                                    Height =240
+                                    Name ="Bezeichnungsfeld20"
+                                    Caption ="LQ"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =7528
+                            Top =831
+                            OptionValue =2
+                            Name ="Option21"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =7758
+                                    Top =803
+                                    Width =675
+                                    Height =240
+                                    Name ="Bezeichnungsfeld22"
+                                    Caption ="TRUMPF"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =8662
+                            Top =831
+                            OptionValue =3
+                            Name ="Option23"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =8892
+                                    Top =803
+                                    Width =465
+                                    Height =240
+                                    Name ="Bezeichnungsfeld24"
+                                    Caption ="Keine"
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11565
+                    Top =680
+                    Width =1455
+                    Height =390
+                    TabIndex =5
+                    Name ="FilterSetzen"
+                    Caption ="Filter setzen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CheckBox
+                    Visible = NotDefault
+                    TripleState = NotDefault
+                    OverlapFlags =215
+                    Left =9013
+                    Top =1230
+                    ColumnOrder =4
+                    TabIndex =6
+                    Name ="FilterGesperrt"
+                    DefaultValue ="Null"
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =247
+                            Left =9243
+                            Top =1200
+                            Width =795
+                            Height =240
+                            Name ="Bezeichnungsfeld27"
+                            Caption ="Gesperrt"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Visible = NotDefault
+                    TripleState = NotDefault
+                    OverlapFlags =215
+                    Left =10260
+                    Top =1230
+                    ColumnOrder =5
+                    TabIndex =7
+                    Name ="FilterAnzeigen"
+                    DefaultValue ="Null"
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =247
+                            Left =10490
+                            Top =1200
+                            Width =795
+                            Height =240
+                            Name ="Bezeichnungsfeld30"
+                            Caption ="Anzeigen"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =255
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =936
+                    Width =5226
+                    Height =255
+                    Name ="Lieferant-Name"
+                    ControlSource ="Lieferantenname"
+                    EventProcPrefix ="Lieferant_Name"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =113
+                    Width =741
+                    Height =255
+                    TabIndex =1
+                    Name ="Text2"
+                    ControlSource ="Lieferant-ID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6244
+                    Width =741
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =2
+                    Name ="L-Nummer/AVISTA"
+                    ControlSource ="L-Nummer/AVISTA"
+                    EventProcPrefix ="L_Nummer_AVISTA"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =5669
+            BackColor =14211288
+            Name ="Formularfuß"
+            Begin
+                Begin Subform
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    SpecialEffect =4
+                    BorderWidth =3
+                    Left =120
+                    Top =120
+                    Width =11340
+                    Height =5430
+                    Name ="Lieferanten"
+                    SourceObject ="Form.Lieferanten"
+                    LinkChildFields ="Lieferant-ID"
+                    LinkMasterFields ="Lieferant-ID"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11565
+                    Top =120
+                    Width =1455
+                    Height =390
+                    TabIndex =1
+                    Name ="Neu"
+                    Caption ="Neu"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11565
+                    Top =5160
+                    Width =1455
+                    Height =390
+                    TabIndex =2
+                    Name ="Befehl7"
+                    Caption ="Schließen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11565
+                    Top =1140
+                    Width =1455
+                    Height =390
+                    TabIndex =3
+                    Name ="Befehl8"
+                    Caption ="Löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11565
+                    Top =631
+                    Width =1455
+                    Height =390
+                    TabIndex =4
+                    Name ="Befehl9"
+                    Caption ="Bearbeiten"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11565
+                    Top =1650
+                    Width =1455
+                    Height =840
+                    TabIndex =5
+                    Name ="cmbAktuallisieren"
+                    Caption ="alle Lieferanten aktuallisieren Daten aus AVISTA"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "LieferantenUebersicht.cls"

@@ -1,0 +1,56 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "QZV-MastertabMitLQBGUndArtikelnr"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 392
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 283,
+          "Bottom": 364,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 500,
+          "Top": 17,
+          "Right": 596,
+          "Bottom": 195,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 501,
+          "Top": 217,
+          "Right": 597,
+          "Bottom": 365,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

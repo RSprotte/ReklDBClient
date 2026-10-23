@@ -1,0 +1,159 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_Übersicht_Lieferantenbewertung"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 330
+      },
+      "Description": {
+        "Type": 10,
+        "Value": "Abfrage für Excel-Tabelle Abfrage_Übersicht_Lieferantenbewertung_Access.xls\" im Ordner F: Einkauf/Zusammenarbeit"
+      }
+    },
+    "Columns": {
+      "[Lieferanten].[Lieferantenname]": {
+        "ColumnOrder": 2,
+        "ColumnWidth": 4605,
+        "AggregateType": -1
+      },
+      "[Lieferanten].[L-Kategorie]": {
+        "ColumnOrder": 1,
+        "AggregateType": -1
+      },
+      "[Mastertab].[ID]": {
+        "ColumnOrder": 5,
+        "ColumnWidth": 810,
+        "AggregateType": -1
+      },
+      "Antwort-Ist": {
+        "ColumnOrder": 11,
+        "ColumnWidth": 1155,
+        "AggregateType": -1
+      },
+      "Antwort-Soll": {
+        "ColumnOrder": 10,
+        "ColumnWidth": 1320,
+        "AggregateType": -1
+      },
+      "Artikel": {
+        "ColumnOrder": 7,
+        "ColumnWidth": 885,
+        "AggregateType": -1
+      },
+      "Baugruppe": {
+        "ColumnOrder": 8,
+        "ColumnWidth": 1095,
+        "AggregateType": -1
+      },
+      "Differenz": {
+        "ColumnOrder": 12,
+        "ColumnWidth": 1125,
+        "AggregateType": -1
+      },
+      "Lieferanten.Lieferantenname": {
+        "ColumnWidth": 4455,
+        "AggregateType": -1
+      },
+      "L-Nr avista": {
+        "ColumnOrder": 3,
+        "ColumnWidth": 1230,
+        "AggregateType": -1
+      },
+      "LQ Aufwand": {
+        "ColumnWidth": 1320,
+        "AggregateType": -1
+      },
+      "Monat": {
+        "ColumnOrder": 9,
+        "ColumnWidth": 1035,
+        "AggregateType": -1
+      },
+      "Reklamationen": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 1590,
+        "AggregateType": -1
+      },
+      "Teile reklamiert": {
+        "ColumnOrder": 6,
+        "ColumnWidth": 1665,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 552
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 285,
+          "Top": 6,
+          "Right": 417,
+          "Bottom": 334,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Problemstatus",
+          "Alias": "",
+          "Left": 683,
+          "Top": 6,
+          "Right": 779,
+          "Bottom": 79,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 571,
+          "Top": 6,
+          "Right": 667,
+          "Bottom": 169,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 463,
+          "Top": 6,
+          "Right": 559,
+          "Bottom": 139,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 247,
+          "Bottom": 544,
+          "ScrollTop": 0
+        }
+      ]
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Abfrage für Excel-Tabelle Abfrage_Übersicht_Lieferantenbewertung_Access.xls\" im Ordner F: Einkauf/Zusammenarbeit"
+      }
+    }
+  }
+}

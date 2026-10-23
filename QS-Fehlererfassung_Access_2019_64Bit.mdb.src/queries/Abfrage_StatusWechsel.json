@@ -1,0 +1,75 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_StatusWechsel"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "[Kategorien-Vorgangstatus].Anzeige": {
+        "ColumnWidth": 3645,
+        "AggregateType": -1
+      },
+      "[Kategorien-Vorgangstatus_1].Anzeige": {
+        "ColumnWidth": 3855,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 552
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "tblFolgeStatusAbhängig",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Vorgangstatus",
+          "Alias": "",
+          "Left": 310,
+          "Top": 18,
+          "Right": 454,
+          "Bottom": 162,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Vorgangstatus_1",
+          "Alias": "",
+          "Left": 253,
+          "Top": 203,
+          "Right": 477,
+          "Bottom": 425,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Vorgangstyp",
+          "Alias": "",
+          "Left": 512,
+          "Top": 143,
+          "Right": 656,
+          "Bottom": 287,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryTicketListe"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "OrderByOn": {
+        "Type": 1,
+        "Value": true
+      }
+    },
+    "Columns": {
+      "Link": {
+        "ColumnWidth": 8535,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 532
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 431,
+          "Bottom": 379,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

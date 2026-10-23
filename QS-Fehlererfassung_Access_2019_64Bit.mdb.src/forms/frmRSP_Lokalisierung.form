@@ -1,0 +1,459 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =26472
+    DatasheetFontHeight =11
+    ItemSuffix =30
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x9bc79ce1ee92e640
+    End
+    RecordSource ="SELECT RSP_Lokalisierung.*, Len([BasisText]) AS Länge_errechnet FROM RSP_Lokalis"
+        "ierung ORDER BY RSP_Lokalisierung.[Text-ID] DESC; "
+    Caption ="frmRSP_Lokalisierung"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1005
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =60
+                    Top =684
+                    Width =792
+                    Height =315
+                    Name ="Text-ID_Bezeichnungsfeld"
+                    Caption ="ID"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Text_ID_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =915
+                    Top =285
+                    Width =1407
+                    Height =315
+                    Name ="TypeOfObject_Bezeichnungsfeld"
+                    Caption ="Type"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2381
+                    Top =285
+                    Width =3807
+                    Height =315
+                    Name ="OjectID_Name_Bezeichnungsfeld"
+                    Caption ="Name"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6241
+                    Top =285
+                    Width =3807
+                    Height =315
+                    Name ="TextID_Bezeichnungsfeld"
+                    Caption ="TextID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =10104
+                    Top =285
+                    Width =3807
+                    Height =315
+                    Name ="BasisText_Bezeichnungsfeld"
+                    Caption ="BasisText"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =23667
+                    Top =684
+                    Width =1032
+                    Height =315
+                    Name ="LängeText_Bezeichnungsfeld"
+                    Caption ="LängeText"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =13950
+                    Top =684
+                    Width =2652
+                    Height =315
+                    Name ="TextE_Bezeichnungsfeld"
+                    Caption ="TextE"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =16658
+                    Top =684
+                    Width =2652
+                    Height =315
+                    Name ="TextCN_Bezeichnungsfeld"
+                    Caption ="TextCN"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =21072
+                    Top =690
+                    Width =1185
+                    Height =315
+                    Name ="ÜbersetztE_Bezeichnungsfeld"
+                    Caption ="ÜbersetztE"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =22302
+                    Top =690
+                    Width =1302
+                    Height =315
+                    Name ="ÜbersetztCN_Bezeichnungsfeld"
+                    Caption ="ÜbersetztCN"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =19366
+                    Top =684
+                    Width =1662
+                    Height =315
+                    Name ="DateLastUpdate_Bezeichnungsfeld"
+                    Caption ="DateLastUpdate"
+                    Tag ="DetachedLabel"
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =6241
+                    Top =690
+                    Width =3807
+                    Height =315
+                    BorderColor =16777215
+                    ForeColor =13598509
+                    Name ="cboTextID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT RSP_Lokalisierung.TextID FROM RSP_Lokalisierung GROUP BY RSP_Lokalisierun"
+                        "g.TextID; "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =10104
+                    Top =690
+                    Width =3807
+                    Height =315
+                    TabIndex =1
+                    BorderColor =16777215
+                    ForeColor =13598509
+                    Name ="cboBasisText"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT RSP_Lokalisierung.BasisText FROM RSP_Lokalisierung GROUP BY RSP_Lokalisie"
+                        "rung.BasisText; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =690
+                    Width =3807
+                    Height =315
+                    TabIndex =2
+                    BorderColor =16777215
+                    ForeColor =13598509
+                    Name ="cboName"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT RSP_Lokalisierung.OjectID_Name FROM RSP_Lokalisierung GROUP BY RSP_Lokali"
+                        "sierung.OjectID_Name; "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =915
+                    Top =690
+                    Width =1407
+                    Height =315
+                    TabIndex =3
+                    BorderColor =16777215
+                    ForeColor =13598509
+                    Name ="cboType"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT RSP_Lokalisierung.TypeOfObject FROM RSP_Lokalisierung GROUP BY RSP_Lokali"
+                        "sierung.TypeOfObject; "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =24765
+                    Top =684
+                    Width =1707
+                    Height =315
+                    Name ="Länge_errechnet_Bezeichnungsfeld"
+                    Caption ="Länge_errechnet"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =372
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =60
+                    Top =57
+                    Width =792
+                    Height =315
+                    ColumnWidth =1701
+                    Name ="Text-ID"
+                    ControlSource ="Text-ID"
+                    EventProcPrefix ="Text_ID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =915
+                    Top =57
+                    Width =1407
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="TypeOfObject"
+                    ControlSource ="TypeOfObject"
+                    StatusBarText ="Beschreibt den Object-Type in der die einzelnen Textfelder enthalten sind (Formu"
+                        "lar, Bericht, Tabelle, Freitext (Fehler), Web, usw"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =57
+                    Width =3807
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="OjectID_Name"
+                    ControlSource ="OjectID_Name"
+                    StatusBarText ="Beschreibt den Identifier (Name) des TypeOfObejct"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =6241
+                    Top =57
+                    Width =3807
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="TextID"
+                    ControlSource ="TextID"
+                    StatusBarText ="Beschreibt den Identifiier des Control, Feld, Spaltenüberschrift, Freitext des O"
+                        "bjects in der der Text enthalten ist"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =10104
+                    Top =57
+                    Width =3807
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="BasisText"
+                    ControlSource ="BasisText"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =23667
+                    Top =57
+                    Width =1032
+                    Height =315
+                    ColumnWidth =1515
+                    TabIndex =5
+                    Name ="LängeText"
+                    ControlSource ="LängeText"
+                    StatusBarText ="Die Länge wird benötigt um den anzeigenden Text räumlich zu beschreiben, wenn 0 "
+                        "dann ist die Länge nich auschlaggebend"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =13950
+                    Top =57
+                    Width =2652
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =6
+                    Name ="TextE"
+                    ControlSource ="TextE"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =16658
+                    Top =57
+                    Width =2652
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =7
+                    Name ="TextCN"
+                    ControlSource ="TextCN"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =21522
+                    Top =120
+                    TabIndex =8
+                    Name ="ÜbersetztE"
+                    ControlSource ="ÜbersetztE"
+                    StatusBarText ="Beim Anlegen, Standardmäßig nein. Beim Import wird der Zustand auf Ja gesetzt. B"
+                        "eim Erzeugen der Tabelle wird bei Änderung das Flag Auf True gesetzt."
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =22827
+                    Top =120
+                    TabIndex =9
+                    Name ="ÜbersetztCN"
+                    ControlSource ="ÜbersetztCN"
+                    StatusBarText ="Beim Anlegen, Standardmäßig nein. Beim Import wird der Zustand auf Ja gesetzt. B"
+                        "eim Erzeugen der Tabelle wird bei Änderung das Flag Auf True gesetzt."
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =19366
+                    Top =57
+                    Width =1662
+                    Height =315
+                    ColumnWidth =1620
+                    TabIndex =10
+                    Name ="DateLastUpdate"
+                    ControlSource ="DateLastUpdate"
+                    Format ="Short Date"
+                    StatusBarText ="Beinhaltet Datum der letzten Erzeigung der Tabelle (Altte Einträge können gelösc"
+                        "ht werden, da diese nicht mehr vorhanden sind)"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =24765
+                    Top =56
+                    Width =1707
+                    Height =315
+                    TabIndex =11
+                    Name ="Text29"
+                    ControlSource ="Länge_errechnet"
+                    StatusBarText ="Die Länge wird benötigt um den anzeigenden Text räumlich zu beschreiben, wenn 0 "
+                        "dann ist die Länge nich auschlaggebend"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmRSP_Lokalisierung.cls"

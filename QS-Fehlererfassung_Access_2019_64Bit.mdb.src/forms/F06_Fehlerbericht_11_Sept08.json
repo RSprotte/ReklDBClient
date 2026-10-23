@@ -1,0 +1,33 @@
+﻿{
+  "Info": {
+    "Class": "clsDbForm",
+    "Description": "F06_Fehlerbericht_11_Sept08 Print Settings"
+  },
+  "Items": {
+    "Printer": {
+      "Orientation": "Portrait"
+    },
+    "Margins": {
+      "LeftMargin": 0.7875,
+      "TopMargin": 0.3938,
+      "RightMargin": 0.3938,
+      "BotMargin": 0.3938,
+      "DataOnly": false,
+      "Width": 7.0861,
+      "Height": 10.8868,
+      "DefaultSize": true,
+      "Columns": 1,
+      "ColumnSpacing": 0.25,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Aktuelle Version"
+      }
+    }
+  }
+}

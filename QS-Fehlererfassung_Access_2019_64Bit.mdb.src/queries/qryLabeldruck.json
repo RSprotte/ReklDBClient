@@ -1,0 +1,101 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryLabeldruck"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "LQEinheit.LQEinheit": {
+        "ColumnWidth": 2385,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 2505,
+        "AggregateType": -1
+      },
+      "Mastertab.[WE-Datum]": {
+        "ColumnWidth": 1410,
+        "AggregateType": -1
+      },
+      "Vorgangstyp.Anzeige": {
+        "ColumnWidth": 2055,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 527
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 272,
+          "Bottom": 567,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 320,
+          "Top": 12,
+          "Right": 464,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblLager",
+          "Alias": "",
+          "Left": 379,
+          "Top": 84,
+          "Right": 523,
+          "Bottom": 228,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 576,
+          "Top": -2,
+          "Right": 892,
+          "Bottom": 551,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Vorgangstyp",
+          "Alias": "",
+          "Left": 1023,
+          "Top": 268,
+          "Right": 1167,
+          "Bottom": 412,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

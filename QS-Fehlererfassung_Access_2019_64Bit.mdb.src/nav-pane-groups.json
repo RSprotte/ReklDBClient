@@ -1,0 +1,31 @@
+﻿{
+  "Info": {
+    "Class": "clsDbNavPaneGroup",
+    "Description": "Navigation Pane Custom Groups"
+  },
+  "Items": {
+    "Categories": [
+      {
+        "Name": "Benutzerdefiniert",
+        "Flags": 0,
+        "Position": 2,
+        "Groups": [
+          {
+            "Name": "Benutzerdefinierte Gruppe 1",
+            "Flags": 0,
+            "Position": 0,
+            "Objects": [
+            ]
+          },
+          {
+            "Name": "Nicht zugewiesene Objekte",
+            "Flags": 4,
+            "Position": 1,
+            "Objects": [
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

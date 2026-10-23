@@ -1,0 +1,133 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =12
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9467
+    DatasheetFontHeight =10
+    ItemSuffix =6
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x7cf36a1a700ae440
+    End
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin CustomControl
+            SpecialEffect =2
+            Width =4536
+            Height =2835
+        End
+        Begin Section
+            Height =3968
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin CustomControl
+                    Enabled = NotDefault
+                    SizeMode =1
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =566
+                    Top =170
+                    Width =3690
+                    Height =2550
+                    AutoActivate =1
+                    Name ="ActiveXStr0"
+                    OnUpdated ="[Event Procedure]"
+                    OLEClass ="Kalender-Steuerelement"
+                    Class ="MSCAL.Calendar.7"
+                End
+                Begin CustomControl
+                    Enabled = NotDefault
+                    SizeMode =1
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    Left =5102
+                    Top =170
+                    Width =3690
+                    Height =2550
+                    AutoActivate =1
+                    TabIndex =1
+                    Name ="ActiveXStr1"
+                    OLEClass ="Kalender-Steuerelement"
+                    Class ="MSCAL.Calendar.7"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =623
+                    Top =2777
+                    Width =3524
+                    Height =340
+                    FontSize =12
+                    TabIndex =2
+                    Name ="Von"
+                    FontName ="Arial"
+                    InputMask ="00/00/0000;0;_"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =5215
+                    Top =2777
+                    Width =3449
+                    Height =340
+                    FontSize =12
+                    TabIndex =3
+                    Name ="Bis"
+                    FontName ="Arial"
+                    InputMask ="00/00/0000;0;_"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3911
+                    Top =3344
+                    Width =1304
+                    Height =454
+                    TabIndex =4
+                    Name ="Befehl5"
+                    Caption ="Übernehmen"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "DatumVonBis.cls"

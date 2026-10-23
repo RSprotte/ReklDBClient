@@ -1,0 +1,299 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11225
+    DatasheetFontHeight =10
+    ItemSuffix =18
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x8f1c24b6ba7fe440
+    End
+    RecordSource ="SELECT Maßnahmen.MaßnahmeID, Maßnahmen.Maßnahme FROM Maßnahmen WHERE (((Maßnahme"
+        "n.MaßnahmeID)=Forms!MaßnahmenDialog!MaßnahmeID)); "
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =907
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =165
+                    Top =285
+                    Width =8340
+                    Height =510
+                    FontSize =16
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Dialog Zuordnung Bearbeitungsort Maßnahme"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =396
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =793
+                    Top =56
+                    Width =741
+                    Height =300
+                    FontSize =11
+                    FontWeight =700
+                    Name ="MID"
+                    ControlSource ="MaßnahmeID"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =170
+                            Top =56
+                            Width =450
+                            Height =300
+                            FontSize =11
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld2"
+                            Caption ="ID:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1757
+                    Top =56
+                    Width =7371
+                    Height =300
+                    FontSize =11
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="IDBeschreibung"
+                    ControlSource ="Maßnahme"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =6576
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =5329
+                    Top =730
+                    Width =5625
+                    Height =4590
+                    FontSize =11
+                    FontWeight =700
+                    Name ="ListFehlerklassenMaßnahme"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT MaßnahmenFehlerortGruppe.LQBereichID, [LQEinheit] & \"->\" & [LQBereich] "
+                        "AS Zuordnung FROM LQEinheit INNER JOIN (MaßnahmenFehlerortGruppe INNER JOIN LQBe"
+                        "reich ON MaßnahmenFehlerortGruppe.LQBereichID=LQBereich.ID) ON LQEinheit.ID=LQBe"
+                        "reich.[ID-LQEinheit] WHERE (((MaßnahmenFehlerortGruppe.MaßnahmeID)=Forms!Maßnahm"
+                        "enDialog!MaßnahmeID)); "
+                    ColumnWidths ="567;3402"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5329
+                            Top =397
+                            Width =3165
+                            Height =285
+                            FontSize =11
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="Bearbeitungsort Maßnahme"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4535
+                    Top =964
+                    Width =576
+                    Height =576
+                    FontSize =14
+                    FontWeight =800
+                    TabIndex =1
+                    Name ="Rechts"
+                    Caption =">"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Übernehmen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4535
+                    Top =1660
+                    Width =576
+                    Height =576
+                    FontSize =14
+                    FontWeight =800
+                    TabIndex =2
+                    Name ="Links"
+                    Caption ="<"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Löschen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10374
+                    Top =5555
+                    Width =576
+                    Height =576
+                    TabIndex =3
+                    Name ="Schließen"
+                    Caption ="Befehl17"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =237
+                    Top =683
+                    Width =4020
+                    Height =1863
+                    TabIndex =4
+                    Name ="ListLQEinheit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.ID, LQEinheit.LQEinheit FROM LQEinheit ORDER BY [LQEinheit]; "
+                    ColumnWidths ="0;1441"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =238
+                            Top =283
+                            Width =1695
+                            Height =305
+                            FontSize =10
+                            Name ="LQ Einheit_Bezeichnungsfeld"
+                            Caption ="LQ Einheit"
+                            FontName ="Arial Black"
+                            EventProcPrefix ="LQ_Einheit_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =226
+                    Top =3234
+                    Width =4020
+                    Height =1863
+                    TabIndex =5
+                    Name ="ListLQBereich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.ID, LQBereich.LQBereich FROM LQBereich WHERE (((LQBereich.[ID-L"
+                        "QEinheit])=[ListLQEinheit])) GROUP BY LQBereich.LQBereich, LQBereich.ID; "
+                    ColumnWidths ="0;1442"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =227
+                            Top =2834
+                            Width =1695
+                            Height =305
+                            FontSize =10
+                            Name ="Bezeichnungsfeld7"
+                            Caption ="LQ Bereich"
+                            FontName ="Arial Black"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "MaßnahmeZuordnungBearbeitungsort_Dialog.cls"

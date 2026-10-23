@@ -1,0 +1,433 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =20292
+    DatasheetFontHeight =11
+    ItemSuffix =29
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    Filter ="[FA] = 'FA-240315-007171 '"
+    RecSrcDt = Begin
+        0x6b60d20ab396e640
+    End
+    RecordSource ="SELECT tblTempInfoBG.FA, tblTempInfoBG.ArtNr, tblTempInfoBG.Variante, tblTempInf"
+        "oBG.Bezeichnung, tblTempInfoBG.Kg, tblTempInfoBG.Menge, tblTempInfoBG.Datum, tbl"
+        "TempInfoBG.Lieferschein, tblTempInfoBG.Bestellnummer, tblTempInfoBG.InfoFertigun"
+        "g FROM tblTempInfoBG ORDER BY tblTempInfoBG.FA DESC; "
+    Caption ="frmInfoBG"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnClick ="[Event Procedure]"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1455
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Top =1140
+                    Width =2427
+                    Height =315
+                    Name ="FA_Bezeichnungsfeld"
+                    Caption ="FA"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2488
+                    Top =1140
+                    Width =1542
+                    Height =315
+                    Name ="ArtNr_Bezeichnungsfeld"
+                    Caption ="ArtNr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4091
+                    Top =1140
+                    Width =1062
+                    Height =315
+                    Name ="Variante_Bezeichnungsfeld"
+                    Caption ="Variante"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5214
+                    Top =1140
+                    Width =4482
+                    Height =315
+                    Name ="Bezeichnung_Bezeichnungsfeld"
+                    Caption ="Bezeichnung"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9757
+                    Top =1140
+                    Width =927
+                    Height =315
+                    Name ="Kg_Bezeichnungsfeld"
+                    Caption ="Kg"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =10745
+                    Top =1140
+                    Width =822
+                    Height =315
+                    Name ="Menge_Bezeichnungsfeld"
+                    Caption ="Menge"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =11628
+                    Top =1140
+                    Width =1242
+                    Height =315
+                    Name ="Datum_Bezeichnungsfeld"
+                    Caption ="Datum"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =2031
+                    Height =564
+                    FontSize =20
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Info zu BG"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =12915
+                    Top =1140
+                    Width =1437
+                    Height =315
+                    Name ="Lieferschein_Bezeichnungsfeld"
+                    Caption ="Lieferschein"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =14400
+                    Top =1140
+                    Width =1572
+                    Height =315
+                    Name ="Betellnummer_Bezeichnungsfeld"
+                    Caption ="Bestellnummer"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =16035
+                    Top =1140
+                    Width =4257
+                    Height =315
+                    Name ="MemoFA_Bezeichnungsfeld"
+                    Caption ="Memo FA"
+                    Tag ="DetachedLabel"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3449
+                    Top =170
+                    Width =2040
+                    Height =315
+                    ColumnOrder =2
+                    Name ="txtFilterFA"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =2145
+                    Top =170
+                    Width =1260
+                    Height =315
+                    Name ="Bezeichnungsfeld22"
+                    Caption ="Filter FA"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12514
+                    Top =165
+                    Width =2211
+                    Height =328
+                    TabIndex =2
+                    Name ="cmbFilterLoeschen"
+                    Caption ="Filter löschen"
+                    OnClick ="[Ereignisprozedur]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6858
+                    Top =165
+                    Width =2040
+                    Height =315
+                    ColumnOrder =1
+                    TabIndex =1
+                    Name ="txtFilterLI"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =5554
+                    Top =165
+                    Width =1260
+                    Height =315
+                    Name ="Bezeichnungsfeld25"
+                    Caption ="Filter LI"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10323
+                    Top =165
+                    Width =2040
+                    Height =315
+                    ColumnOrder =0
+                    TabIndex =3
+                    Name ="txtFilterBstNr"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =9019
+                    Top =165
+                    Width =1260
+                    Height =315
+                    Name ="Bezeichnungsfeld27"
+                    Caption ="Filter BstNr"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =14895
+                    Top =165
+                    Width =2211
+                    Height =328
+                    TabIndex =4
+                    Name ="cmbInfoFa"
+                    Caption ="Infos zu FA abrufen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =5670
+                    Top =675
+                    Width =6960
+                    Height =300
+                    FontSize =12
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld36"
+                    Caption ="Doppelklick Datensatzmarkierer um FA Stüli zu öffnen"
+                End
+            End
+        End
+        Begin Section
+            Height =387
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Top =57
+                    Width =2427
+                    Height =330
+                    ColumnWidth =3000
+                    Name ="FA"
+                    ControlSource ="FA"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2488
+                    Top =57
+                    Width =1542
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="ArtNr"
+                    ControlSource ="ArtNr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4091
+                    Top =57
+                    Width =1062
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="Variante"
+                    ControlSource ="Variante"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5214
+                    Top =57
+                    Width =4482
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="Bezeichnung"
+                    ControlSource ="Bezeichnung"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9757
+                    Top =57
+                    Width =927
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="Kg"
+                    ControlSource ="Kg"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10745
+                    Top =57
+                    Width =822
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =5
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =11628
+                    Top =57
+                    Width =1242
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =6
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =12915
+                    Top =57
+                    Width =1437
+                    Height =330
+                    TabIndex =7
+                    Name ="Lieferschein"
+                    ControlSource ="Lieferschein"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =14400
+                    Top =57
+                    Width =1572
+                    Height =330
+                    TabIndex =8
+                    Name ="Bestellnummer"
+                    ControlSource ="Bestellnummer"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =16035
+                    Top =57
+                    Width =4257
+                    Height =330
+                    TabIndex =9
+                    Name ="InfoFertigung"
+                    ControlSource ="InfoFertigung"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmInfoBG.cls"

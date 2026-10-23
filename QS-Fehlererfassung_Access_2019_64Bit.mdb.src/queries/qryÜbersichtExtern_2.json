@@ -1,0 +1,138 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryÜbersichtExtern_2"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.Rückmeldung_Kunde_Ist": {
+        "ColumnWidth": 2715,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Kunde_Verschiebung": {
+        "ColumnWidth": 3765,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 620
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 384,
+          "Bottom": 221,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 432,
+          "Top": 12,
+          "Right": 576,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 624,
+          "Top": 12,
+          "Right": 768,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Taetigkeiten",
+          "Alias": "",
+          "Left": 239,
+          "Top": 350,
+          "Right": 383,
+          "Bottom": 494,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungDefTaetigkeit",
+          "Alias": "",
+          "Left": 53,
+          "Top": 351,
+          "Right": 197,
+          "Bottom": 495,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 664,
+          "Top": 331,
+          "Right": 808,
+          "Bottom": 475,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Vorgangstatus",
+          "Alias": "",
+          "Left": 484,
+          "Top": 514,
+          "Right": 628,
+          "Bottom": 658,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Verursacher",
+          "Alias": "",
+          "Left": 245,
+          "Top": 518,
+          "Right": 389,
+          "Bottom": 662,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Problemstatus",
+          "Alias": "",
+          "Left": 667,
+          "Top": 493,
+          "Right": 811,
+          "Bottom": 637,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 498,
+          "Top": 344,
+          "Right": 642,
+          "Bottom": 488,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

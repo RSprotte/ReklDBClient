@@ -1,0 +1,511 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =17291
+    DatasheetFontHeight =11
+    ItemSuffix =32
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x0f8ae781ce67e540
+    End
+    RecordSource ="qryDatenAbgleich"
+    Caption ="frmDatenAbgleich"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+        End
+        Begin FormHeader
+            Height =1365
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =72
+                    Top =1020
+                    Width =726
+                    Height =315
+                    Name ="ID_Bezeichnungsfeld"
+                    Caption ="ReklNr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2325
+                    Top =684
+                    Width =2109
+                    Height =315
+                    Name ="Anzeige_Bezeichnungsfeld"
+                    Caption ="Verursacher"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4491
+                    Top =684
+                    Width =2109
+                    Height =315
+                    Name ="Kategorie-Bearbeitung I_Bezeichnungsfeld"
+                    Caption ="Kategorie-Bearb. I"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Kategorie_Bearbeitung_I_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6657
+                    Top =684
+                    Width =2109
+                    Height =315
+                    Name ="Kategorie-Bearbeitung II_Bezeichnungsfeld"
+                    Caption ="Kategorie-Bearb. II"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Kategorie_Bearbeitung_II_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8823
+                    Top =684
+                    Width =2109
+                    Height =315
+                    Name ="Kategorie-Problem_Bezeichnungsfeld"
+                    Caption ="Kategorie-Problem"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Kategorie_Problem_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =10995
+                    Top =1020
+                    Width =1080
+                    Height =315
+                    Name ="Material-Kosten_Bezeichnungsfeld"
+                    Caption ="Mat-Kosten"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Material_Kosten_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =12135
+                    Top =1020
+                    Width =1419
+                    Height =315
+                    Name ="Auftragsnummer_Bezeichnungsfeld"
+                    Caption ="AB-Nr.:"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Width =3672
+                    Height =459
+                    FontSize =20
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Daten_Abgleich"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2325
+                    Top =1020
+                    Width =2109
+                    Height =315
+                    ColumnOrder =0
+                    Name ="cmbVerursacher"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Verursacher.Verursacher FROM Verursacher; "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4474
+                    Top =1020
+                    Width =2109
+                    Height =315
+                    ColumnOrder =3
+                    TabIndex =1
+                    Name ="cmbKatBe1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Bearbeitung I].Anzeige FROM [Kategorien-Bearbeitung I] WHERE "
+                        "((([Kategorien-Bearbeitung I].Aktiv)=True)); "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6629
+                    Top =1020
+                    Width =2109
+                    Height =315
+                    ColumnOrder =4
+                    TabIndex =2
+                    Name ="cmbKatBe2"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Bearbeitung II].Anzeige FROM [Kategorien-Bearbeitung II] WHER"
+                        "E ((([Kategorien-Bearbeitung II].Aktiv)=True)); "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8840
+                    Top =1020
+                    Width =2109
+                    Height =315
+                    ColumnOrder =5
+                    TabIndex =3
+                    Name ="cmbKatProblem"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Problemstatus].[Kategorie-Problemstatus] FROM [Kategorien-Pro"
+                        "blemstatus]; "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13603
+                    Top =120
+                    Width =726
+                    Height =741
+                    TabIndex =4
+                    Name ="cmbFilterLöschen"
+                    Caption ="Befehl33"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddddd99dddddd9ddddddd99ddddd9ddddddddd99ddd99d ,
+                        0xddddddddd99999ddddddd777dd999dddddddd78dd99999ddddddd7d9999dd999 ,
+                        0xddddd7d999ddddddddddd78ddddddddddddd87778dddddddddd8777778dddddd ,
+                        0xddd77777778ddddddd777777777dddddd77777777777ddddd77777777777dddd ,
+                        0xdddddddddddddddd
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Filter löschen"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =855
+                    Top =1020
+                    Width =1404
+                    Height =315
+                    Name ="Bezeichnungsfeld26"
+                    Caption ="Auftragsdatum"
+                    Tag ="DetachedLabel"
+                End
+                Begin CustomControl
+                    Enabled = NotDefault
+                    SizeMode =1
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    Left =6349
+                    Top =113
+                    Width =1185
+                    Height =300
+                    AutoActivate =1
+                    TabIndex =5
+                    Name ="Bis"
+                    OnLostFocus ="[Event Procedure]"
+                    OLEClass ="DTPicker"
+                    Class ="MSComCtl2.DTPicker.2"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =3968
+                    Top =170
+                    Width =525
+                    Height =255
+                    FontSize =8
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld169"
+                    Caption ="Von:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =5782
+                    Top =170
+                    Width =525
+                    Height =255
+                    FontSize =8
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld170"
+                    Caption ="Bis:"
+                    FontName ="Arial"
+                End
+                Begin CustomControl
+                    Enabled = NotDefault
+                    SizeMode =1
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    Left =4535
+                    Top =113
+                    Width =1185
+                    Height =300
+                    AutoActivate =1
+                    TabIndex =6
+                    Name ="Von"
+                    OLEClass ="DTPicker"
+                    Class ="MSComCtl2.DTPicker.2"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =13605
+                    Top =990
+                    Width =1800
+                    Height =345
+                    Name ="Bezeichnungsfeld29"
+                    Caption ="InterneDaten_ROS"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11055
+                    Top =113
+                    Width =2324
+                    Height =340
+                    TabIndex =7
+                    Name ="cmbFilterSetzten"
+                    Caption ="Filter Setzten"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =15477
+                    Top =990
+                    Width =1725
+                    Height =315
+                    Name ="Bezeichnungsfeld31"
+                    Caption ="Belastung von LQ:"
+                End
+            End
+        End
+        Begin Section
+            Height =390
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =72
+                    Top =57
+                    Width =726
+                    Height =330
+                    ColumnWidth =1530
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2325
+                    Top =57
+                    Width =2109
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="Anzeige"
+                    ControlSource ="Anzeige"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4491
+                    Top =57
+                    Width =2109
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="Kategorie-Bearbeitung I"
+                    ControlSource ="Kategorie-Bearbeitung I"
+                    StatusBarText ="Fehlerbericht II"
+                    EventProcPrefix ="Kategorie_Bearbeitung_I"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6657
+                    Top =57
+                    Width =2109
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="Kategorie-Bearbeitung II"
+                    ControlSource ="Kategorie-Bearbeitung II"
+                    StatusBarText ="Fehlerbericht II"
+                    EventProcPrefix ="Kategorie_Bearbeitung_II"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8823
+                    Top =57
+                    Width =2109
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="Kategorie-Problem"
+                    ControlSource ="Kategorie-Problem"
+                    StatusBarText ="Fehlerbericht II"
+                    EventProcPrefix ="Kategorie_Problem"
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10989
+                    Top =57
+                    Width =1083
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =5
+                    Name ="Material-Kosten"
+                    ControlSource ="Material-Kosten"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    StatusBarText ="Fehlerbericht I+II"
+                    InputMask ="0.00"
+                    EventProcPrefix ="Material_Kosten"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =12129
+                    Top =57
+                    Width =1419
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =6
+                    Name ="Auftragsnummer"
+                    ControlSource ="Auftragsnummer"
+                    StatusBarText ="Fehlerbericht I+II"
+                    InputMask ="0000\\-00000;0;_"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =855
+                    Top =60
+                    Width =1404
+                    Height =330
+                    TabIndex =7
+                    Name ="Text28"
+                    ControlSource ="Auftragsdatum"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =14460
+                    Top =120
+                    TabIndex =8
+                    Name ="InterneDaten_ROS"
+                    ControlSource ="InterneDaten_ROS"
+                    StatusBarText ="Dient zur Plausibilitätsprüfung von Datensätze nur für Interne Verwendung ROS"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =15477
+                    Top =57
+                    Height =315
+                    TabIndex =9
+                    Name ="Belastungsbetrag LQ"
+                    ControlSource ="Belastungsbetrag LQ"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    StatusBarText ="Fehlerbericht II"
+                    EventProcPrefix ="Belastungsbetrag_LQ"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmDatenAbgleich.cls"

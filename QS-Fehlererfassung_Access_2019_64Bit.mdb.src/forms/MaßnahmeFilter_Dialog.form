@@ -1,0 +1,399 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6122
+    DatasheetFontHeight =10
+    ItemSuffix =25
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x80a6d519d04ee440
+    End
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =737
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =170
+                    Top =170
+                    Width =3801
+                    Height =510
+                    FontSize =20
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Filter Maßnahmen"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4308
+                    Top =170
+                    Width =1474
+                    Height =510
+                    Name ="FilterSetzen"
+                    Caption ="Filter Setzen"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =4138
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1020
+                    Left =2451
+                    Top =120
+                    Width =2091
+                    Height =345
+                    FontSize =10
+                    FontWeight =700
+                    Name ="ListVerantwortlich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Maßnahmen.Verantwortlich, Sachbearbeiter.Kurzzeichen FROM Maßnahmen INNER"
+                        " JOIN Sachbearbeiter ON Maßnahmen.Verantwortlich=Sachbearbeiter.[SB-ID] GROUP BY"
+                        " Maßnahmen.Verantwortlich, Sachbearbeiter.Kurzzeichen; "
+                    ColumnWidths ="0;1020"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =0
+                            Left =410
+                            Top =120
+                            Width =1860
+                            Height =290
+                            FontSize =10
+                            FontWeight =700
+                            Name ="Verantwortlich_Bezeichnungsfeld"
+                            Caption ="Verantwortlich SB"
+                            FontName ="AAri"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =2451
+                    Top =539
+                    Width =2091
+                    Height =345
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="ListArtMaßnahme"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Maßnahmen.ArtDerMaßnahme, MaßnahmeUmsetzungFrist.Anzeige FROM Maßnahmen I"
+                        "NNER JOIN MaßnahmeUmsetzungFrist ON Maßnahmen.ArtDerMaßnahme = MaßnahmeUmsetzung"
+                        "Frist.[ID-UmsetzungMaßnahme] GROUP BY Maßnahmen.ArtDerMaßnahme, MaßnahmeUmsetzun"
+                        "gFrist.Anzeige; "
+                    ColumnWidths ="0;1441"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =0
+                            Left =410
+                            Top =539
+                            Width =1860
+                            Height =290
+                            FontSize =10
+                            FontWeight =700
+                            Name ="Art der Maßnahme_Bezeichnungsfeld"
+                            Caption ="Art der Maßnahme"
+                            FontName ="AAri"
+                            EventProcPrefix ="Art_der_Maßnahme_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =2535
+                    Left =2451
+                    Top =958
+                    Width =3456
+                    Height =345
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="ListLQEinheit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.ID, LQEinheit.LQEinheit FROM LQEinheit GROUP BY LQEinheit.ID, L"
+                        "QEinheit.LQEinheit; "
+                    ColumnWidths ="0;1554"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =0
+                            Left =410
+                            Top =958
+                            Width =1860
+                            Height =290
+                            FontSize =10
+                            FontWeight =700
+                            Name ="BezLQEinheit"
+                            Caption ="LQ Einheit"
+                            FontName ="AAri"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2451
+                    Top =2670
+                    TabIndex =3
+                    Name ="CtrlAbgeschlossen"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =410
+                            Top =2670
+                            Width =1860
+                            Height =270
+                            FontSize =10
+                            FontWeight =700
+                            Name ="BezAbgeschlossen"
+                            Caption ="Abgeschlossen"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2451
+                    Top =2331
+                    TabIndex =4
+                    Name ="CtrlInBearbeitung"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =410
+                            Top =2331
+                            Width =1860
+                            Height =270
+                            FontSize =10
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld12"
+                            Caption ="In Bearbeitung"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =2535
+                    Left =2451
+                    Top =1377
+                    Width =3456
+                    Height =345
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="ListLQBereich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.ID, LQBereich.LQBereich FROM LQBereich GROUP BY LQBereich.ID, L"
+                        "QBereich.LQBereich; "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =0
+                            Left =410
+                            Top =1377
+                            Width =1860
+                            Height =290
+                            FontSize =10
+                            FontWeight =700
+                            Name ="BezLQBereich"
+                            Caption ="LQ Bereich"
+                            FontName ="AAri"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListWidth =2535
+                    Left =2451
+                    Top =1842
+                    Width =3456
+                    Height =345
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =7
+                    Name ="ListTätigkeit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Taetigkeiten.Taetigkeit, Taetigkeiten.Anzeige, tblZuordnung.Zuordnung FRO"
+                        "M Taetigkeiten INNER JOIN tblZuordnung ON Taetigkeiten.Zuordnung_ID = tblZuordnu"
+                        "ng.Zuordnung_ID WHERE (((tblZuordnung.Zuordnung) Like \"LQ*\")) GROUP BY Taetigk"
+                        "eiten.Taetigkeit, Taetigkeiten.Anzeige, tblZuordnung.Zuordnung; "
+                    ColumnWidths ="1554"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =0
+                            Left =410
+                            Top =1842
+                            Width =1860
+                            Height =290
+                            FontSize =10
+                            FontWeight =700
+                            Name ="BezTätigkeit"
+                            Caption ="Tätigkeit"
+                            FontName ="AAri"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2451
+                    Top =3068
+                    Height =345
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =6
+                    Name ="txtMaßnahmenID"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =0
+                            Left =466
+                            Top =3068
+                            Width =1815
+                            Height =290
+                            FontSize =10
+                            FontWeight =700
+                            Name ="BezMaßnahmenID"
+                            Caption ="MaßnahmenID"
+                            FontName ="AAri"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1020
+                    Left =2446
+                    Top =3532
+                    Width =3456
+                    Height =345
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =8
+                    Name ="ListMaßnahmenHerkunft"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Maßnahmen.MaßnahmenHerkunftID, MaßnahmenHerkunft.Anzeige FROM Maßnahmen I"
+                        "NNER JOIN MaßnahmenHerkunft ON Maßnahmen.MaßnahmenHerkunftID = MaßnahmenHerkunft"
+                        ".ID GROUP BY Maßnahmen.MaßnahmenHerkunftID, MaßnahmenHerkunft.Anzeige; "
+                    ColumnWidths ="0;1020"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =0
+                            Top =3532
+                            Width =2265
+                            Height =290
+                            FontSize =10
+                            FontWeight =700
+                            Name ="BezMaßnahmenHerkunft"
+                            Caption ="Maßnahmen Herkunft"
+                            FontName ="AAri"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "MaßnahmeFilter_Dialog.cls"

@@ -1,0 +1,357 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    ControlBox = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =17970
+    DatasheetFontHeight =11
+    ItemSuffix =26
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xb19907912a43e540
+    End
+    Caption ="frmAccessWsID_AvistaWsID"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin FormHeader
+            Height =1587
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11348
+                    Top =165
+                    Width =3456
+                    Height =576
+                    Name ="cmbWSAvistaAbrufen"
+                    Caption ="Aktualisieren Daten AVISTA WS"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Abfrage ausführen"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =340
+                    Top =170
+                    Width =8730
+                    Height =680
+                    FontSize =24
+                    FontWeight =700
+                    Name ="BezZuordnung"
+                    Caption ="Zuordnung  WS-Avista zu WS-ReklDB"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =17007
+                    Top =165
+                    Width =576
+                    Height =576
+                    TabIndex =1
+                    Name ="cmbSchließen"
+                    Caption ="Befehl2"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =1303
+                    Top =1101
+                    Width =1752
+                    Height =390
+                    TabIndex =2
+                    Name ="Befehl17"
+                    Caption ="Filter löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =165
+                    Top =797
+                    Width =850
+                    Height =694
+                    TabIndex =3
+                    Name ="cmbAufAb"
+                    Caption ="Index Auf/Ab"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3285
+                    Top =1191
+                    Width =1533
+                    Height =300
+                    ColumnOrder =2
+                    TabIndex =4
+                    Name ="cboAvistaGruppe"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblAccessWsID_AvistaWsID.AvistaGrName FROM tblAccessWsID_AvistaWsID GROUP"
+                        " BY tblAccessWsID_AvistaWsID.AvistaGrName; "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4875
+                    Top =1191
+                    Width =4203
+                    Height =300
+                    ColumnOrder =1
+                    TabIndex =5
+                    Name ="cboAvistaBezeichnung"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblAccessWsID_AvistaWsID.AvistaGrBez FROM tblAccessWsID_AvistaWsID GROUP "
+                        "BY tblAccessWsID_AvistaWsID.AvistaGrBez; "
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11348
+                    Top =797
+                    Width =850
+                    Height =694
+                    TabIndex =6
+                    Name ="Befehl22"
+                    Caption ="Index Auf/Ab"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =14455
+                    Top =1176
+                    Width =3119
+                    Height =315
+                    ColumnOrder =0
+                    TabIndex =7
+                    Name ="cboLQ_Bereich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.LQBereich FROM LQWorkstation INNER JOIN LQBereich ON LQWorkstat"
+                        "ion.[ID-LQBereich] = LQBereich.ID GROUP BY LQBereich.LQBereich; "
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12472
+                    Top =1101
+                    Width =1752
+                    Height =390
+                    TabIndex =8
+                    Name ="Befehl25"
+                    Caption ="Filter löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =6462
+            Name ="Detailbereich"
+            Begin
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    Left =170
+                    Top =560
+                    Width =8910
+                    Height =5556
+                    Name ="lstDatenAvista"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblAccessWsID_AvistaWsID.AvistaWsID, tblAccessWsID_AvistaWsID.AvistaWsNam"
+                        "e, tblAccessWsID_AvistaWsID.AvistaGrName, tblAccessWsID_AvistaWsID.AvistaGrBez, "
+                        "tblAccessWsID_AvistaWsID.AvistaStatus FROM tblAccessWsID_AvistaWsID WHERE (((tbl"
+                        "AccessWsID_AvistaWsID.AvistaStatus)=10) AND ((tblAccessWsID_AvistaWsID.AccessWsI"
+                        "D)=0)) ORDER BY tblAccessWsID_AvistaWsID.AvistaWsName; "
+                    ColumnWidths ="567;2553;1420;3119"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =165
+                            Top =165
+                            Width =8340
+                            Height =315
+                            Name ="bezDatenAvista"
+                            Caption ="Daten Avista-WS                                        Avista-Gr.               "
+                                "    Avista-Bezeichnung"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    Left =11348
+                    Top =560
+                    Width =6225
+                    Height =5556
+                    TabIndex =1
+                    Name ="lstDatenReklDB"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation, LQBereich.LQBereich, LQWor"
+                        "kstation.[ID-LQBereich] FROM LQWorkstation INNER JOIN LQBereich ON LQWorkstation"
+                        ".[ID-LQBereich] = LQBereich.ID WHERE (((LQWorkstation.Aktiv)=True)) GROUP BY LQW"
+                        "orkstation.ID, LQWorkstation.LQWorkstation, LQBereich.LQBereich, LQWorkstation.["
+                        "ID-LQBereich], LQWorkstation.WSAvistaID HAVING (((LQWorkstation.WSAvistaID)=0 Or"
+                        " (LQWorkstation.WSAvistaID) Is Null)) ORDER BY LQWorkstation.LQWorkstation; "
+                    ColumnWidths ="567;2722;2268"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =11343
+                            Top =165
+                            Width =5670
+                            Height =315
+                            Name ="bezDatenReklDB"
+                            Caption ="Daten ReklDB-WS                                             LQBereich "
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9360
+                    Top =2489
+                    Height =1307
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="cmbWsAbgleichen"
+                    Caption ="AVISTA-WS\015\012mit\015\012ReklDB-WS verknüpfen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =3571
+            BackColor =15783096
+            Name ="Formularfuß"
+            Begin
+                Begin Subform
+                    OverlapFlags =85
+                    BorderWidth =1
+                    Left =60
+                    Top =165
+                    Width =17910
+                    Height =3300
+                    BorderColor =0
+                    Name ="UfrmVerkuepfteWSAvistaReklDB"
+                    SourceObject ="Form.UfrmVerkuepfteWSAvistaReklDB"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmAccessWsID_AvistaWsID.cls"

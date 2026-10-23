@@ -1,0 +1,27 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "Lieferanten",
+    "Connect": ";DATABASE=\\\\link\\dfs\\QM_Reklamationen_Datenbank\\Access-Datenbank\\Reklamationen Daten\\QS-Fehlererfassung_Daten.mdb",
+    "SourceTableName": "Lieferanten",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[[Lieferant-ID]]",
+    "TableProperties": {
+      "HasEdgeBrowser": {
+        "Type": 4,
+        "Value": 0
+      },
+      "HasIvyChart": {
+        "Type": 4,
+        "Value": 0
+      },
+      "ThemeResourceName": {
+        "Type": 10,
+        "Value": "[Use DB Theme]"
+      }
+    }
+  }
+}

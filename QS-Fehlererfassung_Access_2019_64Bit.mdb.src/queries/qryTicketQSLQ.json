@@ -1,0 +1,137 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryTicketQSLQ"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "OrderByOn": {
+        "Type": 1,
+        "Value": true
+      },
+      "RowHeight": {
+        "Type": 3,
+        "Value": 4245
+      }
+    },
+    "Columns": {
+      "ANB": {
+        "ColumnWidth": 2025,
+        "AggregateType": -1
+      },
+      "ANE": {
+        "ColumnWidth": 2550,
+        "AggregateType": -1
+      },
+      "BCCE": {
+        "ColumnWidth": 2565,
+        "AggregateType": -1
+      },
+      "CCE": {
+        "ColumnWidth": 4455,
+        "AggregateType": -1
+      },
+      "LQBereich.LQBereich": {
+        "ColumnWidth": 2670,
+        "AggregateType": -1
+      },
+      "LQEinheit.LQEinheit": {
+        "ColumnWidth": 2310,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 576
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 13,
+          "Top": 15,
+          "Right": 333,
+          "Bottom": 583,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 598,
+          "Top": 5,
+          "Right": 810,
+          "Bottom": 216,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 632,
+          "Top": 249,
+          "Right": 811,
+          "Bottom": 529,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 861,
+          "Top": 197,
+          "Right": 1038,
+          "Bottom": 349,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 414,
+          "Top": 479,
+          "Right": 589,
+          "Bottom": 742,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 445,
+          "Top": 143,
+          "Right": 589,
+          "Bottom": 333,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 835,
+          "Top": 398,
+          "Right": 1008,
+          "Bottom": 682,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LieferantAnsprechpartner",
+          "Alias": "",
+          "Left": 1070,
+          "Top": 36,
+          "Right": 1251,
+          "Bottom": 365,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1974 @@
+﻿Version =19
+VersionRequired =19
+Begin Report
+    AutoCenter = NotDefault
+    FilterOn = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10154
+    DatasheetFontHeight =10
+    ItemSuffix =210
+    Left =4140
+    Top =780
+    DatasheetGridlinesColor =12632256
+    Filter ="[ID]=11813"
+    RecSrcDt = Begin
+        0x7c3f5cbcd0fee140
+    End
+    RecordSource ="Mastertab"
+    Caption ="Aktion Request"
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            SpecialEffect =3
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin PageBreak
+            Width =283
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =0
+            Name ="Formularkopf"
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =15533
+            Name ="Detailbereich"
+            Begin
+                Begin CheckBox
+                    Left =60
+                    Top =6155
+                    Width =231
+                    Height =225
+                    TabIndex =3
+                    Name ="Kontrollkästchen40"
+                    ControlSource ="Annahme mit Prüfausnahme"
+                    Begin
+                        Begin Label
+                            Left =400
+                            Top =6099
+                            Width =3000
+                            Height =240
+                            FontSize =9
+                            Name ="Bezeichnungsfeld41"
+                            Caption ="Annahme mit Prüfausnahme"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Left =60
+                    Top =6455
+                    TabIndex =4
+                    Name ="Kontrollkästchen42"
+                    ControlSource ="Rücklieferung an Lieferant"
+                    Begin
+                        Begin Label
+                            Left =400
+                            Top =6399
+                            Width =3000
+                            Height =240
+                            FontSize =9
+                            Name ="Bezeichnungsfeld43"
+                            Caption ="Die Ware wird zurückgeschickt"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Line
+                    BorderWidth =1
+                    SpecialEffect =0
+                    Left =30
+                    Top =6691
+                    Width =10105
+                    Name ="Linie44"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    Left =60
+                    Top =7317
+                    Width =6756
+                    Height =4815
+                    TabIndex =5
+                    Name ="Text48"
+                    ControlSource ="Bemerkungen - Maßnahmen"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            Left =60
+                            Top =6750
+                            Width =2205
+                            Height =256
+                            FontSize =9
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld49"
+                            Caption ="Fehlerbeschreibung:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Label
+                    Left =86
+                    Top =12783
+                    Width =8100
+                    Height =240
+                    FontSize =9
+                    Name ="Bezeichnungsfeld52"
+                    Caption ="Fehlerursache und Maßnahme zur Ursachenbeseitigung:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    TextAlign =1
+                    Left =5700
+                    Top =2445
+                    Width =4377
+                    Height =392
+                    FontSize =15
+                    BackColor =13948116
+                    BorderColor =4194368
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld23"
+                    Caption ="Reklamationsbericht"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    TextAlign =2
+                    Left =8535
+                    Top =2490
+                    Width =1527
+                    Height =314
+                    FontSize =13
+                    FontWeight =600
+                    TabIndex =8
+                    BackColor =13948116
+                    BorderColor =13948116
+                    ForeColor =0
+                    Name ="Text25"
+                    ControlSource ="ID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    BackStyle =0
+                    Left =6633
+                    Top =2879
+                    Width =1296
+                    Height =285
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =9
+                    ForeColor =0
+                    Name ="Text27"
+                    ControlSource ="Datum"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            TextAlign =2
+                            Left =5715
+                            Top =2880
+                            Width =690
+                            Height =285
+                            FontSize =9
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld28"
+                            Caption ="Datum:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    BorderWidth =1
+                    Left =5700
+                    Top =2835
+                    Width =4377
+                    Height =3808
+                    BorderColor =263172
+                    Name ="Rechteck39"
+                End
+                Begin Label
+                    Left =60
+                    Top =2385
+                    Width =4815
+                    Height =225
+                    FontSize =7
+                    Name ="Bezeichnungsfeld20"
+                    Caption ="LQ Mechatronik-Systeme GmbH * Carl-Benz-Straße 6 * D-74354 Besigheim"
+                    FontName ="Arial"
+                End
+                Begin Line
+                    OldBorderStyle =4
+                    BorderWidth =1
+                    BorderLineStyle =3
+                    SpecialEffect =0
+                    Left =56
+                    Top =13549
+                    Width =10098
+                    Name ="Linie60"
+                End
+                Begin Line
+                    OldBorderStyle =4
+                    BorderWidth =1
+                    BorderLineStyle =3
+                    SpecialEffect =0
+                    Left =56
+                    Top =14116
+                    Width =10092
+                    Name ="Linie61"
+                End
+                Begin Line
+                    BorderWidth =1
+                    SpecialEffect =0
+                    Left =45
+                    Top =12195
+                    Width =10092
+                    Height =15
+                    Name ="Linie62"
+                End
+                Begin Line
+                    Top =5265
+                    Width =340
+                    Name ="Linie68"
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    Left =8940
+                    Top =6299
+                    Width =556
+                    Height =286
+                    FontSize =9
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="Rückliefer-Menge:"
+                    ControlSource ="Rückliefer-Menge"
+                    FontName ="Arial"
+                    EventProcPrefix ="Rückliefer_Menge_"
+                    Begin
+                        Begin Label
+                            Left =8430
+                            Top =6015
+                            Width =1633
+                            Height =285
+                            FontSize =9
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld75"
+                            Caption ="Rückliefer-Menge"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Label
+                    Left =45
+                    Top =5379
+                    Width =1869
+                    Height =287
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld84"
+                    Caption ="Referenznummer:"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    Left =2027
+                    Top =5378
+                    Width =3073
+                    Height =283
+                    FontSize =10
+                    TabIndex =10
+                    Name ="Text85"
+                    ControlSource ="Meldungsnummer Kunde"
+                    FontName ="Arial"
+                End
+                Begin CheckBox
+                    Left =60
+                    Top =5829
+                    Width =283
+                    Height =227
+                    TabIndex =2
+                    Name ="Kontrollkästchen87"
+                    ControlSource ="Annahme mit Nacharbeit"
+                    Begin
+                        Begin Label
+                            Left =396
+                            Top =5775
+                            Width =3015
+                            Height =240
+                            FontSize =9
+                            Name ="Bezeichnungsfeld88"
+                            Caption ="Annahme mit Nacharbeit"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    BackStyle =0
+                    Left =5526
+                    Top =12220
+                    Width =1306
+                    Height =277
+                    FontSize =10
+                    TabIndex =11
+                    BorderColor =16777215
+                    Name ="Text89"
+                    ControlSource ="Rückmeldung_Lieferant_Soll"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            DisplayWhen =2
+                            TextAlign =2
+                            Left =45
+                            Top =4425
+                            Width =2325
+                            Height =285
+                            Name ="Bezeichnungsfeld90"
+                            Caption ="Rückmeldung_Lieferant_Soll:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    TextAlign =2
+                    Left =2437
+                    Top =4422
+                    Width =1531
+                    Height =457
+                    FontSize =12
+                    FontWeight =600
+                    TabIndex =1
+                    BorderColor =12632256
+                    Name ="Text96"
+                    ControlSource ="Rückmeldung_Lieferant_Soll"
+                    ValidationRule ="([Rückmeldung_Lieferant_Soll]>=[Auftragsdatum] Or [Rückmeldung_Lieferant_Soll] I"
+                        "s Null)"
+                    ValidationText ="Falsches Rückmelde-Datum!"
+                    FontName ="Arial"
+                End
+                Begin Line
+                    OldBorderStyle =4
+                    BorderWidth =1
+                    BorderLineStyle =3
+                    SpecialEffect =0
+                    Top =14685
+                    Width =10092
+                    Name ="Linie109"
+                End
+                Begin ComboBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =1
+                    ListWidth =1965
+                    Left =60
+                    Top =7035
+                    Width =2593
+                    Height =256
+                    TabIndex =12
+                    Name ="Kombinationsfeld114"
+                    ControlSource ="Fehlergruppe"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Fehlergruppen.ID, Fehlergruppen.Fehlergruppe FROM Fehlergruppen; "
+                    ColumnWidths ="0;1965"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =1
+                    ListWidth =2835
+                    Left =2700
+                    Top =7035
+                    Width =3236
+                    Height =256
+                    TabIndex =13
+                    Name ="Kombinationsfeld116"
+                    ControlSource ="Fehlertexte"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Fehlertexte.ID, Fehlertexte.Fehlertexte FROM Fehlertexte; "
+                    ColumnWidths ="0;2835"
+                    FontName ="Arial"
+                End
+                Begin Line
+                    OldBorderStyle =4
+                    BorderWidth =1
+                    BorderLineStyle =3
+                    SpecialEffect =0
+                    Top =15240
+                    Width =10092
+                    Name ="Linie118"
+                End
+                Begin Line
+                    Left =6855
+                    Top =6690
+                    Width =0
+                    Height =5502
+                    Name ="Linie119"
+                End
+                Begin TextBox
+                    CanGrow = NotDefault
+                    CanShrink = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    Left =6924
+                    Top =7028
+                    Width =3117
+                    Height =5106
+                    FontWeight =700
+                    TabIndex =6
+                    Name ="Bemerkungen"
+                    ControlSource ="Bemerkungen - RB"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            Left =6916
+                            Top =6746
+                            Width =2160
+                            Height =240
+                            FontSize =9
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld126"
+                            Caption ="Bemerkungen:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Label
+                    Left =5730
+                    Top =5295
+                    Width =1794
+                    Height =284
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld138"
+                    Caption ="Lieferantennummer:"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =1
+                    ListWidth =3402
+                    Left =7596
+                    Top =5669
+                    Width =1938
+                    Height =284
+                    FontSize =9
+                    TabIndex =14
+                    BoundColumn =1
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Sachbearbeiter QS"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Sachbearbeiter"
+                    ColumnWidths ="0;2268"
+                    StatusBarText ="Sachbearbeiter-QS"
+                    FontName ="Arial"
+                    EventProcPrefix ="Sachbearbeiter_QS"
+                    Begin
+                        Begin Label
+                            TextAlign =1
+                            Left =5725
+                            Top =5669
+                            Width =1800
+                            Height =284
+                            BackColor =13209
+                            ForeColor =0
+                            Name ="Sachbearbeiter"
+                            Caption ="Ihr Ansprechpartner:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    ListRows =1
+                    ListWidth =3402
+                    Left =6971
+                    Top =1984
+                    Width =3096
+                    Height =223
+                    FontSize =7
+                    FontWeight =500
+                    TabIndex =15
+                    BoundColumn =1
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="E-Mail"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Sachbearbeiter"
+                    ColumnWidths ="0;0;0;2268"
+                    StatusBarText ="Sachbearbeiter-QS"
+                    FontName ="Arial"
+                    EventProcPrefix ="E_Mail"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =6
+                    ListRows =1
+                    ListWidth =3402
+                    Left =7361
+                    Top =1530
+                    Width =2570
+                    Height =230
+                    FontWeight =500
+                    TabIndex =16
+                    BoundColumn =1
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Telefonnummer"
+                    ControlSource ="              Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Sachbearbeiter"
+                    ColumnWidths ="0;0;0;0;0;2268"
+                    StatusBarText ="Sachbearbeiter-QS"
+                    FontName ="Arial"
+                    InputMask ="\"++\"99\\(0\") \"9999\"/ \"9999\" -\"99\"\""
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListRows =1
+                    ListWidth =6804
+                    Left =56
+                    Top =2777
+                    Width =5613
+                    Height =340
+                    FontSize =11
+                    TabIndex =17
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Liefernaten-Name"
+                    ControlSource ="Lieferanten-Code 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Lieferanten"
+                    ColumnWidths ="0;0;5670"
+                    StatusBarText ="Lieferanten-Code"
+                    FontName ="Arial"
+                    EventProcPrefix ="Liefernaten_Name"
+                    ControlTipText ="Lieferantenname"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    ColumnCount =13
+                    ListRows =1
+                    ListWidth =1134
+                    Left =7596
+                    Top =5295
+                    Width =1134
+                    Height =284
+                    FontSize =9
+                    FontWeight =600
+                    TabIndex =18
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="L-Nummer (AVISTA)"
+                    ControlSource ="Lieferanten-Code 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Lieferanten"
+                    ColumnWidths ="0;0;0;0;0;0;0;0;0;0;0"
+                    StatusBarText ="Lieferanten"
+                    FontName ="Arial"
+                    EventProcPrefix ="L_Nummer__AVISTA_"
+                    ControlTipText ="L-Nummer (AVISTA)"
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    AutoExpand = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    ListRows =20
+                    ListWidth =4536
+                    Left =6643
+                    Top =3253
+                    Width =1304
+                    Height =284
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =19
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Baugruppen-ID"
+                    ControlSource ="Baugruppen-ID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Baugruppen-avista_out].[Baugruppen-ID], [Baugruppen-avista_out].[LQ Art-"
+                        "Nr], [Baugruppen-avista_out].[Var Nr], [Baugruppen-avista_out].[Kunden-Nr] FROM "
+                        "[Baugruppen-avista_out]; "
+                    ColumnWidths ="0;1363;1022;1134"
+                    FontName ="Arial"
+                    EventProcPrefix ="Baugruppen_ID"
+                    Format ="0000000"
+                    InputMask ="#######"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =1
+                    Left =8106
+                    Top =3252
+                    Width =964
+                    Height =284
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =20
+                    BoundColumn =1
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="BG-Variante"
+                    ControlSource ="Baugruppen-ID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Baugruppen-avista_out].[Var Nr], [Baugruppen-avista_out].* FROM [Baugrup"
+                        "pen-avista_out]; "
+                    ColumnWidths ="0;0;0;0;1701"
+                    FontName ="Arial"
+                    EventProcPrefix ="BG_Variante"
+                    Format ="00000"
+                    InputMask ="#####"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    Left =6563
+                    Top =3531
+                    Width =3470
+                    Height =284
+                    TabIndex =21
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Herstellernummer - BG"
+                    ControlSource ="Herstellernummer - BG"
+                    FontName ="Arial"
+                    EventProcPrefix ="Herstellernummer___BG"
+                    Begin
+                        Begin Label
+                            TextAlign =1
+                            Left =5735
+                            Top =3540
+                            Width =905
+                            Height =278
+                            BackColor =13209
+                            ForeColor =0
+                            Name ="Hersteller-Teilenr."
+                            Caption ="Herst.-Nr.:"
+                            FontName ="Arial"
+                            EventProcPrefix ="Hersteller_Teilenr_"
+                        End
+                    End
+                End
+                Begin Label
+                    TextAlign =4
+                    Left =7920
+                    Top =3165
+                    Width =226
+                    Height =393
+                    FontSize =15
+                    FontWeight =700
+                    BackColor =13209
+                    ForeColor =0
+                    Name ="Bindestrich-BG"
+                    Caption ="-"
+                    FontName ="Arial"
+                    EventProcPrefix ="Bindestrich_BG"
+                End
+                Begin Label
+                    Left =5735
+                    Top =3252
+                    Width =907
+                    Height =284
+                    Name ="Bezeichnungsfeld147"
+                    Caption ="Baugruppe:"
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    Left =8895
+                    Top =3180
+                    Width =1145
+                    Height =359
+                    FontSize =7
+                    TabIndex =22
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Herstellungsdatum - BG"
+                    ControlSource ="Herstellungsdatum - BG"
+                    FontName ="Arial"
+                    EventProcPrefix ="Herstellungsdatum___BG"
+                End
+                Begin TextBox
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    Left =6638
+                    Top =3815
+                    Width =3395
+                    Height =284
+                    TabIndex =23
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Serial-Nr - BG"
+                    ControlSource ="Serial-Nr - BG"
+                    FontName ="Arial"
+                    EventProcPrefix ="Serial_Nr___BG"
+                    Begin
+                        Begin Label
+                            TextAlign =1
+                            Left =5730
+                            Top =3815
+                            Width =905
+                            Height =284
+                            BackColor =13209
+                            ForeColor =0
+                            Name ="Seriennr."
+                            Caption ="Serial-Nr.:"
+                            FontName ="Arial"
+                            EventProcPrefix ="Seriennr_"
+                        End
+                    End
+                End
+                Begin Line
+                    OldBorderStyle =2
+                    BorderWidth =1
+                    BorderLineStyle =1
+                    SpecialEffect =0
+                    Left =5730
+                    Top =4140
+                    Width =448
+                    Name ="Linie148"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    ColumnCount =5
+                    ListRows =1
+                    Left =6638
+                    Top =4428
+                    Width =1304
+                    Height =215
+                    FontSize =6
+                    FontWeight =600
+                    TabIndex =7
+                    BoundColumn =1
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Artike 1 - Kundennummer"
+                    ControlSource ="Artikel-ID 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Artikel-all_avista_out].[Kd Mat-Nr], [Artikel-all_avista_out].* FROM [Ar"
+                        "tikel-all_avista_out]; "
+                    ColumnWidths ="0;0;0;0;1701"
+                    FontName ="Arial"
+                    EventProcPrefix ="Artike_1___Kundennummer"
+                End
+                Begin ComboBox
+                    ColumnHeads = NotDefault
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    AutoExpand = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    ColumnCount =5
+                    ListRows =20
+                    ListWidth =4536
+                    Left =6643
+                    Top =4179
+                    Width =1304
+                    Height =239
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =24
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Artikel-ID_1"
+                    ControlSource ="Artikel-ID 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Artikel-all_avista_out].[Artikel-ID], [Artikel-all_avista_out].[LQ Art-N"
+                        "r], [Artikel-all_avista_out].Variante, [Artikel-all_avista_out].[Kd Mat-Nr] FROM"
+                        " [Artikel-all_avista_out]; "
+                    ColumnWidths ="0;1474;1023;1134"
+                    FontName ="Arial"
+                    EventProcPrefix ="Artikel_ID_1"
+                    Format ="0000000"
+                    InputMask ="#######"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    DecimalPlaces =0
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    Left =8895
+                    Top =4185
+                    Width =1145
+                    Height =344
+                    FontSize =7
+                    TabIndex =25
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="KW/JJ"
+                    ControlSource ="KW/JJ"
+                    FontName ="Arial"
+                    EventProcPrefix ="KW_JJ"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    Left =6638
+                    Top =4927
+                    Width =3395
+                    Height =284
+                    TabIndex =26
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Seriennummer"
+                    ControlSource ="Seriennummer"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            TextAlign =1
+                            Left =5735
+                            Top =4920
+                            Width =907
+                            Height =284
+                            BackColor =13209
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld496"
+                            Caption ="Serial-Nr.:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Label
+                    TextAlign =4
+                    Left =7905
+                    Top =4095
+                    Width =226
+                    Height =393
+                    FontSize =15
+                    FontWeight =700
+                    BackColor =13209
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld716"
+                    Caption ="-"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =2
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =1
+                    Left =6518
+                    Top =4643
+                    Width =3515
+                    Height =284
+                    TabIndex =27
+                    BoundColumn =1
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Hersteller-Teilenummer"
+                    ControlSource ="Artikel-ID 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Artikel-all_avista_out].[Hersteller-Teilenummer], [Artikel-all_avista_ou"
+                        "t].* FROM [Artikel-all_avista_out]; "
+                    ColumnWidths ="0;0;1701"
+                    FontName ="Arial"
+                    EventProcPrefix ="Hersteller_Teilenummer"
+                    Begin
+                        Begin Label
+                            TextAlign =1
+                            Left =5730
+                            Top =4643
+                            Width =907
+                            Height =284
+                            BackColor =13209
+                            ForeColor =0
+                            Name ="Hersteller-Teilenummer1 - Bezeichnungsfeld867"
+                            Caption ="Herst.-Nr.:"
+                            FontName ="Arial"
+                            EventProcPrefix ="Hersteller_Teilenummer1___Bezeichnungsfeld867"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =5
+                    ListRows =1
+                    Left =8106
+                    Top =4179
+                    Width =964
+                    Height =284
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =28
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Artikel-Variante"
+                    ControlSource ="Artikel-ID 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Artikel-all_avista_out].*, [Artikel-all_avista_out].Variante FROM [Artik"
+                        "el-all_avista_out]; "
+                    ColumnWidths ="0;0;1701"
+                    FontName ="Arial"
+                    EventProcPrefix ="Artikel_Variante"
+                End
+                Begin Label
+                    Left =5730
+                    Top =4190
+                    Width =907
+                    Height =284
+                    Name ="Bezeichnungsfeld149"
+                    Caption ="Mat-Nr.:"
+                End
+                Begin Line
+                    OldBorderStyle =2
+                    BorderWidth =1
+                    BorderLineStyle =1
+                    SpecialEffect =0
+                    Left =5730
+                    Top =3210
+                    Width =448
+                    Name ="Linie150"
+                End
+                Begin Line
+                    OldBorderStyle =2
+                    BorderWidth =1
+                    BorderLineStyle =1
+                    SpecialEffect =0
+                    Left =5760
+                    Top =5250
+                    Width =448
+                    Name ="Linie151"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =8850
+                    Top =3285
+                    Width =216
+                    Height =227
+                    BorderColor =16777215
+                    Name ="Rechteck152"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =7725
+                    Top =3285
+                    Width =216
+                    Height =227
+                    BorderColor =16777215
+                    Name ="Rechteck153"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =7725
+                    Top =4215
+                    Width =216
+                    Height =238
+                    BorderColor =16777215
+                    Name ="Rechteck154"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =8850
+                    Top =4215
+                    Width =216
+                    Height =238
+                    BorderColor =16777215
+                    Name ="Rechteck155"
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =9795
+                    Top =4665
+                    Width =231
+                    Height =244
+                    BorderColor =16777215
+                    Name ="Rechteck156"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =8505
+                    Top =5325
+                    Width =216
+                    Height =233
+                    BorderColor =16777215
+                    Name ="Rechteck157"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =9315
+                    Top =5700
+                    Width =216
+                    Height =238
+                    BorderColor =16777215
+                    Name ="Rechteck158"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =5445
+                    Top =2790
+                    Width =216
+                    Height =313
+                    BorderColor =16777215
+                    Name ="Rechteck159"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =5715
+                    Top =7050
+                    Width =216
+                    Height =227
+                    BorderColor =16777215
+                    Name ="Rechteck160"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =7710
+                    Top =4470
+                    Width =216
+                    Height =170
+                    BorderColor =16777215
+                    Name ="Rechteck162"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =9705
+                    Top =1575
+                    Width =216
+                    Height =182
+                    BorderColor =16777215
+                    Name ="Rechteck163"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =9864
+                    Top =2040
+                    Width =216
+                    Height =130
+                    BorderColor =16777215
+                    Name ="Rechteck164"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =9
+                    ListRows =1
+                    ListWidth =6804
+                    Left =56
+                    Top =3458
+                    Width =5613
+                    Height =340
+                    FontSize =11
+                    TabIndex =29
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld165"
+                    ControlSource ="Lieferanten-Code 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Lieferanten"
+                    ColumnWidths ="0;0;0;0;0;0;0;0;5670"
+                    StatusBarText ="Lieferanten-Code"
+                    FontName ="Arial"
+                    ControlTipText ="Lieferantenname"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    DecimalPlaces =0
+                    IMESentenceMode =3
+                    ColumnCount =10
+                    ListRows =1
+                    ListWidth =1134
+                    Left =56
+                    Top =3968
+                    Width =1083
+                    Height =340
+                    FontSize =11
+                    TabIndex =30
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld166"
+                    ControlSource ="Lieferanten-Code 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Lieferanten"
+                    ColumnWidths ="0;0;0;0;0;0;0;0;0;5670"
+                    StatusBarText ="Lieferanten-Code"
+                    FontName ="Arial"
+                    ControlTipText ="Lieferantenname"
+                    Format ="00000"
+                    InputMask ="00000"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =11
+                    ListRows =1
+                    ListWidth =6804
+                    Left =1121
+                    Top =3968
+                    Width =4533
+                    Height =340
+                    FontSize =11
+                    TabIndex =31
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld167"
+                    ControlSource ="Lieferanten-Code 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Lieferanten"
+                    ColumnWidths ="0;0;0;0;0;0;0;0;0;0;5670"
+                    StatusBarText ="Lieferanten-Code"
+                    FontName ="Arial"
+                    ControlTipText ="Lieferantenname"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =5445
+                    Top =3135
+                    Width =216
+                    Height =313
+                    BorderColor =16777215
+                    Name ="Rechteck168"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =5445
+                    Top =3465
+                    Width =216
+                    Height =313
+                    BorderColor =16777215
+                    Name ="Rechteck169"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =896
+                    Top =3983
+                    Width =216
+                    Height =313
+                    BorderColor =16777215
+                    Name ="Rechteck170"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =2430
+                    Top =7050
+                    Width =216
+                    Height =227
+                    BorderColor =16777215
+                    Name ="Rechteck171"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    DisplayWhen =1
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    Left =8700
+                    Top =15285
+                    Width =1418
+                    Height =170
+                    FontSize =6
+                    TabIndex =32
+                    BackColor =16777215
+                    ForeColor =0
+                    Name ="Text723"
+                    ControlSource ="=Now()"
+                    StatusBarText ="FELD 13 TRUMPF"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    DisplayWhen =1
+                    TextAlign =1
+                    Left =7965
+                    Top =15285
+                    Width =737
+                    Height =170
+                    FontSize =6
+                    BackColor =13209
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld724"
+                    Caption ="Druckdatum:"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    ListRows =1
+                    ListWidth =6804
+                    Left =56
+                    Top =3118
+                    Width =5613
+                    Height =340
+                    FontSize =11
+                    TabIndex =33
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld173"
+                    ControlSource ="Lieferanten-Code 1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Lieferanten"
+                    ColumnWidths ="0;0;0;5670"
+                    StatusBarText ="Lieferanten-Code"
+                    FontName ="Arial"
+                    ControlTipText ="Lieferantenname"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =5445
+                    Top =3135
+                    Width =216
+                    Height =313
+                    BorderColor =16777215
+                    Name ="Rechteck174"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =5430
+                    Top =3990
+                    Width =216
+                    Height =313
+                    BorderColor =16777215
+                    Name ="Rechteck175"
+                End
+                Begin Label
+                    Left =5730
+                    Top =6015
+                    Width =2370
+                    Height =285
+                    FontSize =9
+                    Name ="Bezeichnungsfeld178"
+                    Caption ="reklamierte Gesamtmenge:"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =3
+                    Left =6237
+                    Top =6292
+                    Width =1137
+                    Height =295
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =34
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="txt_Menge betroffen - Gesamt"
+                    ControlSource ="=[Menge betroffen - Kunde]+[Menge betroffen - LQ]"
+                    Format ="General Number"
+                    DefaultValue ="0"
+                    FontName ="Arial"
+                    EventProcPrefix ="txt_Menge_betroffen___Gesamt"
+                End
+                Begin Label
+                    Left =6066
+                    Top =1247
+                    Width =2910
+                    Height =210
+                    Name ="Bezeichnungsfeld186"
+                    Caption ="Gewerbegebiet Ottmarsheimer Höhe     "
+                End
+                Begin Label
+                    Left =6066
+                    Top =1473
+                    Width =900
+                    Height =210
+                    Name ="Bezeichnungsfeld187"
+                    Caption ="Telefon:"
+                End
+                Begin Label
+                    Left =6066
+                    Top =1700
+                    Width =900
+                    Height =210
+                    Name ="Bezeichnungsfeld188"
+                    Caption ="Telefax:  "
+                End
+                Begin Label
+                    Left =6066
+                    Top =1927
+                    Width =885
+                    Height =210
+                    Name ="Bezeichnungsfeld189"
+                    Caption ="e-mail:"
+                End
+                Begin Label
+                    Left =6066
+                    Top =2211
+                    Width =2910
+                    Height =210
+                    Name ="Bezeichnungsfeld190"
+                    Caption ="www.lq-group.com"
+                End
+                Begin Label
+                    Left =30
+                    Top =12272
+                    Width =5395
+                    Height =165
+                    FontWeight =600
+                    Name ="Bezeichnungsfeld192"
+                    Caption ="Vom Lieferanten ist diese Abschnitt auszufüllen und bis zum"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    Left =6946
+                    Top =12216
+                    Width =2890
+                    Height =225
+                    FontWeight =600
+                    Name ="Bezeichnungsfeld193"
+                    Caption =", unabhängig von einer Waren-"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    Left =86
+                    Top =12499
+                    Width =6700
+                    Height =255
+                    FontWeight =600
+                    Name ="Bezeichnungsfeld194"
+                    Caption ="sendung, an den zuständigen Reklamationsbearbeiter (s.o.) weiterzuleiten."
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =7
+                    ListRows =1
+                    ListWidth =3402
+                    Left =7365
+                    Top =1755
+                    Width =2570
+                    Height =230
+                    FontWeight =500
+                    TabIndex =35
+                    BoundColumn =1
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Telefax"
+                    ControlSource ="              Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="Sachbearbeiter"
+                    ColumnWidths ="0;0;0;0;0;0;2268"
+                    StatusBarText ="Sachbearbeiter-QS"
+                    FontName ="Arial"
+                    InputMask ="\"++\"99\\(0\") \"9999\"/ \"9999\" -\"99\"\""
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =1
+                    ListWidth =3402
+                    Left =6122
+                    Top =1020
+                    Width =1746
+                    Height =238
+                    TabIndex =36
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Strasse"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Name, Sachbearbeiter.Strasse, Sachbearbeiter.PLZ, Sachbear"
+                        "beiter.Ort FROM Sachbearbeiter; "
+                    ColumnWidths ="0;2268"
+                    StatusBarText ="Sachbearbeiter-QS"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =7653
+                    Top =1020
+                    Width =216
+                    Height =212
+                    BorderColor =16777215
+                    Name ="Rechteck198"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListRows =1
+                    ListWidth =3402
+                    Left =7937
+                    Top =1020
+                    Width =1011
+                    Height =223
+                    TabIndex =37
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld199"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Name, Sachbearbeiter.Strasse, Sachbearbeiter.PLZ, Sachbear"
+                        "beiter.Ort FROM Sachbearbeiter; "
+                    ColumnWidths ="0;0;1134"
+                    StatusBarText ="Sachbearbeiter-QS"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =8730
+                    Top =1020
+                    Width =216
+                    Height =212
+                    BorderColor =16777215
+                    Name ="Rechteck200"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    ListRows =1
+                    ListWidth =3402
+                    Left =8955
+                    Top =1035
+                    Width =1191
+                    Height =238
+                    TabIndex =38
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld201"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Name, Sachbearbeiter.Strasse, Sachbearbeiter.PLZ, Sachbear"
+                        "beiter.Ort FROM Sachbearbeiter; "
+                    ColumnWidths ="0;0;0;1701"
+                    StatusBarText ="Sachbearbeiter-QS"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =9915
+                    Top =1050
+                    Width =216
+                    Height =212
+                    BorderColor =16777215
+                    Name ="Rechteck202"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =9690
+                    Top =1755
+                    Width =216
+                    Height =182
+                    BorderColor =16777215
+                    Name ="Rechteck203"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =1
+                    ListWidth =3402
+                    Left =2190
+                    Top =2385
+                    Width =1071
+                    Height =238
+                    FontSize =7
+                    TabIndex =39
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld204"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Name, Sachbearbeiter.Strasse, Sachbearbeiter.PLZ, Sachbear"
+                        "beiter.Ort FROM Sachbearbeiter; "
+                    ColumnWidths ="0;2268"
+                    StatusBarText ="Sachbearbeiter-QS"
+                    FontName ="Arial"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =1215
+                    Top =15
+                    Width =216
+                    Height =212
+                    BorderColor =16777215
+                    Name ="Rechteck205"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListRows =1
+                    ListWidth =3402
+                    Left =3240
+                    Top =2385
+                    Width =726
+                    Height =238
+                    FontSize =7
+                    TabIndex =40
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld206"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Name, Sachbearbeiter.Strasse, Sachbearbeiter.PLZ, Sachbear"
+                        "beiter.Ort FROM Sachbearbeiter; "
+                    ColumnWidths ="0;0;1134"
+                    StatusBarText ="Sachbearbeiter-QS"
+                    FontName ="Arial"
+                End
+                Begin Rectangle
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BackStyle =1
+                    Left =2175
+                    Top =15
+                    Width =216
+                    Height =212
+                    BorderColor =16777215
+                    Name ="Rechteck207"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =4
+                    ListRows =1
+                    ListWidth =3402
+                    Left =3960
+                    Top =2385
+                    Width =1026
+                    Height =238
+                    FontSize =7
+                    TabIndex =41
+                    BackColor =16777215
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Kombinationsfeld208"
+                    ControlSource ="Sachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Name, Sachbearbeiter.Strasse, Sachbearbeiter.PLZ, Sachbear"
+                        "beiter.Ort FROM Sachbearbeiter; "
+                    ColumnWidths ="0;0;0;1701"
+                    StatusBarText ="Sachbearbeiter-QS"
+                    FontName ="Arial"
+                End
+                Begin UnboundObjectFrame
+                    SizeMode =3
+                    SpecialEffect =0
+                    OldBorderStyle =0
+                    Left =4932
+                    Width =1140
+                    Height =1210
+                    TabIndex =42
+                    Name ="OLEUngebunden209"
+                    Class ="PI3.Image"
+                    OLEClass ="PhotoImpact"
+                End
+            End
+        End
+        Begin FormFooter
+            DisplayWhen =2
+            Height =632
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    Left =572
+                    Width =7476
+                    Height =576
+                    Name ="Drucken"
+                    Caption ="Befehl18"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaad00000000000dadd0888888888080da ,
+                        0x000000000000080d0888888bbb88000a088888877788080d0000000000000880 ,
+                        0x0888888888808080d000000000080800ad0ffffffff08080dad0f00000f0000a ,
+                        0xada0ffffffff0daddada0f00000f0adaadad0ffffffff0addadad000000000da ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz drucken"
+                End
+                Begin CommandButton
+                    Left =9070
+                    Top =56
+                    Width =576
+                    Height =576
+                    TabIndex =1
+                    Name ="Befehl172"
+                    Caption ="Befehl172"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Fxx_Reklamationsbericht_03_Sept08.cls"

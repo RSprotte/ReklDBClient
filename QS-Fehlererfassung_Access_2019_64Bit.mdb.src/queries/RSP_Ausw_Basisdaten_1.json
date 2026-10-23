@@ -1,0 +1,331 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Ausw_Basisdaten_1"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Erfasser-Bereich": {
+        "ColumnWidth": 2280,
+        "AggregateType": -1
+      },
+      "Erfasser-Einheit": {
+        "ColumnWidth": 2175,
+        "AggregateType": -1
+      },
+      "Erfasser-WS": {
+        "ColumnWidth": 3630,
+        "AggregateType": -1
+      },
+      "LQWorkstation.LQWorkstation": {
+        "ColumnWidth": 2115,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Fehleranalyse]": {
+        "ColumnWidth": 2970,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1545,
+        "AggregateType": -1
+      },
+      "Mastertab.Datum": {
+        "ColumnWidth": 2100,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 750,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Ist": {
+        "ColumnWidth": 2745,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Soll": {
+        "ColumnWidth": 2670,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Verl": {
+        "ColumnWidth": 2655,
+        "AggregateType": -1
+      },
+      "Taetigkeit": {
+        "ColumnWidth": 1680,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 641
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 470,
+          "Top": 286,
+          "Right": 713,
+          "Bottom": 584,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 132,
+          "Top": 507,
+          "Right": 292,
+          "Bottom": 685,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 636,
+          "Top": 357,
+          "Right": 813,
+          "Bottom": 445,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 829,
+          "Top": 240,
+          "Right": 993,
+          "Bottom": 418,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 357,
+          "Top": 112,
+          "Right": 598,
+          "Bottom": 440,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 414,
+          "Top": 144,
+          "Right": 569,
+          "Bottom": 277,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 11,
+          "Top": 4,
+          "Right": 298,
+          "Bottom": 497,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 848,
+          "Top": 17,
+          "Right": 1015,
+          "Bottom": 210,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 1047,
+          "Top": 17,
+          "Right": 1143,
+          "Bottom": 105,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 1159,
+          "Top": 91,
+          "Right": 1255,
+          "Bottom": 179,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 1302,
+          "Top": 212,
+          "Right": 1398,
+          "Bottom": 330,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden_1",
+          "Alias": "",
+          "Left": 1319,
+          "Top": 23,
+          "Right": 1501,
+          "Bottom": 201,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Taetigkeiten",
+          "Alias": "",
+          "Left": 1146,
+          "Top": 298,
+          "Right": 1242,
+          "Bottom": 386,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungDefTaetigkeit",
+          "Alias": "",
+          "Left": 1152,
+          "Top": 432,
+          "Right": 1356,
+          "Bottom": 550,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungAnalyseFehlerbild",
+          "Alias": "",
+          "Left": 881,
+          "Top": 431,
+          "Right": 1118,
+          "Bottom": 549,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQFunktion",
+          "Alias": "",
+          "Left": 1430,
+          "Top": 223,
+          "Right": 1526,
+          "Bottom": 326,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich_1",
+          "Alias": "",
+          "Left": 1031,
+          "Top": 225,
+          "Right": 1127,
+          "Bottom": 313,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation_1",
+          "Alias": "",
+          "Left": 1031,
+          "Top": 333,
+          "Right": 1127,
+          "Bottom": 421,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit_1",
+          "Alias": "",
+          "Left": 1054,
+          "Top": 112,
+          "Right": 1150,
+          "Bottom": 200,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQFunktion_1",
+          "Alias": "",
+          "Left": 1428,
+          "Top": 351,
+          "Right": 1524,
+          "Bottom": 439,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "AvistaArtikelTyp",
+          "Alias": "",
+          "Left": 596,
+          "Top": 481,
+          "Right": 715,
+          "Bottom": 569,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Vorgangstyp",
+          "Alias": "",
+          "Left": 1552,
+          "Top": 197,
+          "Right": 1648,
+          "Bottom": 285,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklIDtoTagID",
+          "Alias": "",
+          "Left": 1553,
+          "Top": 24,
+          "Right": 1718,
+          "Bottom": 112,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_ReklTag",
+          "Alias": "",
+          "Left": 1747,
+          "Top": 39,
+          "Right": 1868,
+          "Bottom": 127,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Verursacher",
+          "Alias": "",
+          "Left": 499,
+          "Top": 4,
+          "Right": 595,
+          "Bottom": 92,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ROS_Daten_Einkauf",
+          "Alias": "",
+          "Left": 1592,
+          "Top": 261,
+          "Right": 1775,
+          "Bottom": 544,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 328,
+          "Top": 556,
+          "Right": 472,
+          "Bottom": 700,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblZuordnung",
+          "Alias": "",
+          "Left": 611,
+          "Top": 563,
+          "Right": 755,
+          "Bottom": 707,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

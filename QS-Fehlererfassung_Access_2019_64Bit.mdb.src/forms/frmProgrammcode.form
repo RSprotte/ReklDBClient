@@ -1,0 +1,159 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10336
+    DatasheetFontHeight =11
+    ItemSuffix =13
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x52752c153093e640
+    End
+    RecordSource ="tblTempProgrammcode"
+    Caption ="frmProgrammcode"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =825
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Top =510
+                    Width =3762
+                    Height =315
+                    Name ="Modul_Bezeichnungsfeld"
+                    Caption ="Modul"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5194
+                    Top =510
+                    Width =5142
+                    Height =315
+                    Name ="ProzedurName_Bezeichnungsfeld"
+                    Caption ="ProzedurName"
+                    Tag ="DetachedLabel"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1761
+                    Top =120
+                    Width =4365
+                    Height =315
+                    Name ="txtgesucht"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =60
+                            Top =120
+                            Width =1635
+                            Height =315
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="gesucht:"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3829
+                    Top =510
+                    Width =1290
+                    Height =315
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="ProzedurArt"
+                End
+            End
+        End
+        Begin Section
+            Height =405
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Top =60
+                    Width =3762
+                    Height =345
+                    ColumnWidth =3000
+                    Name ="Modul"
+                    ControlSource ="Modul"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5194
+                    Top =60
+                    Width =5142
+                    Height =345
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="ProzedurName"
+                    ControlSource ="ProzedurName"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3829
+                    Top =60
+                    Width =1290
+                    Height =345
+                    TabIndex =2
+                    Name ="ProzedurArt"
+                    ControlSource ="ProzedurArt"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmProgrammcode.cls"

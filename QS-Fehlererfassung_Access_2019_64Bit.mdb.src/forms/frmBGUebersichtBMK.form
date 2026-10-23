@@ -1,0 +1,348 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AllowFilters = NotDefault
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    AllowUpdating =2
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =21316
+    DatasheetFontHeight =11
+    ItemSuffix =481
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15263976
+    RecSrcDt = Begin
+        0xf6bf5d5bf68fe540
+    End
+    DatasheetFontName ="Aptos"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =8355711
+            ForeColor =8355711
+            FontName ="Aptos"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =10921638
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =4210752
+            FontName ="Aptos"
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =10921638
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =10921638
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =10921638
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =10921638
+            ForeColor =4210752
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =4210752
+            BorderColor =10921638
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =10921638
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =10921638
+            ForeColor =2102279
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =10921638
+        End
+        Begin Tab
+            TextFontFamily =0
+            Width =5103
+            Height =3402
+            FontSize =11
+            FontName ="Aptos Display"
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+            BorderColor =10921638
+        End
+        Begin Section
+            Height =7426
+            BackColor =15921906
+            Name ="Detailbereich"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =221
+                    Top =60
+                    Width =7530
+                    Height =570
+                    FontSize =20
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Übersicht Baugruppen für Konfektion"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5247
+                    Top =1051
+                    Width =1716
+                    Height =336
+                    Name ="cmbGetAvista"
+                    Caption ="Avista"
+                    OnClick ="[Ereignisprozedur]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =353
+                    Top =1260
+                    Width =2166
+                    Height =315
+                    TabIndex =1
+                    Name ="txtBMK"
+                    FontName ="Calibri"
+                End
+                Begin ListBox
+                    ColumnHeads = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =11
+                    Left =396
+                    Top =2324
+                    Width =20580
+                    Height =4832
+                    FontSize =10
+                    TabIndex =2
+                    Name ="lstBGUebersicht"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [tblTempBMK_BG_Pos_Uebersicht].[ID], [tblTempBMK_BG_Pos_Uebersicht].[BG_A"
+                        "rtNr], [tblTempBMK_BG_Pos_Uebersicht].[BG_ArtNr_AstID], [tblTempBMK_BG_Pos_Ueber"
+                        "sicht].[BG_ArtNr_Bez], [tblTempBMK_BG_Pos_Uebersicht].[BMK_ArtNr], [tblTempBMK_B"
+                        "G_Pos_Uebersicht].[BMK_ArtNr_Var], [tblTempBMK_BG_Pos_Uebersicht].[BMK_stlp_pos]"
+                        ", [tblTempBMK_BG_Pos_Uebersicht].[BMK_stlp_id], [tblTempBMK_BG_Pos_Uebersicht].["
+                        "BMK_stlp_menge], [tblTempBMK_BG_Pos_Uebersicht].[BMK_ArtNr_Bez], [tblTempBMK_BG_"
+                        "Pos_Uebersicht].[BMK_ArtNr_Memo] FROM tblTempBMK_BG_Pos_Uebersicht ORDER BY [BG_"
+                        "ArtNr]; "
+                    ColumnWidths ="0;1134;0;4253;858;853;858;0;680;4536;2835"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =353
+                    Top =1986
+                    Width =2685
+                    Height =285
+                    Name ="Bezeichnungsfeld84"
+                    Caption ="Avista Baugruppenliste BMK"
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    BorderWidth =3
+                    OverlapFlags =223
+                    Left =186
+                    Top =1817
+                    Width =20905
+                    Height =5500
+                    Name ="Rechteck102"
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    BorderWidth =3
+                    OverlapFlags =255
+                    Left =186
+                    Top =735
+                    Width =6955
+                    Height =955
+                    Name ="Rechteck104"
+                End
+                Begin TextBox
+                    OverlapFlags =247
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =2748
+                    Top =1245
+                    Width =2325
+                    Height =315
+                    TabIndex =3
+                    Name ="txtMachNr"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Calibri"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            TextAlign =1
+                            Left =2748
+                            Top =855
+                            Width =1290
+                            Height =315
+                            FontWeight =600
+                            Name ="lblMaschNr"
+                            Caption ="Masch.-Nr."
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =247
+                    Left =353
+                    Top =855
+                    Width =1077
+                    Height =315
+                    FontWeight =600
+                    Name ="Bezeichnungsfeld475"
+                    Caption ="BMK"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10771
+                    Top =850
+                    Width =576
+                    Height =576
+                    TabIndex =4
+                    Name ="cmbSchließen"
+                    Caption ="Befehl476"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =7937
+                    Top =907
+                    Width =2211
+                    Height =511
+                    TabIndex =5
+                    Name ="cmbStueliOeffnen"
+                    Caption ="Stüli öffnen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =7937
+                    Top =113
+                    Width =7875
+                    Height =285
+                    FontWeight =700
+                    ForeColor =2366701
+                    Name ="Bezeichnungsfeld480"
+                    Caption ="Achtung! Maschinnennummer nur für Liebherr verwendbar!"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmBGUebersichtBMK.cls"

@@ -1,0 +1,291 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4592
+    DatasheetFontHeight =11
+    ItemSuffix =18
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xcf58bf22156ee540
+    End
+    RecordSource ="SELECT tblZeiterfassung.* FROM tblZeiterfassung; "
+    Caption ="Zeiterfassung"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+        End
+        Begin Section
+            Height =2948
+            BackColor =15527148
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3009
+                    Top =512
+                    Width =1461
+                    Height =315
+                    FontWeight =600
+                    Name ="txtUhrzeitKommen"
+                    ControlSource ="UhrzeitKommen"
+                    Format ="Short Time"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =509
+                            Width =2715
+                            Height =315
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="bezUhrzeitKommen"
+                            Caption ="Uhrzeit Kommen:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3009
+                    Top =909
+                    Width =1461
+                    Height =315
+                    FontWeight =600
+                    TabIndex =1
+                    Name ="txtUhrzeitGehen"
+                    ControlSource ="UhrzeitGehen"
+                    Format ="Short Time"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =909
+                            Width =2715
+                            Height =315
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="bezUhrzeitGehen"
+                            Caption ="Uhrzeit Gehen:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3009
+                    Top =1305
+                    Width =1461
+                    Height =315
+                    FontWeight =600
+                    TabIndex =2
+                    BackColor =5167783
+                    Name ="txtZeitaufwandReklamationen"
+                    Format ="Short Time"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =1305
+                            Width =2715
+                            Height =315
+                            FontWeight =600
+                            BackColor =5167783
+                            ForeColor =0
+                            Name ="bezZeitaufwandReklamationen"
+                            Caption ="Zeit Meldungen h,mm:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3008
+                    Top =2550
+                    Width =1461
+                    Height =315
+                    FontWeight =600
+                    TabIndex =3
+                    BackColor =2366701
+                    Name ="txtFehlzeit"
+                    Format ="Short Time"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =2550
+                            Width =2715
+                            Height =315
+                            FontWeight =600
+                            BackColor =2366701
+                            ForeColor =0
+                            Name ="bezFehlzeit"
+                            Caption ="Fehlzeit h,mm:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3009
+                    Top =1740
+                    Width =1461
+                    Height =315
+                    FontWeight =600
+                    TabIndex =4
+                    BackColor =967423
+                    Name ="txtZeitaufwandGU"
+                    Format ="Short Time"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =113
+                            Top =1740
+                            Width =2715
+                            Height =315
+                            FontWeight =600
+                            BackColor =967423
+                            ForeColor =0
+                            Name ="bezZeitaufwandGU"
+                            Caption ="Zeit Gutschrift h,mm:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3016
+                    Top =2145
+                    Width =1461
+                    Height =315
+                    FontWeight =600
+                    TabIndex =5
+                    BackColor =62207
+                    Name ="txtZeitaufwandRep"
+                    Format ="Short Time"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =2145
+                            Width =2715
+                            Height =315
+                            FontWeight =600
+                            BackColor =62207
+                            ForeColor =0
+                            Name ="bezZeitaufwandRep"
+                            Caption ="Zeit Reparatur h,mm:"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =735
+                    Top =90
+                    Width =396
+                    Height =340
+                    TabIndex =6
+                    Name ="chkMittagspause"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =965
+                            Top =60
+                            Width =1860
+                            Height =315
+                            ForeColor =0
+                            Name ="lblMittagspause"
+                            Caption ="Mittagspause"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3004
+                    Top =56
+                    Width =1461
+                    Height =315
+                    TabIndex =7
+                    Name ="txtDatum"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmZeiterfassung.cls"

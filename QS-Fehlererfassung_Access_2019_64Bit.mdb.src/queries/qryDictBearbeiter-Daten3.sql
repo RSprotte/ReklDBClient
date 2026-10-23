@@ -1,0 +1,32 @@
+﻿SELECT
+  Mastertab.ID,
+  Mastertab.[Kategorie-Problem],
+  Mastertab.[Kategorie-Status],
+  Mastertab.[Baugruppen-ID],
+  Mastertab.[Artikel-ID 1],
+  Mastertab.[LINK-Nr - UBG],
+  Mastertab.[Menge betroffen - Kunde],
+  Mastertab.[WE-Bericht-Menge],
+  Mastertab.[WE-Datum],
+  Mastertab.[Bemerkungen-Vorgang],
+  Mastertab.[Kategorie-Bearbeitung I],
+  Mastertab.[Kategorie-Bearbeitung II],
+  Mastertab.Transportschaden,
+  Mastertab.[Einsatz vor Ort],
+  Mastertab.[Umbau/Reparatur],
+  Mastertab.Auftragsnummer,
+  Mastertab.Gutschriftsnummer,
+  Mastertab.Lieferscheinnummer,
+  Mastertab.Rechnungsnummer,
+  Mastertab.[Material-Kosten],
+  Mastertab.[Meldungsnummer Kunde],
+  ReklMemo.VorgangstypID,
+  Mastertab.Auftragsdatum,
+  Mastertab.intern,
+  Mastertab.extern,
+  ReklMemo.Angebotsnummer,
+  ReklMemo.[Aktueller Eintrag],
+  Mastertab.LQEinheitID
+FROM
+  Mastertab
+  LEFT JOIN ReklMemo ON Mastertab.ID = ReklMemo.ID;

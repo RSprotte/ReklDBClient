@@ -1,0 +1,261 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AllowFilters = NotDefault
+    Modal = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    TabularFamily =88
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15443
+    DatasheetFontHeight =10
+    ItemSuffix =28
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xc33a8fa70d71e640
+    End
+    RecordSource ="SELECT tblKostenaufstellung.*, tblKostenTyp.Ausgaben FROM tblKostenaufstellung L"
+        "EFT JOIN tblKostenTyp ON tblKostenaufstellung.KostentypID = tblKostenTyp.KostenT"
+        "ypID;"
+    DatasheetFontName ="Arial"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =255
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    Top =7
+                    Width =690
+                    Height =210
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld8"
+                    Caption ="Pos"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =2555
+                    Width =1560
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Kosten Typ"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =1695
+                    Top =7
+                    Width =750
+                    Height =210
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Kürzel"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =647
+                    Top =7
+                    Width =780
+                    Height =210
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld13"
+                    Caption ="Datum"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =13890
+                    Width =1245
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Kosten"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9072
+                    Width =2880
+                    Height =210
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld26"
+                    Caption ="Info"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =340
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Width =531
+                    Height =285
+                    FontSize =10
+                    Name ="Pos"
+                    ControlSource ="Pos"
+                    FontName ="Aril"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Left =573
+                    Width =1041
+                    Height =285
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                    FontName ="Aril"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Left =13890
+                    Width =1251
+                    Height =285
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Kosten"
+                    ControlSource ="Kosten"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Aril"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Left =1656
+                    Width =846
+                    Height =285
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Kürzel"
+                    ControlSource ="KZ"
+                    FontName ="Aril"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    ListRows =50
+                    ListWidth =1440
+                    Left =2544
+                    Width =6471
+                    Height =285
+                    FontSize =10
+                    TabIndex =3
+                    BoundColumn =1
+                    Name ="KostenTyp"
+                    ControlSource ="KostentypID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblKostenTyp.Anzeige, tblKostenTyp.KostenTypID FROM tblKostenTyp ORDER BY"
+                        " tblKostenTyp.Anzeige;"
+                    ColumnWidths ="1442"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Aril"
+                End
+                Begin CheckBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =15183
+                    Top =60
+                    TabIndex =6
+                    Name ="Ausgaben"
+                    ControlSource ="Ausgaben"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    TextFontFamily =0
+                    IMESentenceMode =3
+                    Left =9072
+                    Width =4761
+                    Height =285
+                    FontSize =10
+                    TabIndex =4
+                    Name ="txtInfo"
+                    ControlSource ="InfoKostenTyp"
+                    FontName ="Aril"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "UF_Kostenaufstellung.cls"

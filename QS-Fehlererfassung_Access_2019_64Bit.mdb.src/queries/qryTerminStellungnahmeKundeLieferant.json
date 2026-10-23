@@ -1,0 +1,82 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryTerminStellungnahmeKundeLieferant"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1245,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 1050,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Kunde_Verschiebung": {
+        "ColumnWidth": 3765,
+        "AggregateType": -1
+      },
+      "tblTicketListe.VerlängertBis": {
+        "ColumnWidth": 1680,
+        "AggregateType": -1
+      },
+      "TerminKund": {
+        "ColumnWidth": 1560,
+        "AggregateType": -1
+      },
+      "TerminQSLQ": {
+        "ColumnWidth": 1575,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 651
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 20,
+          "Top": 12,
+          "Right": 225,
+          "Bottom": 550,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 384,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketTyp",
+          "Alias": "",
+          "Left": 432,
+          "Top": 12,
+          "Right": 576,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

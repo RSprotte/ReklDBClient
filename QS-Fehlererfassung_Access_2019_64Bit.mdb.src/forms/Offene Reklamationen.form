@@ -1,0 +1,381 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    TabularFamily =55
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =18538
+    DatasheetFontHeight =10
+    ItemSuffix =39
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xf31ae26a12f1e340
+    End
+    RecordSource ="Abfrage_offener_Reklamationen"
+    DatasheetFontName ="Arial"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =913
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =56
+                    Top =113
+                    Width =3354
+                    Height =397
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Offene Reklamationen"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =2888
+                    Top =627
+                    Width =1587
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld5"
+                    Caption ="Rekl.-Nummer"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =113
+                    Top =627
+                    Width =2538
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld7"
+                    Caption ="Rückmeldung an Kunde"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =6852
+                    Top =623
+                    Width =2190
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Rekl.-Status"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    ListWidth =2880
+                    Left =5443
+                    Top =56
+                    Width =2283
+                    Height =283
+                    Name ="Kundenauswahl"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Kunden.Firma FROM Kunden INNER JOIN Mastertab ON Kunden.[Kunden-ID]=Maste"
+                        "rtab.[Kunden-ID] WHERE (((Mastertab.[Kategorie-Status])<>'Abgeschlossen')) GROUP"
+                        " BY Kunden.Firma; "
+                    ColumnWidths ="2835"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4762
+                            Top =56
+                            Width =585
+                            Height =240
+                            Name ="Firma_Bezeichnungsfeld"
+                            Caption ="Kunden"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =93
+                    Left =9411
+                    Top =374
+                    Width =1531
+                    Height =283
+                    TabIndex =1
+                    Name ="RueckmeldedatumAnKunde"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="1"
+                    Begin
+                        Begin Label
+                            OverlapFlags =255
+                            Left =9639
+                            Top =339
+                            Width =2130
+                            Height =240
+                            Name ="Bezeichnungsfeld28"
+                            Caption ="Rückmeldung a.K. mit Datum"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =247
+                    Left =9411
+                    Top =630
+                    Width =1531
+                    Height =283
+                    TabIndex =2
+                    Name ="MeldenummerVorhanden"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="1"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =9639
+                            Top =594
+                            Width =1890
+                            Height =240
+                            Name ="Bezeichnungsfeld31"
+                            Caption ="Meldenummer vorhanden"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =7767
+                    Top =56
+                    Width =1305
+                    Height =292
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =3
+                    Name ="AlleKunden"
+                    Caption ="Alle Kunden"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CheckBox
+                    OverlapFlags =247
+                    Left =9411
+                    Top =91
+                    Width =1531
+                    Height =283
+                    TabIndex =4
+                    Name ="AlleReklamationen2"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="1"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =9639
+                            Top =56
+                            Width =2778
+                            Height =240
+                            FontSize =10
+                            FontWeight =500
+                            ForeColor =255
+                            Name ="Bezeichnungsfeld36"
+                            Caption ="Alle offenen Reklamationen"
+                        End
+                    End
+                End
+                Begin TextBox
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =12585
+                    Top =65
+                    Width =4431
+                    Height =735
+                    TabIndex =5
+                    Name ="FilterView"
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =396
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =3
+                    BackStyle =0
+                    Left =2834
+                    Top =56
+                    Height =330
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Text3"
+                    ControlSource ="ID"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    BackStyle =0
+                    Left =113
+                    Top =56
+                    Width =1986
+                    Height =330
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text6"
+                    ControlSource ="Rückmeldung_Kunde_Soll"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =85
+                    TextAlign =3
+                    BackStyle =0
+                    Left =5385
+                    Top =56
+                    Width =3696
+                    Height =330
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Text12"
+                    ControlSource ="Kategorie-Status"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =8844
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin Subform
+                    OverlapFlags =87
+                    Top =396
+                    Width =15587
+                    Height =8404
+                    Name ="Eingebettet1"
+                    SourceObject ="Form.UF_Offene_Reklamationen"
+                    LinkChildFields ="Mastertab.ID"
+                    LinkMasterFields ="ID"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =120
+                    Top =60
+                    Width =3510
+                    Height =315
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld9"
+                    Caption ="Detailansicht Reklamation"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =15874
+                    Top =8107
+                    Width =576
+                    Height =576
+                    FontSize =12
+                    FontWeight =500
+                    TabIndex =1
+                    ForeColor =16777215
+                    Name ="Objekt schließen - Formular"
+                    Caption ="Objekt schließen"
+                    OnClick ="Makro13"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    EventProcPrefix ="Objekt_schließen___Formular"
+                    ControlTipText ="Objekt schließen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Offene Reklamationen.cls"

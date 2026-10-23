@@ -1,0 +1,561 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =119
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11055
+    DatasheetFontHeight =10
+    ItemSuffix =191
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x04b36ad7705fe340
+    End
+    RecordSource ="Lieferanten"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =5329
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =8009
+                    Top =120
+                    Width =846
+                    Height =465
+                    ColumnWidth =1725
+                    FontSize =20
+                    TabIndex =12
+                    Name ="L-Code"
+                    ControlSource ="Lieferant-ID"
+                    Format ="000"
+                    FontName ="Arial"
+                    EventProcPrefix ="L_Code"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6360
+                            Top =340
+                            Width =1275
+                            Height =240
+                            Name ="Bezeichnungsfeld2"
+                            Caption ="Lieferantencode:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2388
+                    Top =907
+                    Width =3411
+                    Height =255
+                    ColumnWidth =3240
+                    TabIndex =1
+                    Name ="Lieferant-Name"
+                    ControlSource ="Lieferantenname"
+                    AfterUpdate ="[Event Procedure]"
+                    EventProcPrefix ="Lieferant_Name"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =120
+                            Top =907
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="Lieferantenname:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2392
+                    Top =2002
+                    Width =3411
+                    ColumnWidth =2760
+                    TabIndex =3
+                    Name ="Telefonnummer"
+                    ControlSource ="Telefonnummer"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =2002
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld4"
+                            Caption ="Telefonnummer:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2392
+                    Top =1605
+                    Width =3411
+                    ColumnWidth =1785
+                    TabIndex =2
+                    Name ="Ansprechpartner"
+                    ControlSource ="Ansprechpartner"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =1605
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="Ansprechpartner:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2392
+                    Top =3420
+                    Width =2271
+                    ColumnWidth =2580
+                    TabIndex =6
+                    Name ="Lieferant-Adresse"
+                    ControlSource ="Adresse"
+                    EventProcPrefix ="Lieferant_Adresse"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =3420
+                            Width =1920
+                            Height =240
+                            Name ="Bezeichnungsfeld6"
+                            Caption ="Adresse:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2392
+                    Top =3817
+                    Width =786
+                    ColumnWidth =1320
+                    TabIndex =7
+                    Name ="Postleitzahl"
+                    ControlSource ="Postleitzahl"
+                    Format ="00000"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =3247
+                    Top =3817
+                    Width =2556
+                    ColumnWidth =1620
+                    TabIndex =8
+                    Name ="Ort"
+                    ControlSource ="Ort"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =3817
+                            Width =570
+                            Height =240
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="Ort:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2392
+                    Top =2342
+                    Width =3404
+                    Height =219
+                    TabIndex =4
+                    Name ="Telefaxnummer"
+                    ControlSource ="Telefaxnummer"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =2342
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld12"
+                            Caption ="Telefaxnummer:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =120
+                    Top =170
+                    Width =5676
+                    Height =405
+                    FontSize =14
+                    Name ="Matchcode"
+                    ControlSource ="Matchcode"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =2391
+                    Top =4157
+                    TabIndex =9
+                    Name ="L-Nr. / AVISTA"
+                    ControlSource ="L-Nummer/AVISTA"
+                    EventProcPrefix ="L_Nr____AVISTA"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =4157
+                            Width =1815
+                            Height =240
+                            Name ="L-Nummer/AVISTA"
+                            Caption ="Lieferanten-Nr. AVISTA"
+                            EventProcPrefix ="L_Nummer_AVISTA"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6360
+                    Top =1080
+                    Width =4533
+                    Height =2488
+                    TabIndex =10
+                    Name ="Info"
+                    ControlSource ="Info"
+                    OnDblClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6363
+                            Top =735
+                            Width =4530
+                            Height =240
+                            Name ="Bezeichnungsfeld18"
+                            Caption ="Info"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =10581
+                    Top =3825
+                    Width =227
+                    Height =227
+                    TabIndex =11
+                    Name ="GESPERRT"
+                    ControlSource ="GESPERRT"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =9014
+                            Top =3798
+                            Width =1440
+                            Height =240
+                            FontSize =10
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld20_GESPERRT"
+                            Caption ="GESPERRT"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2392
+                    Top =2683
+                    Width =3403
+                    Height =280
+                    TabIndex =5
+                    Name ="Lieferant E-Mail"
+                    ControlSource ="E-Mail"
+                    EventProcPrefix ="Lieferant_E_Mail"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =2683
+                            Width =1755
+                            Height =240
+                            Name ="E-Mail"
+                            Caption ="E-Mail Adresse:"
+                            EventProcPrefix ="E_Mail"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2396
+                    Top =4530
+                    Width =3408
+                    Height =283
+                    TabIndex =13
+                    Name ="Zuordnung"
+                    ControlSource ="Zuordnung"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =128
+                            Top =4530
+                            Width =1815
+                            Height =240
+                            Name ="Zurdnung-Lieferant"
+                            Caption ="Zuordnung"
+                            EventProcPrefix ="Zurdnung_Lieferant"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2392
+                    Top =1245
+                    Width =3411
+                    TabIndex =14
+                    Name ="Bereich/AbteilungText30"
+                    ControlSource ="Bereich / Abteilung"
+                    EventProcPrefix ="Bereich_AbteilungText30"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =124
+                            Top =1245
+                            Width =1695
+                            Height =240
+                            Name ="Bereich/AbteilungBezeichnungsfeld31"
+                            Caption ="Bereich / Abteilung:"
+                            EventProcPrefix ="Bereich_AbteilungBezeichnungsfeld31"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =8507
+                    Top =4261
+                    Width =213
+                    Height =209
+                    TabIndex =16
+                    Name ="ctr_RMA"
+                    ControlSource ="RMA-Nummer"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =6579
+                            Top =4199
+                            Width =1815
+                            Height =240
+                            FontSize =10
+                            FontWeight =700
+                            Name ="txt_RMA"
+                            Caption ="RMA erforderlich"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =247
+                    Left =7692
+                    Top =120
+                    Width =349
+                    Height =567
+                    FontSize =20
+                    FontWeight =700
+                    Name ="txt_L-Code"
+                    Caption ="L"
+                    FontName ="Arial"
+                    EventProcPrefix ="txt_L_Code"
+                End
+                Begin CheckBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =7313
+                    Top =4957
+                    Width =171
+                    Height =170
+                    TabIndex =18
+                    Name ="Kontrollkästchen178"
+                    ControlSource ="LieferantenverantwortungLQ"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =7542
+                            Top =4932
+                            Width =2655
+                            Height =285
+                            FontSize =9
+                            Name ="Bezeichnungsfeld179"
+                            Caption ="Lieferantenverantwortung LQ"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    Left =9360
+                    Top =4483
+                    Width =973
+                    TabIndex =17
+                    Name ="Kombinationsfeld182"
+                    ControlSource ="VerantwortlichEinkauf"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =9360
+                            Top =4200
+                            Width =1470
+                            Height =240
+                            Name ="Bezeichnungsfeld183"
+                            Caption ="Sachbearb. Einkauf"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2388
+                    Top =3061
+                    Width =3403
+                    TabIndex =15
+                    Name ="txt_L-Kategorie"
+                    ControlSource ="L-Kategorie"
+                    EventProcPrefix ="txt_L_Kategorie"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =120
+                            Top =3061
+                            Width =1755
+                            Height =240
+                            Name ="Bezeichnungsfeld176"
+                            Caption ="L-Kategorie"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =2388
+                    Top =4950
+                    Width =227
+                    Height =227
+                    TabIndex =19
+                    Name ="Kontrollkästchen188"
+                    ControlSource ="Intern"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =165
+                            Top =4920
+                            Width =1845
+                            Height =240
+                            FontSize =9
+                            Name ="Bezeichnungsfeld189"
+                            Caption ="Intern"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =8507
+                    Top =3972
+                    TabIndex =20
+                    Name ="InternetPortal"
+                    ControlSource ="InternetPortal"
+                    Begin
+                        Begin Label
+                            OverlapFlags =87
+                            TextAlign =3
+                            Left =5955
+                            Top =3915
+                            Width =2430
+                            Height =284
+                            FontSize =10
+                            FontWeight =700
+                            Name ="txtInternetPortal"
+                            Caption ="Reklamation über Portal"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Lieferanten.cls"

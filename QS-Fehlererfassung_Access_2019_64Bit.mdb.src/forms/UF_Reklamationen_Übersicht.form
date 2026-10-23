@@ -1,0 +1,277 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    TabularFamily =55
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =17628
+    DatasheetFontHeight =10
+    ItemSuffix =121
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xed478a984c07e540
+    End
+    RecordSource ="SELECT Mastertab.ID, LQEinheit.LQEinheit, LQBereich.LQBereich, LQWorkstation.LQW"
+        "orkstation, Mastertab.[Mitarbeiter-Kurzzeichen], Mastertab.[Wie Warum passierte "
+        "der Fehler], Mastertab.[Bemerkungen - Maßnahmen], Mastertab.[Welcher Fehler trit"
+        "t auf], Mastertab.[Sofortmaßnahmen (Aktion)], ROS_ReklMemoProtokoll.Protokoll FR"
+        "OM (((Mastertab LEFT JOIN LQEinheit ON Mastertab.LQEinheitID = LQEinheit.ID) LEF"
+        "T JOIN LQBereich ON Mastertab.LQBereichID = LQBereich.ID) LEFT JOIN LQWorkstatio"
+        "n ON Mastertab.LQWorkstationID = LQWorkstation.ID) LEFT JOIN ROS_ReklMemoProtoko"
+        "ll ON Mastertab.ID = ROS_ReklMemoProtokoll.ID; "
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =2551
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =61
+                    Top =60
+                    Width =2985
+                    Height =225
+                    FontSize =9
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld80"
+                    Caption ="Fehlerbschreibung Kunde"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =61
+                    Top =398
+                    Width =5778
+                    Height =1749
+                    Name ="Text81"
+                    ControlSource ="Welcher Fehler tritt auf"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =5955
+                    Top =60
+                    Width =3570
+                    Height =225
+                    FontSize =9
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld102"
+                    Caption ="Fehlerbegründung (Rückm. an Kunde)"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =5955
+                    Top =398
+                    Width =5778
+                    Height =1749
+                    TabIndex =1
+                    Name ="Text103"
+                    ControlSource ="Wie Warum passierte der Fehler"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =11850
+                    Top =60
+                    Width =2985
+                    Height =225
+                    FontSize =9
+                    FontWeight =700
+                    Name ="BezProtokoll"
+                    Caption ="Fehler-Recherche PE - Historie"
+                End
+                Begin TextBox
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2096
+                    Top =2265
+                    Width =2165
+                    Height =284
+                    FontSize =10
+                    TabIndex =2
+                    BorderColor =10040115
+                    Name ="Maschinennummer"
+                    ControlSource ="LQEinheit"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =225
+                            Top =2265
+                            Width =1820
+                            Height =284
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =13209
+                            ForeColor =10040115
+                            Name ="Bezeichnungsfeld84"
+                            Caption ="Fehlerort-Einheit:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5441
+                    Top =2265
+                    Width =2120
+                    Height =284
+                    FontSize =10
+                    TabIndex =3
+                    BorderColor =10040115
+                    Name ="Text108"
+                    ControlSource ="LQBereich"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4364
+                            Top =2265
+                            Width =1020
+                            Height =285
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =13209
+                            ForeColor =10040115
+                            Name ="Bezeichnungsfeld109"
+                            Caption ="Bereich:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9239
+                    Top =2265
+                    Width =3290
+                    Height =284
+                    FontSize =10
+                    TabIndex =4
+                    BorderColor =10040115
+                    Name ="Text116"
+                    ControlSource ="LQWorkstation"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =7709
+                            Top =2265
+                            Width =1425
+                            Height =285
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =13209
+                            ForeColor =10040115
+                            Name ="Bezeichnungsfeld117"
+                            Caption ="Workstation:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =13992
+                    Top =2265
+                    Width =785
+                    Height =284
+                    FontSize =10
+                    TabIndex =5
+                    BorderColor =10040115
+                    Name ="Text118"
+                    ControlSource ="Mitarbeiter-Kurzzeichen"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =12689
+                            Top =2265
+                            Width =1185
+                            Height =285
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =13209
+                            ForeColor =10040115
+                            Name ="Bezeichnungsfeld119"
+                            Caption ="MA-Kürzel:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =11850
+                    Top =400
+                    Width =5778
+                    Height =1749
+                    TabIndex =6
+                    Name ="txtProtookoll"
+                    ControlSource ="Protokoll"
+                End
+            End
+        End
+    End
+End

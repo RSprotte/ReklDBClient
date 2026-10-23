@@ -1,0 +1,34 @@
+﻿Version =196611
+ColumnsShown =1
+Begin
+    MacroName ="Fehlerbericht drucken"
+    Action ="OpenForm"
+    Argument ="F06_Fehlerbericht_11_Sept08"
+    Argument ="0"
+    Argument ="Fehlerbericht drucken"
+    Argument ="[ID]=[ID]![Formulare]![F06-Fehlerbericht_11_Sept08]"
+    Argument ="1"
+    Argument ="0"
+End
+Begin
+    Action ="RepaintObject"
+    Argument ="2"
+    Argument ="F06_Fehlerbericht_11_Sept08"
+End
+Begin
+    Action ="GoToRecord"
+    Argument ="2"
+    Argument ="F06_Fehlerbericht_11_Sept08"
+    Argument ="3"
+End
+Begin
+    Action ="RepaintObject"
+    Argument ="2"
+    Argument ="F06_Fehlerbericht_11_Sept08"
+End
+Begin
+    Action ="Close"
+    Argument ="2"
+    Argument ="Drucken-Dialog"
+    Argument ="1"
+End

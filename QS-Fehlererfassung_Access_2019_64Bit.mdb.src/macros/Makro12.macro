@@ -1,0 +1,24 @@
+﻿Version =196611
+ColumnsShown =3
+Begin
+    MacroName ="Reklamationsbericht drucken"
+    Action ="OpenForm"
+    Argument ="Fxx_Reklamationsbericht_03_Sept08"
+    Argument ="0"
+    Argument =""
+    Argument ="[ID]=[ID]![Formulare]![Fxx_Reklamationsbericht_03_Sept08]"
+    Argument ="1"
+    Argument ="0"
+End
+Begin
+    Action ="GoToRecord"
+    Argument ="2"
+    Argument ="Fxx_Reklamationsbericht_03_Sept08"
+    Argument ="4"
+End
+Begin
+    Action ="Close"
+    Argument ="2"
+    Argument ="Drucken-Dialog"
+    Argument ="1"
+End

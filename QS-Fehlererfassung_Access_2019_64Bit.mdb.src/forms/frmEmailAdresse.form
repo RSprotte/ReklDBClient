@@ -1,0 +1,127 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5896
+    DatasheetFontHeight =11
+    ItemSuffix =17
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x858ef5bd0c71e640
+    End
+    RecordSource ="SELECT Sachbearbeiter.EmailName, Sachbearbeiter.Name FROM Sachbearbeiter WHERE ("
+        "((Sachbearbeiter.Aktiv)=True)) GROUP BY Sachbearbeiter.EmailName, Sachbearbeiter"
+        ".Name HAVING (((Sachbearbeiter.EmailName) Is Not Null));"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =1587
+            Name ="Detailbereich"
+            Begin
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =2880
+                    Left =2777
+                    Top =283
+                    Width =2890
+                    Height =315
+                    BoundColumn =1
+                    Name ="cobNameKontaktperson"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.EmailName, Sachbearbeiter.Name, Sachbearbeiter.[SB-ID] FRO"
+                        "M Sachbearbeiter GROUP BY Sachbearbeiter.EmailName, Sachbearbeiter.Name, Sachbea"
+                        "rbeiter.[SB-ID], Sachbearbeiter.Aktiv HAVING (((Sachbearbeiter.EmailName) Is Not"
+                        " Null) AND ((Sachbearbeiter.Name) Is Not Null) AND ((Sachbearbeiter.Aktiv)=True)"
+                        ") ORDER BY Sachbearbeiter.Name;"
+                    ColumnWidths ="0;1444"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =566
+                            Top =283
+                            Width =2115
+                            Height =300
+                            Name ="BezNameKontaktperson"
+                            Caption ="Name Kontaktperson"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2775
+                    Top =735
+                    Width =2890
+                    Height =632
+                    TabIndex =1
+                    Name ="cmbKontaktpersonUebernehmen"
+                    Caption ="Email Adresse übernehmen"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmEmailAdresse.cls"

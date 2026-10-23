@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "tblKostenTyp",
+    "Connect": ";DATABASE=\\\\link\\dfs\\QM_Reklamationen_Datenbank\\Access-Datenbank\\Reklamationen Daten\\QS-Fehlererfassung_Daten.mdb",
+    "SourceTableName": "tblKostenTyp",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[KostenTypID]"
+  }
+}

@@ -1,0 +1,96 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_Fehlertexte_Kreuztabelle"
+  },
+  "Items": {
+    "QueryType": 16,
+    "Columns": {
+      "Abfrage_Fehlergruppen_Fehlertexte.Fehlertexte": {
+        "ColumnWidth": 3435,
+        "AggregateType": -1
+      },
+      "Anzahl": {
+        "ColumnWidth": 810,
+        "AggregateType": -1
+      },
+      "Apr": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Aug": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Dez": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Feb": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Jan": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Jul": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Jun": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Mai": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Mrz": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Nov": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Okt": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      },
+      "Sep": {
+        "ColumnWidth": 480,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 110
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 559,
+      "Tables": [
+        {
+          "Name": "Abfrage_Fehlergruppen_Fehlertexte",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 134,
+          "Bottom": 109,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

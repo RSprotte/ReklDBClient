@@ -1,0 +1,1895 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15255
+    DatasheetFontHeight =10
+    ItemSuffix =174
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x0448f8775067e440
+    End
+    Caption ="Dialog Konfiguration Reklamationsdatenbank"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Tab
+            Width =5103
+            Height =3402
+            FontName ="Tahoma"
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =680
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Top =56
+                    Width =3675
+                    Height =390
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Konfiguration LQ ReklDB"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9585
+                    Top =60
+                    Width =576
+                    Height =576
+                    Name ="Schließen"
+                    Caption ="Befehl24"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+        Begin Section
+            Height =7755
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin Tab
+                    MultiRow = NotDefault
+                    OverlapFlags =85
+                    Top =60
+                    Width =10275
+                    Height =7695
+                    Name ="RegisterStr0"
+                    OnChange ="[Event Procedure]"
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="Allgemein"
+                            Caption ="Allgemein"
+                            Begin
+                                Begin Rectangle
+                                    OverlapFlags =223
+                                    Left =793
+                                    Top =958
+                                    Width =6293
+                                    Height =794
+                                    Name ="Rechteck29"
+                                End
+                                Begin Label
+                                    BackStyle =1
+                                    OverlapFlags =215
+                                    Left =908
+                                    Top =850
+                                    Width =1845
+                                    Height =285
+                                    BackColor =-2147483633
+                                    Name ="Bezeichnungsfeld30"
+                                    Caption ="Protokollierung / Logging"
+                                End
+                                Begin ComboBox
+                                    LimitToList = NotDefault
+                                    RowSourceTypeInt =1
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =3798
+                                    Top =1242
+                                    Name ="InLoggingClient"
+                                    RowSourceType ="Value List"
+                                    RowSource ="\"Aktiv\";\"Deaktiv\""
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =1076
+                                            Top =1242
+                                            Width =2445
+                                            Height =240
+                                            Name ="LoggingClient"
+                                            Caption ="Logging / Protokollierung Client:"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6870
+                                    Top =3630
+                                    Width =1236
+                                    Height =576
+                                    TabIndex =1
+                                    Name ="OKAllgemein"
+                                    Caption ="OK"
+                                    OnClick ="[Event Procedure]"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =8287
+                                    Top =3630
+                                    Width =1236
+                                    Height =576
+                                    TabIndex =2
+                                    Name ="ÜbernehmenAllgemein"
+                                    Caption ="Übernehmen"
+                                    OnClick ="[Event Procedure]"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CheckBox
+                                    OverlapFlags =215
+                                    Left =6519
+                                    Top =1247
+                                    TabIndex =3
+                                    Name ="InLoggingClientsAll"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =5669
+                                            Top =1247
+                                            Width =735
+                                            Height =240
+                                            Name ="Bezeichnungsfeld36"
+                                            Caption ="AllClients"
+                                        End
+                                    End
+                                End
+                                Begin ComboBox
+                                    LimitToList = NotDefault
+                                    RowSourceTypeInt =1
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    ListWidth =1440
+                                    Left =3798
+                                    Top =1984
+                                    Width =1644
+                                    Height =255
+                                    TabIndex =4
+                                    Name ="cboAutoAus"
+                                    RowSourceType ="Value List"
+                                    RowSource ="\"Nein\";\"Ja\""
+                                    ColumnWidths ="1440"
+                                    AfterUpdate ="[Event Procedure]"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            Left =2948
+                                            Top =1984
+                                            Width =720
+                                            Height =245
+                                            Name ="AutoAus_Bezeichnungsfeld"
+                                            Caption ="AutoAus"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    TextFontFamily =0
+                                    Left =623
+                                    Top =3514
+                                    Width =2320
+                                    Height =681
+                                    FontSize =11
+                                    TabIndex =5
+                                    ForeColor =2102279
+                                    Name ="cmdStatusNeuBerechnen"
+                                    Caption ="Neu Berechnen Status"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Aptos"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =623
+                                    Top =2607
+                                    Width =2320
+                                    Height =681
+                                    FontSize =11
+                                    TabIndex =6
+                                    Name ="cmbAendern_pKuerzel"
+                                    Caption ="Ändern \"pKuerzel\""
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =215
+                                    TextAlign =2
+                                    IMESentenceMode =3
+                                    Left =3514
+                                    Top =3405
+                                    Width =1260
+                                    Height =277
+                                    TabIndex =7
+                                    Name ="txtAktuelleVersion"
+                                    DefaultValue ="get_AkuelleClientVersion()"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            TextAlign =2
+                                            Left =3514
+                                            Top =2895
+                                            Width =1260
+                                            Height =450
+                                            Name ="bezAktuelleClientVersion"
+                                            Caption ="Aktuelle\015\012Client-Version"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3514
+                                    Top =3746
+                                    Width =2641
+                                    Height =453
+                                    TabIndex =8
+                                    Name ="cmbClientVersionUebernehmen"
+                                    Caption ="Client Version übernehmen"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =215
+                                    TextAlign =2
+                                    IMESentenceMode =3
+                                    Left =4893
+                                    Top =3401
+                                    Width =1260
+                                    Height =255
+                                    TabIndex =9
+                                    Name ="txtEntwicklungsVersion"
+                                    DefaultValue ="get_ClientVersion()"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            TextAlign =2
+                                            Left =4887
+                                            Top =2891
+                                            Width =1260
+                                            Height =450
+                                            Name ="BezEntwicklungsVersion"
+                                            Caption ="Entwicklung\015\012Client-Version"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3458
+                                    Top =4422
+                                    Width =2641
+                                    Height =453
+                                    TabIndex =10
+                                    Name ="cmbAccessFensterSetzten"
+                                    Caption ="Access-Fenster auf einen Bildschirm setzten"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3458
+                                    Top =5102
+                                    Width =2641
+                                    Height =453
+                                    TabIndex =11
+                                    Name ="cmbOffeneAB"
+                                    Caption ="Offene AB`s abrufen"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =623
+                                    Top =4478
+                                    Width =2320
+                                    Height =681
+                                    FontSize =11
+                                    TabIndex =12
+                                    ForeColor =2102279
+                                    Name ="cmbProgrammCode"
+                                    Caption ="Programm-Code durchsuchen"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Aptos"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="ReklamationsberichtLieferant"
+                            Caption ="Rekl.-Bericht Lieferant"
+                            Begin
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    TextAlign =3
+                                    IMESentenceMode =3
+                                    Left =2384
+                                    Top =787
+                                    Width =576
+                                    FontSize =10
+                                    Name ="RBLiefErinnerung"
+                                    AfterUpdate ="=setMahnstufeWerte([RBLiefErinnerung],\"Erinnerung\")"
+                                    DefaultValue ="=getMahnstufeWerte(\"Erinnerung\")"
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =1302
+                                            Top =783
+                                            Width =915
+                                            Height =240
+                                            Name ="Bezeichnungsfeld7"
+                                            Caption ="Erinnerung:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    TextAlign =3
+                                    IMESentenceMode =3
+                                    Left =2384
+                                    Top =1127
+                                    Width =576
+                                    FontSize =10
+                                    TabIndex =1
+                                    Name ="RBLiefMahnung1"
+                                    AfterUpdate ="=setMahnstufeWerte([RBLiefMahnung1],\"1. Mahnung\")"
+                                    DefaultValue ="=getMahnstufeWerte(\"1. Mahnung\")"
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =1299
+                                            Top =1130
+                                            Width =1035
+                                            Height =240
+                                            Name ="Bezeichnungsfeld13"
+                                            Caption ="Mahnstufe 1:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    TextAlign =3
+                                    IMESentenceMode =3
+                                    Left =2384
+                                    Top =1468
+                                    Width =576
+                                    FontSize =10
+                                    TabIndex =2
+                                    Name ="RBLiefMahnung2"
+                                    AfterUpdate ="=setMahnstufeWerte([RBLiefMahnung2],\"2. Mahnung\")"
+                                    DefaultValue ="=getMahnstufeWerte(\"2. Mahnung\")"
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =1299
+                                            Top =1460
+                                            Width =1035
+                                            Height =240
+                                            Name ="Bezeichnungsfeld15"
+                                            Caption ="Mahnstufe 2:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    TextAlign =1
+                                    IMESentenceMode =3
+                                    Left =4198
+                                    Top =1524
+                                    Width =3576
+                                    Height =300
+                                    FontSize =10
+                                    TabIndex =3
+                                    Name ="EinkaufAccount2Mahnung"
+                                    AfterUpdate ="=setMahnstufeText([EinkaufAccount2Mahnung],\"EinkaufAccount2teMahnung\")"
+                                    DefaultValue ="=getMahnstufeText(\"EinkaufAccount2teMahnung\")"
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =3114
+                                            Top =1520
+                                            Width =975
+                                            Height =240
+                                            Name ="Bezeichnungsfeld17"
+                                            Caption ="Einkauf Mail:"
+                                        End
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="Import Data"
+                            EventProcPrefix ="Import_Data"
+                            Begin
+                                Begin ComboBox
+                                    RowSourceTypeInt =1
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    ListRows =5
+                                    ListWidth =1440
+                                    Left =735
+                                    Top =1237
+                                    Width =4776
+                                    Height =345
+                                    FontSize =12
+                                    Name ="ImportVorgang"
+                                    RowSourceType ="Value List"
+                                    RowSource ="\"Import Tätigkeiten-Fehlerbilder\";\"Import Zurodnung Fehlerbild-WS Erfasser\";"
+                                        "\"Import Zurodnung Fehlerbild-WS Analyse\""
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =735
+                                            Top =953
+                                            Width =2265
+                                            Height =245
+                                            FontSize =10
+                                            Name ="Import Vorgänge_Bezeichnungsfeld"
+                                            Caption ="Import Vorgänge"
+                                            FontName ="Arial"
+                                            EventProcPrefix ="Import_Vorgänge_Bezeichnungsfeld"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =5724
+                                    Top =1180
+                                    Width =1134
+                                    Height =397
+                                    TabIndex =1
+                                    Name ="QuelleImport"
+                                    Caption ="Quelle"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =735
+                                    Top =2087
+                                    Width =6126
+                                    Height =390
+                                    FontSize =12
+                                    TabIndex =2
+                                    Name ="QuelleInput"
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =255
+                                            Left =735
+                                            Top =1860
+                                            Width =2550
+                                            Height =240
+                                            FontSize =10
+                                            Name ="Bezeichnungsfeld22"
+                                            Caption ="Quelle:"
+                                            FontName ="Arial"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =736
+                                    Top =2602
+                                    Width =1134
+                                    Height =397
+                                    TabIndex =3
+                                    Name ="Import"
+                                    Caption ="Import"
+                                    OnClick ="[Event Procedure]"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="Language"
+                            Caption ="Language"
+                            Begin
+                                Begin ComboBox
+                                    RowSourceTypeInt =1
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =2097
+                                    Top =1020
+                                    Height =340
+                                    FontSize =10
+                                    Name ="KombLang01"
+                                    RowSourceType ="Value List"
+                                    RowSource ="\"German\";\"English\";\"Chinese\""
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =255
+                                            Left =396
+                                            Top =1020
+                                            Width =1755
+                                            Height =340
+                                            FontSize =10
+                                            Name ="BezLanguage01"
+                                            Caption ="Umstellung Client"
+                                            FontName ="Arial"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =340
+                                    Top =2551
+                                    Width =3921
+                                    Height =576
+                                    TabIndex =1
+                                    Name ="ButGenUebersetzungstabellen"
+                                    Caption ="Übersetzungstabellen generieren"
+                                    OnClick ="[Event Procedure]"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =340
+                                    Top =3207
+                                    Width =3921
+                                    Height =576
+                                    TabIndex =2
+                                    Name ="ButImpUebersetzungstabellen"
+                                    Caption ="Übersetzungstabellen importieren"
+                                    OnClick ="[Event Procedure]"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =3911
+                                    Top =1020
+                                    Width =2676
+                                    Height =340
+                                    FontSize =10
+                                    TabIndex =3
+                                    Name ="ButSpracheUmstellen"
+                                    Caption ="Sprache umstellen Client"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Arial"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin ComboBox
+                                    RowSourceTypeInt =1
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =2097
+                                    Top =1530
+                                    Height =340
+                                    FontSize =10
+                                    TabIndex =4
+                                    Name ="KombLangDB"
+                                    RowSourceType ="Value List"
+                                    RowSource ="\"German\";\"English\";\"Chinese\""
+                                    FontName ="Arial"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =396
+                                            Top =1530
+                                            Width =1650
+                                            Height =340
+                                            FontSize =10
+                                            Name ="Bezeichnungsfeld52"
+                                            Caption ="Umstellung DB"
+                                            FontName ="Arial"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =3911
+                                    Top =1530
+                                    Width =2661
+                                    Height =340
+                                    FontSize =10
+                                    TabIndex =5
+                                    Name ="ButSpracheUmstellenDB"
+                                    Caption ="Sprache umstellen DB"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Arial"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =340
+                                    Top =3863
+                                    Width =3921
+                                    Height =576
+                                    TabIndex =6
+                                    Name ="cmbDatumFormatAnpassen"
+                                    Caption ="Datum Format anpassen"
+                                    OnClick ="[Event Procedure]"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =4478
+                                    Top =3863
+                                    Width =3921
+                                    Height =576
+                                    TabIndex =7
+                                    Name ="CmbTBautostartöffnen"
+                                    Caption ="Formular TB:autostart öffnen"
+                                    OnClick ="[Event Procedure]"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="Externe Datenbank"
+                            EventProcPrefix ="Externe_Datenbank"
+                            Caption ="Externe Datenbank"
+                            Begin
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =283
+                                    Top =850
+                                    Width =2155
+                                    Height =680
+                                    Name ="ButAppendDB"
+                                    Caption ="Datenbank einbinden"
+                                    OnClick ="[Event Procedure]"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="TestMahnung"
+                            Caption ="Mahnung Test"
+                            Begin
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =2494
+                                    Top =963
+                                    Width =1356
+                                    Height =345
+                                    FontSize =12
+                                    Name ="txtSysDate"
+                                    FontName ="Arial"
+                                    InputMask ="99,99,0000;;_"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =345
+                                            Top =960
+                                            Width =2040
+                                            Height =345
+                                            FontSize =12
+                                            Name ="BezSysDate"
+                                            Caption ="System-Datum"
+                                            FontName ="Arial"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =4308
+                                    Top =963
+                                    Width =2091
+                                    Height =396
+                                    TabIndex =1
+                                    Name ="ButSystemDatEinstellen"
+                                    Caption ="System Datum einstellen"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =4308
+                                    Top =1417
+                                    Width =2091
+                                    Height =396
+                                    TabIndex =2
+                                    Name ="ButMahnungQSV"
+                                    Caption ="Mahnungswesen QSV"
+                                    OnClick ="[Event Procedure]"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =4308
+                                    Top =1893
+                                    Width =2091
+                                    Height =396
+                                    TabIndex =3
+                                    Name ="ButMahnungLief"
+                                    Caption ="Mahnungswesen Lieferant"
+                                    OnClick ="[Event Procedure]"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =4308
+                                    Top =2607
+                                    Width =2091
+                                    Height =396
+                                    TabIndex =4
+                                    Name ="ButMahnwesenMngm"
+                                    Caption ="Mahnungswesen Ticket"
+                                    OnClick ="[Event Procedure]"
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =793
+                                    Top =2494
+                                    Width =2605
+                                    Height =277
+                                    TabIndex =5
+                                    Name ="cmbAufgabenInTicket"
+                                    Caption ="QS Aufgaben in Ticket umwandeln"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =737
+                                    Top =3118
+                                    Width =2605
+                                    Height =277
+                                    TabIndex =6
+                                    Name ="cmbDatumInMailtextAendern"
+                                    Caption ="Datum in Mailtext ändern"
+                                    OnClick ="[Event Procedure]"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =120
+                            Top =735
+                            Width =10020
+                            Height =6885
+                            Name ="Seite54"
+                            Caption ="Umgebung"
+                            Begin
+                                Begin ComboBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    ColumnCount =2
+                                    ListWidth =4320
+                                    Left =1486
+                                    Top =735
+                                    Width =2714
+                                    Height =340
+                                    Name ="KonfigLQReklDBDatei"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT RSP_Lokalisierung.OjectID_Name, RSP_Lokalisierung.TextID, RSP_Lokalisieru"
+                                        "ng.TypeOfObject FROM RSP_Lokalisierung WHERE (((RSP_Lokalisierung.TypeOfObject)="
+                                        "\"Umgebung\")); "
+                                    ColumnWidths ="1701;0"
+                                    AfterUpdate ="[Event Procedure]"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =735
+                                            Width =1290
+                                            Height =350
+                                            Name ="Text-ID_Bezeichnungsfeld"
+                                            Caption ="Datei"
+                                            EventProcPrefix ="Text_ID_Bezeichnungsfeld"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1467
+                                    Top =1245
+                                    Width =6247
+                                    Height =940
+                                    TabIndex =1
+                                    Name ="Pfad-DE"
+                                    EventProcPrefix ="Pfad_DE"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =1245
+                                            Width =1245
+                                            Height =345
+                                            Name ="Bezeichnungsfeld59"
+                                            Caption ="Pfad - DE"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1467
+                                    Top =2379
+                                    Width =6246
+                                    Height =941
+                                    TabIndex =2
+                                    Name ="Pfad-E"
+                                    EventProcPrefix ="Pfad_E"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =2379
+                                            Width =1245
+                                            Height =345
+                                            Name ="Bezeichnungsfeld61"
+                                            Caption ="Pfad - US"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1467
+                                    Top =3512
+                                    Width =6246
+                                    Height =941
+                                    TabIndex =3
+                                    Name ="Pfad-CN"
+                                    EventProcPrefix ="Pfad_CN"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =3512
+                                            Width =1245
+                                            Height =345
+                                            Name ="Bezeichnungsfeld63"
+                                            Caption ="Pfad - CN"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7823
+                                    Top =1253
+                                    Width =906
+                                    Height =966
+                                    TabIndex =4
+                                    Name ="Befehl64"
+                                    Caption ="Befehl64"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadada000000000da0adad0fffffff0ad00ada0f00f00f000000ad0fffffff0 ,
+                                        0x000000a0f00f00f000000ad0fffffff0ad00ada444444444da0adad4f44f44f4 ,
+                                        0xadadada444444444dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7823
+                                    Top =2376
+                                    Width =906
+                                    Height =921
+                                    TabIndex =5
+                                    Name ="Befehl70"
+                                    Caption ="Befehl64"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadada000000000da0adad0fffffff0ad00ada0f00f00f000000ad0fffffff0 ,
+                                        0x000000a0f00f00f000000ad0fffffff0ad00ada444444444da0adad4f44f44f4 ,
+                                        0xadadada444444444dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadadadadadadad
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7823
+                                    Top =3524
+                                    Width =906
+                                    Height =906
+                                    TabIndex =6
+                                    Name ="Befehl71"
+                                    Caption ="Befehl64"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadada000000000da0adad0fffffff0ad00ada0f00f00f000000ad0fffffff0 ,
+                                        0x000000a0f00f00f000000ad0fffffff0ad00ada444444444da0adad4f44f44f4 ,
+                                        0xadadada444444444dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadadadadadadad
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7823
+                                    Top =735
+                                    Width =900
+                                    Height =405
+                                    TabIndex =7
+                                    Name ="Befehl72"
+                                    Caption ="Delete"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =4365
+                                    Top =735
+                                    Width =1190
+                                    Height =340
+                                    TabIndex =8
+                                    Name ="Text73"
+                                    ControlSource ="=KonfigLQReklDBDatei.column(1)"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1467
+                                    Top =4533
+                                    Width =6246
+                                    Height =941
+                                    TabIndex =9
+                                    Name ="txtStundensatzDE"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =4528
+                                            Width =1245
+                                            Height =405
+                                            Name ="Bezeichnungsfeld133"
+                                            Caption ="Stundensatz-DE"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7823
+                                    Top =4545
+                                    Width =906
+                                    Height =906
+                                    TabIndex =10
+                                    Name ="cmbStundensatzDE"
+                                    Caption ="Befehl64"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadada000000000da0adad0fffffff0ad00ada0f00f00f000000ad0fffffff0 ,
+                                        0x000000a0f00f00f000000ad0fffffff0ad00ada444444444da0adad4f44f44f4 ,
+                                        0xadadada444444444dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadadadadadadad
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1467
+                                    Top =5554
+                                    Width =6246
+                                    Height =941
+                                    TabIndex =11
+                                    Name ="txtStundensatzE"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =5554
+                                            Width =1245
+                                            Height =345
+                                            Name ="Bezeichnungsfeld136"
+                                            Caption ="Stundensatz-US"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7823
+                                    Top =5566
+                                    Width =906
+                                    Height =906
+                                    TabIndex =12
+                                    Name ="cmbStundensatzE"
+                                    Caption ="Befehl64"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadada000000000da0adad0fffffff0ad00ada0f00f00f000000ad0fffffff0 ,
+                                        0x000000a0f00f00f000000ad0fffffff0ad00ada444444444da0adad4f44f44f4 ,
+                                        0xadadada444444444dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadadadadadadad
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1467
+                                    Top =6575
+                                    Width =6246
+                                    Height =941
+                                    TabIndex =13
+                                    Name ="txtStundensatzCN"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =6575
+                                            Width =1245
+                                            Height =345
+                                            Name ="Bezeichnungsfeld139"
+                                            Caption ="Stundensatz-CN"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7823
+                                    Top =6587
+                                    Width =906
+                                    Height =906
+                                    TabIndex =14
+                                    Name ="cmbStundensatzCN"
+                                    Caption ="Befehl64"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadada000000000da0adad0fffffff0ad00ada0f00f00f000000ad0fffffff0 ,
+                                        0x000000a0f00f00f000000ad0fffffff0ad00ada444444444da0adad4f44f44f4 ,
+                                        0xadadada444444444dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                                        0xadadadadadadadad
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="SoftkeyMakros"
+                            Begin
+                                Begin ListBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    ColumnCount =3
+                                    Left =623
+                                    Top =1190
+                                    Width =5279
+                                    Height =3061
+                                    Name ="lstSofkeyMakro"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT tblSoftKeyMakros.MakroID, tblSoftKeyMakros.MakroName, tblSoftKeyMakros.An"
+                                        "zeige FROM tblSoftKeyMakros; "
+                                    ColumnWidths ="0;2835;1701"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =675
+                                            Top =900
+                                            Width =1125
+                                            Height =240
+                                            Name ="Bezeichnungsfeld92"
+                                            Caption ="Sofkey Makros"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6122
+                                    Top =1416
+                                    Width =2886
+                                    Height =255
+                                    TabIndex =1
+                                    Name ="txtMakro"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =6122
+                                            Top =1133
+                                            Width =645
+                                            Height =240
+                                            Name ="Bezeichnungsfeld94"
+                                            Caption ="Makro"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6122
+                                    Top =2096
+                                    Width =2886
+                                    Height =255
+                                    TabIndex =2
+                                    Name ="txtDefaultMakroBez"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =6122
+                                            Top =1811
+                                            Width =1455
+                                            Height =240
+                                            Name ="Bezeichnungsfeld96"
+                                            Caption ="Makro Bezeichnung"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =6122
+                                    Top =2607
+                                    Width =1011
+                                    TabIndex =3
+                                    Name ="cmdNeu"
+                                    Caption ="Neu"
+                                    OnClick ="[Event Procedure]"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10006
+                            Height =6885
+                            Name ="SoftkeyKonfig"
+                            Begin
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1255
+                                    Top =1074
+                                    Width =3171
+                                    Height =255
+                                    Name ="txtMakroSoftKey1"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =285
+                                            Top =1079
+                                            Width =840
+                                            Height =240
+                                            Name ="BezSoftKey1"
+                                            Caption ="SoftKey 1:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =4544
+                                    Top =1073
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =1
+                                    Name ="txtMakroSoftKeyBez1"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1255
+                                    Top =1420
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =2
+                                    Name ="txtMakroSoftKey2"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =285
+                                            Top =1434
+                                            Width =840
+                                            Height =240
+                                            Name ="BezSoftKey2"
+                                            Caption ="SoftKey 2:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =4544
+                                    Top =1419
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =3
+                                    Name ="txtMakroSoftKeyBez2"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1255
+                                    Top =1760
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =4
+                                    Name ="txtMakroSoftKey3"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =285
+                                            Top =1784
+                                            Width =840
+                                            Height =240
+                                            Name ="BezSoftKey3"
+                                            Caption ="SoftKey 3:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =4544
+                                    Top =1759
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =5
+                                    Name ="txtMakroSoftKeyBez3"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1255
+                                    Top =2122
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =6
+                                    Name ="txtMakroSoftKey4"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =285
+                                            Top =2099
+                                            Width =840
+                                            Height =240
+                                            Name ="BezSoftKey4"
+                                            Caption ="SoftKey 4:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =4544
+                                    Top =2121
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =7
+                                    Name ="txtMakroSoftKeyBez4"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1255
+                                    Top =2453
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =8
+                                    Name ="txtMakroSoftKey5"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =285
+                                            Top =2439
+                                            Width =840
+                                            Height =240
+                                            Name ="BezSoftKey5"
+                                            Caption ="SoftKey 5:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =4544
+                                    Top =2452
+                                    Width =3171
+                                    Height =255
+                                    TabIndex =9
+                                    Name ="txtMakroSoftKeyBez5"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin ListBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    ColumnCount =3
+                                    Left =1206
+                                    Top =3078
+                                    Width =7694
+                                    Height =3061
+                                    TabIndex =10
+                                    Name ="lstSoftKeyMakroZuordnung"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT tblSoftKeyMakros.MakroID, tblSoftKeyMakros.MakroName, tblSoftKeyMakros.An"
+                                        "zeige FROM tblSoftKeyMakros; "
+                                    ColumnWidths ="0;2835;1701"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =1
+                                            Left =455
+                                            Top =3063
+                                            Width =675
+                                            Height =570
+                                            Name ="Bezeichnungsfeld117"
+                                            Caption ="Sofkey- Makros"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7877
+                                    Top =1022
+                                    Width =1071
+                                    TabIndex =11
+                                    Name ="cmdSet1"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7882
+                                    Top =1419
+                                    Width =1071
+                                    TabIndex =12
+                                    Name ="cmdSet2"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7882
+                                    Top =1759
+                                    Width =1071
+                                    TabIndex =13
+                                    Name ="cmdSet3"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7882
+                                    Top =2122
+                                    Width =1071
+                                    TabIndex =14
+                                    Name ="cmdSet4"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =7882
+                                    Top =2485
+                                    Width =1071
+                                    TabIndex =15
+                                    Name ="cmdSet5"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =1249
+                                    Top =735
+                                    Width =1245
+                                    Height =270
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld123"
+                                    Caption ="Makro"
+                                End
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =4532
+                                    Top =737
+                                    Width =1725
+                                    Height =270
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld124"
+                                    Caption ="Makro Bezeichnung"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =9070
+                                    Top =1020
+                                    Width =1071
+                                    TabIndex =16
+                                    Name ="cmdDel1"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =9070
+                                    Top =1417
+                                    Width =1071
+                                    TabIndex =17
+                                    Name ="cmdDel2"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =9070
+                                    Top =1780
+                                    Width =1071
+                                    TabIndex =18
+                                    Name ="cmdDel3"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =9070
+                                    Top =2143
+                                    Width =1071
+                                    TabIndex =19
+                                    Name ="cmdDel4"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =9070
+                                    Top =2506
+                                    Width =1071
+                                    TabIndex =20
+                                    Name ="cmdDel5"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =135
+                            Top =735
+                            Width =10005
+                            Height =6885
+                            Name ="BD3 Enviroment"
+                            EventProcPrefix ="BD3_Enviroment"
+                            Begin
+                                Begin ListBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    ColumnCount =2
+                                    Left =793
+                                    Top =1927
+                                    Width =4592
+                                    Height =5216
+                                    Name ="lstVorgaenge"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="Vorgang-Text"
+                                    ColumnWidths ="0"
+                                    OnClick ="[Event Procedure]"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =793
+                                            Top =1644
+                                            Width =3690
+                                            Height =240
+                                            Name ="bezVorgaenge"
+                                            Caption ="Vorgänge BD3"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    Locked = NotDefault
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6746
+                                    Top =1984
+                                    Width =681
+                                    Height =255
+                                    TabIndex =1
+                                    Name ="txtID"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =5499
+                                            Top =1984
+                                            Width =735
+                                            Height =240
+                                            Name ="Bezeichnungsfeld160"
+                                            Caption ="ID"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6746
+                                    Top =2323
+                                    Width =3291
+                                    Height =255
+                                    TabIndex =2
+                                    Name ="txtVorgang"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =5499
+                                            Top =2323
+                                            Width =1065
+                                            Height =240
+                                            Name ="Bezeichnungsfeld162"
+                                            Caption ="Vorgang-Text"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6746
+                                    Top =2664
+                                    Width =3291
+                                    Height =255
+                                    TabIndex =3
+                                    Name ="txtBezeichnung"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =5499
+                                            Top =2664
+                                            Width =1035
+                                            Height =240
+                                            Name ="Bezeichnungsfeld164"
+                                            Caption ="Beschreibung"
+                                        End
+                                    End
+                                End
+                                Begin CheckBox
+                                    OverlapFlags =247
+                                    Left =6746
+                                    Top =3004
+                                    TabIndex =4
+                                    Name ="ctlAktiv"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =5499
+                                            Top =3004
+                                            Width =1035
+                                            Height =240
+                                            Name ="Bezeichnungsfeld168"
+                                            Caption ="Aktiv"
+                                        End
+                                    End
+                                End
+                                Begin ComboBox
+                                    RowSourceTypeInt =1
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =6746
+                                    Top =3344
+                                    Width =3285
+                                    Height =255
+                                    TabIndex =5
+                                    Name ="cbxDatabase"
+                                    RowSourceType ="Value List"
+                                    RowSource ="\"ReklDB\";\"ServiceDB\";\"ReklDB/ServiceDB\""
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            Left =5507
+                                            Top =3346
+                                            Width =1080
+                                            Height =240
+                                            Name ="Bezeichnungsfeld170"
+                                            Caption ="Datenbank"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =5499
+                                    Top =3685
+                                    Width =1086
+                                    Height =448
+                                    TabIndex =6
+                                    Name ="cmbNeu"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dddddddddddddddddddddddddddddddddddddddddddddddd ,
+                                        0xd7777777777777ddd7fffffffffff7ddd7fcccccccccf7ddd7fcccccccccf7dd ,
+                                        0xd7fcccccccccf7ddd7dddffffffff7dddddbddd7777777dddbdbdbdddddddddd ,
+                                        0xddbbbdddddddddddbbbdbbbdddddddddddbbbddddddddddddbdbdbdddddddddd ,
+                                        0xdddbdddddddddddd000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =6803
+                                    Top =3741
+                                    Width =1086
+                                    Height =403
+                                    TabIndex =7
+                                    Name ="cmbAendern"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00ddddddddddddddddddd0d0d0d0ddddddddddddddd00ddddd ,
+                                        0xddddddddd000ddddddddddddd0b70dddddddddddd0b80ddddddddddddd0b70dd ,
+                                        0xd00000000d0b80dd033000330dd0b70d033000330dd0b00d033333330ddd0110 ,
+                                        0x033333330ddd000d033000030ddddddd030888030ddddddd030888030ddddddd ,
+                                        0x000000000ddddddd000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                                        0x0000000000000000
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                End
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "KonfiguartionLQReklDB.cls"

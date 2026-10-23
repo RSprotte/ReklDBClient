@@ -1,0 +1,142 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10885
+    DatasheetFontHeight =10
+    ItemSuffix =11
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xa779a0c3d61de440
+    End
+    RecordSource ="SELECT Maßnahmen.* FROM Maßnahmen; "
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =5961
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    ScrollBars =2
+                    OverlapFlags =223
+                    Left =60
+                    Top =227
+                    Width =10770
+                    Height =1710
+                    Name ="Text0"
+                    ControlSource ="Beschreibung"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Top =287
+                            Width =555
+                            Height =240
+                            Name ="Bezeichnungsfeld1"
+                            Caption ="Text0:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =223
+                    Left =60
+                    Top =2211
+                    Width =10770
+                    Height =1710
+                    TabIndex =1
+                    Name ="Text2"
+                    ControlSource ="Ziel der Maßnahme"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Top =2271
+                            Width =555
+                            Height =240
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="Text0:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =223
+                    Left =60
+                    Top =4195
+                    Width =10770
+                    Height =1710
+                    TabIndex =2
+                    Name ="Text4"
+                    ControlSource ="Ergebnis Maßnahme"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Top =4255
+                            Width =555
+                            Height =240
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="Text0:"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =87
+                    Left =56
+                    Width =1035
+                    Height =210
+                    Name ="Bezeichnungsfeld8"
+                    Caption ="Beschreibung"
+                End
+                Begin Label
+                    Visible = NotDefault
+                    OverlapFlags =87
+                    Left =60
+                    Top =1980
+                    Width =1140
+                    Height =210
+                    Name ="Bezeichnungsfeld9"
+                    Caption ="Ziel Maßnahme"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    Left =120
+                    Top =3975
+                    Width =1515
+                    Height =210
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Ergebnis Maßnahme"
+                End
+            End
+        End
+    End
+End

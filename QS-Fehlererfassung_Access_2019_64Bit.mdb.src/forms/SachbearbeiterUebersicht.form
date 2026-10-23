@@ -1,0 +1,309 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    TabularFamily =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10431
+    DatasheetFontHeight =10
+    ItemSuffix =25
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[Einheit] = 'Vertrieb'"
+    RecSrcDt = Begin
+        0x3fa7829e4b57e540
+    End
+    RecordSource ="SELECT Sachbearbeiter.Name AS NameSachbearbeiter, Sachbearbeiter.Kurzzeichen, LQ"
+        "Einheit.LQEinheit AS Einheit, Sachbearbeiter.Aktiv, Sachbearbeiter.[SB-ID] FROM "
+        "Sachbearbeiter LEFT JOIN LQEinheit ON Sachbearbeiter.Einheit = LQEinheit.LQEinhe"
+        "it ORDER BY Sachbearbeiter.Name; "
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnMouseMove ="[Event Procedure]"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =1077
+            BackColor =14211288
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =285
+                    Top =225
+                    Width =2220
+                    Height =405
+                    FontSize =16
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Sachbearbeiter"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =5102
+                    Top =283
+                    Width =570
+                    Height =210
+                    Name ="Bezeichnungsfeld19"
+                    Caption ="Filter"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5104
+                    Top =623
+                    Width =2436
+                    ColumnOrder =0
+                    Name ="FilterEinheit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.LQEinheit FROM Sachbearbeiter, LQEinheit GROUP BY LQEinheit.LQE"
+                        "inheit; "
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4138
+                            Top =623
+                            Width =795
+                            Height =240
+                            Name ="Bezeichnungsfeld22"
+                            Caption ="Einheit:"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8727
+                    Top =120
+                    Width =1455
+                    Height =390
+                    TabIndex =1
+                    Name ="FilterLöschen"
+                    Caption ="Filter löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8727
+                    Top =630
+                    Width =1455
+                    Height =390
+                    TabIndex =2
+                    Name ="Befehl7"
+                    Caption ="Schließen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =270
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1587
+                    Width =3411
+                    Height =255
+                    Name ="Lieferant-Name"
+                    ControlSource ="NameSachbearbeiter"
+                    EventProcPrefix ="Lieferant_Name"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =113
+                    Width =1356
+                    Height =255
+                    TabIndex =1
+                    Name ="Text2"
+                    ControlSource ="Kurzzeichen"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =5102
+                    Width =2256
+                    Height =255
+                    TabIndex =2
+                    Name ="Text14"
+                    ControlSource ="Einheit"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =7426
+                    Top =30
+                    TabIndex =3
+                    Name ="Aktiv"
+                    ControlSource ="Aktiv"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =7656
+                            Width =435
+                            Height =240
+                            Name ="Bezeichnungsfeld23"
+                            Caption ="Aktiv"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8277
+                    Width =576
+                    Height =255
+                    TabIndex =4
+                    Name ="SB-ID"
+                    ControlSource ="SB-ID"
+                    EventProcPrefix ="SB_ID"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =5612
+            BackColor =14211288
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8727
+                    Top =390
+                    Width =1455
+                    Height =390
+                    Name ="Neu"
+                    Caption ="Neu"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8727
+                    Top =1411
+                    Width =1455
+                    Height =390
+                    TabIndex =1
+                    Name ="Befehl8"
+                    Caption ="Löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8727
+                    Top =901
+                    Width =1455
+                    Height =390
+                    TabIndex =2
+                    Name ="Befehl9"
+                    Caption ="Bearbeiten"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Subform
+                    Locked = NotDefault
+                    OverlapFlags =87
+                    SpecialEffect =4
+                    BorderWidth =3
+                    Left =165
+                    Top =396
+                    Width =7950
+                    Height =4995
+                    TabIndex =3
+                    Name ="Sachbearbeiter"
+                    SourceObject ="Form.Sachbearbeiter"
+                    LinkChildFields ="SB-ID"
+                    LinkMasterFields ="SB-ID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =165
+                            Top =156
+                            Width =1170
+                            Height =240
+                            Name ="Sachbearbeiter Beschriftung"
+                            Caption ="Sachbearbeiter"
+                            EventProcPrefix ="Sachbearbeiter_Beschriftung"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "SachbearbeiterUebersicht.cls"

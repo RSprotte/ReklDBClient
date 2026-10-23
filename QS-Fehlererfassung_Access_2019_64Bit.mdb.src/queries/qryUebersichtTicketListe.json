@@ -1,0 +1,104 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryUebersichtTicketListe"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RecordsetType": {
+        "Type": 2,
+        "Value": 2
+      }
+    },
+    "Columns": {
+      "tblTicketListe.LinkZuVorgangsOrdner": {
+        "ColumnWidth": 2535,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 485
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 303,
+          "Bottom": 512,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 742,
+          "Top": 315,
+          "Right": 886,
+          "Bottom": 459,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 541,
+          "Top": 3,
+          "Right": 685,
+          "Bottom": 427,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketStatus",
+          "Alias": "",
+          "Left": 735,
+          "Top": 12,
+          "Right": 879,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketTyp",
+          "Alias": "",
+          "Left": 331,
+          "Top": 114,
+          "Right": 501,
+          "Bottom": 351,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "qryTicketSacharbeiterKz",
+          "Alias": "",
+          "Left": 912,
+          "Top": 14,
+          "Right": 1056,
+          "Bottom": 158,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Vorgangstatus",
+          "Alias": "",
+          "Left": 735,
+          "Top": 156,
+          "Right": 879,
+          "Bottom": 300,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,358 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9014
+    DatasheetFontHeight =10
+    ItemSuffix =38
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x7402c196ef5ae640
+    End
+    RecordSource ="SELECT MaßnahmenTempDruck.* FROM MaßnahmenTempDruck ORDER BY MaßnahmenTempDruck."
+        "MaßnahmeID DESC;"
+    Caption ="MaßnahmenTempDruck"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =935
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Top =56
+                    Width =4815
+                    Height =450
+                    FontSize =20
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld30"
+                    Caption ="Übernahme Maßnahmen"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Top =680
+                    Width =576
+                    Height =255
+                    Name ="MaßnahmeID_Bezeichnungsfeld"
+                    Caption ="MID"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =793
+                    Top =680
+                    Width =1026
+                    Height =255
+                    Name ="Maßnahme_Bezeichnungsfeld"
+                    Caption ="Maßnahme"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =6349
+                    Top =680
+                    Width =1026
+                    Height =255
+                    Name ="Druck_Bezeichnungsfeld"
+                    Caption ="Übernehmen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5159
+                    Top =56
+                    Width =1461
+                    Height =576
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Befehl31"
+                    Caption ="Maßnahmen übernehmen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular drucken"
+                End
+            End
+        End
+        Begin Section
+            Height =2220
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Width =711
+                    Height =345
+                    ColumnWidth =1701
+                    FontSize =10
+                    FontWeight =700
+                    Name ="MaßnahmeID"
+                    ControlSource ="MaßnahmeID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =793
+                    Width =5430
+                    Height =345
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="Maßnahme"
+                    ControlSource ="Maßnahme"
+                    StatusBarText ="Kurzbeschreibung Maßnahme"
+                End
+                Begin CheckBox
+                    OverlapFlags =93
+                    Left =6406
+                    Top =113
+                    TabIndex =2
+                    Name ="Druck"
+                    ControlSource ="Druck"
+                End
+                Begin CommandButton
+                    OverlapFlags =247
+                    Left =6633
+                    Top =56
+                    Width =951
+                    Height =345
+                    TabIndex =3
+                    Name ="cmbSetDruck"
+                    Caption ="Set Druck"
+                    OnClick ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =793
+                    Top =453
+                    Width =5445
+                    Height =1236
+                    ColumnWidth =2940
+                    TabIndex =4
+                    Name ="Beschreibung"
+                    ControlSource ="Beschreibung"
+                    StatusBarText ="Beschreibung der Maßnahme"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =6349
+                    Top =737
+                    Width =1245
+                    Height =255
+                    TabIndex =5
+                    Name ="StartUmsetzung"
+                    ControlSource ="StartUmsetzung"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =6349
+                            Top =510
+                            Width =1245
+                            Height =240
+                            Name ="Bezeichnungsfeld34"
+                            Caption ="StartUmsetzung:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6349
+                    Top =1306
+                    Width =1245
+                    Height =255
+                    TabIndex =6
+                    Name ="EndeUmsetzung"
+                    ControlSource ="EndeUmsetzung"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6349
+                            Top =1022
+                            Width =1245
+                            Height =240
+                            Name ="Bezeichnungsfeld35"
+                            Caption ="EndeUmsetzung:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =7653
+                    Top =1304
+                    Width =1245
+                    Height =255
+                    TabIndex =7
+                    Name ="Text36"
+                    ControlSource ="UmgesetztAm"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =7653
+                            Top =1020
+                            Width =1245
+                            Height =240
+                            Name ="BezUmgesetztAm"
+                            Caption ="Umgesetzt am:"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "MaßnahmenTempDruck.cls"

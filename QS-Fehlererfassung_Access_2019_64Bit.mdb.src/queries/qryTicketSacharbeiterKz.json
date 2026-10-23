@@ -1,0 +1,30 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryTicketSacharbeiterKz"
+  },
+  "Items": {
+    "QueryType": 128,
+    "OptionFlag": 3,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 753
+      },
+      "GridLeft": 0,
+      "GridTop": 1230,
+      "ColumnsShown": 2058,
+      "Tables": [
+      ]
+    }
+  }
+}

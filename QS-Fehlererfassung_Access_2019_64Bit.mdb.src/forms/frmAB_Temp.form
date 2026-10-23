@@ -1,0 +1,295 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11678
+    DatasheetFontHeight =11
+    ItemSuffix =17
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xeea3de0ccbd0e540
+    End
+    RecordSource ="tblABTemp"
+    Caption ="frmAB_Temp"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =999
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Top =684
+                    Width =1881
+                    Height =315
+                    Name ="KD_Nr_Bezeichnungsfeld"
+                    Caption ="KD_Nr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1934
+                    Top =684
+                    Width =1881
+                    Height =315
+                    Name ="KD_Bezeichnungsfeld"
+                    Caption ="KD"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3868
+                    Top =684
+                    Width =1881
+                    Height =315
+                    Name ="AB_Bezeichnungsfeld"
+                    Caption ="AB"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5802
+                    Top =684
+                    Width =1881
+                    Height =315
+                    Name ="Bestell_Nr_Bezeichnungsfeld"
+                    Caption ="Bestell_Nr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9055
+                    Top =684
+                    Width =1266
+                    Height =315
+                    Name ="LT_Bezeichnungsfeld"
+                    Caption ="AT"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =10374
+                    Top =684
+                    Width =1266
+                    Height =315
+                    Name ="Vorgang_Bezeichnungsfeld"
+                    Caption ="Vorgang"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =56
+                    Top =56
+                    Width =2700
+                    Height =519
+                    FontSize =20
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="AB_Temp"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =7736
+                    Top =684
+                    Width =1266
+                    Height =315
+                    Name ="VT_Bezeichnungsfeld"
+                    Caption ="VT"
+                    Tag ="DetachedLabel"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2891
+                    Top =56
+                    Width =624
+                    Height =624
+                    Name ="cmbDrucken"
+                    Caption ="Befehl15"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3570
+                    Top =56
+                    Width =624
+                    Height =624
+                    TabIndex =1
+                    Name ="cmbExcelExport"
+                    Caption ="Befehl15"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =372
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Top =57
+                    Width =1881
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    Name ="KD_Nr"
+                    ControlSource ="KD_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1934
+                    Top =57
+                    Width =1881
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    Name ="KD"
+                    ControlSource ="KD"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3868
+                    Top =57
+                    Width =1881
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =2
+                    Name ="AB"
+                    ControlSource ="AB"
+                    OnDblClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5802
+                    Top =57
+                    Width =1881
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Bestell_Nr"
+                    ControlSource ="Bestell_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =9055
+                    Top =57
+                    Width =1266
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =4
+                    Name ="LT"
+                    ControlSource ="LT"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =10374
+                    Top =57
+                    Width =1266
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Vorgang"
+                    ControlSource ="Vorgang"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =7736
+                    Top =57
+                    Width =1266
+                    Height =315
+                    FontSize =10
+                    TabIndex =6
+                    Name ="Text14"
+                    ControlSource ="VT"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmAB_Temp.cls"

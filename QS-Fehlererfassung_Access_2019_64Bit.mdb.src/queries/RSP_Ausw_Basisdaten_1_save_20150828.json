@@ -1,0 +1,268 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Ausw_Basisdaten_1_save_20150828"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Erfasser-Bereich": {
+        "ColumnWidth": 2280,
+        "AggregateType": -1
+      },
+      "Erfasser-Einheit": {
+        "ColumnWidth": 2175,
+        "AggregateType": -1
+      },
+      "Erfasser-WS": {
+        "ColumnWidth": 3630,
+        "AggregateType": -1
+      },
+      "LQWorkstation.LQWorkstation": {
+        "ColumnWidth": 2115,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Fehleranalyse]": {
+        "ColumnWidth": 2970,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1545,
+        "AggregateType": -1
+      },
+      "Mastertab.Datum": {
+        "ColumnWidth": 2100,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 750,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Ist": {
+        "ColumnWidth": 2745,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Soll": {
+        "ColumnWidth": 2670,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Verl": {
+        "ColumnWidth": 2655,
+        "AggregateType": -1
+      },
+      "Taetigkeiten.Taetigkeit": {
+        "ColumnWidth": 1680,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 552
+      },
+      "GridLeft": 12,
+      "GridTop": 512,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": -42,
+          "Top": 329,
+          "Right": 112,
+          "Bottom": 417,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 172,
+          "Top": -11,
+          "Right": 361,
+          "Bottom": 251,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 124,
+          "Top": 345,
+          "Right": 301,
+          "Bottom": 545,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 317,
+          "Top": 228,
+          "Right": 481,
+          "Bottom": 406,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": -111,
+          "Top": -6,
+          "Right": 146,
+          "Bottom": 237,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": -167,
+          "Top": 143,
+          "Right": 13,
+          "Bottom": 407,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": -501,
+          "Top": -8,
+          "Right": -214,
+          "Bottom": 515,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 487,
+          "Top": 76,
+          "Right": 676,
+          "Bottom": 386,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 535,
+          "Top": 5,
+          "Right": 631,
+          "Bottom": 93,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 647,
+          "Top": 79,
+          "Right": 743,
+          "Bottom": 167,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 790,
+          "Top": 200,
+          "Right": 886,
+          "Bottom": 318,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden_1",
+          "Alias": "",
+          "Left": 839,
+          "Top": 5,
+          "Right": 1111,
+          "Bottom": 164,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Taetigkeiten",
+          "Alias": "",
+          "Left": 634,
+          "Top": 286,
+          "Right": 730,
+          "Bottom": 374,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungDefTaetigkeit",
+          "Alias": "",
+          "Left": 640,
+          "Top": 420,
+          "Right": 736,
+          "Bottom": 508,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungAnalyseFehlerbild",
+          "Alias": "",
+          "Left": 519,
+          "Top": 426,
+          "Right": 615,
+          "Bottom": 514,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQFunktion",
+          "Alias": "",
+          "Left": 918,
+          "Top": 211,
+          "Right": 1014,
+          "Bottom": 314,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich_1",
+          "Alias": "",
+          "Left": 519,
+          "Top": 213,
+          "Right": 615,
+          "Bottom": 301,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation_1",
+          "Alias": "",
+          "Left": 519,
+          "Top": 321,
+          "Right": 615,
+          "Bottom": 409,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit_1",
+          "Alias": "",
+          "Left": 542,
+          "Top": 100,
+          "Right": 638,
+          "Bottom": 188,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQFunktion_1",
+          "Alias": "",
+          "Left": 916,
+          "Top": 339,
+          "Right": 1012,
+          "Bottom": 427,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ROS_Daten_Einkauf",
+          "Alias": "",
+          "Left": 21,
+          "Top": 191,
+          "Right": 224,
+          "Bottom": 338,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,297 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5406
+    DatasheetFontHeight =10
+    ItemSuffix =20
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x8b576dee73a2e540
+    End
+    RecordSource ="tblArtNrTemp"
+    Caption ="Baugruppen-avista_out"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =354
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =113
+                    Top =57
+                    Width =1437
+                    Height =240
+                    Name ="LQ Art-Nr_Bezeichnungsfeld"
+                    Caption ="BG LQ-Nr."
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="LQ_Art_Nr_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1590
+                    Top =57
+                    Width =1077
+                    Height =225
+                    Name ="Var Nr_Bezeichnungsfeld"
+                    Caption ="Var Nr"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Var_Nr_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2775
+                    Top =57
+                    Width =1407
+                    Height =240
+                    Name ="Kunden-Nr_Bezeichnungsfeld"
+                    Caption ="BG-Nr."
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Kunden_Nr_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4320
+                    Top =57
+                    Width =222
+                    Height =240
+                    Name ="Bezeichnungsfeld18"
+                    Caption ="BG-Nr."
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =396
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =113
+                    Top =56
+                    Width =1377
+                    Height =285
+                    ColumnWidth =3000
+                    Name ="LQ Art-Nr"
+                    ControlSource ="ast_nummer"
+                    EventProcPrefix ="LQ_Art_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1590
+                    Top =56
+                    Width =1077
+                    Height =285
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="Var Nr"
+                    ControlSource ="avar_nummer"
+                    EventProcPrefix ="Var_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2775
+                    Top =56
+                    Width =1407
+                    Height =285
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="Kunden-Nr"
+                    ControlSource ="avkd_artnr_kd"
+                    StatusBarText ="Kunden-Art-Nr. der Baugruppe"
+                    EventProcPrefix ="Kunden_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4320
+                    Top =56
+                    Width =222
+                    Height =285
+                    TabIndex =3
+                    Name ="txtPGrpBez"
+                    ControlSource ="pg_bez"
+                    StatusBarText ="Kunden-Art-Nr. der Baugruppe"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4604
+                    Top =56
+                    Width =282
+                    Height =285
+                    TabIndex =4
+                    Name ="txtBezeichnung"
+                    ControlSource ="ast_bezeichnung"
+                    StatusBarText ="Kunden-Art-Nr. der Baugruppe"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4944
+                    Top =56
+                    Width =462
+                    Height =285
+                    TabIndex =5
+                    Name ="txtHerstllNr"
+                    ControlSource ="avar_herst_nummer"
+                    StatusBarText ="Kunden-Art-Nr. der Baugruppe"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Artikel-avista_outTemp.cls"

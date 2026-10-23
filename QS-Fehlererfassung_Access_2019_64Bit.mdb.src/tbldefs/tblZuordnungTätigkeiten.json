@@ -1,0 +1,13 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "tblZuordnungTätigkeiten",
+    "Connect": ";DATABASE=\\\\link\\dfs\\QM_Reklamationen_Datenbank\\Access-Datenbank\\Reklamationen Daten\\QS-Fehlererfassung_Daten.mdb",
+    "SourceTableName": "tblZuordnungTätigkeiten",
+    "Attributes": 1073741824,
+    "PrimaryKey": "[Zuordnung_ID]"
+  }
+}

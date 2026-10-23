@@ -1,0 +1,203 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    AllowAdditions = NotDefault
+    OrderByOn = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    TabularFamily =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =14683
+    DatasheetFontHeight =10
+    ItemSuffix =43
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="(((((((((((((((((([Kontaktperson] like 't*'))))))))))))))))))"
+    OrderBy ="[Kunden-ID] DESC"
+    RecSrcDt = Begin
+        0x4436551d728ee640
+    End
+    RecordSource ="SELECT Kunden.[Kunden-ID], Kunden.Kontaktperson, Kunden.Kurzzeichen, Kunden.Tele"
+        "fonnummer, Kunden.EmailAdresse, Kunden.Anmerkungen, Kunden.Aktiv, Kunden.FirmaID"
+        ", tblFirma.Firma_Name FROM Kunden LEFT JOIN tblFirma ON Kunden.FirmaID = tblFirm"
+        "a.Firma_ID WHERE (((Kunden.Kontaktperson) Is Not Null) AND ((Kunden.Aktiv)=True)"
+        ") ORDER BY Kunden.Kontaktperson; "
+    DatasheetFontName ="Arial"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =270
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =6522
+                    Width =1086
+                    Height =255
+                    Name ="Lieferant-Name"
+                    ControlSource ="Kurzzeichen"
+                    EventProcPrefix ="Lieferant_Name"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Width =1926
+                    Height =255
+                    TabIndex =1
+                    Name ="Text2"
+                    ControlSource ="Kontaktperson"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =4778
+                    Height =255
+                    TabIndex =2
+                    Name ="Text35"
+                    ControlSource ="Telefonnummer"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1969
+                    Width =2766
+                    Height =255
+                    TabIndex =3
+                    Name ="Text36"
+                    ControlSource ="EmailAdresse"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =7651
+                    Top =30
+                    TabIndex =4
+                    Name ="ChkAktiv"
+                    ControlSource ="Aktiv"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =7881
+                            Width =435
+                            Height =240
+                            Name ="BezAktiv"
+                            Caption ="Aktiv"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =11340
+                    Width =1011
+                    Height =255
+                    TabIndex =5
+                    Name ="FirmaID"
+                    ControlSource ="FirmaID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8385
+                    Width =2901
+                    Height =255
+                    ColumnWidth =3750
+                    TabIndex =6
+                    Name ="Firma_Name"
+                    ControlSource ="Firma_Name"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =12375
+                    Height =255
+                    ColumnWidth =1410
+                    TabIndex =7
+                    Name ="Kunden-ID"
+                    ControlSource ="Kunden-ID"
+                    Format ="\\K#"
+                    EventProcPrefix ="Kunden_ID"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "KundeAnsprechpartnerÜbersicht.cls"

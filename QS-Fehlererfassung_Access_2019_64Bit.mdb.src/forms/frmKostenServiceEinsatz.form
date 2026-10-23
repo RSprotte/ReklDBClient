@@ -1,0 +1,233 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ScrollBars =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7044
+    DatasheetFontHeight =11
+    ItemSuffix =13
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x4e574f56b287e640
+    End
+    RecordSource ="qryKostenServiceEinsatz"
+    Caption ="frmKostenServiceEinsatz"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =360
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =6930
+                    Top =60
+                    Width =114
+                    Height =300
+                    FontSize =8
+                    Name ="ReklID_Bezeichnungsfeld"
+                    Caption ="ReklID"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    Top =60
+                    Width =960
+                    Height =300
+                    FontSize =8
+                    Name ="Datum_Bezeichnungsfeld"
+                    Caption ="Datum"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =1013
+                    Top =60
+                    Width =3135
+                    Height =300
+                    FontSize =8
+                    Name ="Typ_Bezeichnungsfeld"
+                    Caption ="Typ"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =4198
+                    Top =60
+                    Width =1770
+                    Height =300
+                    FontSize =8
+                    Name ="Info_Bezeichnungsfeld"
+                    Caption ="Info"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =6028
+                    Top =60
+                    Width =864
+                    Height =300
+                    FontSize =8
+                    Name ="Kosten_Bezeichnungsfeld"
+                    Caption ="Kosten"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =285
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =6930
+                    Top =57
+                    Width =114
+                    Height =225
+                    FontSize =8
+                    TabIndex =4
+                    Name ="ReklID"
+                    ControlSource ="ReklID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Top =60
+                    Width =960
+                    Height =225
+                    FontSize =8
+                    TabIndex =3
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1013
+                    Top =60
+                    Width =3135
+                    Height =225
+                    FontSize =8
+                    TabIndex =2
+                    Name ="Typ"
+                    ControlSource ="Typ"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =4198
+                    Top =60
+                    Width =1770
+                    Height =225
+                    FontSize =8
+                    TabIndex =1
+                    Name ="Info"
+                    ControlSource ="Info"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =6028
+                    Top =60
+                    Width =864
+                    Height =225
+                    FontSize =8
+                    Name ="Kosten"
+                    ControlSource ="Kosten"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =6028
+                    Width =864
+                    Height =0
+                    FontSize =8
+                    Name ="txtGesamtKosten"
+                    ControlSource ="=Sum([Kosten])"
+                    FontName ="Arial"
+                End
+            End
+        End
+    End
+End

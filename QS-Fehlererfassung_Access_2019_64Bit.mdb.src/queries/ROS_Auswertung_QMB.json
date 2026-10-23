@@ -1,0 +1,300 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "ROS_Auswertung_QMB"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Erfasser-Bereich": {
+        "ColumnWidth": 2280,
+        "AggregateType": -1
+      },
+      "Erfasser-Einheit": {
+        "ColumnWidth": 2175,
+        "AggregateType": -1
+      },
+      "Erfasser-WS": {
+        "ColumnWidth": 3630,
+        "AggregateType": -1
+      },
+      "Expr1066": {
+        "ColumnWidth": 1980,
+        "AggregateType": -1
+      },
+      "LQWorkstation.LQWorkstation": {
+        "ColumnWidth": 2115,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Fehleranalyse]": {
+        "ColumnWidth": 2970,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1545,
+        "AggregateType": -1
+      },
+      "Mastertab.Datum": {
+        "ColumnWidth": 2100,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 750,
+        "AggregateType": -1
+      },
+      "ROS_Daten_Einkauf.TaetigkeitLieferant": {
+        "ColumnWidth": 2190,
+        "AggregateType": -1
+      },
+      "Taetigkeiten.Taetigkeit": {
+        "ColumnWidth": 1680,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 626
+      },
+      "GridLeft": 12,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 470,
+          "Top": 329,
+          "Right": 624,
+          "Bottom": 417,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 684,
+          "Top": -11,
+          "Right": 873,
+          "Bottom": 251,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 636,
+          "Top": 345,
+          "Right": 813,
+          "Bottom": 545,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 829,
+          "Top": 228,
+          "Right": 993,
+          "Bottom": 406,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 401,
+          "Top": -6,
+          "Right": 658,
+          "Bottom": 237,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 345,
+          "Top": 143,
+          "Right": 525,
+          "Bottom": 407,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 11,
+          "Top": -8,
+          "Right": 298,
+          "Bottom": 515,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 999,
+          "Top": 76,
+          "Right": 1188,
+          "Bottom": 386,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 1047,
+          "Top": 5,
+          "Right": 1143,
+          "Bottom": 93,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 1159,
+          "Top": 79,
+          "Right": 1255,
+          "Bottom": 167,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 1329,
+          "Top": 185,
+          "Right": 1537,
+          "Bottom": 339,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden_1",
+          "Alias": "",
+          "Left": 1287,
+          "Top": 2,
+          "Right": 1559,
+          "Bottom": 161,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Taetigkeiten",
+          "Alias": "",
+          "Left": 1146,
+          "Top": 286,
+          "Right": 1242,
+          "Bottom": 374,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungDefTaetigkeit",
+          "Alias": "",
+          "Left": 1152,
+          "Top": 420,
+          "Right": 1248,
+          "Bottom": 508,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungAnalyseFehlerbild",
+          "Alias": "",
+          "Left": 1031,
+          "Top": 426,
+          "Right": 1127,
+          "Bottom": 514,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQFunktion",
+          "Alias": "",
+          "Left": 1617,
+          "Top": 370,
+          "Right": 1758,
+          "Bottom": 518,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich_1",
+          "Alias": "",
+          "Left": 1031,
+          "Top": 213,
+          "Right": 1127,
+          "Bottom": 301,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation_1",
+          "Alias": "",
+          "Left": 850,
+          "Top": 544,
+          "Right": 1031,
+          "Bottom": 632,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit_1",
+          "Alias": "",
+          "Left": 1054,
+          "Top": 100,
+          "Right": 1150,
+          "Bottom": 188,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQFunktion_1",
+          "Alias": "",
+          "Left": 1392,
+          "Top": 358,
+          "Right": 1522,
+          "Bottom": 444,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ROS_Daten_Einkauf",
+          "Alias": "",
+          "Left": 370,
+          "Top": 275,
+          "Right": 696,
+          "Bottom": 637,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWSzuGrp",
+          "Alias": "",
+          "Left": 1303,
+          "Top": 496,
+          "Right": 1447,
+          "Bottom": 640,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWSzuGrp_1",
+          "Alias": "",
+          "Left": 162,
+          "Top": 539,
+          "Right": 306,
+          "Bottom": 683,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 1079,
+          "Top": 516,
+          "Right": 1223,
+          "Bottom": 660,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblZuordnung",
+          "Alias": "",
+          "Left": 737,
+          "Top": 447,
+          "Right": 881,
+          "Bottom": 591,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

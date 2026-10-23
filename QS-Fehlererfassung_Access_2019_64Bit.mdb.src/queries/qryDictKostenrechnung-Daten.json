@@ -1,0 +1,71 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryDictKostenrechnung-Daten"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "NoFormat": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1220,
+        "bottom": 809
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1204,
+        "bottom": 517
+      },
+      "GridLeft": 96,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": -84,
+          "Right": 331,
+          "Bottom": 565,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 411,
+          "Top": -84,
+          "Right": 688,
+          "Bottom": 495,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 834,
+          "Top": 108,
+          "Right": 978,
+          "Bottom": 252,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 819,
+          "Top": 294,
+          "Right": 963,
+          "Bottom": 438,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

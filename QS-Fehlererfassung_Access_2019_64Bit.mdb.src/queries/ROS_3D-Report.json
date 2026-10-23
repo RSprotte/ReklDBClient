@@ -1,0 +1,142 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "ROS_3D-Report"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 3420
+      }
+    },
+    "Columns": {
+      "Art_LQ": {
+        "ColumnWidth": 3345,
+        "AggregateType": -1
+      },
+      "BestNrKD": {
+        "ColumnWidth": 1620,
+        "AggregateType": -1
+      },
+      "BG_LQ": {
+        "ColumnWidth": 1320,
+        "AggregateType": -1
+      },
+      "ErsterWertvonlangfristige Maßnahmen": {
+        "ColumnWidth": 2685,
+        "AggregateType": -1
+      },
+      "ErsterWertvonWie Warum passierte der Fehler": {
+        "ColumnWidth": 8355,
+        "AggregateType": -1
+      },
+      "Fehler": {
+        "ColumnWidth": 16005,
+        "AggregateType": -1
+      },
+      "Fehlerursache": {
+        "ColumnWidth": 8355,
+        "AggregateType": -1
+      },
+      "Kunden.EmailAdresse": {
+        "ColumnWidth": 4380,
+        "AggregateType": -1
+      },
+      "Kunden.Telefonnummer": {
+        "ColumnWidth": 2250,
+        "AggregateType": -1
+      },
+      "Maßnahmen": {
+        "ColumnWidth": 2685,
+        "AggregateType": -1
+      },
+      "Mastertab.[langfristige Maßnahmen]": {
+        "ColumnWidth": 2685,
+        "AggregateType": -1
+      },
+      "Mastertab.[Wie Warum passierte der Fehler]": {
+        "ColumnWidth": 8355,
+        "AggregateType": -1
+      },
+      "Mastertab.Sachbearbeiter": {
+        "ColumnWidth": 2310,
+        "AggregateType": -1
+      },
+      "ReklNr_KD": {
+        "ColumnWidth": 1425,
+        "AggregateType": -1
+      },
+      "Service_MA": {
+        "ColumnWidth": 2205,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 535
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 295,
+          "Bottom": 685,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 397,
+          "Top": 265,
+          "Right": 603,
+          "Bottom": 473,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 756,
+          "Top": 147,
+          "Right": 930,
+          "Bottom": 340,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 449,
+          "Top": 30,
+          "Right": 638,
+          "Bottom": 193,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 978,
+          "Top": 12,
+          "Right": 1122,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,61 @@
+﻿SELECT
+  Mastertab.ID,
+  Mastertab.Datum,
+  Mastertab.Auftragsdatum,
+  Mastertab.[Baugruppen-ID],
+  Mastertab.[Artikel-ID 1],
+  Mastertab.[Serial-Nr - BG],
+  Mastertab.[Herstellungsdatum - BG],
+  Mastertab.[Menge betroffen - LQ],
+  Mastertab.Seriennummer,
+  Mastertab.[KW/JJ],
+  Mastertab.Verursacher,
+  Mastertab.[Mitarbeiter-Kurzzeichen],
+  Mastertab.LQEinheitErfasserID,
+  Mastertab.LQBereichErfasserID,
+  Mastertab.LQWorkstationErfasserID,
+  Mastertab.TaetigkeitErfasserID,
+  Mastertab.DefTaetigkeitErfasserID,
+  Mastertab.LQEinheitID,
+  Mastertab.LQBereichID,
+  Mastertab.LQWorkstationID,
+  Mastertab.TaetigkeitID,
+  Mastertab.DefTaetigkeitID,
+  Mastertab.Sachbearbeiter,
+  Mastertab.[Welcher Fehler tritt auf],
+  Mastertab.[Bemerkungen - Maßnahmen],
+  ReklMemo.WEBestellnummer,
+  ReklMemo.WABestellnummer,
+  ReklMemo.WELieferschein,
+  ReklMemo.WALieferschein,
+  ReklMemo.[WAWE-AB],
+  Mastertab.[Kategorie-Status],
+  Mastertab.[Fertigungsauftrag-FA],
+  Mastertab.FALosgroesse,
+  Mastertab.[Herstellernummer - BG],
+  Mastertab.[Kunden-ID],
+  Mastertab.[Kategorie-Problem],
+  Mastertab.ErfasserIntern,
+  Mastertab.[QS-Bearbeitung],
+  Mastertab.[PE-Bearbeitung],
+  Mastertab.[Zuständiger Service-MA],
+  [Artikel-all_avista_out].Variante,
+  [Baugruppen-avista_out].[Var Nr],
+  [Artikel-all_avista_out].[Hersteller-Teilenummer],
+  Mastertab.[QS-Bearbeitung],
+  Mastertab.[PE-Bearbeitung],
+  ReklMemo.VorgangArtIntern,
+  Mastertab.[Meldungsnummer Kunde],
+  ReklMemo.VorgangstypID,
+  Mastertab.intern,
+  Mastertab.extern,
+  Mastertab.[Status: erledigt] AS Zustand
+FROM
+  (
+    (
+      Mastertab
+      LEFT JOIN ReklMemo ON Mastertab.ID = ReklMemo.ID
+    )
+    LEFT JOIN [Artikel-all_avista_out] ON Mastertab.[Artikel-ID 1] = [Artikel-all_avista_out].[Artikel-ID]
+  )
+  LEFT JOIN [Baugruppen-avista_out] ON Mastertab.[Baugruppen-ID] = [Baugruppen-avista_out].[Baugruppen-ID];

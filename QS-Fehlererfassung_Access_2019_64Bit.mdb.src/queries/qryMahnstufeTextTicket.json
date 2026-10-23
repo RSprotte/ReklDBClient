@@ -1,0 +1,56 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryMahnstufeTextTicket"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 634
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "tblTicketMahnwesen",
+          "Alias": "",
+          "Left": 365,
+          "Top": 75,
+          "Right": 677,
+          "Bottom": 325,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketMahnungStatus",
+          "Alias": "",
+          "Left": 788,
+          "Top": 98,
+          "Right": 1142,
+          "Bottom": 347,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

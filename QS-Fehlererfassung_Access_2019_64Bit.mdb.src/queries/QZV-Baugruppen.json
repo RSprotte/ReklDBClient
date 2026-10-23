@@ -1,0 +1,44 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "QZV-Baugruppen"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "[Baugruppen-avista_out].[Baugruppen-ID]": {
+        "ColumnWidth": 2685,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 188
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 242,
+          "Bottom": 169,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

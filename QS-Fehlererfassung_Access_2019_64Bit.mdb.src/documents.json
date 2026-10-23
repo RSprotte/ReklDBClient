@@ -1,0 +1,30 @@
+﻿{
+  "Info": {
+    "Class": "clsDbDocument",
+    "Description": "Database Documents Properties (DAO)"
+  },
+  "Items": {
+    "Databases": {
+      "SummaryInfo": {
+        "Author": {
+          "Type": 10,
+          "Value": "roberto santarelli"
+        },
+        "Company": {
+          "Type": 10,
+          "Value": "Microsoft"
+        },
+        "Title": {
+          "Type": 10,
+          "Value": "PerformanceTest"
+        }
+      },
+      "UserDefined": {
+        "ReplicateProject": {
+          "Type": 1,
+          "Value": true
+        }
+      }
+    }
+  }
+}

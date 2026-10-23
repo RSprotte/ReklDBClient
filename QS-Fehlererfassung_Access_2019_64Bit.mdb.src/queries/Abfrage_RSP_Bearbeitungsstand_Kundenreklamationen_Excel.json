@@ -1,0 +1,256 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_RSP_Bearbeitungsstand_Kundenreklamationen_Excel"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 3795
+      },
+      "DatasheetFontName": {
+        "Type": 10,
+        "Value": "Arial"
+      },
+      "DatasheetFontHeight": {
+        "Type": 3,
+        "Value": 8
+      },
+      "DatasheetFontWeight": {
+        "Type": 3,
+        "Value": 400
+      },
+      "DatasheetFontItalic": {
+        "Type": 1,
+        "Value": false
+      },
+      "DatasheetFontUnderline": {
+        "Type": 1,
+        "Value": false
+      },
+      "TabularCharSet": {
+        "Type": 2,
+        "Value": 0
+      },
+      "TabularFamily": {
+        "Type": 2,
+        "Value": 34
+      },
+      "DatasheetForeColor": {
+        "Type": 4,
+        "Value": 0
+      },
+      "Description": {
+        "Type": 10,
+        "Value": "Abfrage für Export in .xls Format"
+      },
+      "DatasheetForeColor12": {
+        "Type": 4,
+        "Value": 0
+      }
+    },
+    "Columns": {
+      "[Mastertab].[Auftragsdatum]": {
+        "ColumnOrder": 1,
+        "AggregateType": -1
+      },
+      "[Mastertab].[langfristige Maßnahmen]": {
+        "ColumnOrder": 1,
+        "ColumnWidth": 3030,
+        "AggregateType": -1
+      },
+      "Antwort": {
+        "ColumnOrder": 15,
+        "ColumnWidth": 960,
+        "AggregateType": -1
+      },
+      "Anzahl": {
+        "ColumnOrder": 9,
+        "ColumnWidth": 945,
+        "AggregateType": -1
+      },
+      "Art-Datum": {
+        "ColumnOrder": 8,
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      },
+      "Artikel": {
+        "ColumnOrder": 7,
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      },
+      "BG-Datum": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      },
+      "BG-Nr": {
+        "ColumnOrder": 3,
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      },
+      "Fehleranalyse": {
+        "ColumnOrder": 13,
+        "ColumnWidth": 2085,
+        "AggregateType": -1
+      },
+      "Fehlerbeschreibung": {
+        "ColumnOrder": 11,
+        "ColumnWidth": 4335,
+        "AggregateType": -1
+      },
+      "Fehlerursache": {
+        "ColumnOrder": 12,
+        "ColumnWidth": 5010,
+        "AggregateType": -1
+      },
+      "Kunden.Firma": {
+        "ColumnOrder": 1,
+        "ColumnWidth": 615,
+        "AggregateType": -1
+      },
+      "Lieferant": {
+        "ColumnWidth": 1995,
+        "AggregateType": -1
+      },
+      "LQ-Vorgang": {
+        "ColumnOrder": 16,
+        "AggregateType": -1
+      },
+      "Mastertab.[langfristige Maßnahmen]": {
+        "ColumnOrder": 17,
+        "ColumnWidth": 2805,
+        "AggregateType": -1
+      },
+      "Mastertab.Auftragsdatum": {
+        "ColumnOrder": 1,
+        "AggregateType": -1
+      },
+      "Mastertab.Fehlerpositionen": {
+        "ColumnOrder": 10,
+        "ColumnWidth": 750,
+        "AggregateType": -1
+      },
+      "Meldung": {
+        "ColumnOrder": 2,
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      },
+      "Quartal": {
+        "ColumnWidth": 1035,
+        "AggregateType": -1
+      },
+      "Status": {
+        "ColumnOrder": 18,
+        "ColumnWidth": 1440,
+        "AggregateType": -1
+      },
+      "UBG": {
+        "ColumnOrder": 5,
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      },
+      "UBG-Datum": {
+        "ColumnOrder": 6,
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      },
+      "Umgesetzt": {
+        "ColumnOrder": 19,
+        "ColumnWidth": 1395,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 391
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 1046,
+          "Top": 15,
+          "Right": 1228,
+          "Bottom": 343,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Vorgangstatus",
+          "Alias": "",
+          "Left": 819,
+          "Top": 89,
+          "Right": 1033,
+          "Bottom": 177,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 696,
+          "Top": 158,
+          "Right": 811,
+          "Bottom": 321,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 198,
+          "Top": 84,
+          "Right": 343,
+          "Bottom": 217,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 181,
+          "Bottom": 184,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 415,
+          "Top": 29,
+          "Right": 632,
+          "Bottom": 387,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 85,
+          "Top": 211,
+          "Right": 229,
+          "Bottom": 355,
+          "ScrollTop": 0
+        }
+      ]
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Abfrage für Export in .xls Format"
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryFehlerbildZuAvistaWs"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Aktiv": {
+        "ColumnWidth": 1665,
+        "AggregateType": -1
+      },
+      "ZuordnungWsEinzeltaetigkeit.EinzelTaetigkeitMelderID": {
+        "ColumnWidth": 2775,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 633
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "ZuordnungWsEinzeltaetigkeit",
+          "Alias": "",
+          "Left": 311,
+          "Top": 13,
+          "Right": 587,
+          "Bottom": 253,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 249,
+          "Bottom": 237,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

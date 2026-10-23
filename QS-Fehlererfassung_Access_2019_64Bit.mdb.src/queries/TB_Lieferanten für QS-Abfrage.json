@@ -1,0 +1,70 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "TB_Lieferanten für QS-Abfrage"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 480
+      },
+      "OrderByOn": {
+        "Type": 1,
+        "Value": true
+      }
+    },
+    "Columns": {
+      "[Lieferanten].[Lieferantenname]": {
+        "ColumnWidth": 5400,
+        "AggregateType": -1
+      },
+      "[Lieferanten].[Lieferant-ID]": {
+        "ColumnWidth": 675,
+        "AggregateType": -1
+      },
+      "[Lieferanten].[Matchcode]": {
+        "ColumnWidth": 2565,
+        "AggregateType": -1
+      },
+      "[Lieferanten].[RMA-Nummer]": {
+        "ColumnWidth": 720,
+        "AggregateType": -1
+      },
+      "Lieferanten.[Lieferant-ID]": {
+        "ColumnWidth": 930,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 408
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 134,
+          "Bottom": 229,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

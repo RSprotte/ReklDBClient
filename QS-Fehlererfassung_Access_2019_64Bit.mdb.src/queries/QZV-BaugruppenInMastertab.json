@@ -1,0 +1,73 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "QZV-BaugruppenInMastertab"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "[RSP_Ausw_Basisdaten_1].[Auftragsdatum]": {
+        "ColumnWidth": 1530,
+        "AggregateType": -1
+      },
+      "[RSP_Ausw_Basisdaten_1].[Datum]": {
+        "ColumnWidth": 1110,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_Basisdaten_1.[LINK-Nr - UBG]": {
+        "ColumnWidth": 2010,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_Basisdaten_1.ArtNr": {
+        "ColumnWidth": 2355,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_Basisdaten_1.BG": {
+        "ColumnWidth": 2415,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_Basisdaten_1.Datum": {
+        "ColumnWidth": 1110,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 212
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "RSP_Ausw_Basisdaten_1",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 310,
+          "Bottom": 214,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "QZV-Baugruppen",
+          "Alias": "",
+          "Left": 348,
+          "Top": 6,
+          "Right": 444,
+          "Bottom": 154,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

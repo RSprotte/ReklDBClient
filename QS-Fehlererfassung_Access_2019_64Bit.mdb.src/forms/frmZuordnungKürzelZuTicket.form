@@ -1,0 +1,267 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    ControlBox = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9807
+    DatasheetFontHeight =11
+    ItemSuffix =16
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xaead631db2f6e440
+    End
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =907
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =566
+                    Top =113
+                    Width =5495
+                    Height =396
+                    FontSize =14
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld8"
+                    Caption ="Ticket-Zuordnung zum Sachbearbeiter"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =9070
+                    Top =113
+                    Width =576
+                    Height =576
+                    FontSize =12
+                    FontWeight =500
+                    ForeColor =16777215
+                    Name ="Objekt schließen - Formular"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    EventProcPrefix ="Objekt_schließen___Formular"
+                    ControlTipText ="Objekt schließen"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =566
+                    Width =983
+                    Height =287
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =1
+                    Name ="txtKürzelSuchen"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =566
+                    Top =566
+                    Width =1808
+                    Height =287
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld15"
+                    Caption ="nach Kürzel suchen"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =4648
+            Name ="Detailbereich"
+            Begin
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =566
+                    Top =566
+                    Width =1440
+                    Height =3963
+                    Name ="ListeSacharbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.[SB-ID], Sachbearbeiter.Kurzzeichen FROM Sachbearbeiter OR"
+                        "DER BY Sachbearbeiter.Kurzzeichen; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                    OnClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =113
+                            Width =1410
+                            Height =320
+                            Name ="BezSacharbeiter"
+                            Caption ="Sacharbeiter"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =2381
+                    Top =566
+                    Width =3180
+                    Height =3963
+                    TabIndex =1
+                    Name ="ListeTicketTyp"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblTicketTyp.TicketTypID, tblTicketTyp.Anzeige FROM tblTicketTyp; "
+                    ColumnWidths ="0;1441"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =2381
+                            Top =113
+                            Width =1410
+                            Height =320
+                            Name ="BezTicketTyp"
+                            Caption ="Ticket Typ"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =6467
+                    Top =559
+                    Width =3180
+                    Height =3963
+                    TabIndex =2
+                    Name ="ListeAuswahlTicketTyp"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblKürzelZuTicketTyp.AuswahlTicketTypID, tblTicketTyp.Anzeige FROM tblKür"
+                        "zelZuTicketTyp INNER JOIN tblTicketTyp ON tblKürzelZuTicketTyp.AuswahlTicketTypI"
+                        "D = tblTicketTyp.TicketTypID WHERE (((tblKürzelZuTicketTyp.SacharbeiterID)=[Form"
+                        "s]![frmZuordnungKürzelZuTicket]![ListeSacharbeiter])) GROUP BY tblKürzelZuTicket"
+                        "Typ.AuswahlTicketTypID, tblTicketTyp.Anzeige; "
+                    ColumnWidths ="0"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6462
+                            Top =113
+                            Width =2265
+                            Height =315
+                            Name ="BezAuswahlTicketTyp"
+                            Caption ="Auswahl Ticket Typ"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5693
+                    Top =1133
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =3
+                    ForeColor =-2147483630
+                    Name ="Befehl59"
+                    Caption =">"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5693
+                    Top =1926
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =4
+                    ForeColor =-2147483630
+                    Name ="Befehl60"
+                    Caption ="<"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmZuordnungKürzelZuTicket.cls"

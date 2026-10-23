@@ -1,0 +1,312 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11977
+    DatasheetFontHeight =11
+    ItemSuffix =14
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x1df246a74a5ee540
+    End
+    RecordSource ="qryTerminStellungnahmeKundeLieferant"
+    Caption ="frm_TerminStellungnahmeKundeLieferant"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1020
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Top =684
+                    Width =1140
+                    Height =315
+                    Name ="ID_Bezeichnungsfeld"
+                    Caption ="ReklNr"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =3285
+                    Top =690
+                    Width =2670
+                    Height =315
+                    Name ="Rückmeldung_Kunde_Verschiebung_Bezeichnungsfeld"
+                    Caption ="Rückmeldung Kunde soll"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =5996
+                    Top =690
+                    Width =2580
+                    Height =315
+                    Name ="VerlängertBis_Bezeichnungsfeld"
+                    Caption ="Rückmeldund Lief soll"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =8643
+                    Top =690
+                    Width =1635
+                    Height =315
+                    Name ="TerminKund_Bezeichnungsfeld"
+                    Caption ="Termin Kunde"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =10342
+                    Top =690
+                    Width =1635
+                    Height =315
+                    Name ="TerminQSLQ_Bezeichnungsfeld"
+                    Caption ="Termin QSLQ"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =57
+                    Top =57
+                    Width =7323
+                    Height =519
+                    FontSize =20
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Termin Stellungnahme verschieben auf"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =1200
+                    Top =684
+                    Width =2025
+                    Height =315
+                    Name ="Kunden-Nr_Bezeichnungsfeld"
+                    Caption ="Kunden-Nr"
+                    FontName ="Arial"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Kunden_Nr_Bezeichnungsfeld"
+                End
+            End
+        End
+        Begin Section
+            Height =330
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Width =1140
+                    Height =330
+                    ColumnWidth =1530
+                    FontSize =10
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =3285
+                    Width =2655
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Rückmeldung_Kunde_Verschiebung"
+                    ControlSource ="Rückmeldung_Kunde_Verschiebung"
+                    Format ="Short Date"
+                    StatusBarText ="Fehlerbericht II"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =5996
+                    Width =2580
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =2
+                    Name ="VerlängertBis"
+                    ControlSource ="VerlängertBis"
+                    Format ="Short Date"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =8643
+                    Width =1620
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =3
+                    BackColor =62207
+                    Name ="TerminKund"
+                    ControlSource ="TerminKund"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =10342
+                    Width =1620
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =4
+                    BackColor =62207
+                    Name ="TerminQSLQ"
+                    ControlSource ="TerminQSLQ"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1200
+                    Width =2025
+                    Height =330
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Text13"
+                    ControlSource ="Meldungsnummer Kunde"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =907
+            BackColor =15783096
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11338
+                    Top =170
+                    Width =576
+                    Height =576
+                    Name ="cmbSchließen"
+                    Caption ="Befehl11"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frm_TerminStellungnahmeKundeLieferant.cls"

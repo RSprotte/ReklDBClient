@@ -1,0 +1,152 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10828
+    DatasheetFontHeight =11
+    ItemSuffix =21
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecordSource ="SELECT tblKI.ID, tblKI.Anfrage, tblKI.KZ FROM tblKI WHERE (((tblKI.KZ)=get_pKuer"
+        "zel())); "
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            SizeMode =3
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin EmptyCell
+            Height =240
+        End
+        Begin FormHeader
+            Height =866
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =60
+                    Top =60
+                    Width =2925
+                    Height =460
+                    FontSize =18
+                    BorderColor =4270094
+                    ForeColor =4270094
+                    Name ="Auto_Kopfzeile0"
+                    Caption ="Definitionen für KI"
+                    FontName ="Aptos Display"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =566
+                    Width =885
+                    Height =300
+                    Name ="Bezeichnungsfeld17"
+                    Caption ="Anfrage:"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9754
+                    Top =566
+                    Width =405
+                    Height =300
+                    Name ="Bezeichnungsfeld18"
+                    Caption ="KZ:"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6803
+                    Top =60
+                    Width =1694
+                    Height =627
+                    Name ="cmbNeuerDatensatz"
+                    Caption ="Neuer Datensatz"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =300
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =60
+                    Width =9651
+                    Height =300
+                    ColumnWidth =10425
+                    Name ="Anfrage"
+                    ControlSource ="Anfrage"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9754
+                    Width =1071
+                    Height =300
+                    TabIndex =1
+                    Name ="KZ"
+                    ControlSource ="KZ"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmTextKI.cls"

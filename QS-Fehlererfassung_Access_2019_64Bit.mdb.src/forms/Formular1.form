@@ -1,0 +1,454 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8460
+    DatasheetFontHeight =11
+    ItemSuffix =38
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x3e9e8334b00de540
+    End
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Tab
+            TextFontFamily =0
+            Width =5103
+            Height =3402
+            FontSize =11
+            FontName ="Aptos Display"
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin Section
+            Height =9105
+            Name ="Detailbereich"
+            Begin
+                Begin Tab
+                    OverlapFlags =93
+                    Top =345
+                    Width =8460
+                    Height =8760
+                    Name ="RegisterStr5"
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Top =840
+                            Width =8325
+                            Height =8130
+                            Name ="Seite6"
+                            Begin
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =120
+                                    Top =1815
+                                    Width =2256
+                                    Height =576
+                                    Name ="Befehl_Fernglas"
+                                    Caption ="Befehl0"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00dddddddddddddddddddddddddddddddd00000ddddd00000d ,
+                                        0x0f000ddddd0f000d0f000ddddd0f000d0000000d0000000d00f000000f00000d ,
+                                        0x00f000d00f00000d00f000d00f00000dd0000000000000dddd0f000d0f000ddd ,
+                                        0xdd00000d00000dddddd000ddd000ddddddd0f0ddd0f0ddddddd000ddd000dddd ,
+                                        0xdddddddddddddddd
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Top =2655
+                                    Width =3004
+                                    Height =1190
+                                    TabIndex =1
+                                    Name ="zum_Testen"
+                                    Caption ="zum Testen"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =120
+                                    Top =915
+                                    Width =2256
+                                    Height =576
+                                    TabIndex =2
+                                    Name ="Befehl4_DE"
+                                    Caption ="Befehl0"
+                                    OnClick ="[Event Procedure]"
+                                    PictureData = Begin
+                                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                                        0xffff0000ffffff00ddddddd99dddddd9ddddddd99ddddd9ddddddddd99ddd99d ,
+                                        0xddddddddd99999ddddddd777dd999dddddddd78dd99999ddddddd7d9999dd999 ,
+                                        0xddddd7d999ddddddddddd78ddddddddddddd87778dddddddddd8777778dddddd ,
+                                        0xddd77777778ddddddd777777777dddddd77777777777ddddd77777777777dddd ,
+                                        0xdddddddddddddddd
+                                    End
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6066
+                                    Top =850
+                                    Width =2211
+                                    Height =964
+                                    TabIndex =3
+                                    Name ="cmbEinheitToAvista"
+                                    Caption ="Avista-Einheit"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6066
+                                    Top =1984
+                                    Width =2211
+                                    Height =964
+                                    TabIndex =4
+                                    Name ="cmbBereichToAvista"
+                                    Caption ="Avista-Bereich"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6066
+                                    Top =3174
+                                    Width =2211
+                                    Height =964
+                                    TabIndex =5
+                                    Name ="cmbTaetigkeitToAvista"
+                                    Caption ="Avista-Tätigkeit"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6066
+                                    Top =4365
+                                    Width =2211
+                                    Height =964
+                                    TabIndex =6
+                                    Name ="cmbDefTaetigkeitenToAvista"
+                                    Caption ="Avista-DefTaetigkeiten"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6015
+                                    Top =5610
+                                    Width =2211
+                                    Height =964
+                                    TabIndex =7
+                                    Name ="cmbInterneReklaAusLqppAnlegen"
+                                    Caption ="Intern Reklamation aus LQPP anlegen"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =737
+                                    Top =4422
+                                    Width =2721
+                                    Height =585
+                                    TabIndex =8
+                                    Name ="Text20"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =737
+                                    Top =5215
+                                    Width =2721
+                                    Height =585
+                                    TabIndex =9
+                                    Name ="Text22"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =737
+                                    Top =6009
+                                    Width =2721
+                                    Height =585
+                                    TabIndex =10
+                                    Name ="Text23"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6462
+                                    Top =6746
+                                    Width =1761
+                                    Height =1174
+                                    TabIndex =11
+                                    Name ="cmbAbgleichHerststellerNr"
+                                    Caption ="Abgleich Herst.Teile Nr. Avista / RekDB"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3231
+                                    Top =907
+                                    Width =2211
+                                    Height =964
+                                    TabIndex =12
+                                    Name ="cmbServiceLager"
+                                    Caption ="Service Lager abrufen"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3750
+                                    Top =5445
+                                    Width =1928
+                                    Height =1134
+                                    TabIndex =13
+                                    Name ="TestButton"
+                                    Caption ="Test Button"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =3231
+                                    Top =2154
+                                    Width =2211
+                                    Height =964
+                                    TabIndex =14
+                                    Name ="cmbGewicht"
+                                    Caption ="Gewichte Baugruppe abfrufen"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =737
+                                    Top =6916
+                                    Width =2721
+                                    Height =585
+                                    TabIndex =15
+                                    Name ="Text36"
+                                End
+                            End
+                        End
+                        Begin Page
+                            OverlapFlags =247
+                            Left =120
+                            Top =840
+                            Width =8205
+                            Height =8130
+                            Name ="Seite7"
+                            Begin
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1820
+                                    Top =1815
+                                    Width =2436
+                                    Height =315
+                                    Name ="txtDatum1"
+                                    Format ="General Date"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =1815
+                                            Width =1575
+                                            Height =315
+                                            Name ="Bezeichnungsfeld9"
+                                            Caption ="datum 1 (start)"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1820
+                                    Top =2210
+                                    Width =2436
+                                    Height =315
+                                    TabIndex =1
+                                    Name ="txtDatum2"
+                                    Format ="General Date"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =2210
+                                            Width =1575
+                                            Height =315
+                                            Name ="Bezeichnungsfeld11"
+                                            Caption ="datum 2 (ende)"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =4422
+                                    Top =1814
+                                    Width =2271
+                                    Height =576
+                                    TabIndex =2
+                                    Name ="Befehl12"
+                                    Caption ="Datum Diff Berechnen"
+                                    OnClick ="[Event Procedure]"
+                                    ObjectPalette = Begin
+                                        0x000301000000000000000000
+                                    End
+                                    ControlTipText ="Datensatz suchen"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1820
+                                    Top =2605
+                                    Width =2436
+                                    Height =315
+                                    TabIndex =3
+                                    Name ="txtDiff"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =2605
+                                            Width =1575
+                                            Height =315
+                                            Name ="Bezeichnungsfeld14"
+                                            Caption ="Diff"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1820
+                                    Top =3005
+                                    Width =2436
+                                    Height =315
+                                    TabIndex =4
+                                    Name ="txtAT"
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1820
+                                    Top =3395
+                                    Width =2436
+                                    Height =315
+                                    TabIndex =5
+                                    Name ="txth"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =3395
+                                            Width =1575
+                                            Height =315
+                                            Name ="Bezeichnungsfeld31"
+                                            Caption ="h"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =247
+                                    IMESentenceMode =3
+                                    Left =1820
+                                    Top =3790
+                                    Width =2436
+                                    Height =315
+                                    TabIndex =6
+                                    Name ="txtmin"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =247
+                                            TextAlign =3
+                                            Left =120
+                                            Top =3790
+                                            Width =1575
+                                            Height =315
+                                            Name ="Bezeichnungsfeld33"
+                                            Caption ="min"
+                                        End
+                                    End
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =3
+                    Left =3514
+                    Top =3571
+                    Width =1575
+                    Height =315
+                    Name ="AT"
+                    Caption ="AT"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Formular1.cls"

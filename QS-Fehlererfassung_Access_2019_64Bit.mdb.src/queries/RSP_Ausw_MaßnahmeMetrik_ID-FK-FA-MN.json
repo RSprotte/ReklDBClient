@@ -1,0 +1,61 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Ausw_MaßnahmeMetrik_ID-FK-FA-MN"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "RSP_Ausw_Basisdaten_1.LQEinheit": {
+        "ColumnWidth": 1815,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_MaßnahmeMetrik_FK-FA-MN.[FehlerartKlassifizierung].[Klassifizierung]": {
+        "ColumnWidth": 3360,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_MaßnahmeMetrik_FK-FA-MN.RSP_Ausw_MaßnahmeMetrik_FA-MN.[MaßnahmenFehlerarten].[Fehlerart]": {
+        "ColumnWidth": 3255,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 408
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "RSP_Ausw_Basisdaten_1",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 255,
+          "Bottom": 349,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_Ausw_MaßnahmeMetrik_FK-FA-MN",
+          "Alias": "",
+          "Left": 364,
+          "Top": 5,
+          "Right": 460,
+          "Bottom": 48,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

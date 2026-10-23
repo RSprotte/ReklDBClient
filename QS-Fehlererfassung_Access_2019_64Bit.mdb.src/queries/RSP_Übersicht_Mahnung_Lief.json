@@ -1,0 +1,83 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Übersicht_Mahnung_Lief"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "tblTicketListe.MailBetreff": {
+        "ColumnWidth": 7485,
+        "AggregateType": -1
+      },
+      "tblTicketListe.MailDatum": {
+        "ColumnWidth": 1440,
+        "AggregateType": -1
+      },
+      "tblTicketMahnungStatus.Anzeige": {
+        "ColumnWidth": 1500,
+        "AggregateType": -1
+      },
+      "tblTicketTyp.Anzeige": {
+        "ColumnWidth": 2175,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 719
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "tblTicketMahnungStatus",
+          "Alias": "",
+          "Left": 714,
+          "Top": 33,
+          "Right": 858,
+          "Bottom": 177,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 61,
+          "Top": -14,
+          "Right": 266,
+          "Bottom": 467,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketMahnwesen",
+          "Alias": "",
+          "Left": 465,
+          "Top": -10,
+          "Right": 609,
+          "Bottom": 134,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketTyp",
+          "Alias": "",
+          "Left": 291,
+          "Top": 112,
+          "Right": 435,
+          "Bottom": 256,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

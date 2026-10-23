@@ -1,0 +1,260 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =17745
+    DatasheetFontHeight =11
+    ItemSuffix =17
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x10f8875ecf49e540
+    End
+    RecordSource ="qryVerkuepfteWSAvistaReklDB"
+    Caption ="UfrmVerkuepfteWSAvistaReklDB"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =660
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =690
+                    Top =345
+                    Width =2835
+                    Height =315
+                    Name ="AvistaWsName_Bezeichnungsfeld"
+                    Caption ="AvistaWsName"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =3525
+                    Top =345
+                    Width =1860
+                    Height =315
+                    Name ="AvistaGrName_Bezeichnungsfeld"
+                    Caption ="AvistaGrName"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =11685
+                    Top =345
+                    Width =2835
+                    Height =315
+                    Name ="LQWorkstation_Bezeichnungsfeld"
+                    Caption ="LQWorkstation"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =14520
+                    Top =345
+                    Width =2835
+                    Height =315
+                    Name ="LQBereich_Bezeichnungsfeld"
+                    Caption ="LQBereich"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    Left =120
+                    Width =4569
+                    Height =339
+                    FontSize =14
+                    Name ="Bezeichnungsfeld8"
+                    Caption ="Verknüpfte WS"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =5392
+                    Top =340
+                    Width =3396
+                    Height =315
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Avista-Bezeichnung"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =11055
+                    Top =345
+                    Width =630
+                    Height =315
+                    Name ="lblLQWorkstationID"
+                    Caption ="WsID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Top =345
+                    Width =696
+                    Height =315
+                    Name ="lblAvistaWsID"
+                    Caption ="AvID"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =330
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =14520
+                    Width =2835
+                    Height =330
+                    ColumnWidth =3000
+                    Name ="LQBereich"
+                    ControlSource ="LQBereich"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =11685
+                    Width =2835
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="LQWorkstation"
+                    ControlSource ="LQWorkstation"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =3525
+                    Width =1860
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="AvistaGrName"
+                    ControlSource ="AvistaGrName"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =690
+                    Width =2835
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="AvistaWsName"
+                    ControlSource ="AvistaWsName"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =5392
+                    Width =3396
+                    Height =330
+                    TabIndex =4
+                    Name ="AvistaGrBez"
+                    ControlSource ="AvistaGrBez"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =87
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =11055
+                    Width =630
+                    Height =330
+                    TabIndex =5
+                    Name ="txtWSID"
+                    ControlSource ="ID"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Width =696
+                    Height =330
+                    TabIndex =6
+                    Name ="txtAvistaWsID"
+                    ControlSource ="AvistaWsID"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8835
+                    Width =2165
+                    Height =330
+                    TabIndex =7
+                    Name ="cmbVerknüpfungLoeschen"
+                    Caption ="Verknüpfung löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "UfrmVerkuepfteWSAvistaReklDB.cls"

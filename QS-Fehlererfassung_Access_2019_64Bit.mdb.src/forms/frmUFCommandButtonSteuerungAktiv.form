@@ -1,0 +1,146 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =3231
+    DatasheetFontHeight =11
+    ItemSuffix =14
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xcd615a655455e540
+    End
+    RecordSource ="SELECT tblControls.CtrID, tblControls.FormName, tblControls.ControlName, tblCont"
+        "rols.Requery, tblControls.Refresh, tblControls.Update, tblControls.View FROM tbl"
+        "Controls; "
+    Caption ="frmUFControlsSteuerung"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =315
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =225
+                    Width =615
+                    Height =315
+                    Name ="Bezeichnungsfeld13"
+                    Caption ="View:"
+                End
+            End
+        End
+        Begin Section
+            Height =315
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2385
+                    Width =261
+                    Height =315
+                    ColumnWidth =1701
+                    Name ="CtrID"
+                    ControlSource ="CtrID"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2722
+                    Width =162
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="FormName"
+                    ControlSource ="FormName"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2955
+                    Width =162
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="ControlName"
+                    ControlSource ="ControlName"
+                End
+                Begin ComboBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =226
+                    Width =2046
+                    Height =315
+                    TabIndex =3
+                    Name ="View"
+                    ControlSource ="View"
+                    RowSourceType ="Value List"
+                    RowSource ="DE;Service;Admin"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End

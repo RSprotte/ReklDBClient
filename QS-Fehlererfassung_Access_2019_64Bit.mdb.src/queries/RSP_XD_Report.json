@@ -1,0 +1,136 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_XD_Report"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Kategorie-Fehleranalyse]": {
+        "ColumnWidth": 2970,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1545,
+        "AggregateType": -1
+      },
+      "Mastertab.Datum": {
+        "ColumnWidth": 2100,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Ist": {
+        "ColumnWidth": 2745,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Soll": {
+        "ColumnWidth": 2670,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Verl": {
+        "ColumnWidth": 2655,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 478
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 470,
+          "Top": 341,
+          "Right": 624,
+          "Bottom": 474,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 636,
+          "Top": 104,
+          "Right": 796,
+          "Bottom": 267,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 636,
+          "Top": 357,
+          "Right": 813,
+          "Bottom": 460,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 829,
+          "Top": 240,
+          "Right": 993,
+          "Bottom": 463,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 401,
+          "Top": 6,
+          "Right": 558,
+          "Bottom": 124,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 414,
+          "Top": 144,
+          "Right": 569,
+          "Bottom": 322,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 11,
+          "Top": 4,
+          "Right": 298,
+          "Bottom": 452,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 848,
+          "Top": 17,
+          "Right": 990,
+          "Bottom": 210,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 1038,
+          "Top": 12,
+          "Right": 1182,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,191 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryÜbersichtIntern"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 688
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 384,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 432,
+          "Top": 12,
+          "Right": 576,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Taetigkeiten",
+          "Alias": "",
+          "Left": 624,
+          "Top": 12,
+          "Right": 768,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungDefTaetigkeit",
+          "Alias": "",
+          "Left": 816,
+          "Top": 12,
+          "Right": 960,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 1008,
+          "Top": 12,
+          "Right": 1152,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 1200,
+          "Top": 12,
+          "Right": 1344,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 1392,
+          "Top": 12,
+          "Right": 1536,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 48,
+          "Top": 156,
+          "Right": 192,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation_1",
+          "Alias": "",
+          "Left": 240,
+          "Top": 156,
+          "Right": 384,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklIDtoTagID",
+          "Alias": "",
+          "Left": 432,
+          "Top": 156,
+          "Right": 576,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 624,
+          "Top": 156,
+          "Right": 768,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 816,
+          "Top": 156,
+          "Right": 960,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Vorgangstatus",
+          "Alias": "",
+          "Left": 1008,
+          "Top": 156,
+          "Right": 1152,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Verursacher",
+          "Alias": "",
+          "Left": 1200,
+          "Top": 156,
+          "Right": 1344,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 1392,
+          "Top": 156,
+          "Right": 1536,
+          "Bottom": 300,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 48,
+          "Top": 300,
+          "Right": 192,
+          "Bottom": 444,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden_1",
+          "Alias": "",
+          "Left": 240,
+          "Top": 300,
+          "Right": 384,
+          "Bottom": 444,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

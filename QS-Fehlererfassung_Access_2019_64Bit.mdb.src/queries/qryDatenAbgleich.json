@@ -1,0 +1,79 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryDatenAbgleich"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Kategorie-Problem]": {
+        "ColumnWidth": 2190,
+        "AggregateType": -1
+      },
+      "Mastertab.Auftragsnummer": {
+        "ColumnWidth": 1560,
+        "AggregateType": -1
+      },
+      "Verursacher.Anzeige": {
+        "ColumnWidth": 1170,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 549
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 315,
+          "Bottom": 553,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Verursacher",
+          "Alias": "",
+          "Left": 539,
+          "Top": 299,
+          "Right": 683,
+          "Bottom": 443,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 406,
+          "Top": 3,
+          "Right": 664,
+          "Bottom": 240,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ROS_Daten_Einkauf",
+          "Alias": "",
+          "Left": 704,
+          "Top": 6,
+          "Right": 1041,
+          "Bottom": 383,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

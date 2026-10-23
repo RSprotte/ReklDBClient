@@ -1,0 +1,401 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ScrollBars =2
+    TabularFamily =3
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11625
+    DatasheetFontHeight =10
+    ItemSuffix =51
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[Firma_Name] like 'tru*'"
+    RecSrcDt = Begin
+        0x99746ee5cdc2e540
+    End
+    RecordSource ="SELECT tblFirma.Firma_ID, tblFirma.Firma_Name, tblFirma.KndNr_Avista, tblZuordnu"
+        "ng.Zuordnung, tblFirma.Zurodnung_ID FROM tblFirma LEFT JOIN tblZuordnung ON tblF"
+        "irma.Zurodnung_ID = tblZuordnung.Zuordnung_ID GROUP BY tblFirma.Firma_ID, tblFir"
+        "ma.Firma_Name, tblFirma.KndNr_Avista, tblZuordnung.Zuordnung, tblFirma.Zurodnung"
+        "_ID ORDER BY tblFirma.Firma_Name; "
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnMouseMove ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =1474
+            BackColor =14211288
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =113
+                    Top =226
+                    Width =3870
+                    Height =420
+                    FontSize =16
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Kunden - Ansprechpartner"
+                    FontName ="Arial"
+                End
+                Begin Rectangle
+                    OverlapFlags =93
+                    Left =4095
+                    Top =390
+                    Width =3673
+                    Height =967
+                    Name ="Rechteck5"
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =6022
+                    Top =847
+                    Width =1185
+                    Height =285
+                    TabIndex =1
+                    Name ="FilterLöschen"
+                    Caption ="Filter löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    Left =4095
+                    Top =60
+                    Width =735
+                    Height =315
+                    FontSize =12
+                    Name ="Bezeichnungsfeld15"
+                    Caption ="Filter"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8325
+                    Top =350
+                    Width =1455
+                    Height =390
+                    TabIndex =2
+                    Name ="NeuerKunde"
+                    Caption ="Neuer Kunde"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8325
+                    Top =861
+                    Width =1455
+                    Height =390
+                    TabIndex =3
+                    Name ="KundeBearbeiten"
+                    Caption ="Kunde bearbeiten"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =5625
+                    Top =504
+                    Width =2046
+                    ColumnOrder =0
+                    Name ="FilterEingabe"
+                    OnChange ="[Event Procedure]"
+                End
+                Begin OptionGroup
+                    OverlapFlags =215
+                    Left =4160
+                    Top =507
+                    Width =1401
+                    Height =814
+                    ColumnOrder =1
+                    TabIndex =4
+                    Name ="OptionFilter"
+                    Begin
+                        Begin OptionButton
+                            OverlapFlags =223
+                            Left =4265
+                            Top =620
+                            OptionValue =1
+                            Name ="OptionKndNr"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =255
+                                    Left =4495
+                                    Top =564
+                                    Width =555
+                                    Height =240
+                                    Name ="Bezeichnungsfeld44"
+                                    Caption ="KndNr"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =255
+                            Left =4265
+                            Top =821
+                            OptionValue =2
+                            Name ="OptionFirmierung"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =255
+                                    Left =4500
+                                    Top =789
+                                    Width =930
+                                    Height =240
+                                    Name ="Bezeichnungsfeld46"
+                                    Caption ="Name-Firma"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =247
+                            Left =4265
+                            Top =1044
+                            OptionValue =3
+                            Name ="Option48"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =4500
+                                    Top =1014
+                                    Width =990
+                                    Height =240
+                                    Name ="Bezeichnungsfeld49"
+                                    Caption ="Name-Kunde"
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =10513
+                    Top =345
+                    Width =877
+                    Height =876
+                    FontSize =12
+                    FontWeight =500
+                    TabIndex =5
+                    ForeColor =16777215
+                    Name ="Objekt schließen - Formular"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    EventProcPrefix ="Objekt_schließen___Formular"
+                    ControlTipText ="Vorgang schließen"
+                End
+            End
+        End
+        Begin Section
+            Height =255
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =1587
+                    Width =3411
+                    Height =255
+                    Name ="Lieferant-Name"
+                    ControlSource ="Firma_Name"
+                    EventProcPrefix ="Lieferant_Name"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =113
+                    Width =1356
+                    Height =255
+                    TabIndex =1
+                    Name ="Text2"
+                    ControlSource ="KndNr_Avista"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    Left =4988
+                    Width =3411
+                    Height =255
+                    TabIndex =2
+                    Name ="Zuordnung"
+                    ControlSource ="Zuordnung"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8503
+                    Width =1146
+                    Height =255
+                    TabIndex =3
+                    Name ="Firma_ID"
+                    ControlSource ="Firma_ID"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =6643
+            BackColor =14211288
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6750
+                    Top =127
+                    Width =1455
+                    Height =585
+                    Name ="NeuerAnsprechpartner"
+                    Caption ="Neu Ansprechpartner"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9970
+                    Top =120
+                    Width =1455
+                    Height =390
+                    TabIndex =1
+                    Name ="AnsprechpartnerLoeschen"
+                    Caption ="Löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8360
+                    Top =127
+                    Width =1455
+                    Height =390
+                    TabIndex =2
+                    Name ="AnsprechpartnerBearbeiten"
+                    Caption ="Bearbeiten"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    SpecialEffect =0
+                    Left =60
+                    Top =973
+                    Width =11460
+                    Height =5670
+                    TabIndex =3
+                    Name ="KundeAnsprechpartnerÜbersicht"
+                    SourceObject ="Form.KundeAnsprechpartnerÜbersicht"
+                    LinkChildFields ="FirmaID"
+                    LinkMasterFields ="Firma_ID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =60
+                            Top =690
+                            Width =2415
+                            Height =240
+                            Name ="KundeAnsprechpartnerÜbersicht Beschriftung"
+                            Caption ="KundeAnsprechpartnerÜbersicht"
+                            EventProcPrefix ="KundeAnsprechpartnerÜbersicht_Beschriftung"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "KundenUebersicht.cls"

@@ -1,0 +1,83 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Auswertung1"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 585
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 363,
+          "Bottom": 499,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 401,
+          "Top": 6,
+          "Right": 583,
+          "Bottom": 173,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 564,
+          "Top": 155,
+          "Right": 765,
+          "Bottom": 331,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 415,
+          "Top": 311,
+          "Right": 601,
+          "Bottom": 582,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 669,
+          "Top": 6,
+          "Right": 974,
+          "Bottom": 409,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 1022,
+          "Top": 12,
+          "Right": 1166,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

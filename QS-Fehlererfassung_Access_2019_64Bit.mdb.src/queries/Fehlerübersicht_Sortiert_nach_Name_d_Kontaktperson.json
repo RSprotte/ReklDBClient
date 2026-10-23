@@ -1,0 +1,69 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Fehlerübersicht_Sortiert_nach_Name_d_Kontaktperson"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Kunden.[Kunden-ID]": {
+        "ColumnWidth": 1140,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1155,
+        "AggregateType": -1
+      },
+      "Mastertab.Datum": {
+        "ColumnWidth": 1110,
+        "AggregateType": -1
+      },
+      "Mastertab.Fehlertexte": {
+        "ColumnWidth": 1245,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 720,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 110
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 337,
+          "Top": 10,
+          "Right": 433,
+          "Bottom": 113,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 161,
+          "Bottom": 109,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

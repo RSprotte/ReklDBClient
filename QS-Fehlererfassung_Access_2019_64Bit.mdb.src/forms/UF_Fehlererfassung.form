@@ -1,0 +1,427 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AllowFilters = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    TabularFamily =88
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =17406
+    DatasheetFontHeight =10
+    ItemSuffix =30
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x23124a45ac90e640
+    End
+    RecordSource ="SELECT AufwandVorgangPositionen.[MID] AS ReklaID, AufwandVorgangPositionen.Vorga"
+        "ngID, AufwandVorgangPositionen.Datum, AufwandVorgangPositionen.Pos, AufwandVorga"
+        "ngPositionen.Artikel, AufwandVorgangPositionen.Menge, AufwandVorgangPositionen.Z"
+        "eit, AufwandVorgangPositionen.Vorgang, AufwandVorgangPositionen.Kürzel, AufwandV"
+        "organgPositionen.StdSatzID, AufwandVorgangPositionen.StdSatz, AufwandVorgangPosi"
+        "tionen.DatumStdSatz, AufwandVorgangPositionen.Aufwand, [Zeit]*[StdSatz] AS Betra"
+        "g, AufwandVorgangPositionen.InfoPos FROM AufwandVorgangPositionen ORDER BY Aufwa"
+        "ndVorgangPositionen.Datum, AufwandVorgangPositionen.Pos; "
+    AfterUpdate ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnTimer ="147"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =13750737
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =262
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =2715
+                    Top =7
+                    Width =450
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld9"
+                    Caption ="St."
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3836
+                    Width =1560
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Vorgang"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =8311
+                    Top =7
+                    Width =501
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Kz"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =1175
+                    Top =7
+                    Width =1095
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="Artikel"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Top =7
+                    Width =780
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld13"
+                    Caption ="Datum"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3245
+                    Top =7
+                    Width =555
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Aufw."
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =13320
+                    Width =810
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld18"
+                    Caption ="StdSatz"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =14674
+                    Width =801
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld21"
+                    Caption ="Betrag"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9195
+                    Width =3741
+                    Height =255
+                    FontSize =9
+                    FontWeight =700
+                    ForeColor =16711680
+                    Name ="Bezeichnungsfeld28"
+                    Caption ="InfoPos DblClick zum betrachten u. ändern"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =300
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8302
+                    Width =816
+                    Height =300
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Kürzel"
+                    ControlSource ="Kürzel"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Kurzzeichen FROM Sachbearbeiter WHERE (((Sachbearbeiter.Ak"
+                        "tiv)=True)) GROUP BY Sachbearbeiter.Kurzzeichen; "
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =9154
+                    Width =4139
+                    Height =285
+                    TabIndex =6
+                    Name ="txtInfoPos"
+                    ControlSource ="InfoPos"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    OnDblClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =13329
+                    Width =801
+                    Height =300
+                    FontSize =9
+                    TabIndex =9
+                    Name ="Betrag"
+                    ControlSource ="StdSatz"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =15585
+                    Width =690
+                    Height =285
+                    FontSize =10
+                    TabIndex =7
+                    Name ="cmbEmailSendTo"
+                    Caption ="Email"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =16320
+                    Width =336
+                    Height =255
+                    TabIndex =11
+                    Name ="StdSatzID"
+                    ControlSource ="StdSatzID"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =16710
+                    Width =336
+                    Height =255
+                    TabIndex =12
+                    Name ="Text23"
+                    ControlSource ="Aufwand"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =17070
+                    Width =336
+                    Height =255
+                    TabIndex =13
+                    Name ="Text29"
+                    ControlSource ="VorgangID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Top =15
+                    Width =1146
+                    Height =285
+                    FontSize =10
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1182
+                    Top =15
+                    Width =1474
+                    Height =285
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Artikel"
+                    ControlSource ="Artikel"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2692
+                    Top =15
+                    Width =501
+                    Height =285
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    DecimalPlaces =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3229
+                    Top =15
+                    Width =555
+                    Height =285
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Zeit"
+                    ControlSource ="Zeit"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListRows =50
+                    ListWidth =1440
+                    Left =3820
+                    Top =15
+                    Width =4446
+                    Height =285
+                    FontSize =10
+                    TabIndex =4
+                    BoundColumn =1
+                    Name ="Vorgang"
+                    ControlSource ="Vorgang"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Vorgang-Text].Anzeige, [Vorgang-Text].[Vorgang-ID], [Vorgang-Text].Aktiv"
+                        ", [Vorgang-Text].Datenbank FROM [Vorgang-Text] WHERE ((([Vorgang-Text].Aktiv)=Tr"
+                        "ue) AND (([Vorgang-Text].Datenbank) Like \"ReklDB*\")) ORDER BY [Vorgang-Text].A"
+                        "nzeige; "
+                    ColumnWidths ="1442"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =14166
+                    Top =15
+                    Width =465
+                    Height =285
+                    TabIndex =8
+                    Name ="cmbChangeStdSatz"
+                    Caption ="Email"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddddd0000dddddddddd ,
+                        0xdd00ff07dddddddddd0ff7f07ddddddddd0fff7b07ddddddddd0fbb7b07ddddd ,
+                        0xdddd0bbb7b07ddddddddd0bbb0707ddddddddd0b077707ddddddddd07870007d ,
+                        0xdddddddd07001117ddddddddd009111ddddddddddd0191ddddddddddddd11ddd ,
+                        0xdddddddddddddddd
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =14674
+                    Top =15
+                    Width =876
+                    Height =285
+                    FontSize =9
+                    TabIndex =10
+                    Name ="AufwandBetrag"
+                    ControlSource ="Betrag"
+                    Format ="#,##0.00 €;-#,##0.00 €"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "UF_Fehlererfassung.cls"

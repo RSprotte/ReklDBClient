@@ -1,0 +1,40 @@
+﻿{
+  "Info": {
+    "Class": "clsDbForm",
+    "Description": "Fxx_Reklamationsbericht_03_Sept08 Print Settings"
+  },
+  "Items": {
+    "Device": {
+      "DriverName": "winspool",
+      "DeviceName": "PDFCreator",
+      "Port": "PDFCreator:",
+      "Default": false
+    },
+    "Printer": {
+      "Orientation": "Portrait",
+      "PaperSize": "A4"
+    },
+    "Margins": {
+      "LeftMargin": 0.7875,
+      "TopMargin": 0.3938,
+      "RightMargin": 0.3938,
+      "BotMargin": 0.3938,
+      "DataOnly": false,
+      "Width": 7.0514,
+      "Height": 10.7868,
+      "DefaultSize": true,
+      "Columns": 1,
+      "ColumnSpacing": 0.25,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    },
+    "Properties": {
+      "Description": {
+        "Type": 10,
+        "Value": "Aktuelle Version"
+      }
+    }
+  }
+}

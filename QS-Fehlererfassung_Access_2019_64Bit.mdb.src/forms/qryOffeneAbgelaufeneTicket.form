@@ -1,0 +1,461 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =31680
+    DatasheetFontHeight =11
+    ItemSuffix =33
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xbe613fe295ebe440
+    End
+    RecordSource ="qryOffeneAbgelaufeneTicket"
+    Caption ="qryOffeneAbgelaufeneTicket"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin FormHeader
+            Height =1026
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =3
+                    Left =342
+                    Top =684
+                    Width =1197
+                    Height =315
+                    Name ="TicketID_Bezeichnungsfeld"
+                    Caption ="TicketID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =3
+                    Left =1596
+                    Top =684
+                    Width =1710
+                    Height =315
+                    Name ="tblTicketListe.TicketTypID_Bezeichnungsfeld"
+                    Caption ="tblTicketListe.TicketTypID"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="tblTicketListe_TicketTypID_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =3
+                    Left =3363
+                    Top =684
+                    Width =1083
+                    Height =315
+                    Name ="TicketStatusID_Bezeichnungsfeld"
+                    Caption ="TicketStatusID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =3
+                    Left =4503
+                    Top =684
+                    Width =1140
+                    Height =315
+                    Name ="VerlängertBis_Bezeichnungsfeld"
+                    Caption ="VerlängertBis"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =3
+                    Left =5700
+                    Top =684
+                    Width =1653
+                    Height =315
+                    Name ="tblTicketTyp.TicketTypID_Bezeichnungsfeld"
+                    Caption ="tblTicketTyp.TicketTypID"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="tblTicketTyp_TicketTypID_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =7410
+                    Top =684
+                    Width =2565
+                    Height =315
+                    Name ="TicketTyp_Bezeichnungsfeld"
+                    Caption ="TicketTyp"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =10032
+                    Top =684
+                    Width =2565
+                    Height =315
+                    Name ="Anzeige_Bezeichnungsfeld"
+                    Caption ="Anzeige"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =12654
+                    Top =684
+                    Width =1083
+                    Height =315
+                    Name ="Arbeitstage_Bezeichnungsfeld"
+                    Caption ="Arbeitstage"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =13794
+                    Top =684
+                    Width =5016
+                    Height =315
+                    Name ="MailBetreff_Bezeichnungsfeld"
+                    Caption ="MailBetreff"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =18867
+                    Top =684
+                    Width =5016
+                    Height =315
+                    Name ="MailText_Bezeichnungsfeld"
+                    Caption ="MailText"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =23940
+                    Top =684
+                    Width =1197
+                    Height =315
+                    Name ="AnsichtSteuerung_Bezeichnungsfeld"
+                    Caption ="AnsichtSteuerung"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =25194
+                    Top =684
+                    Width =1083
+                    Height =315
+                    Name ="ErinnerungTage_Bezeichnungsfeld"
+                    Caption ="ErinnerungTage"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =26334
+                    Top =684
+                    Width =1026
+                    Height =315
+                    Name ="Mahnung1Tage_Bezeichnungsfeld"
+                    Caption ="Mahnung1Tage"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =27417
+                    Top =684
+                    Width =1026
+                    Height =315
+                    Name ="Mahnung2Tage_Bezeichnungsfeld"
+                    Caption ="Mahnung2Tage"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =28500
+                    Top =684
+                    Width =3123
+                    Height =315
+                    Name ="Tage_Bezeichnungsfeld"
+                    Caption ="Tage"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =57
+                    Top =57
+                    Width =5742
+                    Height =969
+                    FontSize =20
+                    Name ="Bezeichnungsfeld30"
+                    Caption ="qryOffeneAbgelaufeneTicket"
+                End
+            End
+        End
+        Begin Section
+            Height =1254
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =342
+                    Top =57
+                    Width =1197
+                    Height =315
+                    ColumnWidth =1701
+                    Name ="TicketID"
+                    ControlSource ="TicketID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1596
+                    Top =57
+                    Width =1710
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =1
+                    Name ="tblTicketListe.TicketTypID"
+                    ControlSource ="tblTicketListe.TicketTypID"
+                    EventProcPrefix ="tblTicketListe_TicketTypID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3363
+                    Top =57
+                    Width =1083
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =2
+                    Name ="TicketStatusID"
+                    ControlSource ="TicketStatusID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4503
+                    Top =57
+                    Width =1140
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =3
+                    Name ="VerlängertBis"
+                    ControlSource ="VerlängertBis"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5700
+                    Top =57
+                    Width =1653
+                    Height =315
+                    ColumnWidth =1701
+                    TabIndex =4
+                    Name ="tblTicketTyp.TicketTypID"
+                    ControlSource ="tblTicketTyp.TicketTypID"
+                    EventProcPrefix ="tblTicketTyp_TicketTypID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =7410
+                    Top =57
+                    Width =2565
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =5
+                    Name ="TicketTyp"
+                    ControlSource ="TicketTyp"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10032
+                    Top =57
+                    Width =2565
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =6
+                    Name ="Anzeige"
+                    ControlSource ="Anzeige"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =12654
+                    Top =57
+                    Width =1083
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =7
+                    Name ="Arbeitstage"
+                    ControlSource ="Arbeitstage"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =13794
+                    Top =57
+                    Width =5016
+                    Height =1140
+                    ColumnWidth =3000
+                    TabIndex =8
+                    Name ="MailBetreff"
+                    ControlSource ="MailBetreff"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =18867
+                    Top =57
+                    Width =5016
+                    Height =1140
+                    ColumnWidth =3000
+                    TabIndex =9
+                    Name ="MailText"
+                    ControlSource ="MailText"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =23940
+                    Top =57
+                    TabIndex =10
+                    Name ="AnsichtSteuerung"
+                    ControlSource ="AnsichtSteuerung"
+                    StatusBarText ="Regelung der Auswahlfelder für den jeweiligen Benutzer"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =25194
+                    Top =57
+                    Width =1083
+                    Height =330
+                    ColumnWidth =960
+                    TabIndex =11
+                    Name ="ErinnerungTage"
+                    ControlSource ="ErinnerungTage"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =26334
+                    Top =57
+                    Width =1026
+                    Height =330
+                    ColumnWidth =960
+                    TabIndex =12
+                    Name ="Mahnung1Tage"
+                    ControlSource ="Mahnung1Tage"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =27417
+                    Top =57
+                    Width =1026
+                    Height =330
+                    ColumnWidth =960
+                    TabIndex =13
+                    Name ="Mahnung2Tage"
+                    ControlSource ="Mahnung2Tage"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =28500
+                    Top =57
+                    Width =3123
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =14
+                    Name ="Tage"
+                    ControlSource ="Tage"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =3458
+            Name ="Formularfuß"
+            Begin
+                Begin Subform
+                    OverlapFlags =215
+                    Left =680
+                    Top =226
+                    Width =11460
+                    Height =2895
+                    Name ="tblTicketMahnwesen-Unterformular"
+                    SourceObject ="Form.tblTicketMahnwesen-Unterformular"
+                    LinkChildFields ="TicketID"
+                    LinkMasterFields ="TicketID"
+                    EventProcPrefix ="tblTicketMahnwesen_Unterformular"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =680
+                            Width =3435
+                            Height =315
+                            Name ="tblTicketMahnwesen-Unterformular Beschriftung"
+                            Caption ="tblTicketMahnwesen-Unterformular"
+                            EventProcPrefix ="tblTicketMahnwesen_Unterformular_Beschriftung"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End

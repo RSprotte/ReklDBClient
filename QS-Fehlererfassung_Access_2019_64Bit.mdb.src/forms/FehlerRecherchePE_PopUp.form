@@ -1,0 +1,188 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10374
+    DatasheetFontHeight =10
+    ItemSuffix =6
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xf6bde95793a0e440
+    End
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =10204
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =120
+                    Top =181
+                    Width =3630
+                    Height =465
+                    FontSize =16
+                    FontWeight =900
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Fehler-Recherche PE"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =120
+                    Top =805
+                    Width =5369
+                    Height =3123
+                    FontSize =10
+                    Name ="txtFehlerRecherche"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5295
+                    Top =120
+                    Width =1311
+                    Height =576
+                    TabIndex =1
+                    Name ="ButUebernehmen"
+                    Caption ="Übernehmen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3795
+                    Top =120
+                    Width =1311
+                    Height =576
+                    TabIndex =2
+                    Name ="ButOK"
+                    Caption ="OK"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6795
+                    Top =120
+                    Width =1311
+                    Height =576
+                    TabIndex =3
+                    Name ="ButAbbrechen"
+                    Caption ="Abbrechen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =120
+                    Top =4047
+                    Width =10079
+                    Height =6023
+                    FontSize =9
+                    TabIndex =4
+                    BorderColor =10040115
+                    Name ="Text6109"
+                    StatusBarText ="Weitere Infos - Bemerkungen 1"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5550
+                    Top =794
+                    Width =4643
+                    Height =3128
+                    FontSize =9
+                    TabIndex =5
+                    BorderColor =10040115
+                    Name ="Bemerkungen-Vorgang"
+                    StatusBarText ="Weitere Infos zu Vorgang Pos.20-80"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    EventProcPrefix ="Bemerkungen_Vorgang"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =2
+                            Left =8220
+                            Top =105
+                            Width =1425
+                            Height =645
+                            FontWeight =500
+                            BackColor =13209
+                            Name ="Bezeichnungsfeld1847"
+                            Caption ="weitere Infos zu den Vorgang-Positionen"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FehlerRecherchePE_PopUp.cls"

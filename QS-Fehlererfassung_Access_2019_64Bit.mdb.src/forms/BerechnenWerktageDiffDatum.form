@@ -1,0 +1,127 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6122
+    DatasheetFontHeight =10
+    ItemSuffix =7
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x29d4369fd366e440
+    End
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =1701
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2154
+                    Top =226
+                    Name ="D1"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =907
+                            Top =226
+                            Width =555
+                            Height =240
+                            Name ="Bezeichnungsfeld1"
+                            Caption ="D1"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2154
+                    Top =586
+                    TabIndex =1
+                    Name ="D2"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =907
+                            Top =586
+                            Width =555
+                            Height =240
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="D2"
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2154
+                    Top =1190
+                    Width =1026
+                    TabIndex =2
+                    Name ="WT"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =907
+                            Top =1190
+                            Width =555
+                            Height =240
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="WT"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4138
+                    Top =226
+                    Width =1125
+                    Height =570
+                    TabIndex =3
+                    Name ="Befehl6"
+                    Caption ="Berechnen Werktage"
+                    OnClick ="=getDelayTwoDates([D1],[D2])"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "BerechnenWerktageDiffDatum.cls"

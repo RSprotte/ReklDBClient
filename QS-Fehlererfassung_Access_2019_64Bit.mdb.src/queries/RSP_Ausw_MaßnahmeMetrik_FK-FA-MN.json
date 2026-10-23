@@ -1,0 +1,53 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Ausw_MaßnahmeMetrik_FK-FA-MN"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "FehlerartKlassifizierung.Klassifizierung": {
+        "ColumnWidth": 2025,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 342
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "FehlerartKlassifizierung",
+          "Alias": "",
+          "Left": 306,
+          "Top": 6,
+          "Right": 486,
+          "Bottom": 49,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_Ausw_MaßnahmeMetrik_FA-MN",
+          "Alias": "",
+          "Left": 524,
+          "Top": 6,
+          "Right": 620,
+          "Bottom": 184,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

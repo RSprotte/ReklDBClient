@@ -1,0 +1,553 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7993
+    DatasheetFontHeight =11
+    ItemSuffix =79
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    Filter ="[KundenID]<>0"
+    RecSrcDt = Begin
+        0x03da57c3b232e540
+    End
+    RecordSource ="SELECT tblReklBearbZeit.*, tblFirma.Firma_Name, Lieferanten.Lieferantenname FROM"
+        " (tblReklBearbZeit LEFT JOIN tblFirma ON tblReklBearbZeit.KundenID = tblFirma.Fi"
+        "rma_ID) LEFT JOIN Lieferanten ON tblReklBearbZeit.LiefID = Lieferanten.[Lieferan"
+        "t-ID]; "
+    Caption ="frmReklBearbZeit"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnMouseMove ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =13750737
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin OptionButton
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+            ForeColor =2102279
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+        End
+        Begin ToggleButton
+            TextFontFamily =0
+            Width =283
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =2026
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =6979
+                    Top =1711
+                    Width =519
+                    Height =315
+                    ForeColor =0
+                    Name ="txtReklBearbZeitID"
+                    Caption ="ID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =60
+                    Top =1711
+                    Width =4635
+                    Height =315
+                    ForeColor =0
+                    Name ="txtFirmaID"
+                    Caption ="Lieferant"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =4755
+                    Top =1711
+                    Width =894
+                    Height =315
+                    ForeColor =0
+                    Name ="txtATQS"
+                    Caption ="AT QS"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5715
+                    Top =1707
+                    Width =1029
+                    Height =315
+                    ForeColor =0
+                    Name ="txt8DReport"
+                    Caption ="8D Report"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =113
+                    Width =4200
+                    Height =510
+                    FontSize =20
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="txtFirmakonfig"
+                    Caption ="Konfiguration Lieferant"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =1333
+                    Top =1200
+                    Width =3885
+                    Height =405
+                    ColumnOrder =1
+                    Name ="cboFirma"
+                    RowSourceType ="Value List"
+                    RowSource ="270;ABB STOTZ-KONTAKT GmbH;283;Abicor Binzel;204;AIRTEC Pneumamausertik GmbH;258"
+                        ";AIS GmbH;253;Amphenol-Tuchel Electronics GmbH;91;Anixter Deutschland GmbH;228;A"
+                        "rlt Computer Produkte GmbH erforderlich;107;Arnold Elektromechanische Baueleleme"
+                        "nte GmbH;193;Arnotec Gmbh;205;Arrow Central Europe GmbH;257;Avnet EMG GmbH;262;A"
+                        "VS-Ing.J.C. Römer GmbH;113;B&R Industrie-Elektronik GmbH;267;Bader GmbH Gehäuseb"
+                        "au;213;BALANCE SYSTEMS GmbH;21;Balluff GmbH;219;Barksdale GmbH;176;Baumer Electr"
+                        "ic GmbH;251;Baumüller Nürnberg GmbH;8;BCS Büschel Connecting Systems;235;BD Sens"
+                        "ors GmbH;136;Beck GmbH;154;Beckhoff Automation GmbH;5;Belden Deutschland GmbH;24"
+                        "7;Bergmann Messgeräte Entwicklung KG;130;Bielomatik Leuze GmbH + Co.;82;Bihl+Wie"
+                        "demann GmbH;212;Blum-Novotest GmbH;85;Börsig GmbH;29;Bosch Rexroth AG;123;BRAMME"
+                        "R GmbH & Co. KG Kundenservicecenter Stuttgar;67;Bürklin OHG;76;Camozzi GmbH;236;"
+                        "CAPTRON Electronic GmbH;224;Chiron-Werke GmbH & Co.KG;190;Christ-Elektronik GmbH"
+                        ";116;CNC-Bearbeitungstechnik;58;Conec Elektronische Bauelemente GmbH;3;Connectro"
+                        "nic GmbH;279;Conrad Electronic SE;145;Dessauer Schaltschrank- und Gehäusetechnik"
+                        " GmbH;75;DR. JOHANNES HEIDENHAIN GMBH;122;E. Dold & Söhne KG;180;E. Krieg GmbH;6"
+                        "1;E+H Gross GmbH;87;Eaton Electric GmbH;161;EFB-Elektronik;230;EGON HARIG GmbH;4"
+                        "2;Emil Löffelhardt GmbH + Co. KG;52;Ernst & Enbring GmbH & Co. KG;207;ESB Excels"
+                        "ior + Schwarz Blechverarbeitung;38;ESCHA Bauelemente GmbH;26;Euchner GmbH + Co. "
+                        "KG;56;Falk GmbH;57;FCT electronic gmbh;128;Ferdinand Gross GmbH & Co. KG;37;Fest"
+                        "o AG & Co;192;FISCHER Industrietechnik GmbH;120;Flexico Verpackungen GmbH;68;Fle"
+                        "xschlauch Produktions GmbH;45;Franz Binder GmbH + Co.;260;Franz Oberflächentechn"
+                        "ik GmbH & Co.KG;263;Friedrich Döbrich Druckgießerei GmbH & Co. KG;40;Friedrich L"
+                        "ütze GmbH & Co.;167;Frizlen GmbH & Co. KG;248;FS Elektronik GmbH;206;Gebrüder Fr"
+                        "ei GmbH & Co.;250;Gemballa Electronics\015\012 Gemballa Electronics GmbH & Co. K"
+                        "G;169;Gems Sensors & Controls;64;Georg Schlegel GmbH & Co;41;Gerich GmbH;229;Get"
+                        "riebebau Nord GmbH & Co. KG;254;Gleason Pfauter;218;GLS;22;gmb Blechbearbeitung "
+                        "GmbH & Co. KG;268;H. Steinhart Metallwarenfabrik GmbH & Co. Kgrforderlich;20;H. "
+                        "Waldmann GmbH & Co. KG;97;H.P.Kaysser GmbH + Co. KG;32;Haas Kabeltechnik GmbH;10"
+                        "4;Hans Turck GmbH & Co. KG;36;Harting Deutschland GmbH & Co. KG;240;häwa GmbH;18"
+                        "6;Heinz CNC Rohrbiegetechnik;49;HELUKABEL GmbH;6;HIK GmbH;269;Hopf Kunststofftec"
+                        "hnik GmbH;234;Hornung GmbH;9;Huber+Suhner GmbH;275;Hummel AG;191;Hüttinger Elekt"
+                        "ronik GmbH & Co KG;147;icotek GmbH;278;IDS Imaging Development Systems GmbH;124;"
+                        "ifm electronic gmbh;71;igus GmbH;17;IME GmbH;168;INDEX-Werke GmbH + Co.KG;202;In"
+                        "du-Sol GmbH;179;Infiltec GmbH;121;Ing. Konrad Weinmann;112;Ingenieur-Büro Schmid"
+                        " GmbH;249;INGUN Prüfmittelbau GmbH;23;Intercontec Produkt GmbH;272;J. Schmalz Gm"
+                        "bH;188;Jäger Fluid;237;Jäger Metallbau;189;Jahn Industrieschilder/ Etiketten Gmb"
+                        "H;28;K.A. Schmersal GmbH & Co;109;Kabel Wächter GmbH + Co. KG;74;Kabelschlepp Gm"
+                        "bH;78;Kaltenbach Elektrotechnik GmbH & Co. KG;13;Kappa opto-electronics GmbH;252"
+                        ";Käppler & Pausch GmbH;227;Karl Berrang GmbH;164;Keuerleber GmbH;79;Keyence Deut"
+                        "schland GmbH;139;Kohler GmbH;96;Kontron Modular Computers GmbH;255;Kraft & Bauer"
+                        " Brandschutzsysteme GmbH;172;Kraus & Naimer GmbH;149;KUKA Industries GmbH & Co. "
+                        "KG;265;Kumaident GmbH;34;Laser Components GmbH;151;Leuze elektronic GmbH + Co.;2"
+                        "08;Liebherr Verzahntechnik GmbH;163;Lindy-Elektronik GmbH;170;LOHMEIER Schaltsch"
+                        "rank-Systeme GmbH & Co;175;LQ Mechatronics (Taicang) Co.,Ltd.;241;LQ Mechatronic"
+                        "s Inc;264;Lütze AG;181;Maku GmbH & Co. KG;277;Märklen GmbH & Co. KG;98;Marposs G"
+                        "mbH;177;Masterflex AG;94;Mauser & Co. GmbH;259;Mecos AG;233;Mercateo AG;282;Mers"
+                        "en Deutschland Eggolsheim GmbH;137;MES Electronic Connect GmbH & Co. KG;173;MGV "
+                        "Stromversorgung;25;Microtherm GmbH;30;Moldcon Connectors GmbH;55;Morgan Rekofa G"
+                        "mbH & Co. KG;220;Mouser Electronics, Inc;246;MSC Technologies GmbH;11;Murrelektr"
+                        "onik GmbH;33;Murrplastik Systemtechnik GmbH;256;Name erforderlich;271;National I"
+                        "nstruments Germany GmbH;261;Nefab Packaging Germany GmbH;50;Nexans Deutschland  "
+                        "Industries AG & Co. KG;44;Nies electronic gmbh;276;Ntron Ltd.;129;OSP Präzisiont"
+                        "eile GmbH;171;Pentair Technical Soulutions GmbH;86;Pepperl+Fuchs GmbH;72;Phoenix"
+                        " Contact GmbH & Co;105;Pilz GmbH & Co. Steuerungssysteme;210;Provertha Steckverb"
+                        "inder GmbH;106;PRYSMIAN CABLES & SYSTEMS;134;PULS Reparaturannahme;141;Pulsotron"
+                        "ic GmbH & Co.KG;99;R&D Steuerungstechnik;280;Räder- Vogel GmbH & Co.KG;281;Rala "
+                        "GmbH & Co. KG;165;RAUSCHER GmbH;244;RECHNER Industrie-Elektronik GmbH;125;reiche"
+                        "lt elektronik GmbH & Co. KG;182;Rinde Regeltechnik GmbH;114;Rittal GmbH & Co.KG;"
+                        "24;RK Kutting GmbH;101;ROSE Elektrotechnik GmbH + Co KG;203;Rosenberger;47;RS Co"
+                        "mponents GmbH;215;Rsprotte;146;RubyTech Deutschland;274;S&D GmbH;118;SAB Bröcksk"
+                        "es GmbH & Co. KG;199;SCHAD GmbH;143;Schaffner EMV GmbH;157;Schmalz+Schön GmbH;18"
+                        "5;SCHMIDBERGER GMBH Kabelschleppvertrieb;239;Schmitt Europe LTD;48;Schneider Ele"
+                        "ctric GmbH;93;Schreinerei Joachim Schmid;226;Schröder Spezialglas GmbH;102;SES-S"
+                        "terling GmbH;110;SEW-Eurodrive GmbH&Co.;178;SICK AG;19;Siemens AG;214;Simone Fic"
+                        "ht e.K.;156;SKF Lubrication Systems;273;SMC Pneumatik GmbH;133;ste;242;steinahrt"
+                        ";111;SUCO Robert Scheufele GmbH & Co. KG;200;SVS-VISTEK GmbH;222;SwissTec GmbH&C"
+                        "o.KG;16;TECHNO - Kabelsysteme GmbH;194;Tekpro Präzisionsdrehteile GmbH;243;THERM"
+                        "O SENSOR GmbH;209;Thermokon Sensortechnik GmbH;46;TRUMPF;184;TRUMPF Grüsch AG;54"
+                        ";U.I. Lapp GmbH;166;Unitronic AG;160;Vision Systems GmbH;238;Voith Turbo H + L H"
+                        "ydraulic GmbH & Co.KG;43;WAGO Kontakttechnik GmbH;155;Walter König GmbH;148;Weid"
+                        "müller GmbH & Co;103;Werma Signaltechnik GmbH & Co.;108;Wieland Electric GmbH;11"
+                        "7;WIESEMANN+THEIS GmbH;39;WITTENSTEIN Motion Control GmbH;225;Witzenmann-Speck G"
+                        "mbH;159;Wöhner GmbH & Co.KG;231;Wörtz Systemhaus - MBA AG;153;Yamaichi Electroni"
+                        "cs;81;Zeichentechnik Herbert Rosenbaum;266;Zipper-Technik GmbH;"
+                    ColumnWidths ="0;2835"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =60
+                    Top =1200
+                    Width =1216
+                    Height =405
+                    ForeColor =0
+                    Name ="txtFirma"
+                    Caption ="Lieferant"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5279
+                    Top =1200
+                    Width =2655
+                    Height =405
+                    TabIndex =1
+                    Name ="cmbFirmakonfig"
+                    Caption ="Lieferant konfigurieren"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4590
+                    Top =113
+                    Width =576
+                    Height =576
+                    TabIndex =2
+                    Name ="cmbSpeichernReklBearbZeit"
+                    Caption ="Befehl28"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddd0000000000000dd03300000088030d ,
+                        0xd03300000088030dd03300000088030dd03300000000030dd03333333333330d ,
+                        0xd03300000000330dd03088888888030dd03088888888030dd03088888888030d ,
+                        0xd03088888888030dd03088888888000dd03088888888080dd00000000000000d ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz speichern"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5329
+                    Top =113
+                    Width =576
+                    Height =576
+                    TabIndex =3
+                    Name ="cmbReklBearbZeitSchließen"
+                    Caption ="Befehl29"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin OptionGroup
+                    OverlapFlags =85
+                    Left =6240
+                    Top =113
+                    Width =1686
+                    Height =943
+                    ColumnOrder =0
+                    TabIndex =4
+                    Name ="Rahmen72"
+                    DefaultValue ="1"
+                    OnClick ="[Event Procedure]"
+                    Begin
+                        Begin OptionButton
+                            SpecialEffect =2
+                            OverlapFlags =87
+                            Left =6410
+                            Top =374
+                            OptionValue =1
+                            Name ="optKunde"
+                            OnMouseMove ="[Event Procedure]"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =255
+                                    Left =6640
+                                    Top =346
+                                    Width =675
+                                    Height =315
+                                    Name ="Bezeichnungsfeld76"
+                                    Caption ="Kunde"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            SpecialEffect =2
+                            OverlapFlags =87
+                            Left =6426
+                            Top =688
+                            TabIndex =1
+                            OptionValue =2
+                            Name ="optLieferant"
+                            OnMouseMove ="[Event Procedure]"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =6656
+                                    Top =660
+                                    Width =915
+                                    Height =315
+                                    Name ="Bezeichnungsfeld78"
+                                    Caption ="Lieferant"
+                                End
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =375
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =60
+                    Top =60
+                    Width =4635
+                    Height =315
+                    Name ="txtLieferantenname"
+                    ControlSource ="Lieferantenname"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =60
+                    Top =60
+                    Width =4635
+                    Height =315
+                    TabIndex =1
+                    Name ="Firma_Name"
+                    ControlSource ="Firma_Name"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =6083
+                    Top =120
+                    TabIndex =2
+                    Name ="8DReport"
+                    ControlSource ="8DReport"
+                    StatusBarText ="Regelung der Auswahlfelder für den jeweiligen Benutzer"
+                    EventProcPrefix ="Ctl8DReport"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =4755
+                    Top =60
+                    Width =894
+                    Height =315
+                    ColumnWidth =1530
+                    TabIndex =3
+                    Name ="ATQS"
+                    ControlSource ="ATQS"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =6975
+                    Top =60
+                    Width =519
+                    Height =315
+                    ColumnWidth =1701
+                    TabIndex =4
+                    Name ="ReklBearbZeitID"
+                    ControlSource ="ReklBearbZeitID"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmReklBearbZeit.cls"

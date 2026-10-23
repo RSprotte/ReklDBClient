@@ -1,0 +1,165 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9581
+    DatasheetFontHeight =11
+    ItemSuffix =13
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xddcfeea66ae4e440
+    End
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =6066
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =566
+                    Top =1474
+                    Width =2271
+                    Height =315
+                    Name ="txtReklaEingang"
+                    Format ="General Date"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1077
+                            Width =2850
+                            Height =315
+                            Name ="BezReklaEingang"
+                            Caption ="Vorgangs Eingang am:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =566
+                    Top =2381
+                    Width =2271
+                    Height =315
+                    TabIndex =1
+                    Name ="txtReklaErfasst"
+                    Format ="General Date"
+                    DefaultValue ="=Format(Now())"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1984
+                            Width =2850
+                            Height =315
+                            Name ="BezReklaErfasst"
+                            Caption ="Vorgang Erfasst am:"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =566
+                    Top =226
+                    Width =3402
+                    Height =511
+                    FontSize =20
+                    Name ="BezVorgangsErfassung"
+                    Caption ="Vorgangs-Erfassung"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4535
+                    Top =566
+                    Width =4535
+                    Height =2205
+                    TabIndex =2
+                    Name ="txtFreitext"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4535
+                            Top =226
+                            Width =1710
+                            Height =315
+                            Name ="BezFreiText"
+                            Caption ="Frei Text:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4535
+                    Top =3231
+                    Width =4535
+                    Height =2205
+                    TabIndex =3
+                    Name ="txtHtmlText"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4535
+                            Top =2891
+                            Width =1710
+                            Height =315
+                            Name ="Bez.HtmlText"
+                            Caption ="HTML Text:"
+                            EventProcPrefix ="Bez_HtmlText"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2267
+                    Top =3458
+                    Height =1077
+                    TabIndex =4
+                    Name ="CobHtmlCode"
+                    Caption ="HTML-Code"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmVorgangErfassung.cls"

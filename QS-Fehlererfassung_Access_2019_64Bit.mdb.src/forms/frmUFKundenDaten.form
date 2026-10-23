@@ -1,0 +1,342 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6830
+    DatasheetFontHeight =11
+    ItemSuffix =17
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x9d57c54a0d53e540
+    End
+    RecordSource ="SELECT Kunden.*, tblFirma.Firma_Name, tblFirma.KndNr_Avista FROM Kunden RIGHT JO"
+        "IN tblFirma ON Kunden.FirmaID = tblFirma.Firma_ID WHERE (((Kunden.Aktiv)=True));"
+        " "
+    Caption ="frmUFKundenDaten"
+    AfterUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =15783096
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =2355
+            BackColor =12632256
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2831
+                    Top =1278
+                    Width =3981
+                    Height =300
+                    ColumnWidth =3000
+                    FontWeight =600
+                    TabIndex =2
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDaten#Telefonnummer"
+                    ControlSource ="Telefonnummer"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDaten_Telefonnummer"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Top =1248
+                            Width =2751
+                            Height =315
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblTelefonnummer"
+                            Caption ="Telefonnummer:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2831
+                    Top =1674
+                    Width =3981
+                    Height =300
+                    ColumnWidth =3000
+                    FontWeight =600
+                    TabIndex =3
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDaten#EmailAdresse"
+                    ControlSource ="EmailAdresse"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDaten_EmailAdresse"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Top =1644
+                            Width =2751
+                            Height =315
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblEmailAdresse"
+                            Caption ="E-Mail: "
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2831
+                    Top =90
+                    Width =3981
+                    Height =300
+                    ColumnWidth =3000
+                    FontWeight =600
+                    TabIndex =4
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDaten#Firma_Name"
+                    ControlSource ="Firma_Name"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDaten_Firma_Name"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Top =60
+                            Width =2751
+                            Height =315
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblFirma_Name"
+                            Caption ="Kunde / Firma:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2831
+                    Top =486
+                    Width =1335
+                    Height =300
+                    ColumnWidth =1200
+                    FontWeight =600
+                    TabIndex =5
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDaten#KndNr_Avista"
+                    ControlSource ="KndNr_Avista"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDaten_KndNr_Avista"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Left =1416
+                            Top =456
+                            Width =1335
+                            Height =315
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblKndNr_Avista_Bezeichnungsfeld"
+                            Caption ="KD-Nr.:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =170
+                    Top =453
+                    Width =1080
+                    Height =285
+                    FontSize =10
+                    TabIndex =1
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDaten#Kunden-ID"
+                    ControlSource ="Kunden-ID"
+                    StatusBarText ="Fehlerbericht II"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDaten_Kunden_ID"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2831
+                    Top =882
+                    Width =3981
+                    Height =300
+                    FontWeight =600
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDaten#Kontaktperson"
+                    ControlSource ="Kontaktperson"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDaten_Kontaktperson"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Top =852
+                            Width =2751
+                            Height =315
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblKontaktperson"
+                            Caption ="Name / Kontakt:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5375
+                    Top =486
+                    Width =1455
+                    Height =300
+                    FontWeight =600
+                    TabIndex =6
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Text15"
+                    ControlSource ="Kurzzeichen"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Left =4320
+                            Top =471
+                            Width =975
+                            Height =315
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="Bezeichnungsfeld16"
+                            Caption ="KD-KZ.:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmUFKundenDaten.cls"

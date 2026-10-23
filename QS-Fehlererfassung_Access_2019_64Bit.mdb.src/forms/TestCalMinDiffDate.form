@@ -1,0 +1,206 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7030
+    DatasheetFontHeight =11
+    ItemSuffix =16
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x99dd6c694fe4e440
+    End
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =5952
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1529
+                    Top =850
+                    Width =2438
+                    Height =315
+                    Name ="txtDatStart"
+                    Format ="General Date"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =396
+                            Top =850
+                            Width =645
+                            Height =315
+                            Name ="Bezeichnungsfeld1"
+                            Caption ="Text0:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1529
+                    Top =1285
+                    Width =2438
+                    Height =315
+                    TabIndex =1
+                    Name ="txtDatEnde"
+                    Format ="General Date"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =396
+                            Top =1285
+                            Width =645
+                            Height =315
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="Text0:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    Left =1529
+                    Top =1720
+                    Width =2438
+                    Height =315
+                    TabIndex =2
+                    Name ="txtAnzMin"
+                    Format ="General Number"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =390
+                            Top =1725
+                            Width =1395
+                            Height =315
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="Gesamt (min):"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4592
+                    Top =850
+                    Width =2151
+                    Height =576
+                    TabIndex =3
+                    Name ="cmbBerechnen"
+                    Caption ="Berechnen"
+                    OnClick ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =3917
+                    Top =2834
+                    Width =803
+                    Height =330
+                    TabIndex =4
+                    Name ="txtGesamtStd"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =453
+                            Top =2834
+                            Width =2340
+                            Height =315
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="Gesamt Zeit(Tage h min)"
+                        End
+                    End
+                End
+                Begin TextBox
+                    DecimalPlaces =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1529
+                    Top =3326
+                    Width =2438
+                    Height =315
+                    TabIndex =5
+                    Name ="txtAnzTage"
+                    Format ="General Number"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =396
+                            Top =3326
+                            Width =645
+                            Height =315
+                            Name ="Bezeichnungsfeld10"
+                            Caption ="AT"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =4881
+                    Top =2834
+                    Width =803
+                    Height =330
+                    TabIndex =6
+                    Name ="txtGesamtMin"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =2953
+                    Top =2834
+                    Width =803
+                    Height =330
+                    TabIndex =7
+                    Name ="txtTage"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "TestCalMinDiffDate.cls"

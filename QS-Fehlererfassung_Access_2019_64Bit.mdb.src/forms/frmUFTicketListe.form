@@ -1,0 +1,363 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =16892
+    DatasheetFontHeight =11
+    ItemSuffix =23
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x83650929b23be640
+    End
+    RecordSource ="SELECT tblTicketListe.ReklID, tblTicketTyp.Anzeige, tblTicketStatus.Anzeige, tbl"
+        "TicketListe.MailDatum, tblTicketListe.BearbeitungBis, tblTicketListe.VerlängertB"
+        "is, tblTicketListe.ErledigtAm, tblTicketListe.TicketID, tblTicketListe.TicketSta"
+        "tusID, tblTicketListe.MailErstellt, tblTicketListe.TicketTypID, tblTicketListe.M"
+        "ailAn, tblTicketListe.ErledigtVon, tblTicketTyp.TicketAnzeigen FROM (tblTicketLi"
+        "ste LEFT JOIN tblTicketTyp ON tblTicketListe.TicketTypID = tblTicketTyp.TicketTy"
+        "pID) LEFT JOIN tblTicketStatus ON tblTicketListe.TicketStatusID = tblTicketStatu"
+        "s.TicketStatusID WHERE (((tblTicketStatus.TicketStatusID)<>3) AND ((tblTicketTyp"
+        ".TicketAnzeigen)=True));"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =315
+            BackColor =12566463
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Width =555
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="ID"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =570
+                    Width =2715
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld1"
+                    Caption ="Ticket Typ"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =10986
+                    Width =1695
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld2"
+                    Caption ="Ticket Status"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =7476
+                    Width =1170
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld3"
+                    Caption ="Vers. am"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =2
+                    Left =8646
+                    Width =1170
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld4"
+                    Caption ="Bearb. bis:"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =2
+                    Left =9816
+                    Width =1170
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld5"
+                    Caption ="Verl. bis:"
+                End
+                Begin Label
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =14400
+                    Width =1170
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld6"
+                    Caption ="ErledigtAm:"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =2
+                    Left =6306
+                    Width =1170
+                    Height =315
+                    ForeColor =0
+                    Name ="BezErstellt am"
+                    Caption ="ErstelltAm:"
+                    EventProcPrefix ="BezErstellt_am"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =2
+                    Left =12681
+                    Width =694
+                    Height =315
+                    ForeColor =0
+                    Name ="txtMahnstufe"
+                    Caption ="Status"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =3285
+                    Width =3021
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld20"
+                    Caption ="Verantwortlich"
+                End
+                Begin Label
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =15647
+                    Width =1245
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld22"
+                    Caption ="ErledigtVon:"
+                End
+            End
+        End
+        Begin Section
+            Height =315
+            BackColor =12566463
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Width =570
+                    Height =315
+                    FontSize =10
+                    Name ="TicketID"
+                    ControlSource ="TicketID"
+                    StatusBarText ="Reklamations ID"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =570
+                    Width =2715
+                    Height =315
+                    ColumnWidth =2970
+                    FontSize =10
+                    TabIndex =1
+                    Name ="tblTicketTyp.Anzeige"
+                    ControlSource ="tblTicketTyp.Anzeige"
+                    EventProcPrefix ="tblTicketTyp_Anzeige"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =93
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =10986
+                    Width =1695
+                    Height =315
+                    ColumnWidth =3045
+                    FontSize =10
+                    TabIndex =2
+                    Name ="tblTicketStatus.Anzeige"
+                    ControlSource ="tblTicketStatus.Anzeige"
+                    EventProcPrefix ="tblTicketStatus_Anzeige"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =93
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =7476
+                    Width =1170
+                    Height =315
+                    FontSize =10
+                    TabIndex =3
+                    Name ="MailDatum"
+                    ControlSource ="MailDatum"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =95
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =8646
+                    Width =1170
+                    Height =315
+                    ColumnWidth =1830
+                    FontSize =10
+                    TabIndex =4
+                    Name ="BearbeitungBis"
+                    ControlSource ="BearbeitungBis"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =9816
+                    Width =1170
+                    Height =315
+                    FontSize =10
+                    TabIndex =5
+                    Name ="VerlängertBis"
+                    ControlSource ="VerlängertBis"
+                    Format ="Short Date"
+                    AfterUpdate ="[Event Procedure]"
+                    InputMask ="00,00,00;0;*"
+                    OnGotFocus ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =14400
+                    Width =1191
+                    Height =315
+                    TabIndex =6
+                    Name ="ErledigtAm"
+                    ControlSource ="ErledigtAm"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =6306
+                    Width =1170
+                    Height =315
+                    FontSize =10
+                    TabIndex =7
+                    Name ="MailErstellt"
+                    ControlSource ="MailErstellt"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13438
+                    Width =906
+                    Height =315
+                    FontSize =10
+                    TabIndex =8
+                    Name ="cmbErledigt"
+                    Caption ="Erledigt"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =12681
+                    Width =694
+                    Height =315
+                    FontSize =10
+                    TabIndex =9
+                    Name ="bezMahnstufe"
+                    ControlSource ="TicketStatusID"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =3285
+                    Width =3021
+                    Height =315
+                    ColumnWidth =3555
+                    FontSize =10
+                    TabIndex =10
+                    Name ="MailAn"
+                    ControlSource ="MailAn"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =15647
+                    Width =1245
+                    Height =315
+                    TabIndex =11
+                    Name ="ErledigtVon"
+                    ControlSource ="ErledigtVon"
+                    StatusBarText ="Kürzel"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmUFTicketListe.cls"

@@ -1,0 +1,71 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_Rückmeldungen_Lieferant"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 495
+      },
+      "OrderByOn": {
+        "Type": 1,
+        "Value": true
+      }
+    },
+    "Columns": {
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 960,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Lieferant_Ist": {
+        "ColumnWidth": 2430,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Lieferant_Soll": {
+        "ColumnWidth": 2520,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 249
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 291,
+          "Top": 6,
+          "Right": 530,
+          "Bottom": 109,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 253,
+          "Bottom": 184,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Ausw_MaßnahmeMetrik_FA-MN"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Maßnahmen.Maßnahme": {
+        "ColumnWidth": 4575,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 273
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "MaßnahmenFehlerarten",
+          "Alias": "",
+          "Left": 36,
+          "Top": 9,
+          "Right": 166,
+          "Bottom": 97,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Maßnahmen",
+          "Alias": "",
+          "Left": 310,
+          "Top": 6,
+          "Right": 514,
+          "Bottom": 184,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

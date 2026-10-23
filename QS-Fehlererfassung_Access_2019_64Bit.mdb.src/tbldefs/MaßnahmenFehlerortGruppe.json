@@ -1,0 +1,12 @@
+﻿{
+  "Info": {
+    "Class": "clsDbTableDef",
+    "Description": "Linked Table"
+  },
+  "Items": {
+    "Name": "MaßnahmenFehlerortGruppe",
+    "Connect": ";DATABASE=\\\\link\\dfs\\QM_Reklamationen_Datenbank\\Access-Datenbank\\Reklamationen Daten\\QS-Fehlererfassung_Daten.mdb",
+    "SourceTableName": "MaßnahmenFehlerortGruppe",
+    "Attributes": 1073741824
+  }
+}

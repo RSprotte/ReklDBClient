@@ -1,0 +1,349 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =119
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8220
+    DatasheetFontHeight =10
+    ItemSuffix =198
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[Firma_ID] = 1"
+    RecSrcDt = Begin
+        0xa53a594130cbe440
+    End
+    RecordSource ="SELECT tblFirma.Firma_ID, tblFirma.Firma_Name, tblFirma.KndNr_Avista, tblZuordnu"
+        "ng.Zuordnung FROM tblFirma LEFT JOIN tblZuordnung ON tblFirma.Zurodnung_ID = tbl"
+        "Zuordnung.Zuordnung_ID; "
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =4251
+            BackColor =16760767
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =2834
+                    Top =2154
+                    Width =3411
+                    Height =255
+                    ColumnWidth =3240
+                    Name ="SKontaktperson"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =566
+                            Top =2154
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="Name, Vorname"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =2834
+                    Top =2834
+                    Width =3411
+                    ColumnWidth =2760
+                    TabIndex =2
+                    Name ="STelefonnummer"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =566
+                            Top =2834
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld4"
+                            Caption ="Telefonnummer:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =2834
+                    Top =2494
+                    Width =1143
+                    Height =256
+                    TabIndex =1
+                    Name ="SKuerzel"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =566
+                            Top =2494
+                            Width =645
+                            Height =240
+                            Name ="Bezeichnungsfeld18"
+                            Caption ="Kürzel"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =2834
+                    Top =3174
+                    Width =3403
+                    Height =256
+                    TabIndex =3
+                    Name ="SE-Mail"
+                    FontName ="Arial"
+                    EventProcPrefix ="SE_Mail"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =566
+                            Top =3174
+                            Width =1755
+                            Height =240
+                            Name ="E-Mail"
+                            Caption ="E-Mail Adresse:"
+                            EventProcPrefix ="E_Mail"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =570
+                    Top =60
+                    Width =5670
+                    Height =360
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld185"
+                    Caption ="Ansprechpartner/Kontaktperson Kunde"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =2834
+                    Top =3571
+                    Width =3403
+                    Height =256
+                    TabIndex =5
+                    Name ="SAnmerkung"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =566
+                            Top =3571
+                            Width =1755
+                            Height =240
+                            Name ="Bezeichnungsfeld187"
+                            Caption ="Anmerkung:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2834
+                    Top =566
+                    Width =1146
+                    Height =255
+                    TabIndex =4
+                    BackColor =15263976
+                    Name ="SKunden-ID"
+                    ControlSource ="Firma_ID"
+                    FontName ="Arial"
+                    EventProcPrefix ="SKunden_ID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =566
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld189"
+                            Caption ="KundenID"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6803
+                    Top =566
+                    Width =1191
+                    Height =454
+                    TabIndex =6
+                    Name ="Speichern"
+                    Caption ="Speichern"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6803
+                    Top =1076
+                    Width =1191
+                    Height =454
+                    TabIndex =7
+                    Name ="Abbrechen"
+                    Caption ="Abbrechen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =2834
+                    Top =907
+                    Width =1086
+                    Height =255
+                    TabIndex =8
+                    BackColor =15263976
+                    Name ="Text190"
+                    ControlSource ="KndNr_Avista"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =907
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld191"
+                            Caption ="Kunden-Nr"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =2834
+                    Top =1587
+                    Width =2271
+                    TabIndex =9
+                    BackColor =15263976
+                    Name ="Text192"
+                    ControlSource ="Zuordnung"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1587
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld193"
+                            Caption ="Zuordnung"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =2834
+                    Top =1247
+                    Width =3408
+                    Height =256
+                    TabIndex =10
+                    BackColor =15263976
+                    Name ="Text194"
+                    ControlSource ="Firma_Name"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =570
+                            Top =1245
+                            Width =825
+                            Height =240
+                            Name ="Bezeichnungsfeld195"
+                            Caption ="Firmierung"
+                        End
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =2
+                    OverlapFlags =247
+                    Left =453
+                    Top =2040
+                    Width =6909
+                    Height =1928
+                    Name ="Rechteck196"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "DialogAnsprechpartnerKunde.cls"

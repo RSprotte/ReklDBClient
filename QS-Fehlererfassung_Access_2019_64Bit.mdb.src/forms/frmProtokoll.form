@@ -1,0 +1,313 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ScrollBars =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15394
+    DatasheetFontHeight =11
+    ItemSuffix =34
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    Filter ="[Feld] = '[Kategorie-Bearbeitung I]' and [Tabelle] = '[ReklMemo]'"
+    RecSrcDt = Begin
+        0x880628306f75e640
+    End
+    RecordSource ="qryProtokoll"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =645
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Width =795
+                    Height =300
+                    FontSize =9
+                    Name ="Bezeichnungsfeld24"
+                    Caption ="Datum:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =1838
+                    Width =681
+                    Height =300
+                    FontSize =9
+                    Name ="Bezeichnungsfeld25"
+                    Caption ="KZZ:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =2551
+                    Width =1290
+                    Height =300
+                    FontSize =9
+                    Name ="Bezeichnungsfeld26"
+                    Caption ="Tabelle:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =4119
+                    Width =1005
+                    Height =300
+                    FontSize =9
+                    Name ="Bezeichnungsfeld27"
+                    Caption ="Feld:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =6932
+                    Width =1170
+                    Height =300
+                    FontSize =9
+                    Name ="Bezeichnungsfeld28"
+                    Caption ="Alter_Wert:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11179
+                    Width =1290
+                    Height =300
+                    FontSize =9
+                    Name ="Bezeichnungsfeld29"
+                    Caption ="Neuer_Wert:"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =10488
+                    Width =216
+                    Height =300
+                    FontSize =9
+                    Name ="Vorgang_ID"
+                    ControlSource ="Vorgang_ID"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =2550
+                    Top =345
+                    Width =1536
+                    Height =300
+                    FontSize =9
+                    TabIndex =1
+                    BorderColor =16777215
+                    ForeColor =13598509
+                    Name ="cobTabelle"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qryProtokoll.Tabelle FROM qryProtokoll GROUP BY qryProtokoll.Tabelle ORDE"
+                        "R BY qryProtokoll.Tabelle DESC;"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =4119
+                    Top =345
+                    Width =2781
+                    Height =300
+                    FontSize =9
+                    TabIndex =2
+                    BorderColor =16777215
+                    ForeColor =13598509
+                    Name ="cboFeld"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT qryProtokoll.Feld FROM qryProtokoll GROUP BY qryProtokoll.Feld ORDER BY q"
+                        "ryProtokoll.Feld;"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =13200
+                    Top =60
+                    Width =1871
+                    Height =448
+                    FontSize =10
+                    TabIndex =3
+                    Name ="cmbFilterLoeschen"
+                    Caption ="Filter Löschen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =340
+            BackColor =12632256
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Width =1806
+                    Height =300
+                    ColumnWidth =1935
+                    FontSize =9
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    StatusBarText ="Änderungs-Datum"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1838
+                    Width =681
+                    Height =300
+                    ColumnWidth =750
+                    FontSize =9
+                    TabIndex =1
+                    Name ="KZZ"
+                    ControlSource ="KZZ"
+                    StatusBarText ="Kurzzeichen Sacharbeiter"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =2551
+                    Width =1536
+                    Height =300
+                    ColumnWidth =1275
+                    FontSize =9
+                    TabIndex =2
+                    Name ="Tabelle"
+                    ControlSource ="Tabelle"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =4119
+                    Width =2781
+                    Height =300
+                    ColumnWidth =2415
+                    FontSize =9
+                    TabIndex =3
+                    Name ="Feld"
+                    ControlSource ="Feld"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =6932
+                    Width =4215
+                    Height =300
+                    ColumnWidth =1455
+                    FontSize =9
+                    TabIndex =4
+                    Name ="Alter_Wert"
+                    ControlSource ="Alter_Wert"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =11179
+                    Width =4215
+                    Height =300
+                    ColumnWidth =1575
+                    FontSize =9
+                    TabIndex =5
+                    Name ="Neuer_Wert"
+                    ControlSource ="Neuer_Wert"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =12632256
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmProtokoll.cls"

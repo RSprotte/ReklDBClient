@@ -1,0 +1,274 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4314
+    DatasheetFontHeight =11
+    ItemSuffix =18
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xbaadf35a727be640
+    End
+    RecordSource ="SELECT LieferantAnsprechpartner.*, [Name] & \", \" & [Vorname] AS Kontaktperson,"
+        " Lieferanten.Info, Lieferanten.[Lieferant-ID] FROM LieferantAnsprechpartner LEFT"
+        " JOIN Lieferanten ON LieferantAnsprechpartner.LieferantID = Lieferanten.[Liefera"
+        "nt-ID];"
+    Caption ="frmUFKundenDaten"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =15783096
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =1815
+            BackColor =12632256
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =93
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =963
+                    Top =285
+                    Width =3351
+                    Height =285
+                    ColumnWidth =3000
+                    FontSize =9
+                    FontWeight =600
+                    TabIndex =1
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryLieferantenDaten#Telefon"
+                    ControlSource ="Telefon"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryLieferantenDaten_Telefon"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            TextFontFamily =34
+                            ReadingOrder =1
+                            Top =285
+                            Width =876
+                            Height =285
+                            FontSize =9
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblTelefonnummer"
+                            Caption ="Tel."
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =963
+                    Width =3351
+                    Height =285
+                    FontSize =9
+                    FontWeight =600
+                    TabIndex =3
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryLieferantenDaten#Kontaktperson"
+                    ControlSource ="Kontaktperson"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryLieferantenDaten_Kontaktperson"
+                    Begin
+                        Begin Label
+                            OverlapFlags =87
+                            TextAlign =3
+                            TextFontFamily =34
+                            ReadingOrder =1
+                            Width =876
+                            Height =285
+                            FontSize =9
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="AP"
+                            Caption ="Name"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =1
+                    OverlapFlags =223
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =113
+                    Top =340
+                    Width =285
+                    Height =285
+                    FontSize =9
+                    TabIndex =2
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryLieferantenDaten#AnsprechpartnerID"
+                    ControlSource ="AnsprechpartnerID"
+                    StatusBarText ="Fehlerbericht II"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryLieferantenDaten_AnsprechpartnerID"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =87
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =963
+                    Top =570
+                    Width =3351
+                    Height =285
+                    ColumnWidth =3000
+                    FontSize =9
+                    FontWeight =600
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="AnsprechpartnerID#Email"
+                    ControlSource ="Email"
+                    FontName ="Arial"
+                    EventProcPrefix ="AnsprechpartnerID_Email"
+                    Begin
+                        Begin Label
+                            OverlapFlags =255
+                            TextAlign =3
+                            TextFontFamily =34
+                            ReadingOrder =1
+                            Top =570
+                            Width =876
+                            Height =285
+                            FontSize =9
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblEmail"
+                            Caption ="E-Mail"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =960
+                    Top =960
+                    Width =3351
+                    Height =855
+                    FontSize =9
+                    FontWeight =600
+                    TabIndex =4
+                    BackColor =12632256
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="txtInfo"
+                    ControlSource ="Info"
+                    OnDblClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =1
+                    OverlapFlags =247
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =113
+                    Top =745
+                    Width =285
+                    Height =285
+                    FontSize =9
+                    TabIndex =5
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="Text17"
+                    ControlSource ="Lieferant-ID"
+                    StatusBarText ="Fehlerbericht II"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmUFLiefernatDaten.cls"

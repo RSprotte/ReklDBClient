@@ -1,0 +1,368 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ScrollBars =2
+    TabularFamily =100
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6692
+    DatasheetFontHeight =10
+    ItemSuffix =21
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[Meldungsnummer Kunde] = '26-7LD013'"
+    RecSrcDt = Begin
+        0x9eaf31c06c06e640
+    End
+    RecordSource ="SELECT Mastertab.ID, Mastertab.[Meldungsnummer Kunde], Mastertab.Referenznummer,"
+        " Mastertab.Fehlerpositionen, Mastertab.[Welcher Fehler tritt auf], LQEinheit.LQE"
+        "inheit, Mastertab.Sachbearbeiter, Mastertab.[Kategorie-Status] FROM Mastertab LE"
+        "FT JOIN LQEinheit ON Mastertab.LQEinheitID = LQEinheit.ID WHERE (((Mastertab.Ref"
+        "erenznummer) Is Not Null)) ORDER BY Mastertab.ID; "
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =13750737
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =1162
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =5670
+                    Height =405
+                    FontSize =16
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Referenzvorgänge bzw. -positionen"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =56
+                    Top =907
+                    Width =1080
+                    Height =240
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld2"
+                    Caption ="Rekl_ID"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =2612
+                    Top =907
+                    Width =2490
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld5"
+                    Caption ="Meldungsnummer Kunde"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =1190
+                    Top =892
+                    Width =825
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld7"
+                    Caption ="Ref.Nr."
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6009
+                    Top =113
+                    Width =576
+                    Height =576
+                    Name ="Schließen"
+                    Caption ="Befehl9"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =2062
+                    Top =907
+                    Width =501
+                    Height =240
+                    FontSize =10
+                    FontWeight =700
+                    Name ="BezFehlerpositionen"
+                    Caption ="Pos."
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =2267
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =56
+                    Top =113
+                    Width =1080
+                    FontSize =10
+                    Name ="Text1"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =247
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =56
+                    Top =113
+                    Width =1086
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Text4"
+                    ControlSource ="ID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2612
+                    Top =113
+                    Width =2496
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Text6"
+                    ControlSource ="Meldungsnummer Kunde"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1204
+                    Top =113
+                    Width =801
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Text8"
+                    ControlSource ="Referenznummer"
+                    OnDblClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =57
+                    Top =962
+                    Width =6525
+                    Height =1191
+                    ColumnWidth =4500
+                    TabIndex =4
+                    Name ="Welcher Fehler tritt auf"
+                    ControlSource ="Welcher Fehler tritt auf"
+                    StatusBarText ="Fehlerbericht I+II - Fehlerbeschreibung"
+                    EventProcPrefix ="Welcher_Fehler_tritt_auf"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =56
+                            Top =736
+                            Width =3285
+                            Height =225
+                            Name ="Bezeichnungsfeld10"
+                            Caption ="Fehlerbeschreibung:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3918
+                    Top =490
+                    Width =1851
+                    Height =255
+                    TabIndex =5
+                    Name ="Kategorie-Status"
+                    ControlSource ="Kategorie-Status"
+                    StatusBarText ="Fehlerbericht II"
+                    EventProcPrefix ="Kategorie_Status"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =1987
+                    Top =490
+                    Width =1851
+                    Height =255
+                    TabIndex =6
+                    Name ="LQEinheit"
+                    ControlSource ="LQEinheit"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =56
+                    Top =490
+                    Width =1851
+                    Height =255
+                    TabIndex =7
+                    Name ="Sachbearbeiter"
+                    ControlSource ="Sachbearbeiter"
+                    StatusBarText ="Fehlerbericht II"
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2062
+                    Top =113
+                    Width =501
+                    Height =255
+                    ColumnWidth =1575
+                    FontSize =10
+                    TabIndex =8
+                    Name ="txtFehlerpositionen"
+                    ControlSource ="Fehlerpositionen"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6009
+                    Top =169
+                    Width =576
+                    Height =576
+                    TabIndex =9
+                    Name ="cmbFehlerUrsacheAnzeigen"
+                    Caption ="Befehl17"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddd00000000000000dd ,
+                        0x080ffffffffff0dd080f00f00f00f0dd080ffffffffff0dd080f00f00f00f0dd ,
+                        0x080ffffffffff0dd080f00f00f00f0dd080ffffffffff0dd080f00f00f00f0dd ,
+                        0x080ffffffffff0dd00000000000000dd08088888888880dd00000000000000dd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Weitersuchen"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Referenzmeldungspositionen.cls"

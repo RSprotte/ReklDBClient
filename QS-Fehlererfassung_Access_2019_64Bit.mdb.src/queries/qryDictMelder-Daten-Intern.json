@@ -1,0 +1,99 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryDictMelder-Daten-Intern"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.DefTaetigkeitErfasserID": {
+        "ColumnWidth": 2610,
+        "AggregateType": -1
+      },
+      "Mastertab.LQBereichErfasserID": {
+        "ColumnWidth": 2295,
+        "AggregateType": -1
+      },
+      "Mastertab.LQBereichID": {
+        "ColumnWidth": 2325,
+        "AggregateType": -1
+      },
+      "Mastertab.LQEinheitErfasserID": {
+        "ColumnWidth": 3045,
+        "AggregateType": -1
+      },
+      "Mastertab.LQEinheitID": {
+        "ColumnWidth": 3015,
+        "AggregateType": -1
+      },
+      "Mastertab.LQWorkstationErfasserID": {
+        "ColumnWidth": 2325,
+        "AggregateType": -1
+      },
+      "Mastertab.TaetigkeitErfasserID": {
+        "ColumnWidth": 2280,
+        "AggregateType": -1
+      },
+      "ReklMemo.VorgangArtIntern": {
+        "ColumnWidth": 2040,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 657
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 334,
+          "Bottom": 672,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 422,
+          "Top": 30,
+          "Right": 641,
+          "Bottom": 374,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 389,
+          "Top": 410,
+          "Right": 591,
+          "Bottom": 630,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 683,
+          "Top": 12,
+          "Right": 827,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

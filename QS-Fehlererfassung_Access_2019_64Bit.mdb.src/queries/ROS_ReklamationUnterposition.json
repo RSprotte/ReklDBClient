@@ -1,0 +1,44 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "ROS_ReklamationUnterposition"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Kategorie-Status]": {
+        "ColumnWidth": 2115,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 581
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 411,
+          "Bottom": 564,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

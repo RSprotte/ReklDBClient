@@ -1,0 +1,57 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryFirmenName"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Kunden.[Kunden-ID]": {
+        "ColumnWidth": 1410,
+        "AggregateType": -1
+      },
+      "tblFirma.Firma_Name": {
+        "ColumnWidth": 3960,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 551
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 272,
+          "Bottom": 342,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 434,
+          "Top": 119,
+          "Right": 578,
+          "Bottom": 263,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,525 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6406
+    DatasheetFontHeight =10
+    ItemSuffix =28
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xf886245f1749e440
+    End
+    RecordSource ="Sachbearbeiter"
+    Caption ="Sachbearbeiter"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =4141
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1524
+                    Top =114
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    Name ="Name"
+                    ControlSource ="Name"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =57
+                            Top =114
+                            Width =1377
+                            Height =255
+                            Name ="Name_Bezeichnungsfeld"
+                            Caption ="Name"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1524
+                    Top =456
+                    Width =3579
+                    Height =285
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="Kurzzeichen"
+                    ControlSource ="Kurzzeichen"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =57
+                            Top =456
+                            Width =1377
+                            Height =255
+                            Name ="Kurzzeichen_Bezeichnungsfeld"
+                            Caption ="Kurzzeichen"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =855
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =2
+                    Name ="EmailName"
+                    ControlSource ="EmailName"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =855
+                            Width =1377
+                            Height =255
+                            Name ="EmailName_Bezeichnungsfeld"
+                            Caption ="Email-Name"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =1197
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =3
+                    Name ="Durchwahl"
+                    ControlSource ="Durchwahl"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =1197
+                            Width =1377
+                            Height =255
+                            Name ="Durchwahl_Bezeichnungsfeld"
+                            Caption ="Durchwahl"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =1539
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =4
+                    Name ="TelefonBeruflich"
+                    ControlSource ="TelefonBeruflich"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =1539
+                            Width =1377
+                            Height =255
+                            Name ="TelefonBeruflich_Bezeichnungsfeld"
+                            Caption ="Telefon/beruflich"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =1881
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =5
+                    Name ="TelefaxBeruflich"
+                    ControlSource ="TelefaxBeruflich"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =1881
+                            Width =1377
+                            Height =255
+                            Name ="TelefaxBeruflich_Bezeichnungsfeld"
+                            Caption ="Telefax/beruflich"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =2223
+                    Width =3579
+                    Height =255
+                    ColumnWidth =1560
+                    TabIndex =8
+                    Name ="Bürostandort"
+                    ControlSource ="Bürostandort"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =2223
+                            Width =1377
+                            Height =255
+                            Name ="Bürostandort_Bezeichnungsfeld"
+                            Caption ="Bürostandort"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =3225
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =9
+                    Name ="Strasse"
+                    ControlSource ="Strasse"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =3225
+                            Width =1377
+                            Height =255
+                            Name ="Strasse_Bezeichnungsfeld"
+                            Caption ="Strasse"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =3567
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =10
+                    Name ="PLZ"
+                    ControlSource ="PLZ"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =3567
+                            Width =1377
+                            Height =255
+                            Name ="PLZ_Bezeichnungsfeld"
+                            Caption ="PLZ"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1527
+                    Top =3886
+                    Width =3579
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =11
+                    Name ="Ort"
+                    ControlSource ="Ort"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =60
+                            Top =3886
+                            Width =1377
+                            Height =255
+                            Name ="Ort_Bezeichnungsfeld"
+                            Caption ="Ort"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    FontUnderline = NotDefault
+                    OverlapFlags =85
+                    Left =5670
+                    Top =3555
+                    Width =576
+                    Height =576
+                    TabIndex =12
+                    Name ="Schließen"
+                    Caption ="Befehl24"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =5550
+                    Top =150
+                    TabIndex =13
+                    Name ="Aktiv"
+                    ControlSource ="Aktiv"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =5780
+                            Top =120
+                            Width =435
+                            Height =240
+                            Name ="Bezeichnungsfeld25"
+                            Caption ="Aktiv"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =2565
+                    Width =3579
+                    Height =255
+                    TabIndex =6
+                    Name ="Einheit"
+                    ControlSource ="Einheit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.LQEinheit FROM LQEinheit; "
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =2565
+                            Width =1377
+                            Height =255
+                            Name ="Einheit_Bezeichnungsfeld"
+                            Caption ="Einheit"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5725
+                    Top =510
+                    Width =456
+                    Height =255
+                    TabIndex =14
+                    Name ="SB-ID"
+                    ControlSource ="SB-ID"
+                    EventProcPrefix ="SB_ID"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1528
+                    Top =2907
+                    Width =3579
+                    Height =255
+                    TabIndex =7
+                    Name ="Bereich"
+                    ControlSource ="Bereich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.LQBereich, LQEinheit.LQEinheit FROM LQEinheit LEFT JOIN LQBerei"
+                        "ch ON LQEinheit.ID = LQBereich.[ID-LQEinheit] WHERE (((LQEinheit.LQEinheit)=[For"
+                        "mulare]![Sachbearbeiter]![Einheit]));"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =61
+                            Top =2907
+                            Width =1377
+                            Height =255
+                            Name ="Bereich_Bezeichnungsfeld"
+                            Caption ="Bereich"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Sachbearbeiter.cls"

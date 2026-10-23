@@ -1,0 +1,153 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_Rückmeldungen_TRUMPF"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 480
+      },
+      "DatasheetFontName": {
+        "Type": 10,
+        "Value": "Arial"
+      },
+      "DatasheetFontHeight": {
+        "Type": 3,
+        "Value": 8
+      },
+      "DatasheetFontWeight": {
+        "Type": 3,
+        "Value": 400
+      },
+      "DatasheetFontItalic": {
+        "Type": 1,
+        "Value": false
+      },
+      "DatasheetFontUnderline": {
+        "Type": 1,
+        "Value": false
+      },
+      "TabularCharSet": {
+        "Type": 2,
+        "Value": 0
+      },
+      "TabularFamily": {
+        "Type": 2,
+        "Value": 34
+      },
+      "DatasheetForeColor": {
+        "Type": 4,
+        "Value": 0
+      },
+      "DatasheetForeColor12": {
+        "Type": 4,
+        "Value": 0
+      }
+    },
+    "Columns": {
+      "[Kategorien-Vorgangstatus].[Kategorie-Vorgangstatus]": {
+        "ColumnWidth": 1455,
+        "AggregateType": -1
+      },
+      "[Mastertab].[ID]": {
+        "ColumnWidth": 570,
+        "AggregateType": -1
+      },
+      "AnKdIst": {
+        "ColumnWidth": 885,
+        "AggregateType": -1
+      },
+      "AnKdSoll": {
+        "ColumnWidth": 885,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 885,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 555,
+        "AggregateType": -1
+      },
+      "QS": {
+        "ColumnWidth": 630,
+        "AggregateType": -1
+      },
+      "Rückstand": {
+        "ColumnWidth": 960,
+        "AggregateType": -1
+      },
+      "Verschoben": {
+        "ColumnWidth": 1125,
+        "AggregateType": -1
+      },
+      "VonLiefIst": {
+        "ColumnWidth": 1080,
+        "AggregateType": -1
+      },
+      "VonLiefSoll": {
+        "ColumnWidth": 1080,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 386
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Kategorien-Vorgangstatus",
+          "Alias": "",
+          "Left": 481,
+          "Top": 6,
+          "Right": 577,
+          "Bottom": 94,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 347,
+          "Top": 6,
+          "Right": 472,
+          "Bottom": 234,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 309,
+          "Bottom": 364,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 625,
+          "Top": 12,
+          "Right": 769,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryStellungnahme_Klärung_Kunde_Trumpf"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "NoFormat": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "Columns": {
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1440,
+        "AggregateType": -1
+      },
+      "Mastertab.Auftragsdatum": {
+        "ColumnWidth": 1800,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Kunde_Ist": {
+        "ColumnWidth": 2715,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1194,
+        "bottom": 809
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1178,
+        "bottom": 484
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 19,
+          "Top": 15,
+          "Right": 221,
+          "Bottom": 553,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 306,
+          "Top": 339,
+          "Right": 450,
+          "Bottom": 483,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 480,
+          "Top": 341,
+          "Right": 624,
+          "Bottom": 485,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 301,
+          "Top": 17,
+          "Right": 445,
+          "Bottom": 161,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kategorien-Vorgangstatus",
+          "Alias": "",
+          "Left": 307,
+          "Top": 181,
+          "Right": 451,
+          "Bottom": 325,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

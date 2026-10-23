@@ -1,0 +1,75 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "ROS_Statistik_Service"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Kategorie-Problem]": {
+        "ColumnWidth": 2805,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Status]": {
+        "ColumnWidth": 2340,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 761
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 243,
+          "Bottom": 754,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 275,
+          "Top": 12,
+          "Right": 420,
+          "Bottom": 250,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Vorgangstyp",
+          "Alias": "",
+          "Left": 466,
+          "Top": 16,
+          "Right": 562,
+          "Bottom": 119,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "AufwandVorgangPositionen",
+          "Alias": "",
+          "Left": 600,
+          "Top": 6,
+          "Right": 739,
+          "Bottom": 199,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

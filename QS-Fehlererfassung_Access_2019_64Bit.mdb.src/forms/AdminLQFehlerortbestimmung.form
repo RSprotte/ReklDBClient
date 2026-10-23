@@ -1,0 +1,880 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    DataEntry = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =13492
+    DatasheetFontHeight =10
+    ItemSuffix =36
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x593a47b45432e440
+    End
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnMouseMove ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =793
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =578
+                    Top =170
+                    Width =5775
+                    Height =570
+                    FontSize =16
+                    Name ="Bezeichnungsfeld21"
+                    Caption ="LQ Fehlerortbestimmung"
+                    FontName ="Arial Black"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12359
+                    Top =113
+                    Width =576
+                    Height =576
+                    Name ="Schließen"
+                    Caption ="Schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+        Begin Section
+            Height =10601
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin ListBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    Left =577
+                    Top =683
+                    Width =11670
+                    Height =2313
+                    Name ="ListLQEinheit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.ID, LQEinheit.LQEinheit, LQEinheit.MailTOLQEinheit FROM LQEinhe"
+                        "it WHERE (((LQEinheit.Aktiv)=Yes)) ORDER BY LQEinheit.LQEinheit; "
+                    ColumnWidths ="0;1985"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =578
+                            Top =283
+                            Width =1695
+                            Height =305
+                            FontSize =10
+                            Name ="LQ Einheit_Bezeichnungsfeld"
+                            Caption ="LQ Einheit"
+                            FontName ="Arial Black"
+                            EventProcPrefix ="LQ_Einheit_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =12359
+                    Top =623
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =1
+                    Name ="AddLQEinheit"
+                    Caption ="+"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =12359
+                    Top =1304
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =2
+                    Name ="DelLQEinheit"
+                    Caption ="-"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =9515
+                    Top =226
+                    Width =3420
+                    Height =390
+                    FontSize =12
+                    TabIndex =3
+                    Name ="AddNewLQEinheit"
+                    FontName ="Arial Black"
+                End
+                Begin ListBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =570
+                    Top =3862
+                    Width =5160
+                    Height =2313
+                    TabIndex =4
+                    Name ="ListLQBereich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.ID, LQBereich.LQBereich, LQBereich.MailTOLQBereich FROM LQBerei"
+                        "ch WHERE (((LQBereich.[ID-LQEinheit])=[ListLQEinheit])) GROUP BY LQBereich.ID, L"
+                        "QBereich.LQBereich, LQBereich.MailTOLQBereich, LQBereich.Aktiv HAVING (((LQBerei"
+                        "ch.Aktiv)=Yes)) ORDER BY LQBereich.LQBereich; "
+                    ColumnWidths ="0;1985"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =571
+                            Top =3462
+                            Width =1695
+                            Height =305
+                            FontSize =10
+                            Name ="Bezeichnungsfeld7"
+                            Caption ="LQ Bereich"
+                            FontName ="Arial Black"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5844
+                    Top =3859
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =5
+                    Name ="AddLQBereich"
+                    Caption ="+"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5844
+                    Top =4483
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =6
+                    Name ="DelLQBereich"
+                    Caption ="-"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =3000
+                    Top =3405
+                    Width =3420
+                    Height =390
+                    FontSize =12
+                    TabIndex =7
+                    Name ="AddNewLQBereich"
+                    FontName ="Arial Black"
+                End
+                Begin ListBox
+                    OverlapFlags =247
+                    MultiSelect =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =570
+                    Top =6857
+                    Width =5160
+                    Height =3348
+                    TabIndex =8
+                    Name ="ListLQWorkstation"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation WHERE (("
+                        "(LQWorkstation.[ID-LQBereich])=[ListLQBereich])) GROUP BY LQWorkstation.ID, LQWo"
+                        "rkstation.LQWorkstation, LQWorkstation.Aktiv HAVING (((LQWorkstation.Aktiv)=True"
+                        ")) ORDER BY LQWorkstation.LQWorkstation; "
+                    ColumnWidths ="0;1441"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =574
+                            Top =6457
+                            Width =1755
+                            Height =300
+                            FontSize =10
+                            Name ="Bezeichnungsfeld17"
+                            Caption ="LQ Workstation"
+                            FontName ="Arial Black"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5900
+                    Top =6797
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =9
+                    Name ="AddLQWorkstation"
+                    Caption ="+"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5900
+                    Top =7419
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =10
+                    Name ="DelLQWorkstation"
+                    Caption ="-"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =3191
+                    Top =6343
+                    Width =3285
+                    Height =390
+                    FontSize =12
+                    TabIndex =11
+                    Name ="AddNewLQWorkstation"
+                    FontName ="Arial Black"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =93
+                    Left =12359
+                    Top =1984
+                    Width =576
+                    Height =576
+                    FontSize =10
+                    FontWeight =500
+                    TabIndex =12
+                    ForeColor =65535
+                    Name ="MailZuordnenLQEinheit"
+                    Caption ="XDReportLief"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000020000000200000000100080000000000000400000000000000000000 ,
+                        0x0000000000000000000000000000bf0000bf000000bfbf00bf000000bf00bf00 ,
+                        0xbfbf0000c0c0c000c0dcc000f0c8a40000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xf0fbff00a4a0a000808080000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x070707070707070707f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8 ,
+                        0xf8f8f8f8f8f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000ff000000fffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffb000000000000000000000000fffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000000000000000fffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Doppelklick-Reklamationsbericht drucken"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =93
+                    Left =5844
+                    Top =5163
+                    Width =576
+                    Height =576
+                    FontSize =10
+                    FontWeight =500
+                    TabIndex =13
+                    ForeColor =65535
+                    Name ="MailZuordnenLQBereich"
+                    Caption ="XDReportLief"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000020000000200000000100080000000000000400000000000000000000 ,
+                        0x0000000000000000000000000000bf0000bf000000bfbf00bf000000bf00bf00 ,
+                        0xbfbf0000c0c0c000c0dcc000f0c8a40000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xf0fbff00a4a0a000808080000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x070707070707070707f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8 ,
+                        0xf8f8f8f8f8f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000ff000000fffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffb000000000000000000000000fffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000000000000000fffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Doppelklick-Reklamationsbericht drucken"
+                End
+                Begin ListBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =7095
+                    Top =3862
+                    Width =5160
+                    Height =2313
+                    TabIndex =14
+                    Name ="ListLQFunktion"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQFunktion.ID, LQFunktion.LQFunktion FROM LQFunktion LEFT JOIN LQBereich "
+                        "ON LQFunktion.[ID-LQBereich] = LQBereich.ID WHERE (((LQBereich.[ID-LQEinheit])=["
+                        "ListLQEinheit])) GROUP BY LQFunktion.ID, LQFunktion.LQFunktion, LQFunktion.Aktiv"
+                        " HAVING (((LQFunktion.Aktiv)=True)) ORDER BY LQFunktion.LQFunktion; "
+                    ColumnWidths ="0;1442"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =7095
+                            Top =3462
+                            Width =1695
+                            Height =305
+                            FontSize =10
+                            Name ="Bezeichnungsfeld12"
+                            Caption ="LQ Funktion"
+                            FontName ="Arial Black"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =12368
+                    Top =3858
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =15
+                    Name ="AddLQFunktion"
+                    Caption ="+"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =12368
+                    Top =4482
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =16
+                    Name ="DelLQFunktion"
+                    Caption ="-"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =9524
+                    Top =3405
+                    Width =3420
+                    Height =390
+                    FontSize =12
+                    TabIndex =17
+                    Name ="AddNewLQFunktion"
+                    FontName ="Arial Black"
+                End
+                Begin ListBox
+                    OverlapFlags =247
+                    MultiSelect =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =7096
+                    Top =6864
+                    Width =5160
+                    Height =3348
+                    TabIndex =18
+                    Name ="ListLQWorkstationFunkt"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation, LQWSzuGrp.[ID-LQFunktion] "
+                        "FROM LQWorkstation LEFT JOIN LQWSzuGrp ON LQWorkstation.ID = LQWSzuGrp.[ID-WS] G"
+                        "ROUP BY LQWorkstation.ID, LQWorkstation.LQWorkstation, LQWSzuGrp.[ID-LQFunktion]"
+                        ", LQWorkstation.Aktiv HAVING (((LQWSzuGrp.[ID-LQFunktion])=[ListLQFunktion]) AND"
+                        " ((LQWorkstation.Aktiv)=Yes)) ORDER BY LQWorkstation.LQWorkstation; "
+                    ColumnWidths ="0;1443"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =7095
+                            Top =6465
+                            Width =1755
+                            Height =300
+                            FontSize =10
+                            Name ="Bezeichnungsfeld24"
+                            Caption ="LQ Workstation"
+                            FontName ="Arial Black"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =5900
+                    Top =8213
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =19
+                    Name ="InListWSFunk"
+                    Caption ="+"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddddddddddddddddddd ,
+                        0xddddddddddddddddddddddd4ddddddddddddddd44dddddddddddddd444dddddd ,
+                        0xddddddd4444dddddd44444444444ddddd444444444444dddd44444444444dddd ,
+                        0xddddddd4444dddddddddddd444ddddddddddddd44dddddddddddddd4dddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin Rectangle
+                    BorderWidth =3
+                    OverlapFlags =255
+                    Left =170
+                    Top =113
+                    Width =13143
+                    Height =10367
+                    Name ="Rechteck26"
+                End
+                Begin CommandButton
+                    OverlapFlags =255
+                    Left =5900
+                    Top =8838
+                    Width =576
+                    Height =576
+                    FontSize =16
+                    TabIndex =20
+                    Name ="OutListWSFunk"
+                    Caption ="-"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddddddddddddddddddd ,
+                        0xddddddddddddddddddddddd4dddddddddddddd44ddddddddddddd444dddddddd ,
+                        0xdddd4444ddddddddddd44444444444dddd444444444444ddddd44444444444dd ,
+                        0xdddd4444ddddddddddddd444dddddddddddddd44ddddddddddddddd4dddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    FontName ="Arial Black"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin Rectangle
+                    BorderWidth =3
+                    OverlapFlags =255
+                    Left =171
+                    Top =3165
+                    Width =6580
+                    Height =7315
+                    Name ="Rechteck27"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =247
+                    Left =5900
+                    Top =9575
+                    Width =576
+                    Height =576
+                    FontSize =10
+                    FontWeight =500
+                    TabIndex =21
+                    ForeColor =65535
+                    Name ="MailZuordnenLQWS"
+                    Caption ="XDReportLief"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000020000000200000000100080000000000000400000000000000000000 ,
+                        0x0000000000000000000000000000bf0000bf000000bfbf00bf000000bf00bf00 ,
+                        0xbfbf0000c0c0c000c0dcc000f0c8a40000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xf0fbff00a4a0a000808080000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x070707070707070707f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8 ,
+                        0xf8f8f8f8f8f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000ff000000fffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffb000000000000000000000000fffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000000000000000fffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Doppelklick-Reklamationsbericht drucken"
+                End
+                Begin ListBox
+                    Visible = NotDefault
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =4875
+                    Top =226
+                    Width =1984
+                    Height =227
+                    TabIndex =22
+                    Name ="Liste33"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID FROM LQWorkstation GROUP BY LQWorkstation.ID HAVING (((L"
+                        "QWorkstation.ID)=[ListLQWorkstation])); "
+                End
+                Begin Rectangle
+                    BorderWidth =3
+                    OverlapFlags =255
+                    Left =6746
+                    Top =3165
+                    Width =6580
+                    Height =7315
+                    Name ="Rechteck35"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "AdminLQFehlerortbestimmung.cls"

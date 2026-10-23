@@ -1,0 +1,38 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Zeitaufwand_TRUMPF_monatsübersicht"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 234
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "RSP_Zeitauwand_TRUMPF",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 429,
+          "Bottom": 173,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

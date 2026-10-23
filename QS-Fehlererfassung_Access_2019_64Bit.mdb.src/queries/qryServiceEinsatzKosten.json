@@ -1,0 +1,52 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryServiceEinsatzKosten"
+  },
+  "Items": {
+    "QueryType": 128,
+    "OptionFlag": 3,
+    "Columns": {
+      "Info": {
+        "ColumnWidth": 7920,
+        "AggregateType": -1
+      },
+      "tblKostenaufstellung.Datum": {
+        "ColumnWidth": 1140,
+        "AggregateType": -1
+      },
+      "tblKostenaufstellung.Kosten": {
+        "ColumnWidth": 1065,
+        "AggregateType": -1
+      },
+      "tblKostenaufstellung.ReklID": {
+        "ColumnWidth": 1020,
+        "AggregateType": -1
+      },
+      "Typ": {
+        "ColumnWidth": 3780,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 495
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 2058,
+      "Tables": [
+      ]
+    }
+  }
+}

@@ -1,0 +1,196 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Ausw_Basisdaten_1_Filter"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "[Artikel-all_avista_out].[LQ Art-Nr]": {
+        "ColumnWidth": 2850,
+        "AggregateType": -1
+      },
+      "Lieferanten.VerantwortlichEinkauf": {
+        "ColumnWidth": 2055,
+        "AggregateType": -1
+      },
+      "Mastertab.[LINK-Nr - UBG]": {
+        "ColumnWidth": 1695,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 619
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 9,
+          "Top": 9,
+          "Right": 323,
+          "Bottom": 659,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 588,
+          "Top": 170,
+          "Right": 744,
+          "Bottom": 364,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 432,
+          "Top": 302,
+          "Right": 598,
+          "Bottom": 470,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 386,
+          "Top": 13,
+          "Right": 525,
+          "Bottom": 131,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Taetigkeiten",
+          "Alias": "",
+          "Left": 574,
+          "Top": 6,
+          "Right": 670,
+          "Bottom": 124,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ZuordnungDefTaetigkeit",
+          "Alias": "",
+          "Left": 708,
+          "Top": 6,
+          "Right": 804,
+          "Bottom": 124,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 842,
+          "Top": 6,
+          "Right": 938,
+          "Bottom": 124,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 775,
+          "Top": 314,
+          "Right": 948,
+          "Bottom": 614,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 1139,
+          "Top": 142,
+          "Right": 1320,
+          "Bottom": 275,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 1244,
+          "Top": 6,
+          "Right": 1340,
+          "Bottom": 124,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation_1",
+          "Alias": "",
+          "Left": 1152,
+          "Top": 303,
+          "Right": 1327,
+          "Bottom": 432,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklIDtoTagID",
+          "Alias": "",
+          "Left": 1512,
+          "Top": 6,
+          "Right": 1608,
+          "Bottom": 94,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 1646,
+          "Top": 6,
+          "Right": 1786,
+          "Bottom": 199,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter_1",
+          "Alias": "",
+          "Left": 435,
+          "Top": 168,
+          "Right": 571,
+          "Bottom": 286,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Verursacher",
+          "Alias": "",
+          "Left": 1512,
+          "Top": 96,
+          "Right": 1608,
+          "Bottom": 184,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 776,
+          "Top": 166,
+          "Right": 920,
+          "Bottom": 310,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblZuordnung",
+          "Alias": "",
+          "Left": 948,
+          "Top": 152,
+          "Right": 1092,
+          "Bottom": 296,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

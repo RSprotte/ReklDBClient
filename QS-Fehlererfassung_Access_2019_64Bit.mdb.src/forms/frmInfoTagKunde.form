@@ -1,0 +1,211 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =2
+    TabularFamily =117
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9127
+    DatasheetFontHeight =10
+    ItemSuffix =4
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xccf11e0f2caae440
+    End
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =737
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =225
+                    Top =120
+                    Width =7980
+                    Height =465
+                    FontSize =16
+                    FontWeight =700
+                    Name ="BezUeberschriftTagZuordnung"
+                    Caption ="Informationen Lieferbedingungen Kunde hinzufügen"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8390
+                    Top =60
+                    Width =576
+                    Height =576
+                    Name ="Schließen"
+                    Caption ="Befehl22"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+        Begin Section
+            Height =7086
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin ListBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =170
+                    Top =227
+                    Width =4095
+                    Height =6757
+                    Name ="ListTag"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT RSP_ReklTag.TagID, RSP_ReklTag.Tag FROM RSP_ReklTag GROUP BY RSP_ReklTag."
+                        "TagID, RSP_ReklTag.Tag ORDER BY RSP_ReklTag.Tag; "
+                    ColumnWidths ="0;1443"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =170
+                            Width =1065
+                            Height =240
+                            Name ="Taetigkeiten_Bezeichnungsfeld"
+                            Caption ="Übersicht Tag"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4428
+                    Top =1122
+                    Width =1134
+                    Height =622
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="ButNewTag"
+                    Caption ="Neues Tag"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5672
+                    Top =1123
+                    Width =1134
+                    Height =622
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="ButDeleteTag"
+                    Caption ="Löschen Tag"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListWidth =2880
+                    Left =4425
+                    Top =622
+                    Width =4475
+                    Height =330
+                    TabIndex =3
+                    Name ="cboFirma"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [tblFirma].[Firma_ID], [tblFirma].[Firma_Name], [tblFirma].[KndNr_Avista]"
+                        " FROM tblFirma ORDER BY [Firma_Name]; "
+                    ColumnWidths ="0;3402;567"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextFontFamily =0
+                            Left =4425
+                            Top =225
+                            Width =870
+                            Height =335
+                            FontSize =11
+                            BackColor =-2147483633
+                            BorderColor =13750737
+                            ForeColor =2102279
+                            Name ="txtFirma"
+                            Caption ="Firma"
+                            FontName ="Aptos"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmInfoTagKunde.cls"

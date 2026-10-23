@@ -1,0 +1,195 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9354
+    DatasheetFontHeight =11
+    ItemSuffix =12
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x1829a8e05173e640
+    End
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =5102
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2835
+                    Width =4033
+                    Height =176
+                    TabIndex =3
+                    BorderColor =16777215
+                    ForeColor =16777215
+                    Name ="txtTextKI"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =124
+                    Top =225
+                    Width =9075
+                    Height =810
+                    Name ="Bezeichnungsfeld7"
+                    Caption ="Der Text wird in die Zwischenablage kopiert und anschließend einer KI zur weiter"
+                        "en Bearbeitung übergeben. Das von der KI erzeugte Ergebnis wird danach im Intern"
+                        "etbrowser dargestellt.\015\012"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =122
+                    Top =1110
+                    Width =9075
+                    Height =300
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Definition:"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =215
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =122
+                    Top =1395
+                    Width =9075
+                    Height =300
+                    FontSize =10
+                    TabIndex =2
+                    Name ="cboKI"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblKI.ID, tblKI.Anfrage, tblKI.KZ FROM tblKI WHERE (((tblKI.KZ)=get_pKuer"
+                        "zel())); "
+                    ColumnWidths ="0;2835"
+                    DefaultValue ="=[cboKI].[Itemdata](0)"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =122
+                    Top =1740
+                    Width =9075
+                    Height =300
+                    Name ="Bezeichnungsfeld9"
+                    Caption ="Text:\015\012"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =122
+                    Top =2025
+                    Width =9075
+                    Height =2280
+                    FontSize =9
+                    Name ="txtText"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =120
+                    Top =4350
+                    Width =2669
+                    Height =611
+                    FontSize =10
+                    TabIndex =4
+                    Name ="cmbFrage"
+                    Caption ="Neue Definition erstellen und mit Kürzel abspeichern"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =3324
+                    Top =4350
+                    Width =2669
+                    Height =611
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =5
+                    ForeColor =255
+                    Name ="cmbLoeschen"
+                    Caption ="Text Inhalt löschen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =6528
+                    Top =4365
+                    Width =2669
+                    Height =611
+                    FontSize =10
+                    TabIndex =1
+                    Name ="cmbKI"
+                    Caption ="Text zur Überarbeitung an KI übergeben"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmKI.cls"

@@ -1,0 +1,70 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryVerkuepfteWSAvistaReklDB"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "LQBereich.LQBereich": {
+        "ColumnWidth": 1725,
+        "AggregateType": -1
+      },
+      "LQWorkstation.LQWorkstation": {
+        "ColumnWidth": 1800,
+        "AggregateType": -1
+      },
+      "tblAccessWsID_AvistaWsID.AvistaGrName": {
+        "ColumnWidth": 1755,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 540
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "tblAccessWsID_AvistaWsID",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 321,
+          "Bottom": 350,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 378,
+          "Top": 3,
+          "Right": 753,
+          "Bottom": 356,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 801,
+          "Top": 12,
+          "Right": 945,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,75 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryTerminStellungnahmeKundeLQ"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Ist_QS": {
+        "ColumnWidth": 1680,
+        "AggregateType": -1
+      },
+      "Soll_Kunde": {
+        "ColumnWidth": 1470,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1178,
+        "bottom": 531
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 278,
+          "Bottom": 453,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 397,
+          "Top": 19,
+          "Right": 634,
+          "Bottom": 446,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 711,
+          "Top": 363,
+          "Right": 855,
+          "Bottom": 507,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 317,
+          "Top": 215,
+          "Right": 461,
+          "Bottom": 359,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

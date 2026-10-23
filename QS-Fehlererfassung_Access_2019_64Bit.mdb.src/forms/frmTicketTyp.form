@@ -1,0 +1,572 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =14059
+    DatasheetFontHeight =11
+    ItemSuffix =35
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    Filter ="[TicketTypID] = 1"
+    RecSrcDt = Begin
+        0x5afb63112cece440
+    End
+    RecordSource ="tblTicketTyp"
+    Caption ="frmTicketTyp"
+    DatasheetFontName ="Calibri"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1398
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =56
+                    Top =1081
+                    Width =519
+                    Height =315
+                    ForeColor =0
+                    Name ="TicketTypID_Bezeichnungsfeld"
+                    Caption ="ID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =657
+                    Top =1081
+                    Width =3330
+                    Height =315
+                    ForeColor =0
+                    Name ="TicketTyp_Bezeichnungsfeld"
+                    Caption ="TicketTyp"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =4043
+                    Top =1081
+                    Width =894
+                    Height =315
+                    ForeColor =0
+                    Name ="Arbeitstage_Bezeichnungsfeld"
+                    Caption ="Be.AT"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8001
+                    Top =1077
+                    Width =1134
+                    Height =315
+                    ForeColor =0
+                    Name ="AnsichtSteuerung_Bezeichnungsfeld"
+                    Caption ="Sicht QS-LQ"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =5015
+                    Top =1077
+                    Width =912
+                    Height =315
+                    ForeColor =0
+                    Name ="ErinnerungTage_Bezeichnungsfeld"
+                    Caption ="ErinTage"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =6009
+                    Top =1077
+                    Width =912
+                    Height =315
+                    ForeColor =0
+                    Name ="Mahnung1Tage_Bezeichnungsfeld"
+                    Caption ="1MahAT"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =7003
+                    Top =1083
+                    Width =915
+                    Height =315
+                    ForeColor =0
+                    Name ="Mahnung2Tage_Bezeichnungsfeld"
+                    Caption ="2MahAT"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =5340
+                    Height =510
+                    FontSize =20
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld20"
+                    Caption ="Ticket-Typ Konfiguration"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =774
+                    Top =680
+                    Width =3330
+                    Height =315
+                    ColumnOrder =0
+                    Name ="cboFilterTicketTyp"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblTicketTyp.TicketTypID, tblTicketTyp.Anzeige FROM tblTicketTyp; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =56
+                    Top =680
+                    Width =661
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld24"
+                    Caption ="Filter"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6975
+                    Top =120
+                    Width =2550
+                    Height =405
+                    TabIndex =1
+                    Name ="cmbNeuerTicketTyp"
+                    Caption ="Neuer Ticket-Typ anlegen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9810
+                    Top =120
+                    Width =576
+                    Height =576
+                    TabIndex =2
+                    Name ="cmbSpeichernTicketTyp"
+                    Caption ="Befehl28"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddd0000000000000dd03300000088030d ,
+                        0xd03300000088030dd03300000088030dd03300000000030dd03333333333330d ,
+                        0xd03300000000330dd03088888888030dd03088888888030dd03088888888030d ,
+                        0xd03088888888030dd03088888888000dd03088888888080dd00000000000000d ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz speichern"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10547
+                    Top =120
+                    Width =576
+                    Height =576
+                    TabIndex =3
+                    Name ="cmbFormTickettypSchließen"
+                    Caption ="Befehl29"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9195
+                    Top =1077
+                    Width =1695
+                    Height =315
+                    ForeColor =0
+                    Name ="MahnwesenAktiv_Bezeichnungsfeld"
+                    Caption ="MahnwesenAktiv"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =10953
+                    Top =1077
+                    Width =1515
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld33"
+                    Caption ="MehrfachTicket"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =12529
+                    Top =1077
+                    Width =1530
+                    Height =315
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld34"
+                    Caption ="TicketAnzeigen"
+                End
+            End
+        End
+        Begin Section
+            Height =6632
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =56
+                    Top =57
+                    Width =519
+                    Height =315
+                    ColumnWidth =1701
+                    Name ="TicketTypID"
+                    ControlSource ="TicketTypID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =4025
+                    Top =57
+                    Width =894
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =1
+                    Name ="Arbeitstage"
+                    ControlSource ="Arbeitstage"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2384
+                    Top =850
+                    Width =8850
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="MailBetreff"
+                    ControlSource ="MailBetreff"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2384
+                    Top =1247
+                    Width =8850
+                    Height =5385
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="MailText"
+                    ControlSource ="MailText"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =8505
+                    Top =60
+                    TabIndex =4
+                    Name ="AnsichtSteuerung"
+                    ControlSource ="AnsichtSteuerung"
+                    StatusBarText ="Regelung der Auswahlfelder für den jeweiligen Benutzer"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =4988
+                    Top =56
+                    Width =912
+                    Height =330
+                    ColumnWidth =960
+                    TabIndex =5
+                    Name ="ErinnerungTage"
+                    ControlSource ="ErinnerungTage"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =5973
+                    Top =56
+                    Width =912
+                    Height =330
+                    ColumnWidth =960
+                    TabIndex =6
+                    Name ="Mahnung1Tage"
+                    ControlSource ="Mahnung1Tage"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =6958
+                    Top =56
+                    Width =912
+                    Height =330
+                    ColumnWidth =960
+                    TabIndex =7
+                    Name ="Mahnung2Tage"
+                    ControlSource ="Mahnung2Tage"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2392
+                    Top =453
+                    Width =8842
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =8
+                    Name ="EskalationsAdresse"
+                    ControlSource ="EskalationsAdresse"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =56
+                    Top =850
+                    Width =2212
+                    Height =330
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="MailBetreff_Bezeichnungsfeld"
+                    Caption ="MailBetreff"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =56
+                    Top =1247
+                    Width =2212
+                    Height =330
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="MailText_Bezeichnungsfeld"
+                    Caption ="MailText"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =56
+                    Top =453
+                    Width =2212
+                    Height =315
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="EskalationsAdresse_Bezeichnungsfeld"
+                    Caption ="EskalationsAdresse"
+                    Tag ="DetachedLabel"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =648
+                    Top =57
+                    Width =3330
+                    Height =315
+                    TabIndex =9
+                    Name ="TicketTyp"
+                    ControlSource ="Anzeige"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =9876
+                    Top =60
+                    TabIndex =10
+                    Name ="MahnwesenAktiv"
+                    ControlSource ="MahnwesenAktiv"
+                    StatusBarText ="Überwachung des Ticket zur Einhaltung der gesetzten Termine. Wenn gesetzt werden"
+                        " Mahungen versendet"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =11528
+                    Top =60
+                    TabIndex =11
+                    Name ="MehrfachTicket"
+                    ControlSource ="MehrfachTicket"
+                    StatusBarText ="Mehrmahlige Verwendung des Ticket-Typ z.B. bei Lagerprüfung für verschiedene Abt"
+                        "eilungen"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =13155
+                    Top =60
+                    TabIndex =12
+                    Name ="AnsichtErstellungTicket"
+                    ControlSource ="TicketAnzeigen"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmTicketTyp.cls"

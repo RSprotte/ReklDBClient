@@ -1,0 +1,102 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryAbholauftrag"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "BG": {
+        "ColumnWidth": 2295,
+        "AggregateType": -1
+      },
+      "LQArt": {
+        "ColumnWidth": 2280,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 566
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 272,
+          "Bottom": 524,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 584,
+          "Top": 194,
+          "Right": 775,
+          "Bottom": 374,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 432,
+          "Top": 12,
+          "Right": 576,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 624,
+          "Top": 12,
+          "Right": 768,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 436,
+          "Top": 389,
+          "Right": 648,
+          "Bottom": 584,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_ReklTag",
+          "Alias": "",
+          "Left": 1139,
+          "Top": 166,
+          "Right": 1283,
+          "Bottom": 310,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklIDtoTagID",
+          "Alias": "",
+          "Left": 833,
+          "Top": 135,
+          "Right": 977,
+          "Bottom": 279,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

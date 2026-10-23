@@ -1,0 +1,218 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6406
+    DatasheetFontHeight =11
+    ItemSuffix =7
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x65e6a0877037e540
+    End
+    Caption ="zu prüfendes Lager"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =2097
+            Name ="Detailbereich"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =113
+                    Top =170
+                    Width =2160
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =13209
+                    BorderColor =0
+                    ForeColor =10040115
+                    Name ="Bezeichnungsfeld5878"
+                    Caption ="Verursacher-Einheit:"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    AutoExpand = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =26
+                    ListWidth =2130
+                    Left =2393
+                    Top =170
+                    Width =3981
+                    Height =280
+                    FontSize =10
+                    FontWeight =700
+                    BorderColor =255
+                    ForeColor =0
+                    Name ="LQEinheitID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.ID, LQEinheit.LQEinheit FROM LQEinheit WHERE (((LQEinheit.Aktiv"
+                        ")=Yes)) ORDER BY LQEinheit.LQEinheit; "
+                    ColumnWidths ="0;2133"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =113
+                    Top =567
+                    Width =2160
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =13209
+                    BorderColor =0
+                    ForeColor =10040115
+                    Name ="Bezeichnungsfeld6058"
+                    Caption ="Bereich:"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    AutoExpand = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =26
+                    ListWidth =2130
+                    Left =2393
+                    Top =567
+                    Width =3981
+                    Height =280
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    BorderColor =255
+                    ForeColor =0
+                    Name ="LQBereichID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.ID, LQBereich.LQBereich FROM LQBereich WHERE (((LQBereich.[ID-L"
+                        "QEinheit])=[LQEinheitID])) GROUP BY LQBereich.ID, LQBereich.LQBereich, LQBereich"
+                        ".Aktiv HAVING (((LQBereich.Aktiv)=Yes)); "
+                    ColumnWidths ="0;2133"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =113
+                    Top =964
+                    Width =2160
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =13209
+                    BorderColor =0
+                    ForeColor =10040115
+                    Name ="Bezeichnungsfeld6062"
+                    Caption ="Workstation:"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    AutoExpand = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =26
+                    ListWidth =2130
+                    Left =2393
+                    Top =964
+                    Width =3981
+                    Height =280
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    BorderColor =255
+                    ForeColor =0
+                    Name ="LQWorkstationID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation WHERE (("
+                        "(LQWorkstation.[ID-LQBereich])=[LQBereichID])) GROUP BY LQWorkstation.ID, LQWork"
+                        "station.LQWorkstation, LQWorkstation.Aktiv HAVING (((LQWorkstation.Aktiv)=Yes));"
+                        " "
+                    ColumnWidths ="0;2133"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3628
+                    Top =1417
+                    Width =2618
+                    Height =498
+                    TabIndex =3
+                    Name ="cmbDatenÜbernehmen"
+                    Caption ="Daten übernehmen"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmLagerPrüfung.cls"

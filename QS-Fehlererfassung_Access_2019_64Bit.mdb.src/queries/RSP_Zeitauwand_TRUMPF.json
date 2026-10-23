@@ -1,0 +1,109 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Zeitauwand_TRUMPF"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "AnzahlvonID": {
+        "ColumnWidth": 1245,
+        "AggregateType": -1
+      },
+      "LQBereich.LQBereich": {
+        "ColumnWidth": 2115,
+        "AggregateType": -1
+      },
+      "LQEinheit.LQEinheit": {
+        "ColumnWidth": 2175,
+        "AggregateType": -1
+      },
+      "LQWorkstation.LQWorkstation": {
+        "ColumnWidth": 2595,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Fehleranalyse]": {
+        "ColumnWidth": 2280,
+        "AggregateType": -1
+      },
+      "SummevonAufwand-TRUMPF": {
+        "ColumnWidth": 2730,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 399
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 4,
+          "Top": 15,
+          "Right": 382,
+          "Bottom": 383,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 528,
+          "Top": 12,
+          "Right": 624,
+          "Bottom": 89,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 527,
+          "Top": 91,
+          "Right": 623,
+          "Bottom": 183,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 526,
+          "Top": 189,
+          "Right": 622,
+          "Bottom": 296,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 681,
+          "Top": 95,
+          "Right": 911,
+          "Bottom": 371,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 959,
+          "Top": 12,
+          "Right": 1103,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

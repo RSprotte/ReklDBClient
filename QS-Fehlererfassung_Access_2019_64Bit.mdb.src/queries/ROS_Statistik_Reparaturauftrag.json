@@ -1,0 +1,107 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "ROS_Statistik_Reparaturauftrag"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "TotalsRow": {
+        "Type": 1,
+        "Value": true
+      }
+    },
+    "Columns": {
+      "Differenz": {
+        "AggregateType": 0,
+        "ColumnWidth": 1290
+      },
+      "Ges_Kosten": {
+        "AggregateType": 0,
+        "ColumnWidth": 1515
+      },
+      "Mastertab.[Kategorie-Problem]": {
+        "ColumnWidth": 2805,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Status]": {
+        "ColumnWidth": 2340,
+        "AggregateType": -1
+      },
+      "Mastertab.[Zuständiger Service-MA]": {
+        "ColumnWidth": 2145,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "AggregateType": 2
+      },
+      "Mastertab.Reparaturbetrag": {
+        "AggregateType": 0,
+        "ColumnWidth": 2250
+      },
+      "Mat_Kosten": {
+        "AggregateType": 0
+      },
+      "SummevonZeit": {
+        "AggregateType": 0,
+        "ColumnWidth": 1830
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 710
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 243,
+          "Bottom": 754,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 275,
+          "Top": 12,
+          "Right": 420,
+          "Bottom": 250,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Vorgangstyp",
+          "Alias": "",
+          "Left": 466,
+          "Top": 16,
+          "Right": 562,
+          "Bottom": 119,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "AufwandVorgangPositionen",
+          "Alias": "",
+          "Left": 600,
+          "Top": 6,
+          "Right": 739,
+          "Bottom": 199,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

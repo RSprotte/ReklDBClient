@@ -1,0 +1,375 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoCenter = NotDefault
+    AllowDeletions = NotDefault
+    AllowAdditions = NotDefault
+    OrderByOn = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    AllowUpdating =2
+    TabularFamily =48
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8560
+    DatasheetFontHeight =10
+    ItemSuffix =20
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    OrderBy ="[RSP_Übersicht_Mahnung_Lief].[Datum] DESC, [RSP_Übersicht_Mahnung_Lief].[ReklID]"
+        ", [RSP_Übersicht_Mahnung_Lief].[MailDatum] DESC, [RSP_Übersicht_Mahnung_Lief].[V"
+        "erlängertBis] DESC"
+    RecSrcDt = Begin
+        0x860c4741a907e540
+    End
+    RecordSource ="RSP_Übersicht_Mahnung_Lief"
+    Caption ="RSP_Übersicht_Mahnung_Lief"
+    DatasheetFontName ="Tahoma"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =2721
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2267
+                    Top =113
+                    Width =900
+                    Height =255
+                    ColumnWidth =810
+                    ColumnOrder =0
+                    Name ="R-ID"
+                    ControlSource ="ReklID"
+                    StatusBarText ="Reklamations ID"
+                    EventProcPrefix ="R_ID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =59
+                            Top =113
+                            Width =2145
+                            Height =255
+                            Name ="R-ID_Bezeichnungsfeld"
+                            Caption ="R-ID"
+                            EventProcPrefix ="R_ID_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2265
+                    Top =2057
+                    Width =2310
+                    Height =255
+                    ColumnWidth =1410
+                    ColumnOrder =6
+                    TabIndex =1
+                    Name ="Mahnstufe"
+                    ControlSource ="tblTicketMahnungStatus.Anzeige"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =59
+                            Top =2056
+                            Width =2145
+                            Height =255
+                            Name ="Mahnstufe_Bezeichnungsfeld"
+                            Caption ="Mahnstufe"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2265
+                    Top =2381
+                    Width =1035
+                    Height =255
+                    ColumnWidth =1110
+                    ColumnOrder =7
+                    TabIndex =2
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =59
+                            Top =2381
+                            Width =2145
+                            Height =255
+                            Name ="Datum_Bezeichnungsfeld"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2265
+                    Top =1409
+                    Width =1035
+                    Height =255
+                    ColumnWidth =1140
+                    ColumnOrder =3
+                    TabIndex =3
+                    Name ="Rückmeldung_Lieferant_Verlängertl"
+                    ControlSource ="VerlängertBis"
+                    StatusBarText ="RSP: 07.03.2014 - Verlängerung Befundbericht Lieferant"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =59
+                            Top =1409
+                            Width =2145
+                            Height =255
+                            Name ="Rückmeldung_Lieferant_Verlängertl_Bezeichnungsfeld"
+                            Caption ="Rück_Ver"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2265
+                    Top =437
+                    Height =255
+                    ColumnWidth =1275
+                    ColumnOrder =1
+                    TabIndex =4
+                    Name ="MailDatum"
+                    ControlSource ="MailDatum"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1334
+                            Top =437
+                            Width =870
+                            Height =240
+                            Name ="Bezeichnungsfeld15"
+                            Caption ="MailDatum:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2265
+                    Top =761
+                    Height =255
+                    ColumnWidth =2355
+                    ColumnOrder =4
+                    TabIndex =5
+                    Name ="tblTicketTyp.Anzeige"
+                    ControlSource ="tblTicketTyp.Anzeige"
+                    EventProcPrefix ="tblTicketTyp_Anzeige"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1514
+                            Top =761
+                            Width =690
+                            Height =240
+                            Name ="Bezeichnungsfeld16"
+                            Caption ="Anzeige:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2265
+                    Top =1733
+                    Width =6231
+                    Height =255
+                    ColumnWidth =6375
+                    ColumnOrder =5
+                    TabIndex =6
+                    Name ="MailBetreff"
+                    ControlSource ="MailBetreff"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =1334
+                            Top =1733
+                            Width =870
+                            Height =240
+                            Name ="Bezeichnungsfeld17"
+                            Caption ="MailBetreff:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2265
+                    Top =1085
+                    Width =1035
+                    Height =255
+                    ColumnWidth =1200
+                    ColumnOrder =2
+                    TabIndex =7
+                    Name ="Text18"
+                    ControlSource ="BearbeitungBis"
+                    StatusBarText ="RSP: 07.03.2014 - Verlängerung Befundbericht Lieferant"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =59
+                            Top =1085
+                            Width =2145
+                            Height =255
+                            Name ="Bezeichnungsfeld19"
+                            Caption ="Rück_Bis"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "UF_RSP_Übersicht_Mahnung_Lief.cls"

@@ -1,0 +1,34 @@
+﻿{
+  "Info": {
+    "Class": "clsDbReport",
+    "Description": "Labeldruck Print Settings"
+  },
+  "Items": {
+    "Device": {
+      "DriverName": "winspool",
+      "DeviceName": "DYMO Label Writer 5XL on DYMOLW5XL30a605E",
+      "Port": "DYMO Label Writer 5XL on DYMOLW5XL30a605E.local",
+      "Default": false
+    },
+    "Printer": {
+      "Orientation": "Landscape",
+      "PaperSize": 206
+    },
+    "Margins": {
+      "LeftMargin": 0.2201,
+      "TopMargin": 0.0535,
+      "RightMargin": 0.0562,
+      "BotMargin": 0.0562,
+      "DataOnly": false,
+      "Width": 6.3,
+      "Height": 4.3312,
+      "DefaultSize": false,
+      "Columns": 1,
+      "ColumnSpacing": 0.25,
+      "RowSpacing": 0,
+      "ItemLayout": "Horizontal Columns",
+      "FastPrint": 1,
+      "Datasheet": 1
+    }
+  }
+}

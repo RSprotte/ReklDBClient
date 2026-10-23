@@ -1,0 +1,275 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularFamily =109
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11225
+    DatasheetFontHeight =10
+    ItemSuffix =12
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x8c30804213bfe440
+    End
+    RecordSource ="tblMenüleiste"
+    Caption ="tblMenüleiste"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =354
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =57
+                    Top =57
+                    Width =1425
+                    Height =240
+                    Name ="Register_ID_Bezeichnungsfeld"
+                    Caption ="Menü_ID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1539
+                    Top =57
+                    Width =1938
+                    Height =240
+                    Name ="Register_Bezeichnungsfeld"
+                    Caption ="Register"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3534
+                    Top =57
+                    Width =2628
+                    Height =240
+                    Name ="Unterregister_Bezeichnungsfeld"
+                    Caption ="Unterregister"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6576
+                    Top =57
+                    Width =2973
+                    Height =240
+                    Name ="Anzeige_Bezeichnungsfeld"
+                    Caption ="Anzeige"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9694
+                    Top =57
+                    Width =504
+                    Height =240
+                    Name ="Aktiv_Bezeichnungsfeld"
+                    Caption ="Aktiv"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =312
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =57
+                    Top =57
+                    Width =1425
+                    Height =255
+                    ColumnWidth =1701
+                    TabIndex =1
+                    Name ="Register_ID"
+                    ControlSource ="Menü_ID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3534
+                    Top =57
+                    Width =2973
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =2
+                    Name ="Unterregister"
+                    ControlSource ="Unterregister"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6576
+                    Top =57
+                    Width =2973
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =3
+                    Name ="Anzeige"
+                    ControlSource ="Anzeige"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =9694
+                    Top =57
+                    TabIndex =4
+                    Name ="Aktiv"
+                    ControlSource ="Aktiv"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =2880
+                    Left =1587
+                    Top =56
+                    Width =1871
+                    Height =227
+                    Name ="Kombinationsfeld10"
+                    ControlSource ="Register_ID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblRegister.Register_ID, tblRegister.Anzeige FROM tblRegister; "
+                    ColumnWidths ="0"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmMenüleiste.cls"

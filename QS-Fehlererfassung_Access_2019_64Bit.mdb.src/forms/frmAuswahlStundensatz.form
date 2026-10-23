@@ -1,0 +1,165 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6463
+    DatasheetFontHeight =11
+    ItemSuffix =4
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x8dc34b5b3670e640
+    End
+    Caption ="Auswahl Stundensatz"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =1247
+            Name ="Detailbereich"
+            Begin
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    ColumnCount =3
+                    ListRows =20
+                    ListWidth =2880
+                    Left =1756
+                    Top =680
+                    Width =4491
+                    Height =285
+                    Name ="cboAuswahlStdSatz"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblAufwandStdSaetze.StdSatzID, tblAufwandStdSaetze.Stundensatz, tblAufwan"
+                        "dStdSaetze.Betrag FROM tblAufwandStdSaetze ORDER BY tblAufwandStdSaetze.StdSatzI"
+                        "D;"
+                    ColumnWidths ="0;3402;1442"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextFontFamily =34
+                            Left =226
+                            Top =680
+                            Width =1380
+                            Height =305
+                            Name ="Stundensatz_Bezeichnungsfeld"
+                            Caption ="Stundensatz"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =226
+                    Top =65
+                    Width =3180
+                    Height =405
+                    FontSize =16
+                    Name ="Bezeichnungsfeld2"
+                    Caption ="Auswahl Stundensatz"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5215
+                    Top =113
+                    Width =1011
+                    Height =403
+                    TabIndex =1
+                    Name ="cmbUebernehmen"
+                    Caption ="Befehl3"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddddddddddddddddd0d0d0d0ddddddddddddddd00ddddd ,
+                        0xddddddddd000ddddddddddddd0b70dddddddddddd0b80ddddddddddddd0b70dd ,
+                        0xd00000000d0b80dd033000330dd0b70d033000330dd0b00d033333330ddd0110 ,
+                        0x033333330ddd000d033000030ddddddd030888030ddddddd030888030ddddddd ,
+                        0x000000000ddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmAuswahlStundensatz.cls"

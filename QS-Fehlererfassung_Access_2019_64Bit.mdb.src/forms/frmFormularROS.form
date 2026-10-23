@@ -1,0 +1,446 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    AllowUpdating =2
+    ScrollBars =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =14456
+    DatasheetFontHeight =11
+    ItemSuffix =23
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    TimerInterval =300000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x6937e6950ac6e540
+    End
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnTimer ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =7530
+            BackColor =15527148
+            Name ="Detailbereich"
+            Begin
+                Begin Subform
+                    OverlapFlags =215
+                    OldBorderStyle =0
+                    Width =11730
+                    Height =4875
+                    Name ="frmÜbersichtNotizen"
+                    SourceObject ="Form.frmÜbersichtNotizen"
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    OldBorderStyle =0
+                    Left =10890
+                    Top =4875
+                    Width =3465
+                    Height =2655
+                    TabIndex =1
+                    Name ="frmZeiterfassungROS"
+                    SourceObject ="Form.frmZeiterfassungROS"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Width =1131
+                    Height =1146
+                    TabIndex =2
+                    Name ="cmbAktiveHostAnzeigen"
+                    Caption ="Befehl3"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddd000000000000000d ,
+                        0x088888888888880d088888800000080d08888880ffff080d080000800000080d ,
+                        0x088888888888880d088888800000080d08888880ffff080d080000800000080d ,
+                        0x088888888888880d044444444444440d044444444444440d000000000000000d ,
+                        0xdddddddddddddddd
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular öffnen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =11920
+                    Top =120
+                    Width =726
+                    Height =636
+                    TabIndex =3
+                    Name ="Befehl3"
+                    Caption ="Befehl3"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddd000000000000000d ,
+                        0x088888888888880d088888800000080d08888880ffff080d080000800000080d ,
+                        0x088888888888880d088888800000080d08888880ffff080d080000800000080d ,
+                        0x088888888888880d044444444444440d044444444444440d000000000000000d ,
+                        0xdddddddddddddddd
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Aktive Client`s"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =12745
+                    Top =120
+                    Width =726
+                    Height =636
+                    TabIndex =4
+                    Name ="cmbOffeneAB"
+                    Caption ="AB`s"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Offene AB`s"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13609
+                    Top =120
+                    Width =726
+                    Height =636
+                    TabIndex =5
+                    Name ="Befehl6"
+                    Caption ="Befehl5"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddddddddddddddddddd ,
+                        0x000000000000000d0fffffffffffff0d0ffff44444ffff0d0fffffffffffff0d ,
+                        0x0ffff444444fff0d0fffffffffffff0d0ffffffffff11f0d0f0000fffff11f0d ,
+                        0x0fffffffffffff0d000000000000000ddddddddddddddddddddddddddddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Email schreiben"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12760
+                    Top =1650
+                    Width =726
+                    Height =636
+                    TabIndex =6
+                    Name ="cmbUpdate"
+                    Caption ="Befehl5"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dd0000ddd7227ddddd0ffd2d727727dd0f0ffd2727dd727d ,
+                        0x0f0ffd227dddd72d0f0ffd2222dddddd0f0ffdddddd2222d0f0ffd27dddd722d ,
+                        0x0f0ffd727dd7272d0f0fffd727727d2d0f0ffffd7227dddd0f0fffffd0000ddd ,
+                        0x0f0ffffff0f08ddd0f0ffffff008dddd0f000000008ddddd0fffffffdddddddd ,
+                        0x00000000dddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Daten aktuallisieren"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11920
+                    Top =876
+                    Width =726
+                    Height =636
+                    TabIndex =7
+                    Name ="cmbP4TAusgabe"
+                    Caption ="P4T"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Stellungnahme Klärung Kunde"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =13611
+                    Top =861
+                    Width =726
+                    Height =636
+                    TabIndex =8
+                    Name ="cmbWreneingang"
+                    Caption ="Lager"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Service-Lager"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =12760
+                    Top =870
+                    Width =726
+                    Height =636
+                    TabIndex =9
+                    Name ="cmbInfozuFA"
+                    Caption ="FA"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Info`s zu FA"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =13611
+                    Top =1655
+                    Width =726
+                    Height =636
+                    TabIndex =10
+                    Name ="cmbStueli"
+                    Caption ="Stüli"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Stüli öffnen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11910
+                    Top =2838
+                    Width =2436
+                    Height =352
+                    FontSize =10
+                    TabIndex =11
+                    Name ="cmbFormular1"
+                    Caption ="Formular1 öffnen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Formular öffnen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11920
+                    Top =1655
+                    Width =726
+                    Height =636
+                    TabIndex =12
+                    Name ="cmbTVN"
+                    Caption ="TVN"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="TVN abrufen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11910
+                    Top =2430
+                    Width =1134
+                    Height =352
+                    FontSize =10
+                    TabIndex =13
+                    Name ="cmbSNR"
+                    Caption ="Info SNR"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Info`s SNR"
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    Left =285
+                    Top =4875
+                    Width =10035
+                    Height =2655
+                    TabIndex =14
+                    BorderColor =15527148
+                    Name ="frmGesperrteVorgänge"
+                    SourceObject ="Form.frmGesperrteVorgänge"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11910
+                    Top =3267
+                    Width =2436
+                    Height =352
+                    FontSize =10
+                    TabIndex =15
+                    Name ="cmbPerplextiy"
+                    Caption ="KI öffnen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Formular öffnen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =13193
+                    Top =2430
+                    Width =1134
+                    Height =352
+                    FontSize =10
+                    TabIndex =16
+                    Name ="cmbGLS"
+                    Caption ="GLS"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Info`s SNR"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11910
+                    Top =3696
+                    Width =2436
+                    Height =352
+                    FontSize =10
+                    TabIndex =17
+                    Name ="cmbABDaten"
+                    Caption ="AB Daten abrufen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Formular öffnen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    Left =11910
+                    Top =4125
+                    Width =2436
+                    Height =352
+                    FontSize =10
+                    TabIndex =18
+                    Name ="cboVorgangsOrdner"
+                    Caption ="Vorgangs-Ordner öffnen"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Formular öffnen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmFormularROS.cls"

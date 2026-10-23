@@ -1,0 +1,295 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    OrderByOn = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9535
+    DatasheetFontHeight =11
+    ItemSuffix =21
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    TimerInterval =300000
+    DatasheetGridlinesColor =15062992
+    OrderBy ="[qryGesperrteVorgänge].[Datum] DESC"
+    RecSrcDt = Begin
+        0x039d3678d3aee540
+    End
+    RecordSource ="qryGesperrteVorgänge"
+    Caption ="frmGesperrteVorgänge"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnTimer ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =828
+            BackColor =15527148
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =63
+                    Top =513
+                    Width =741
+                    Height =315
+                    Name ="ID_Bezeichnungsfeld"
+                    Caption ="ID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =857
+                    Top =513
+                    Width =900
+                    Height =315
+                    Name ="Zustand_Bezeichnungsfeld"
+                    Caption ="Zustand"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =1820
+                    Top =513
+                    Width =705
+                    Height =315
+                    Name ="Kürzel_Bezeichnungsfeld"
+                    Caption ="Kürzel"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =2556
+                    Top =513
+                    Width =1083
+                    Height =315
+                    Name ="Datum_Bezeichnungsfeld"
+                    Caption ="Datum"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =3690
+                    Top =513
+                    Width =510
+                    Height =315
+                    Name ="Seit_Bezeichnungsfeld"
+                    Caption ="Seit"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =4268
+                    Top =513
+                    Width =1320
+                    Height =315
+                    Name ="Uhrzeit_Bezeichnungsfeld"
+                    Caption ="Uhrzeit geöff."
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =60
+                    Width =4626
+                    Height =519
+                    FontSize =20
+                    Name ="Bezeichnungsfeld16"
+                    Caption ="GesperrteVorgänge"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =5610
+                    Top =510
+                    Width =1005
+                    Height =315
+                    Name ="Client_Bezeichnungsfeld"
+                    Caption ="Client"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =390
+            BackColor =15527148
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =60
+                    Top =57
+                    Width =741
+                    Height =330
+                    ColumnWidth =1530
+                    FontSize =10
+                    Name ="ID"
+                    ControlSource ="ID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =853
+                    Top =57
+                    Width =900
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Zustand"
+                    ControlSource ="Zustand"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =1815
+                    Top =57
+                    Width =705
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Kürzel"
+                    ControlSource ="Kürzel"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2550
+                    Top =57
+                    Width =1083
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =3690
+                    Top =60
+                    Width =510
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Seit"
+                    ControlSource ="Seit"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =4260
+                    Top =57
+                    Width =1320
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Uhrzeit"
+                    ControlSource ="Uhrzeit"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6750
+                    Top =60
+                    Width =1359
+                    Height =330
+                    FontSize =7
+                    TabIndex =6
+                    Name ="cmbVorgangEnt"
+                    Caption ="Vorgang Entsperren"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8176
+                    Top =60
+                    Width =1359
+                    Height =330
+                    FontSize =7
+                    TabIndex =7
+                    Name ="cmbVorgangOeffnen"
+                    Caption ="Vorgang öffnen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =5610
+                    Top =60
+                    Width =1050
+                    Height =330
+                    FontSize =10
+                    TabIndex =8
+                    Name ="Client"
+                    ControlSource ="Client"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmGesperrteVorgänge.cls"

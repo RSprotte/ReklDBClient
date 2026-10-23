@@ -1,0 +1,105 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "ExportExcelROS"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Bearbeiter.Kurzzeichen": {
+        "ColumnWidth": 1575,
+        "AggregateType": -1
+      },
+      "BG": {
+        "ColumnWidth": 1695,
+        "AggregateType": -1
+      },
+      "Mastertab.[Bestellnummer Kunde]": {
+        "ColumnWidth": 1980,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1230,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 1005,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 639
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 17,
+          "Top": 6,
+          "Right": 287,
+          "Bottom": 634,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 518,
+          "Top": 27,
+          "Right": 662,
+          "Bottom": 160,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 764,
+          "Top": 30,
+          "Right": 908,
+          "Bottom": 163,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Bearbeiter",
+          "Alias": "",
+          "Left": 1036,
+          "Top": 97,
+          "Right": 1180,
+          "Bottom": 215,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 335,
+          "Top": 12,
+          "Right": 479,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 606,
+          "Top": 187,
+          "Right": 831,
+          "Bottom": 614,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

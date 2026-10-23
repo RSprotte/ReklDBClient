@@ -1,0 +1,147 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =15
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8900
+    DatasheetFontHeight =10
+    ItemSuffix =10
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xad415e8a3f22e440
+    End
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =3344
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =135
+                    Top =90
+                    Width =6930
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld1"
+                    Caption ="Definition Fehlerbild - Eingabe Dialog"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2123
+                    Top =570
+                    Width =6381
+                    Name ="DefTaetigkeit"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =113
+                            Top =570
+                            Width =1935
+                            Height =240
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="Fehlerbild:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2123
+                    Top =907
+                    Width =6381
+                    Height =2175
+                    TabIndex =1
+                    Name ="Beschreibung"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =113
+                            Top =907
+                            Width =1890
+                            Height =240
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="Beschreibung"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =113
+                    Top =1247
+                    Width =1905
+                    Height =570
+                    TabIndex =2
+                    Name ="OK"
+                    Caption ="OK"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =113
+                    Top =1937
+                    Width =1905
+                    Height =570
+                    TabIndex =3
+                    Name ="Abbrechen"
+                    Caption ="Abbrechen"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Dialog_DefTaetigkeit.cls"

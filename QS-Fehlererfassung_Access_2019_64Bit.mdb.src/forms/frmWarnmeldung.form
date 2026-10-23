@@ -1,0 +1,70 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7541
+    DatasheetFontHeight =11
+    ItemSuffix =1
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    TimerInterval =10000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x51640f998dede440
+    End
+    DatasheetFontName ="Calibri"
+    OnTimer ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =1204
+            Name ="Detailbereich"
+            Begin
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    BorderWidth =1
+                    OverlapFlags =85
+                    TextAlign =2
+                    Width =7541
+                    Height =1204
+                    FontSize =12
+                    BackColor =62207
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Achtung! Achtung! Achtung! Achtung! Achtung! Achtung! Achtung!\015\012Bitte alle"
+                        " Änderungen speichen und Datenbank-Client beenden.\015\012Es müssen Wartungsarbe"
+                        "iten an der Datenbank durchgeführt werden.\015\012Der Datenbank-Client wird in c"
+                        "a 5min. automatisch heruntergefahren!"
+                    FontName ="Arial"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmWarnmeldung.cls"

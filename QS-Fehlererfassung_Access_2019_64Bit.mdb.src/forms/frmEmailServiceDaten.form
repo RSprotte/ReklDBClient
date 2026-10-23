@@ -1,0 +1,301 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =12179
+    DatasheetFontHeight =11
+    ItemSuffix =23
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    Filter ="[ID] = 16"
+    RecSrcDt = Begin
+        0xe99fb934ee7ee640
+    End
+    RecordSource ="tblEmailService"
+    Caption ="Email-Service-Daten"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =684
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    TextFontFamily =34
+                    Left =570
+                    Top =60
+                    Width =4359
+                    Height =624
+                    FontSize =20
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="Email-Daten-Service"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =6638
+                    Top =225
+                    Width =5391
+                    Height =300
+                    Name ="Name_EMail"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblEmailService.ID, tblEmailService.Name_EMail FROM tblEmailService ORDER"
+                        " BY tblEmailService.Name_EMail;"
+                    ColumnWidths ="0;3969"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =5220
+                            Top =225
+                            Width =1365
+                            Height =300
+                            Name ="Bezeichnungsfeld17"
+                            Caption ="Email Name"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =8298
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1313
+                    Top =855
+                    Width =10716
+                    Height =315
+                    ColumnWidth =5385
+                    FontSize =10
+                    TabIndex =1
+                    Name ="An"
+                    ControlSource ="An"
+                    Format ="@"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =34
+                            Top =855
+                            Width =1140
+                            Height =300
+                            FontSize =10
+                            Name ="An_Bezeichnungsfeld"
+                            Caption ="An"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1313
+                    Top =1242
+                    Width =10716
+                    Height =300
+                    ColumnWidth =2580
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Von"
+                    ControlSource ="Von"
+                    Format ="@"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =34
+                            Top =1242
+                            Width =1140
+                            Height =300
+                            FontSize =10
+                            Name ="Von_Bezeichnungsfeld"
+                            Caption ="Von"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1313
+                    Top =1614
+                    Width =10716
+                    Height =330
+                    ColumnWidth =5025
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Betreff"
+                    ControlSource ="Betreff"
+                    Format ="@"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =34
+                            Top =1614
+                            Width =1140
+                            Height =300
+                            FontSize =10
+                            Name ="Betreff_Bezeichnungsfeld"
+                            Caption ="Betreff"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1313
+                    Top =2013
+                    Width =10716
+                    Height =6225
+                    ColumnWidth =5565
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Text"
+                    ControlSource ="Text"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =34
+                            Top =2013
+                            Width =1140
+                            Height =300
+                            FontSize =10
+                            Name ="Text_Bezeichnungsfeld"
+                            Caption ="Text"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1313
+                    Top =60
+                    Width =516
+                    Height =300
+                    ColumnWidth =615
+                    FontSize =10
+                    Name ="ID"
+                    ControlSource ="ID"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =34
+                            Left =174
+                            Top =60
+                            Width =966
+                            Height =300
+                            FontSize =10
+                            Name ="Bezeichnungsfeld16"
+                            Caption ="ID"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1313
+                    Top =450
+                    Width =10716
+                    Height =300
+                    TabIndex =4
+                    Name ="Kombinationsfeld21"
+                    ControlSource ="Name_EMail"
+                    Begin
+                        Begin Label
+                            OldBorderStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            TextFontFamily =34
+                            Top =450
+                            Width =1140
+                            Height =300
+                            FontSize =10
+                            Name ="Bezeichnungsfeld22"
+                            Caption ="Email Name"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmEmailServiceDaten.cls"

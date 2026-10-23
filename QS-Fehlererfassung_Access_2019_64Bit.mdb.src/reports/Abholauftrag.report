@@ -1,0 +1,564 @@
+﻿Version =19
+VersionRequired =19
+Begin Report
+    LayoutForPrint = NotDefault
+    PopUp = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    FilterOn = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9807
+    DatasheetFontHeight =11
+    ItemSuffix =51
+    Left =16785
+    Top =2115
+    DatasheetGridlinesColor =15062992
+    Filter ="[ID]=82229"
+    RecSrcDt = Begin
+        0xda45be108df3e540
+    End
+    RecordSource ="qryAbholauftrag"
+    Caption ="Abholauftrag"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin UnboundObjectFrame
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+            ForeColor =2102279
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =1421
+            BackColor =15783096
+            Name ="Berichtskopf"
+            Begin
+                Begin Label
+                    Left =345
+                    Top =124
+                    Width =6285
+                    Height =540
+                    FontSize =20
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Abholauftrag / Warenbegleitschein"
+                End
+                Begin CommandButton
+                    Left =7035
+                    Top =289
+                    Width =2106
+                    Height =342
+                    Name ="cmbSpeichernPDF"
+                    Caption ="als PDF speichern"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    Left =7800
+                    Top =735
+                    Width =576
+                    Height =576
+                    FontSize =12
+                    FontWeight =500
+                    TabIndex =1
+                    ForeColor =16777215
+                    Name ="cmbBerichtSchließen"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Vorgang schließen"
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    Left =8565
+                    Top =735
+                    Width =576
+                    Height =576
+                    FontSize =8
+                    TabIndex =2
+                    ForeColor =-2147483630
+                    Name ="cmbMailLogiFuhrpark"
+                    Caption ="Befehl6367"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dddddddddddddddddddddddddddddddddddddddddddddddd ,
+                        0x000000000000000d0fffffffffffff0d0ffff44444ffff0d0fffffffffffff0d ,
+                        0x0ffff444444fff0d0fffffffffffff0d0ffffffffff11f0d0f0000fffff11f0d ,
+                        0x0fffffffffffff0d000000000000000ddddddddddddddddddddddddddddddddd ,
+                        0xdddddddddddddddd
+                    End
+                    FontName ="Tahoma"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                End
+                Begin CommandButton
+                    Left =7035
+                    Top =735
+                    Width =576
+                    Height =576
+                    FontSize =8
+                    TabIndex =3
+                    ForeColor =-2147483630
+                    Name ="cmbUpdate"
+                    Caption ="Befehl69"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xa0a0adadadadadaddadadadadadad000a0a0a07dadada000dadad007dadadada ,
+                        0xa0a0a0007dada000dadad0bb07dad000adada0bb077da000dadada0bb077d000 ,
+                        0xadadad0b0077a000dadadad0110ad000adadada000adadaddadadadadadadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Tahoma"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular aktualsieren"
+                End
+            End
+        End
+        Begin PageHeader
+            Height =0
+            Name ="Seitenkopfbereich"
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =8220
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2892
+                    Top =342
+                    Width =1530
+                    Height =390
+                    FontSize =14
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                    Begin
+                        Begin Label
+                            Left =342
+                            Top =342
+                            Width =2460
+                            Height =390
+                            FontSize =14
+                            Name ="ID_Bezeichnungsfeld"
+                            Caption ="ReklNr / LQ"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2895
+                    Top =1260
+                    Width =1200
+                    Height =390
+                    ColumnWidth =1680
+                    FontSize =14
+                    TabIndex =1
+                    Name ="KndNr_Avista"
+                    ControlSource ="KndNr_Avista"
+                    Begin
+                        Begin Label
+                            Left =345
+                            Top =1260
+                            Width =2460
+                            Height =390
+                            FontSize =14
+                            Name ="KndNr_Avista_Bezeichnungsfeld"
+                            Caption ="KND-Nr."
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2895
+                    Top =1712
+                    Width =6690
+                    Height =390
+                    ColumnWidth =3750
+                    FontSize =14
+                    TabIndex =2
+                    Name ="Firma_Name"
+                    ControlSource ="Firma_Name"
+                    Begin
+                        Begin Label
+                            Left =345
+                            Top =1712
+                            Width =2460
+                            Height =390
+                            FontSize =14
+                            Name ="Firma_Name_Bezeichnungsfeld"
+                            Caption ="Abholung bei"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2901
+                    Top =3120
+                    Width =6735
+                    Height =390
+                    ColumnWidth =1800
+                    FontSize =14
+                    TabIndex =3
+                    Name ="LQ Art-Nr"
+                    ControlSource ="LQArt"
+                    EventProcPrefix ="LQ_Art_Nr"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2901
+                    Top =3572
+                    Width =6750
+                    Height =390
+                    ColumnWidth =4800
+                    FontSize =14
+                    TabIndex =5
+                    Name ="Bezeichnung 1"
+                    ControlSource ="Bezeichnung 1"
+                    EventProcPrefix ="Bezeichnung_1"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2894
+                    Top =4485
+                    Width =4479
+                    Height =375
+                    FontSize =14
+                    TabIndex =4
+                    Name ="txtLager"
+                    Begin
+                        Begin Label
+                            Left =345
+                            Top =4485
+                            Width =2460
+                            Height =380
+                            FontSize =14
+                            Name ="Abgabe bei_Bezeichnungsfeld"
+                            Caption ="Abgabe in"
+                            EventProcPrefix ="Abgabe_bei_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    IMESentenceMode =3
+                    Left =7485
+                    Top =60
+                    Height =315
+                    ColumnWidth =855
+                    TabIndex =6
+                    Name ="Meldungsnummer Kunde"
+                    ControlSource ="Meldungsnummer Kunde"
+                    StatusBarText ="Fehlerbericht I+II - Meldungsnummer"
+                    EventProcPrefix ="Meldungsnummer_Kunde"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    IMESentenceMode =3
+                    Left =7485
+                    Top =570
+                    Height =315
+                    TabIndex =7
+                    Name ="Auftragsdatum"
+                    ControlSource ="Auftragsdatum"
+                    StatusBarText ="Fehlerbericht I+II - Auftragsdatum"
+                    InputMask ="00,00,0000;0;_"
+                End
+                Begin Label
+                    Left =348
+                    Top =5453
+                    Width =9241
+                    Height =460
+                    FontSize =18
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld28"
+                    Caption ="Warenbegleitschein bitte dem Artikel beilegen!"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2897
+                    Top =4943
+                    Width =4479
+                    Height =375
+                    FontSize =14
+                    TabIndex =8
+                    Name ="txtDatum"
+                    Format ="Short Date"
+                    Begin
+                        Begin Label
+                            Left =348
+                            Top =4943
+                            Width =2460
+                            Height =380
+                            FontSize =14
+                            Name ="Bezeichnungsfeld31"
+                            Caption ="Ausführen am"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2901
+                    Top =3120
+                    Width =6735
+                    Height =390
+                    ColumnWidth =2295
+                    FontSize =14
+                    TabIndex =9
+                    Name ="BG"
+                    ControlSource ="BG"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2901
+                    Top =3572
+                    Width =6750
+                    Height =390
+                    ColumnWidth =5070
+                    FontSize =14
+                    TabIndex =10
+                    Name ="BG Bezeichnung"
+                    ControlSource ="BG Bezeichnung"
+                    EventProcPrefix ="BG_Bezeichnung"
+                End
+                Begin Label
+                    Left =351
+                    Top =3120
+                    Width =2460
+                    Height =390
+                    FontSize =14
+                    Name ="Bezeichnungsfeld37"
+                    Caption ="Art.-Nr. LQ"
+                End
+                Begin Label
+                    Left =351
+                    Top =3572
+                    Width =2460
+                    Height =390
+                    FontSize =14
+                    Name ="Bezeichnungsfeld38"
+                    Caption ="Bezeichnung "
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2895
+                    Top =2222
+                    Width =6690
+                    Height =390
+                    FontSize =14
+                    TabIndex =11
+                    Name ="Text39"
+                    ControlSource ="Tag"
+                    Begin
+                        Begin Label
+                            Left =345
+                            Top =2222
+                            Width =2460
+                            Height =390
+                            FontSize =14
+                            Name ="Bezeichnungsfeld40"
+                            Caption ="Werk"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2898
+                    Top =2671
+                    Width =6690
+                    Height =390
+                    FontSize =14
+                    TabIndex =12
+                    Name ="Text41"
+                    ControlSource ="Kontaktperson"
+                    Begin
+                        Begin Label
+                            Left =348
+                            Top =2671
+                            Width =2460
+                            Height =390
+                            FontSize =14
+                            Name ="Bezeichnungsfeld42"
+                            Caption ="Kontakt"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2895
+                    Top =795
+                    Width =2775
+                    Height =390
+                    FontSize =14
+                    TabIndex =13
+                    Name ="Text43"
+                    ControlSource ="Meldungsnummer Kunde"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                    Begin
+                        Begin Label
+                            Left =345
+                            Top =795
+                            Width =2460
+                            Height =390
+                            FontSize =14
+                            Name ="Bezeichnungsfeld44"
+                            Caption ="ReklNr / Kunde"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2895
+                    Top =4035
+                    Width =6750
+                    Height =390
+                    FontSize =14
+                    TabIndex =14
+                    Name ="Text47"
+                    ControlSource ="Bezeichnung 1"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2895
+                    Top =4035
+                    Width =6750
+                    Height =390
+                    FontSize =14
+                    TabIndex =15
+                    Name ="BGKD"
+                    ControlSource ="BGKD"
+                End
+                Begin Label
+                    Left =345
+                    Top =4035
+                    Width =2460
+                    Height =390
+                    FontSize =14
+                    Name ="Bezeichnungsfeld49"
+                    Caption ="Art.-Nr. Kunde"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2889
+                    Top =4035
+                    Width =6750
+                    Height =390
+                    FontSize =14
+                    TabIndex =16
+                    Name ="ArtKD"
+                    ControlSource ="ArtKD"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Berichtsfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Abholauftrag.cls"

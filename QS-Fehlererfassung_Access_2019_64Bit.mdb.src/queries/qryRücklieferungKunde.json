@@ -1,0 +1,120 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryRücklieferungKunde"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "NoFormat": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "Columns": {
+      "[Artikel-all_avista_out].[Kd Mat-Nr]": {
+        "ColumnWidth": 1365,
+        "AggregateType": -1
+      },
+      "LagerArt": {
+        "ColumnWidth": 1725,
+        "AggregateType": -1
+      },
+      "LagerBG": {
+        "ColumnWidth": 3270,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1245,
+        "AggregateType": -1
+      },
+      "Vorgangstyp.Anzeige": {
+        "ColumnWidth": 2055,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1194,
+        "bottom": 809
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1178,
+        "bottom": 392
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 287,
+          "Top": 275,
+          "Right": 461,
+          "Bottom": 557,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 18,
+          "Top": 14,
+          "Right": 225,
+          "Bottom": 511,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 547,
+          "Top": 381,
+          "Right": 691,
+          "Bottom": 525,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 570,
+          "Top": 178,
+          "Right": 714,
+          "Bottom": 322,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 614,
+          "Top": 2,
+          "Right": 758,
+          "Bottom": 146,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 756,
+          "Top": 129,
+          "Right": 993,
+          "Bottom": 477,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Vorgangstyp",
+          "Alias": "",
+          "Left": 1035,
+          "Top": 325,
+          "Right": 1179,
+          "Bottom": 469,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

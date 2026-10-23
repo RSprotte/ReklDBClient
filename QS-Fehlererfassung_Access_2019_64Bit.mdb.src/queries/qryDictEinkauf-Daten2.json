@@ -1,0 +1,66 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryDictEinkauf-Daten2"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Kategorie-Status]": {
+        "ColumnWidth": 2100,
+        "AggregateType": -1
+      },
+      "Mastertab.[Lieferanten-Code 1]": {
+        "ColumnWidth": 4230,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 698
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 316,
+          "Bottom": 592,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ROS_Daten_Einkauf",
+          "Alias": "",
+          "Left": 463,
+          "Top": 18,
+          "Right": 720,
+          "Bottom": 519,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 768,
+          "Top": 12,
+          "Right": 1008,
+          "Bottom": 546,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

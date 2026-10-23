@@ -1,0 +1,84 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryFrachtkostenZuordnung"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "[Artikel-all_avista_out].[Kd Mat-Nr]": {
+        "ColumnWidth": 1365,
+        "AggregateType": -1
+      },
+      "Mastertab.[WE-Datum]": {
+        "ColumnWidth": 1410,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 685
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 192,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 384,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 432,
+          "Top": 12,
+          "Right": 576,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 624,
+          "Top": 12,
+          "Right": 768,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 816,
+          "Top": 12,
+          "Right": 960,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

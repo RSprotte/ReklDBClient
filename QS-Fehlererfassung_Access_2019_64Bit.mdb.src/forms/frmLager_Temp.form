@@ -1,0 +1,203 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7821
+    DatasheetFontHeight =11
+    ItemSuffix =19
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x5dea5c480a1ce640
+    End
+    RecordSource ="tblLagerTemp"
+    Caption ="frmLager_Temp"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1005
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =60
+                    Top =684
+                    Width =1086
+                    Height =315
+                    Name ="Menge_Bezeichnungsfeld"
+                    Caption ="Menge"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1260
+                    Top =684
+                    Width =3096
+                    Height =315
+                    Name ="Lager_Bezeichnungsfeld"
+                    Caption ="Lager"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =56
+                    Top =56
+                    Width =2700
+                    Height =519
+                    FontSize =20
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="Lager_Temp"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4425
+                    Top =684
+                    Width =786
+                    Height =315
+                    Name ="Bezeichnungsfeld13"
+                    Caption ="Frei"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5265
+                    Top =690
+                    Width =1146
+                    Height =315
+                    Name ="Bezeichnungsfeld15"
+                    Caption ="Lagerpreis"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6465
+                    Top =690
+                    Width =1356
+                    Height =315
+                    Name ="Bezeichnungsfeld17"
+                    Caption ="Lagerplatz"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =372
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =60
+                    Top =57
+                    Width =1086
+                    Height =315
+                    ColumnWidth =3000
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1260
+                    Top =57
+                    Width =3096
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="Lager"
+                    ControlSource ="Lager"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4425
+                    Top =57
+                    Width =786
+                    Height =315
+                    TabIndex =2
+                    Name ="Text14"
+                    ControlSource ="Frei"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5265
+                    Top =57
+                    Width =1146
+                    Height =315
+                    TabIndex =3
+                    Name ="Text16"
+                    ControlSource ="Lagerpreis"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6465
+                    Top =57
+                    Width =1356
+                    Height =315
+                    TabIndex =4
+                    Name ="Text18"
+                    ControlSource ="Lagerplatz"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmLager_Temp.cls"

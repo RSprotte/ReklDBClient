@@ -1,0 +1,1027 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    FilterOn = NotDefault
+    DataEntry = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =12415
+    DatasheetFontHeight =10
+    ItemSuffix =83
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[Maßnahmen].[MaßnahmeID] = 837"
+    RecSrcDt = Begin
+        0x9c6e282e740ae540
+    End
+    RecordSource ="SELECT Maßnahmen.*, MaßnahmenHerkunft.Anzeige FROM Maßnahmen LEFT JOIN Maßnahmen"
+        "Herkunft ON Maßnahmen.MaßnahmenHerkunftID = MaßnahmenHerkunft.ID; "
+    Caption ="Maßnahmen"
+    BeforeInsert ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnMouseMove ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            SpecialEffect =3
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =680
+            BackColor =14211288
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    FontItalic = NotDefault
+                    OverlapFlags =85
+                    Left =113
+                    Top =135
+                    Width =4605
+                    Height =510
+                    FontSize =18
+                    FontWeight =700
+                    ForeColor =255
+                    Name ="Bezeichnungsfeld19"
+                    Caption ="Maßnahme Dialog"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =11551
+                    Top =56
+                    Width =576
+                    Height =576
+                    FontSize =12
+                    FontWeight =500
+                    ForeColor =16777215
+                    Name ="ObjektSchließen"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Objekt schließen"
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =7880
+                    Top =113
+                    Width =2494
+                    Height =397
+                    TabIndex =1
+                    Name ="Befehl79"
+                    Caption ="Test"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =12354
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =989
+                    Top =266
+                    Width =1086
+                    Height =749
+                    ColumnWidth =1701
+                    FontSize =26
+                    FontWeight =900
+                    BackColor =15329769
+                    Name ="MaßnahmeID"
+                    ControlSource ="MaßnahmeID"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =989
+                            Top =56
+                            Width =960
+                            Height =255
+                            FontWeight =700
+                            ForeColor =2366701
+                            Name ="MaßnahmeID_Bezeichnungsfeld"
+                            Caption ="M-ID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =120
+                    Top =4079
+                    Width =12015
+                    Height =300
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    BackColor =15329769
+                    Name ="Maßnahme"
+                    ControlSource ="Maßnahme"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =120
+                            Top =3795
+                            Width =1560
+                            Height =255
+                            FontSize =10
+                            Name ="Maßnahme_Bezeichnungsfeld"
+                            Caption ="Maßnahme"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =87
+                    Left =120
+                    Top =4702
+                    Width =5205
+                    Height =3570
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =2
+                    BackColor =15329769
+                    Name ="Beschreibung"
+                    ControlSource ="Beschreibung"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            Left =120
+                            Top =4429
+                            Width =1560
+                            Height =255
+                            FontSize =10
+                            Name ="Beschreibung_Bezeichnungsfeld"
+                            Caption ="Beschreibung"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =5762
+                    Top =1927
+                    Width =1321
+                    Height =285
+                    ColumnWidth =825
+                    FontSize =10
+                    TabIndex =3
+                    BackColor =15329769
+                    Name ="StartUmsetzung"
+                    ControlSource ="StartUmsetzung"
+                    Format ="Short Date"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =3731
+                            Top =1927
+                            Width =1905
+                            Height =285
+                            FontSize =10
+                            Name ="StartUmsetzung_Bezeichnungsfeld"
+                            Caption ="Start Umsetzung"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =5762
+                    Top =2243
+                    Width =1321
+                    Height =285
+                    ColumnWidth =825
+                    FontSize =10
+                    TabIndex =4
+                    BackColor =15329769
+                    Name ="EndeUmsetzung"
+                    ControlSource ="EndeUmsetzung"
+                    Format ="Short Date"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                    OnGotFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =3731
+                            Top =2243
+                            Width =1905
+                            Height =285
+                            FontSize =10
+                            Name ="EndeUmsetzung_Bezeichnungsfeld"
+                            Caption ="geplantes Ende"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =5586
+                    Top =8775
+                    Width =4980
+                    Height =3570
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =5
+                    BackColor =15329769
+                    Name ="StatusUmsetzung"
+                    ControlSource ="StatusUmsetzung"
+                    StatusBarText ="Bescheibt den Fortschritt der Umsetzung (Blog)"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =5586
+                            Top =8491
+                            Width =2895
+                            Height =255
+                            FontSize =10
+                            Name ="StatusUmsetzung_Bezeichnungsfeld"
+                            Caption ="Notizfeld zur Umsetztung"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =87
+                    Left =5586
+                    Top =4702
+                    Width =4980
+                    Height =3570
+                    FontSize =10
+                    TabIndex =6
+                    BackColor =15329769
+                    Name ="Ziel"
+                    ControlSource ="Ziel der Maßnahme"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            Left =5586
+                            Top =4419
+                            Width =1560
+                            Height =255
+                            FontSize =10
+                            Name ="Bezeichnungsfeld15"
+                            Caption ="Ziel"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =2224
+                    Top =1932
+                    Width =1456
+                    Height =285
+                    FontSize =10
+                    TabIndex =7
+                    BackColor =15329769
+                    Name ="Kombinationsfeld20"
+                    ControlSource ="ArtDerMaßnahme"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT MaßnahmeUmsetzungFrist.[ID-UmsetzungMaßnahme], MaßnahmeUmsetzungFrist.Anz"
+                        "eige, MaßnahmeUmsetzungFrist.MaßnahmeFrist FROM MaßnahmeUmsetzungFrist; "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =50
+                            Top =1932
+                            Width =2025
+                            Height =285
+                            FontSize =10
+                            Name ="Sp1_Bezeichnungsfeld"
+                            Caption ="Art der Maßnahmen"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =120
+                    Top =8784
+                    Width =5205
+                    Height =3570
+                    FontSize =10
+                    TabIndex =8
+                    BackColor =15329769
+                    Name ="Text22"
+                    ControlSource ="Ergebnis Maßnahme"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =120
+                            Top =8501
+                            Width =1560
+                            Height =255
+                            FontSize =10
+                            Name ="Bezeichnungsfeld23"
+                            Caption ="Wirkung"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =2224
+                    Top =2248
+                    Width =1456
+                    Height =285
+                    FontSize =10
+                    TabIndex =9
+                    BackColor =15329769
+                    Name ="Kombinationsfeld32"
+                    ControlSource ="Verantwortlich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.[SB-ID], Sachbearbeiter.Kurzzeichen FROM Sachbearbeiter OR"
+                        "DER BY [Kurzzeichen]; "
+                    ColumnWidths ="0;1440"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =50
+                            Top =2248
+                            Width =2025
+                            Height =285
+                            FontSize =10
+                            Name ="Kurzzeichen_Bezeichnungsfeld"
+                            Caption ="Verantwortlicher SB"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =5579
+                    Top =278
+                    Width =3136
+                    Height =749
+                    TabIndex =10
+                    BackColor =15329769
+                    Name ="ListeLQBereich"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.LQBereich, MaßnahmenFehlerortGruppe.MaßnahmeID FROM MaßnahmenFe"
+                        "hlerortGruppe INNER JOIN LQBereich ON MaßnahmenFehlerortGruppe.LQBereichID=LQBer"
+                        "eich.ID WHERE (((MaßnahmenFehlerortGruppe.MaßnahmeID)=Forms!MaßnahmenDialog!Maßn"
+                        "ahmeID)); "
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =5579
+                    Top =56
+                    Width =2055
+                    Height =210
+                    Name ="BezQBereich"
+                    Caption ="LQ Bereich"
+                End
+                Begin ListBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =8991
+                    Top =266
+                    Width =3136
+                    Height =749
+                    TabIndex =11
+                    BackColor =15329769
+                    Name ="ListFehlerklassen"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Taetigkeiten.Anzeige, MaßnahmenFehlerarten.MaßnahmeID FROM MaßnahmenFehle"
+                        "rarten INNER JOIN Taetigkeiten ON MaßnahmenFehlerarten.Fehlerklasse=Taetigkeiten"
+                        ".Taetigkeit WHERE (((MaßnahmenFehlerarten.MaßnahmeID)=Forms!MaßnahmenDialog!Maßn"
+                        "ahmeID)); "
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =8991
+                    Top =56
+                    Width =2010
+                    Height =210
+                    Name ="BezZuordnungMassnahmeTaetigkeit"
+                    Caption ="Zugeordnete Tätigkeiten"
+                End
+                Begin ListBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =2167
+                    Top =266
+                    Width =3136
+                    Height =749
+                    TabIndex =12
+                    BackColor =15329769
+                    Name ="ListeLQEinheit"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.LQEinheit, LQBereich.LQBereich, MaßnahmenFehlerortGruppe.Maßnah"
+                        "meID FROM (MaßnahmenFehlerortGruppe INNER JOIN LQBereich ON MaßnahmenFehlerortGr"
+                        "uppe.LQBereichID = LQBereich.ID) INNER JOIN LQEinheit ON LQBereich.[ID-LQEinheit"
+                        "] = LQEinheit.ID WHERE (((MaßnahmenFehlerortGruppe.MaßnahmeID)=[Forms]![Maßnahme"
+                        "nDialog]![MaßnahmeID])); "
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =2167
+                    Top =56
+                    Width =2055
+                    Height =210
+                    Name ="BezLQEinheit"
+                    Caption ="LQ Einheit"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =5762
+                    Top =2569
+                    Width =1321
+                    Height =285
+                    FontSize =10
+                    TabIndex =13
+                    BackColor =15329769
+                    Name ="txtUmgesetztAm"
+                    ControlSource ="UmgesetztAm"
+                    Format ="Short Date"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                    OnLostFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =3731
+                            Top =2564
+                            Width =1905
+                            Height =285
+                            FontSize =10
+                            Name ="BezUmgesetztAm"
+                            Caption ="umgesetzt am"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =10294
+                    Top =1932
+                    Width =1321
+                    Height =285
+                    FontSize =10
+                    TabIndex =15
+                    BackColor =15329769
+                    Name ="txtWirkungPrüfenBis"
+                    ControlSource ="WirkungPrüfenBis"
+                    Format ="Short Date"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                    OnGotFocus ="[Event Procedure]"
+                    OnLostFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =7768
+                            Top =1932
+                            Width =2250
+                            Height =285
+                            FontSize =10
+                            Name ="BezWirkungPrüfenBis"
+                            Caption ="Wirkung prüfen bis"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    Left =10294
+                    Top =2248
+                    Width =1321
+                    Height =285
+                    FontSize =10
+                    TabIndex =16
+                    BackColor =15329769
+                    Name ="txtWirkungGeprüftAm"
+                    ControlSource ="WirkungGeprüftAm"
+                    Format ="Short Date"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                    OnLostFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =8338
+                            Top =2248
+                            Width =1680
+                            Height =285
+                            FontSize =10
+                            Name ="BezWirkungGeprüftAm"
+                            Caption ="geprüft am"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3244
+                    Top =1303
+                    Width =541
+                    Height =300
+                    FontSize =10
+                    TabIndex =14
+                    BackColor =15329769
+                    Name ="cboPriorität"
+                    ControlSource ="Priorität"
+                    RowSourceType ="Value List"
+                    RowSource ="\"1\";\"2\";\"3\""
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =1757
+                            Top =1303
+                            Width =1395
+                            Height =285
+                            FontSize =10
+                            Name ="BezPriorität"
+                            Caption ="Priorität"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =6656
+                    Top =1303
+                    Width =3136
+                    Height =285
+                    FontSize =10
+                    TabIndex =17
+                    BackColor =15329769
+                    Name ="cboMaßnahmenHerkunft"
+                    ControlSource ="MaßnahmenHerkunftID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT MaßnahmenHerkunft.ID, MaßnahmenHerkunft.Anzeige FROM MaßnahmenHerkunft; "
+                    ColumnWidths ="0;1441"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4295
+                            Top =1303
+                            Width =2085
+                            Height =285
+                            FontSize =10
+                            Name ="BezMaßnahmenHerkunft"
+                            Caption ="Maßnahmen Herkunft"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =10778
+                    Top =4702
+                    Width =1359
+                    Height =3570
+                    FontSize =10
+                    TabIndex =18
+                    BackColor =15329769
+                    Name ="ListeReklamation"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT MIDZuReklID.ReklID FROM MIDZuReklID WHERE (((MIDZuReklID.MID)=[Forms]![Ma"
+                        "ßnahmenDialog]![MaßnahmeID])) GROUP BY MIDZuReklID.ReklID; "
+                    OnDblClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =1
+                            Left =10777
+                            Top =4431
+                            Width =1365
+                            Height =255
+                            FontSize =10
+                            Name ="BezReklamation"
+                            Caption ="zugeor. Rekla"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10778
+                    Top =8784
+                    Width =1359
+                    Height =1425
+                    FontSize =10
+                    TabIndex =19
+                    BackColor =15329769
+                    Name ="ListeErMID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT ErMIDZuMID.MID FROM ErMIDZuMID WHERE (((ErMIDZuMID.ErMID)=[Forms]![Maßnah"
+                        "menDialog]![MaßnahmeID])) GROUP BY ErMIDZuMID.MID; "
+                    OnDblClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10777
+                            Top =8496
+                            Width =1365
+                            Height =255
+                            FontSize =10
+                            Name ="BezErMID"
+                            Caption ="Erweit. von ID"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10789
+                    Top =10886
+                    Width =1359
+                    Height =1425
+                    FontSize =10
+                    TabIndex =20
+                    BackColor =15329769
+                    Name ="ListeErweiterung"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT ErMIDZuMID.ErMID FROM ErMIDZuMID WHERE (((ErMIDZuMID.MID)=[Forms]![Maßnah"
+                        "menDialog]![MaßnahmeID])) GROUP BY ErMIDZuMID.ErMID; "
+                    OnDblClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =10778
+                            Top =10598
+                            Width =1365
+                            Height =255
+                            FontSize =10
+                            Name ="BezErweiterung"
+                            Caption ="Erweiterung "
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =10294
+                    Top =2574
+                    Width =1321
+                    Height =285
+                    FontSize =10
+                    TabIndex =21
+                    BackColor =15329769
+                    Name ="cboVerantPrüfSB"
+                    ControlSource ="VerantwortlichPrID"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.[SB-ID], Sachbearbeiter.Kurzzeichen FROM Sachbearbeiter OR"
+                        "DER BY [Kurzzeichen]; "
+                    ColumnWidths ="0;1441"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =8332
+                            Top =2574
+                            Width =1665
+                            Height =285
+                            FontSize =10
+                            Name ="BezVerantPrüfSB"
+                            Caption ="Verant.Prüf.SB"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =2894
+                    Top =2895
+                    Width =2466
+                    Height =276
+                    TabIndex =22
+                    Name ="cmbMahnwesenAktivieren"
+                    Caption ="MW Maßnahmen  aktivieren"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Aktivieren Mahnwesen für Maßnahme"
+                End
+                Begin CheckBox
+                    Locked = NotDefault
+                    OverlapFlags =93
+                    Left =5636
+                    Top =2952
+                    TabIndex =23
+                    Name ="chkAktivierungMM"
+                    ControlSource ="AktivierungMM"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =7540
+                    Top =2895
+                    Width =2466
+                    Height =276
+                    TabIndex =24
+                    Name ="cmbAktivierungMWPr"
+                    Caption ="MW Wirksamkeitpr. aktivieren"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Aktivieren Mahnwesen für Wirksamkeitsprüfung"
+                End
+                Begin CheckBox
+                    Locked = NotDefault
+                    OverlapFlags =93
+                    Left =10282
+                    Top =2952
+                    TabIndex =25
+                    Name ="chkAktivierungMWPr"
+                    ControlSource ="AktivierungMWPr"
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    BorderWidth =1
+                    OverlapFlags =255
+                    Top =1757
+                    Width =7145
+                    Height =1866
+                    Name ="Rechteck77"
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    BorderWidth =1
+                    OverlapFlags =255
+                    Left =7160
+                    Top =1757
+                    Width =4970
+                    Height =1866
+                    Name ="Rechteck78"
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =247
+                    TextAlign =2
+                    Left =4365
+                    Top =3285
+                    Width =6165
+                    Height =300
+                    FontSize =11
+                    Name ="Bezeichnungsfeld82"
+                    Caption ="Bitte nach Eingabe vom Datum, diesen mit \"Enter\" bestädigen!"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =793
+            BackColor =14211288
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3994
+                    Top =56
+                    Width =3981
+                    Height =576
+                    FontSize =12
+                    FontWeight =700
+                    Name ="ZuordBearbOrt"
+                    Caption ="Zuordnung Bearbeitungsort"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =113
+                    Top =56
+                    Width =3696
+                    Height =576
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="ButZurdnungTaetigkeiten"
+                    Caption ="Tätigkeitenzuordnung"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8160
+                    Top =56
+                    Width =3981
+                    Height =576
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="CmdMaßnahmeErweitern"
+                    Caption ="Maßnahmen Erweiterung"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "MaßnahmenDialog.cls"

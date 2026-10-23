@@ -1,0 +1,65 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryTicketMaßnahmenPE"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "MailBCC": {
+        "ColumnWidth": 7770,
+        "AggregateType": -1
+      },
+      "MailCC": {
+        "ColumnWidth": 4455,
+        "AggregateType": -1
+      },
+      "MailTo": {
+        "ColumnWidth": 4065,
+        "AggregateType": -1
+      },
+      "MailVon": {
+        "ColumnWidth": 4065,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 549
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 430,
+          "Bottom": 420,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 522,
+          "Top": 5,
+          "Right": 867,
+          "Bottom": 371,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

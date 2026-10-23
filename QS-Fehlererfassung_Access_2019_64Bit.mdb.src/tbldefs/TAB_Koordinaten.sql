@@ -1,0 +1,5 @@
+﻿CREATE TABLE [TAB_Koordinaten] (
+  [ID] AUTOINCREMENT CONSTRAINT [PrimaryKey] PRIMARY KEY UNIQUE NOT NULL,
+  [Formname] VARCHAR (100),
+  [Koordinaten] VARCHAR (100)
+)

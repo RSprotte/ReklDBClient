@@ -1,0 +1,341 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    DataEntry = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8390
+    DatasheetFontHeight =11
+    ItemSuffix =27
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x53e99dbe4d0ae540
+    End
+    RecordSource ="tblNotizen"
+    Caption ="frmNotizen"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin FormHeader
+            Height =1026
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    Left =57
+                    Top =57
+                    Width =2322
+                    Height =969
+                    FontSize =20
+                    Name ="Bezeichnungsfeld16"
+                    Caption ="Neue Notiz"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5495
+                    Top =170
+                    Width =2031
+                    Height =576
+                    Name ="cmbfrmNotizSchließen"
+                    Caption ="Notiz erstellen"
+                    OnClick ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =113
+                    Top =623
+                    Width =1267
+                    Height =315
+                    ColumnOrder =0
+                    TabIndex =1
+                    Name ="NotizID"
+                    ControlSource ="NotizID"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4535
+                    Top =170
+                    Width =576
+                    Height =576
+                    TabIndex =2
+                    Name ="cmbFromSchließen"
+                    Caption ="Befehl24"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =6599
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1638
+                    Top =60
+                    Width =1267
+                    Height =330
+                    ColumnWidth =1530
+                    Name ="ReklID"
+                    ControlSource ="ReklID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Top =60
+                            Width =1548
+                            Height =330
+                            Name ="ReklID_Bezeichnungsfeld"
+                            Caption ="ReklID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5377
+                    Top =64
+                    Width =1267
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="BearbeiterKz"
+                    ControlSource ="BearbeiterKz"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =3064
+                            Top =64
+                            Width =2223
+                            Height =330
+                            Name ="BearbeiterKz_Bezeichnungsfeld"
+                            Caption ="Bearbeiter Kürzel"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1642
+                    Top =964
+                    Width =6172
+                    Height =630
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="NotizFeldFrei"
+                    ControlSource ="NotizFeldFrei"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4
+                            Top =964
+                            Width =1548
+                            Height =330
+                            Name ="NotizFeldFrei_Bezeichnungsfeld"
+                            Caption ="Notiz Feld Frei"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1638
+                    Top =1755
+                    Width =1267
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =4
+                    Name ="ErledigenBis"
+                    ControlSource ="ErledigenBis"
+                    OnClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Top =1755
+                            Width =1548
+                            Height =330
+                            Name ="ErledigenBis_Bezeichnungsfeld"
+                            Caption ="Erledigen Bis"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =1642
+                    Top =514
+                    Width =4987
+                    Height =315
+                    TabIndex =1
+                    Name ="NotizFeld"
+                    ControlSource ="NotizFeld"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Vorgang-Text].[Vorgang-ID], [Vorgang-Text].Anzeige, [Vorgang-Text].Aktiv"
+                        ", [Vorgang-Text].Datenbank FROM [Vorgang-Text] WHERE ((([Vorgang-Text].Aktiv)=Tr"
+                        "ue) AND (([Vorgang-Text].Datenbank)=\"ReklDB\")) ORDER BY [Vorgang-Text].Anzeige"
+                        "; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =4
+                            Top =514
+                            Width =1548
+                            Height =330
+                            Name ="NotizFeld_Bezeichnungsfeld"
+                            Caption ="Notiz Feld"
+                        End
+                    End
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    Left =56
+                    Top =2219
+                    Width =8220
+                    Height =4380
+                    TabIndex =5
+                    Name ="frmUFNotizen"
+                    SourceObject ="Form.frmUFNotizen"
+                    LinkChildFields ="ReklID"
+                    LinkMasterFields ="ReklID"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmNotizen.cls"

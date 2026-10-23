@@ -1,0 +1,380 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =22779
+    DatasheetFontHeight =11
+    ItemSuffix =23
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x122f8ab88f17e640
+    End
+    RecordSource ="tblTempStueli"
+    Caption ="frmStueli"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1005
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =56
+                    Top =684
+                    Width =741
+                    Height =315
+                    Name ="Pos_Bezeichnungsfeld"
+                    Caption ="Pos"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =797
+                    Top =684
+                    Width =711
+                    Height =315
+                    Name ="Menge_Bezeichnungsfeld"
+                    Caption ="Menge"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =1508
+                    Top =684
+                    Width =1056
+                    Height =315
+                    Name ="Artikel_Bezeichnungsfeld"
+                    Caption ="Artikel"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =223
+                    TextAlign =1
+                    Left =2550
+                    Top =684
+                    Width =951
+                    Height =315
+                    Name ="Var_Bezeichnungsfeld"
+                    Caption ="Var"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =223
+                    TextAlign =1
+                    Left =3474
+                    Top =690
+                    Width =1761
+                    Height =315
+                    Name ="Kd_Nr_Bezeichnungsfeld"
+                    Caption ="Kd_Nr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =5229
+                    Top =690
+                    Width =5901
+                    Height =315
+                    Name ="Bez_Bezeichnungsfeld"
+                    Caption ="Bez"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =11130
+                    Top =690
+                    Width =4746
+                    Height =315
+                    Name ="Typ_Bezeichnungsfeld"
+                    Caption ="Typ"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =15876
+                    Top =690
+                    Width =4206
+                    Height =315
+                    Name ="Label_Bezeichnungsfeld"
+                    Caption ="Label"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =20082
+                    Top =690
+                    Width =2697
+                    Height =315
+                    Name ="Hersteller_Bezeichnungsfeld"
+                    Caption ="Hersteller"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =56
+                    Top =56
+                    Width =5430
+                    Height =579
+                    FontSize =20
+                    Name ="Bezeichnungsfeld18"
+                    Caption ="Aktuelle Stückliste"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6236
+                    Top =56
+                    Width =1984
+                    Height =513
+                    Name ="cmbTVNArt"
+                    Caption ="TVN Artikel"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =215
+                    TextAlign =2
+                    BackStyle =0
+                    IMESentenceMode =3
+                    Left =3630
+                    Top =165
+                    Width =1473
+                    Height =330
+                    FontSize =12
+                    TabIndex =1
+                    Name ="txtArtNr"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8503
+                    Top =56
+                    Width =1984
+                    Height =513
+                    TabIndex =2
+                    Name ="cmbStueli"
+                    Caption ="Stückliste öffnen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =740
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =56
+                    Top =57
+                    Width =741
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    Name ="Pos"
+                    ControlSource ="Pos"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =95
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =797
+                    Top =57
+                    Width =711
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =95
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =1508
+                    Top =57
+                    Width =1056
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Artikel"
+                    ControlSource ="Artikel"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =255
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =2550
+                    Top =60
+                    Width =951
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Var"
+                    ControlSource ="Var"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =255
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =3465
+                    Top =60
+                    Width =1761
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Kd_Nr"
+                    ControlSource ="Kd_Nr"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =127
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =5220
+                    Top =60
+                    Width =5901
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Bez"
+                    ControlSource ="Bez"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =127
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =11121
+                    Top =60
+                    Width =4746
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =6
+                    Name ="Typ"
+                    ControlSource ="Typ"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =127
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =15867
+                    Top =60
+                    Width =4206
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =7
+                    Name ="Label"
+                    ControlSource ="Label"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =119
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =20073
+                    Top =60
+                    Width =2697
+                    Height =680
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =8
+                    Name ="Hersteller"
+                    ControlSource ="Hersteller"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmStueli.cls"

@@ -1,0 +1,96 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_Gewaehrleistungsaufwendungen_Gesamt_pro_Jahr"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 345
+      }
+    },
+    "Columns": {
+      "Belastungen an LQ": {
+        "ColumnOrder": 6,
+        "ColumnWidth": 1485,
+        "AggregateType": -1
+      },
+      "Belastungen von LQ": {
+        "ColumnOrder": 9,
+        "ColumnWidth": 1800,
+        "AggregateType": -1
+      },
+      "Frachtkosten LQ": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 1515,
+        "AggregateType": -1
+      },
+      "Jahr": {
+        "ColumnOrder": 1,
+        "ColumnWidth": 510,
+        "AggregateType": -1
+      },
+      "Kosten-Aufwand": {
+        "ColumnOrder": 7,
+        "ColumnWidth": 1530,
+        "AggregateType": -1
+      },
+      "Materialkosten LQ": {
+        "ColumnOrder": 3,
+        "ColumnWidth": 1665,
+        "AggregateType": -1
+      },
+      "Prüfkosten LQ": {
+        "ColumnOrder": 5,
+        "ColumnWidth": 1590,
+        "AggregateType": -1
+      },
+      "QS-Vorgänge": {
+        "ColumnOrder": 10,
+        "ColumnWidth": 1245,
+        "AggregateType": -1
+      },
+      "Reparaturkosten": {
+        "ColumnOrder": 8,
+        "ColumnWidth": 1545,
+        "AggregateType": -1
+      },
+      "Zeitaufwand LQ": {
+        "ColumnOrder": 2,
+        "ColumnWidth": 1440,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 346
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 346,
+          "Bottom": 349,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,91 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryDictUebersicht-Daten"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Einsatz vor Ort]": {
+        "ColumnWidth": 1755,
+        "AggregateType": -1
+      },
+      "Mastertab.[mit Rücksendung]": {
+        "ColumnWidth": 2010,
+        "AggregateType": -1
+      },
+      "Mastertab.[per E-Mail/Fax]": {
+        "ColumnWidth": 1860,
+        "AggregateType": -1
+      },
+      "Mastertab.[Umbau/Reparatur]": {
+        "ColumnWidth": 2085,
+        "AggregateType": -1
+      },
+      "Mastertab.Transportschaden": {
+        "ColumnWidth": 2070,
+        "AggregateType": -1
+      },
+      "ReklMemo.Portal": {
+        "ColumnWidth": 975,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 645
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 298,
+          "Bottom": 599,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 594,
+          "Top": 14,
+          "Right": 876,
+          "Bottom": 451,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 338,
+          "Top": 134,
+          "Right": 539,
+          "Bottom": 412,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 924,
+          "Top": 12,
+          "Right": 1109,
+          "Bottom": 339,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

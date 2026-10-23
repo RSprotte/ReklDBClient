@@ -1,0 +1,56 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryTicketLQEinheit"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "AN": {
+        "ColumnWidth": 3675,
+        "AggregateType": -1
+      },
+      "BCC": {
+        "ColumnWidth": 4455,
+        "AggregateType": -1
+      },
+      "CC": {
+        "ColumnWidth": 3450,
+        "AggregateType": -1
+      },
+      "LQEinheit.LQEinheit": {
+        "ColumnWidth": 2310,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 731
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 81,
+          "Top": 41,
+          "Right": 405,
+          "Bottom": 309,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

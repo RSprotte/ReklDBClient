@@ -1,0 +1,162 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5612
+    DatasheetFontHeight =11
+    ItemSuffix =9
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xfae8fbdb9508e540
+    End
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+            ForeColor =2102279
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+        End
+        Begin Section
+            Height =1984
+            Name ="Detailbereich"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =915
+                    Top =1200
+                    Width =2890
+                    Height =632
+                    TabIndex =1
+                    Name ="cmbLagerUebernehmen"
+                    Caption ="Daten übernehmen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =2436
+                    Top =285
+                    Width =2890
+                    Height =315
+                    Name ="cobLager"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblLager.LagerID, tblLager.Lagerbezeichnung FROM tblLager; "
+                    ColumnWidths ="0;1701"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            Left =225
+                            Top =285
+                            Width =2115
+                            Height =320
+                            Name ="BezLager"
+                            Caption ="Lager auswählen"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =229
+                    Top =692
+                    Width =2115
+                    Height =320
+                    Name ="Bezeichnungsfeld6"
+                    Caption ="Ausführen am"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2431
+                    Top =692
+                    Width =2895
+                    Height =345
+                    TabIndex =2
+                    Name ="txtAusfuehrenAm"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmLager.cls"

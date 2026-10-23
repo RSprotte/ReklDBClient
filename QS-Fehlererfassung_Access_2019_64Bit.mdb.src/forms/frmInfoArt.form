@@ -1,0 +1,641 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =19068
+    DatasheetFontHeight =11
+    ItemSuffix =38
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecordSource ="SELECT tblTempInfoArt.FA, tblTempInfoArt.Art, tblTempInfoArt.Var, tblTempInfoArt"
+        ".Bezeichnung, tblTempInfoArt.Haupt_FA, tblTempInfoArt.FA_Linie, tblTempInfoArt.K"
+        "Z, tblTempInfoArt.Datum, tblTempInfoArt.Memo_Fertigung, tblTempInfoArt.Sonder_In"
+        "fo, tblTempInfoArt.Bez2, tblTempInfoArt.Aenderungs_Stand, tblTempInfoArt.STL_Sta"
+        "nd, tblTempInfoArt.Zeich_Nr, tblTempInfoArt.Zeich_Index, tblTempInfoArt.Menge FR"
+        "OM tblTempInfoArt ORDER BY tblTempInfoArt.FA DESC; "
+    Caption ="frmInfoArt"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =13750737
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =999
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =60
+                    Top =684
+                    Width =2019
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="FA_Bezeichnungsfeld"
+                    Caption ="FA"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2221
+                    Top =684
+                    Width =1134
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Art_Bezeichnungsfeld"
+                    Caption ="Art"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3437
+                    Top =684
+                    Width =819
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Var_Bezeichnungsfeld"
+                    Caption ="Var"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4923
+                    Top =684
+                    Width =4839
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Bezeichnung_Bezeichnungsfeld"
+                    Caption ="Bezeichnung"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9810
+                    Top =684
+                    Width =2019
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Haupt_FA_Bezeichnungsfeld"
+                    Caption ="Haupt_FA"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =11915
+                    Top =684
+                    Width =5079
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="FA_Linie_Bezeichnungsfeld"
+                    Caption ="FA_Linie"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =17076
+                    Top =684
+                    Width =849
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="KZ_Bezeichnungsfeld"
+                    Caption ="KZ"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =17970
+                    Top =684
+                    Width =1098
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Datum_Bezeichnungsfeld"
+                    Caption ="Datum"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =57
+                    Top =57
+                    Width =2778
+                    Height =519
+                    FontSize =20
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Bezeichnungsfeld30"
+                    Caption ="Fertigungs Info"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5272
+                    Top =113
+                    Width =2040
+                    Height =315
+                    ColumnOrder =0
+                    Name ="txtFilterFA"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =3
+                    Left =2483
+                    Top =113
+                    Width =2745
+                    Height =315
+                    Name ="Bezeichnungsfeld22"
+                    Caption ="Filter FA oder FA suchen "
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =7365
+                    Top =120
+                    Width =2211
+                    Height =328
+                    TabIndex =1
+                    Name ="cmbFilterLoeschen"
+                    Caption ="Filter löschen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =4308
+                    Top =684
+                    Width =561
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Menge_Bezeichnungsfeld"
+                    Caption ="St"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =9853
+                    Top =127
+                    Width =6075
+                    Height =300
+                    FontSize =12
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld36"
+                    Caption ="Doppelklick Datensatzmarkierer um FA Stüli zu Öffnen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =16157
+                    Top =113
+                    Width =2211
+                    Height =328
+                    TabIndex =2
+                    Name ="cmbPruefprotokoll"
+                    Caption ="Prüfprotokoll öffnen"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =1205
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =60
+                    Top =57
+                    Width =2019
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    BorderColor =16777215
+                    Name ="FA"
+                    ControlSource ="FA"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2221
+                    Top =57
+                    Width =1134
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    BorderColor =16777215
+                    Name ="Art"
+                    ControlSource ="Art"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3437
+                    Top =57
+                    Width =819
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =2
+                    BorderColor =16777215
+                    Name ="Var"
+                    ControlSource ="Var"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =4923
+                    Top =57
+                    Width =4839
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =3
+                    BorderColor =16777215
+                    Name ="Bezeichnung"
+                    ControlSource ="Bezeichnung"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =9810
+                    Top =57
+                    Width =2019
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =4
+                    BorderColor =16777215
+                    Name ="Haupt_FA"
+                    ControlSource ="Haupt_FA"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =11915
+                    Top =57
+                    Width =5079
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =5
+                    BorderColor =16777215
+                    Name ="FA_Linie"
+                    ControlSource ="FA_Linie"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =17076
+                    Top =57
+                    Width =849
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =6
+                    BorderColor =16777215
+                    Name ="KZ"
+                    ControlSource ="KZ"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =17970
+                    Top =57
+                    Width =1098
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =7
+                    BorderColor =16777215
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =13143
+                    Top =735
+                    Width =1869
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =8
+                    BorderColor =16777215
+                    Name ="Aenderungs_Stand"
+                    ControlSource ="Aenderungs_Stand"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =15064
+                    Top =735
+                    Width =1098
+                    Height =315
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =9
+                    BorderColor =16777215
+                    Name ="STL_Stand"
+                    ControlSource ="STL_Stand"
+                    Format ="Short Date"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =16214
+                    Top =735
+                    Width =1479
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =10
+                    BorderColor =16777215
+                    Name ="Zeich_Nr"
+                    ControlSource ="Zeich_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =17745
+                    Top =735
+                    Width =1224
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =11
+                    BorderColor =16777215
+                    Name ="Zeich_Index"
+                    ControlSource ="Zeich_Index"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =60
+                    Top =735
+                    Width =4734
+                    Height =315
+                    FontSize =10
+                    TabIndex =12
+                    BorderColor =16777215
+                    Name ="Memo_Fertigung"
+                    ControlSource ="Memo_Fertigung"
+                End
+                Begin Label
+                    OverlapFlags =255
+                    TextAlign =1
+                    Left =60
+                    Top =450
+                    Width =4734
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Memo_Fertigung_Bezeichnungsfeld"
+                    Caption ="Memo_Fertigung"
+                    Tag ="DetachedLabel"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =4846
+                    Top =735
+                    Width =4734
+                    Height =315
+                    FontSize =10
+                    TabIndex =13
+                    BorderColor =16777215
+                    Name ="Sonder_Info"
+                    ControlSource ="Sonder_Info"
+                End
+                Begin Label
+                    OverlapFlags =255
+                    TextAlign =1
+                    Left =4846
+                    Top =450
+                    Width =4734
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Sonder_Info_Bezeichnungsfeld"
+                    Caption ="Sonder_Info"
+                    Tag ="DetachedLabel"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =9632
+                    Top =735
+                    Width =3459
+                    Height =315
+                    FontSize =10
+                    TabIndex =14
+                    BorderColor =16777215
+                    Name ="Bez2"
+                    ControlSource ="Bez2"
+                End
+                Begin Label
+                    OverlapFlags =255
+                    TextAlign =1
+                    Left =9632
+                    Top =450
+                    Width =3459
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Bez2_Bezeichnungsfeld"
+                    Caption ="Bez2"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =255
+                    TextAlign =1
+                    Left =13143
+                    Top =450
+                    Width =1869
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Aenderungs_Stand_Bezeichnungsfeld"
+                    Caption ="Aenderungs_Stand"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =255
+                    TextAlign =1
+                    Left =15064
+                    Top =450
+                    Width =1098
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="STL_Stand_Bezeichnungsfeld"
+                    Caption ="STL_Stand"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =255
+                    TextAlign =1
+                    Left =16214
+                    Top =450
+                    Width =1479
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Zeich_Nr_Bezeichnungsfeld"
+                    Caption ="Zeich_Nr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =255
+                    TextAlign =1
+                    Left =17745
+                    Top =450
+                    Width =1224
+                    Height =315
+                    FontWeight =500
+                    ForeColor =12349952
+                    Name ="Zeich_Index_Bezeichnungsfeld"
+                    Caption ="Zeich_Index"
+                    Tag ="DetachedLabel"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =4308
+                    Top =56
+                    Width =561
+                    Height =315
+                    TabIndex =15
+                    BorderColor =16777215
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    OverlapFlags =247
+                    Width =19055
+                    Height =1205
+                    BorderColor =0
+                    Name ="Rechteck35"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmInfoArt.cls"

@@ -1,0 +1,556 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10275
+    DatasheetFontHeight =10
+    ItemSuffix =147
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x0448f8775067e440
+    End
+    Caption ="Konfiguration Soft Key"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Tab
+            Width =5103
+            Height =3402
+            FontName ="Tahoma"
+        End
+        Begin Page
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =680
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =60
+                    Width =3675
+                    Height =390
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Konfiguration Soft Key"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6916
+                    Top =56
+                    Width =576
+                    Height =576
+                    Name ="Schließen"
+                    Caption ="Befehl24"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+        Begin Section
+            Height =8100
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin Tab
+                    MultiRow = NotDefault
+                    OverlapFlags =85
+                    Top =60
+                    Width =10275
+                    Height =8040
+                    Name ="RegisterStr0"
+                    Begin
+                        Begin Page
+                            OverlapFlags =87
+                            Left =135
+                            Top =465
+                            Width =10006
+                            Height =7495
+                            Name ="SoftkeyKonfig"
+                            Begin
+                                Begin TextBox
+                                    Visible = NotDefault
+                                    Locked = NotDefault
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =9527
+                                    Top =5384
+                                    Width =336
+                                    Height =255
+                                    Name ="txtMakroSoftKey1"
+                                    Begin
+                                        Begin Label
+                                            Visible = NotDefault
+                                            OverlapFlags =215
+                                            Left =9127
+                                            Top =5389
+                                            Width =270
+                                            Height =240
+                                            Name ="BezSoftKey1"
+                                            Caption ="SoftKey 1:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =1206
+                                    Top =1102
+                                    Width =5316
+                                    Height =283
+                                    TabIndex =1
+                                    Name ="txtMakroSoftKeyBez1"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Visible = NotDefault
+                                    Locked = NotDefault
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =9527
+                                    Top =5730
+                                    Width =336
+                                    Height =255
+                                    TabIndex =2
+                                    Name ="txtMakroSoftKey2"
+                                    Begin
+                                        Begin Label
+                                            Visible = NotDefault
+                                            OverlapFlags =215
+                                            Left =9127
+                                            Top =5744
+                                            Width =270
+                                            Height =240
+                                            Name ="BezSoftKey2"
+                                            Caption ="SoftKey 2:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =1206
+                                    Top =1454
+                                    Width =5316
+                                    Height =283
+                                    TabIndex =3
+                                    Name ="txtMakroSoftKeyBez2"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Visible = NotDefault
+                                    Locked = NotDefault
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =9527
+                                    Top =6070
+                                    Width =336
+                                    Height =255
+                                    TabIndex =4
+                                    Name ="txtMakroSoftKey3"
+                                    Begin
+                                        Begin Label
+                                            Visible = NotDefault
+                                            OverlapFlags =215
+                                            Left =9127
+                                            Top =6094
+                                            Width =270
+                                            Height =240
+                                            Name ="BezSoftKey3"
+                                            Caption ="SoftKey 3:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =1206
+                                    Top =1792
+                                    Width =5316
+                                    Height =283
+                                    TabIndex =5
+                                    Name ="txtMakroSoftKeyBez3"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Visible = NotDefault
+                                    Locked = NotDefault
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =9527
+                                    Top =6432
+                                    Width =336
+                                    Height =255
+                                    TabIndex =6
+                                    Name ="txtMakroSoftKey4"
+                                    Begin
+                                        Begin Label
+                                            Visible = NotDefault
+                                            OverlapFlags =215
+                                            Left =9127
+                                            Top =6409
+                                            Width =270
+                                            Height =240
+                                            Name ="BezSoftKey4"
+                                            Caption ="SoftKey 4:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =1206
+                                    Top =2132
+                                    Width =5316
+                                    Height =283
+                                    TabIndex =7
+                                    Name ="txtMakroSoftKeyBez4"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin TextBox
+                                    Visible = NotDefault
+                                    Locked = NotDefault
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =9527
+                                    Top =6763
+                                    Width =336
+                                    Height =255
+                                    TabIndex =8
+                                    Name ="txtMakroSoftKey5"
+                                    Begin
+                                        Begin Label
+                                            Visible = NotDefault
+                                            OverlapFlags =215
+                                            Left =9127
+                                            Top =6749
+                                            Width =270
+                                            Height =240
+                                            Name ="BezSoftKey5"
+                                            Caption ="SoftKey 5:"
+                                        End
+                                    End
+                                End
+                                Begin TextBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    Left =1206
+                                    Top =2472
+                                    Width =5316
+                                    Height =283
+                                    TabIndex =9
+                                    Name ="txtMakroSoftKeyBez5"
+                                    AfterUpdate ="[Event Procedure]"
+                                End
+                                Begin ListBox
+                                    OverlapFlags =215
+                                    IMESentenceMode =3
+                                    ColumnCount =3
+                                    Left =1206
+                                    Top =3078
+                                    Width =7694
+                                    Height =4576
+                                    TabIndex =10
+                                    Name ="lstSoftKeyMakroZuordnung"
+                                    RowSourceType ="Table/Query"
+                                    RowSource ="SELECT tblSoftKeyMakros.MakroID, tblSoftKeyMakros.MakroName, tblSoftKeyMakros.An"
+                                        "zeige FROM tblSoftKeyMakros ORDER BY tblSoftKeyMakros.Anzeige; "
+                                    ColumnWidths ="0;0;1701"
+                                    Begin
+                                        Begin Label
+                                            OverlapFlags =215
+                                            TextAlign =2
+                                            Left =280
+                                            Top =3063
+                                            Width =850
+                                            Height =570
+                                            FontSize =10
+                                            Name ="Bezeichnungsfeld117"
+                                            Caption ="Sofkey Auswahl"
+                                        End
+                                    End
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6630
+                                    Top =1102
+                                    Width =1071
+                                    TabIndex =11
+                                    Name ="cmdSet1"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6635
+                                    Top =1454
+                                    Width =1071
+                                    TabIndex =12
+                                    Name ="cmdSet2"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6635
+                                    Top =1792
+                                    Width =1071
+                                    TabIndex =13
+                                    Name ="cmdSet3"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6635
+                                    Top =2132
+                                    Width =1071
+                                    TabIndex =14
+                                    Name ="cmdSet4"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =6635
+                                    Top =2472
+                                    Width =1071
+                                    TabIndex =15
+                                    Name ="cmdSet5"
+                                    Caption ="Set Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin Label
+                                    Visible = NotDefault
+                                    OverlapFlags =215
+                                    Left =9521
+                                    Top =5045
+                                    Width =345
+                                    Height =270
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld123"
+                                    Caption ="Makro"
+                                End
+                                Begin Label
+                                    OverlapFlags =215
+                                    Left =1206
+                                    Top =737
+                                    Width =1725
+                                    Height =283
+                                    FontSize =10
+                                    Name ="Bezeichnungsfeld124"
+                                    Caption ="Soft Key"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7823
+                                    Top =1102
+                                    Width =1071
+                                    TabIndex =16
+                                    Name ="cmdDel1"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7823
+                                    Top =1454
+                                    Width =1071
+                                    TabIndex =17
+                                    Name ="cmdDel2"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7823
+                                    Top =1792
+                                    Width =1071
+                                    TabIndex =18
+                                    Name ="cmdDel3"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7823
+                                    Top =2132
+                                    Width =1071
+                                    TabIndex =19
+                                    Name ="cmdDel4"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin CommandButton
+                                    OverlapFlags =215
+                                    Left =7823
+                                    Top =2472
+                                    Width =1071
+                                    TabIndex =20
+                                    Name ="cmdDel5"
+                                    Caption ="Del Makro"
+                                    OnClick ="[Event Procedure]"
+                                End
+                                Begin Label
+                                    OverlapFlags =215
+                                    Left =280
+                                    Top =1102
+                                    Width =850
+                                    Height =283
+                                    Name ="Bezeichnungsfeld141"
+                                    Caption ="SoftKey 1:"
+                                End
+                                Begin Label
+                                    OverlapFlags =215
+                                    Left =280
+                                    Top =1454
+                                    Width =850
+                                    Height =283
+                                    Name ="Bezeichnungsfeld143"
+                                    Caption ="SoftKey 2:"
+                                End
+                                Begin Label
+                                    OverlapFlags =215
+                                    Left =280
+                                    Top =1792
+                                    Width =850
+                                    Height =283
+                                    Name ="Bezeichnungsfeld144"
+                                    Caption ="SoftKey 3:"
+                                End
+                                Begin Label
+                                    OverlapFlags =215
+                                    Left =280
+                                    Top =2132
+                                    Width =850
+                                    Height =283
+                                    Name ="Bezeichnungsfeld145"
+                                    Caption ="SoftKey 4:"
+                                End
+                                Begin Label
+                                    OverlapFlags =215
+                                    Left =280
+                                    Top =2472
+                                    Width =850
+                                    Height =283
+                                    Name ="Bezeichnungsfeld146"
+                                    Caption ="SoftKey 5:"
+                                End
+                            End
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmKonfiguartionSoftkey.cls"

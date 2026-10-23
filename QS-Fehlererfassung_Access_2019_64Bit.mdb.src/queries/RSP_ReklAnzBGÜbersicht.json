@@ -1,0 +1,131 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_ReklAnzBGÜbersicht"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "[Baugruppen-avista_out].[Baugruppen-ID]": {
+        "ColumnOrder": 1,
+        "AggregateType": -1
+      },
+      "[Baugruppen-avista_out].[Bezeichnung 1]": {
+        "ColumnOrder": 3,
+        "ColumnWidth": 4290,
+        "AggregateType": -1
+      },
+      "[Baugruppen-avista_out].[Kunden-Nr]": {
+        "ColumnOrder": 2,
+        "ColumnWidth": 1020,
+        "AggregateType": -1
+      },
+      "[Baugruppen-avista_out].[LQ Art-Nr]": {
+        "ColumnOrder": 1,
+        "ColumnWidth": 1020,
+        "AggregateType": -1
+      },
+      "12M": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 735,
+        "AggregateType": -1
+      },
+      "3M": {
+        "ColumnOrder": 6,
+        "ColumnWidth": 735,
+        "AggregateType": -1
+      },
+      "6M": {
+        "ColumnOrder": 5,
+        "ColumnWidth": 750,
+        "AggregateType": -1
+      },
+      "GJ": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 735,
+        "AggregateType": -1
+      },
+      "M10-12": {
+        "ColumnOrder": 6,
+        "ColumnWidth": 1305,
+        "AggregateType": -1
+      },
+      "M7-12": {
+        "ColumnOrder": 5,
+        "ColumnWidth": 1050,
+        "AggregateType": -1
+      },
+      "RSP_ReklAnzBGAktGJ.[Anzahl Reklamationen]": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 3945,
+        "AggregateType": -1
+      },
+      "RSP_ReklAnzBGAktGJ_M10_12.[Anzahl Reklamationen]": {
+        "ColumnOrder": 6,
+        "ColumnWidth": 4725,
+        "AggregateType": -1
+      },
+      "RSP_ReklAnzBGAktGJ_M7_12.[Anzahl Reklamationen]": {
+        "ColumnOrder": 5,
+        "ColumnWidth": 4620,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 289
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Baugruppen-avista_out",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 134,
+          "Bottom": 244,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_ReklAnzBGAktGJ",
+          "Alias": "",
+          "Left": 221,
+          "Top": 112,
+          "Right": 408,
+          "Bottom": 205,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_ReklAnzBGAktGJ_M10_12",
+          "Alias": "",
+          "Left": 498,
+          "Top": 160,
+          "Right": 722,
+          "Bottom": 248,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_ReklAnzBGAktGJ_M7_12",
+          "Alias": "",
+          "Left": 884,
+          "Top": 185,
+          "Right": 1095,
+          "Bottom": 273,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

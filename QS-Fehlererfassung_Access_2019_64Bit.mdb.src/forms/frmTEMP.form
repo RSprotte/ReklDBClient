@@ -1,0 +1,480 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6994
+    DatasheetFontHeight =11
+    ItemSuffix =30
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecordSource ="SELECT * FROM TBL_TEMP; "
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =8150
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =100
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    Name ="txtMatchcode"
+                    ControlSource ="Matchcode"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =100
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblMatchcode"
+                            Caption ="Matchcode:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =650
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =1
+                    Name ="txtArt_Nr"
+                    ControlSource ="Art_Nr"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =650
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblArt_Nr"
+                            Caption ="Art_Nr:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =1200
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =2
+                    Name ="txtVariante"
+                    ControlSource ="Variante"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =1200
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblVariante"
+                            Caption ="Variante:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =1750
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =3
+                    Name ="txtBezeichnung"
+                    ControlSource ="Bezeichnung"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =1750
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblBezeichnung"
+                            Caption ="Bezeichnung:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =2300
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =4
+                    Name ="txtBezeichnung_2"
+                    ControlSource ="Bezeichnung_2"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =2300
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblBezeichnung_2"
+                            Caption ="Bezeichnung_2:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =2850
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =5
+                    Name ="txtHersteller"
+                    ControlSource ="Hersteller"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =2850
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblHersteller"
+                            Caption ="Hersteller:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =3400
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =6
+                    Name ="txtHersteller_Nr"
+                    ControlSource ="Hersteller_Nr"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =3400
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblHersteller_Nr"
+                            Caption ="Hersteller_Nr:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =3950
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =7
+                    Name ="txtStatus"
+                    ControlSource ="Status"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =3950
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblStatus"
+                            Caption ="Status:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =4500
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =8
+                    Name ="txtast_merkmal_1"
+                    ControlSource ="ast_merkmal_1"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =4500
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblast_merkmal_1"
+                            Caption ="ast_merkmal_1:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =5050
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =9
+                    Name ="txtast_merkmal_2"
+                    ControlSource ="ast_merkmal_2"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =5050
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblast_merkmal_2"
+                            Caption ="ast_merkmal_2:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =5600
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =10
+                    Name ="txtast_merkmal_3"
+                    ControlSource ="ast_merkmal_3"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =5600
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblast_merkmal_3"
+                            Caption ="ast_merkmal_3:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =6150
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =11
+                    Name ="txtast_merkmal_4"
+                    ControlSource ="ast_merkmal_4"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =6150
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblast_merkmal_4"
+                            Caption ="ast_merkmal_4:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =6700
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =12
+                    Name ="txtast_merkmal_5"
+                    ControlSource ="ast_merkmal_5"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =6700
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblast_merkmal_5"
+                            Caption ="ast_merkmal_5:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =7250
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =13
+                    Name ="txtast_merkmal_6"
+                    ControlSource ="ast_merkmal_6"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =7250
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblast_merkmal_6"
+                            Caption ="ast_merkmal_6:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2500
+                    Top =7800
+                    Width =3000
+                    Height =350
+                    FontSize =12
+                    TabIndex =14
+                    Name ="txtast_merkmal_7"
+                    ControlSource ="ast_merkmal_7"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =100
+                            Top =7800
+                            Width =2300
+                            Height =270
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblast_merkmal_7"
+                            Caption ="ast_merkmal_7:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End

@@ -1,0 +1,110 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =184
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =16970
+    DatasheetFontHeight =10
+    ItemSuffix =3
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x9646b9f1adade440
+    End
+    DatasheetFontName ="Tahoma"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularkopf"
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =11281
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin Subform
+                    OverlapFlags =85
+                    Left =170
+                    Top =170
+                    Width =16215
+                    Height =10890
+                    Name ="UF_RSP_Übersicht_Mahnung_Lief"
+                    SourceObject ="Form.UF_RSP_Übersicht_Mahnung_QSV"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =802
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =10431
+                    Top =113
+                    Width =576
+                    Height =576
+                    Name ="Schliessen"
+                    Caption ="Befehl2"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Übersicht_Mahnwesen_QSV.cls"

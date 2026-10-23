@@ -1,0 +1,47 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryMaßnahmenSachbearbeiter"
+  },
+  "Items": {
+    "QueryType": 0,
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 668
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Maßnahmen",
+          "Alias": "",
+          "Left": 55,
+          "Top": 20,
+          "Right": 237,
+          "Bottom": 329,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 260,
+          "Top": 22,
+          "Right": 476,
+          "Bottom": 401,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

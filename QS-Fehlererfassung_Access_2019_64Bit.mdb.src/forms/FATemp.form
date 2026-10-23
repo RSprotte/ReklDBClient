@@ -1,0 +1,321 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    Modal = NotDefault
+    AutoCenter = NotDefault
+    AllowDesignChanges = NotDefault
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15200
+    DatasheetFontHeight =10
+    ItemSuffix =46
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xb112904d725be440
+    End
+    Caption ="Übersicht FAs"
+    DatasheetFontName ="Arial"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =354
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =170
+                    Top =57
+                    Width =1368
+                    Height =240
+                    Name ="Ansprechpartner_Bezeichnungsfeld"
+                    Caption ="FA"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =8730
+                    Top =57
+                    Width =1368
+                    Height =240
+                    Name ="Telefonnummer_Bezeichnungsfeld"
+                    Caption ="Var.-Bezeichnung"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5896
+                    Top =57
+                    Width =2679
+                    Height =240
+                    Name ="E-Mail_Bezeichnungsfeld"
+                    Caption ="Bezeichnung"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="E_Mail_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =10828
+                    Top =57
+                    Width =1368
+                    Height =240
+                    Name ="Adresse_Bezeichnungsfeld"
+                    Caption ="Bedarfsmenge"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3118
+                    Top =57
+                    Width =2679
+                    Height =240
+                    Name ="Info_Bezeichnungsfeld"
+                    Caption ="Variante"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1644
+                    Top =57
+                    Width =1368
+                    Height =240
+                    Name ="Bezeichnungsfeld42"
+                    Caption ="Artikel"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =12302
+                    Top =57
+                    Width =2898
+                    Height =240
+                    Name ="Bezeichnungsfeld44"
+                    Caption ="Matchcode"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =342
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =170
+                    Top =57
+                    Width =1368
+                    Height =255
+                    ColumnWidth =2310
+                    Name ="aint_nr"
+                    ControlSource ="aint_nr"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =8730
+                    Top =57
+                    Width =2043
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =1
+                    Name ="avar_bezeichnung"
+                    ControlSource ="avar_bezeichnung"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5896
+                    Top =57
+                    Width =2679
+                    Height =285
+                    ColumnWidth =4530
+                    TabIndex =2
+                    Name ="ast_bezeichnung"
+                    ControlSource ="ast_bezeichnung"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10828
+                    Top =57
+                    Width =1368
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =3
+                    Name ="aint_bedarf_menge"
+                    ControlSource ="aint_bedarf_menge"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3118
+                    Top =57
+                    Width =2679
+                    Height =285
+                    ColumnWidth =3000
+                    TabIndex =4
+                    Name ="avar_nummer"
+                    ControlSource ="avar_nummer"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1644
+                    Top =57
+                    Width =1368
+                    Height =255
+                    TabIndex =5
+                    Name ="ast_nummer"
+                    ControlSource ="ast_nummer"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =12302
+                    Top =57
+                    Width =2898
+                    Height =255
+                    TabIndex =6
+                    Name ="Text45"
+                    ControlSource ="ast_matchcode"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =56
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "FATemp.cls"

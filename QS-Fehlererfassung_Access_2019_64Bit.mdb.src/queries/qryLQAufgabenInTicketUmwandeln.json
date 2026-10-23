@@ -1,0 +1,100 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryLQAufgabenInTicketUmwandeln"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "LQEinheit.LQEinheit": {
+        "ColumnWidth": 2310,
+        "AggregateType": -1
+      },
+      "MailBCC": {
+        "ColumnWidth": 4455,
+        "AggregateType": -1
+      },
+      "MailCC": {
+        "ColumnWidth": 4110,
+        "AggregateType": -1
+      },
+      "MailTo": {
+        "ColumnWidth": 2610,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Status]": {
+        "ColumnWidth": 2640,
+        "AggregateType": -1
+      },
+      "ReklMemo.QSBearbeitungBis_Verl": {
+        "ColumnWidth": 2580,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 668
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 18,
+          "Top": 13,
+          "Right": 204,
+          "Bottom": 550,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 240,
+          "Top": 12,
+          "Right": 384,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 247,
+          "Top": 199,
+          "Right": 397,
+          "Bottom": 536,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 541,
+          "Top": 14,
+          "Right": 807,
+          "Bottom": 410,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter_1",
+          "Alias": "",
+          "Left": 898,
+          "Top": 48,
+          "Right": 1129,
+          "Bottom": 467,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

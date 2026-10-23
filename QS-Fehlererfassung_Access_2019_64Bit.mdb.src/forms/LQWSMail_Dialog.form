@@ -1,0 +1,243 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DataEntry = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =13152
+    DatasheetFontHeight =10
+    ItemSuffix =9
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[ID] = "
+    RecSrcDt = Begin
+        0xcd25f3dbef36e540
+    End
+    RecordSource ="LQWorkstation"
+    Caption ="Zuordnung Mailaccount LQ-WS"
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =737
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =60
+                    Top =225
+                    Width =3750
+                    Height =465
+                    FontSize =16
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption =" Mailaccount LQ WS"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =3968
+                    Top =340
+                    Width =2841
+                    Height =285
+                    FontSize =10
+                    FontWeight =700
+                    Name ="SelLQWS"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation; "
+                    ColumnWidths ="0;1440"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =3968
+                            Top =56
+                            Width =1710
+                            Height =245
+                            FontSize =10
+                            FontWeight =700
+                            Name ="LQEinheit_Bezeichnungsfeld"
+                            Caption ="LQWS"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =12452
+                    Top =113
+                    Width =576
+                    Height =576
+                    TabIndex =1
+                    Name ="Schließen"
+                    Caption ="Befehl22"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+        Begin Section
+            Height =1303
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =2267
+                    Top =113
+                    Width =10761
+                    Height =300
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Text1"
+                    ControlSource ="MailTOLQWS"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =376
+                            Top =120
+                            Width =1875
+                            Height =300
+                            FontSize =12
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld2"
+                            Caption ="Mail To:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =2268
+                    Top =510
+                    Width =10746
+                    Height =300
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text5"
+                    ControlSource ="MailCCLQWS"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =346
+                            Top =510
+                            Width =1905
+                            Height =300
+                            FontSize =12
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld6"
+                            Caption ="Mail CC:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =2268
+                    Top =907
+                    Width =10746
+                    Height =300
+                    FontSize =12
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Text7"
+                    ControlSource ="MailEskalationLQWS"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =226
+                            Top =912
+                            Width =2025
+                            Height =300
+                            FontSize =12
+                            FontWeight =700
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="Mail Eskalation:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "LQWSMail_Dialog.cls"

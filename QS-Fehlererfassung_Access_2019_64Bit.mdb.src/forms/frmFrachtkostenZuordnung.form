@@ -1,0 +1,228 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =18425
+    DatasheetFontHeight =11
+    ItemSuffix =20
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x8eed18f0cdf3e540
+    End
+    RecordSource ="qryFrachtkostenZuordnung"
+    Caption ="frmFrachtkostenZuordnung"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =855
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    Left =120
+                    Top =60
+                    Width =5508
+                    Height =504
+                    FontSize =20
+                    Name ="Bezeichnungsfeld18"
+                    Caption ="Frachtkosten  Zuordnung"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =2
+                    Left =915
+                    Top =570
+                    Width =1134
+                    Height =285
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld19"
+                    Caption ="WE-Datum"
+                End
+            End
+        End
+        Begin Section
+            Height =396
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =60
+                    Top =60
+                    Width =792
+                    Height =330
+                    ColumnWidth =1530
+                    FontSize =10
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =893
+                    Top =63
+                    Width =1134
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =1
+                    Name ="WE-Datum"
+                    ControlSource ="WE-Datum"
+                    StatusBarText ="Fehlerbericht I - WE Datum"
+                    EventProcPrefix ="WE_Datum"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2068
+                    Top =66
+                    Width =1398
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Firma_Name"
+                    ControlSource ="Firma_Name"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3507
+                    Top =66
+                    Width =1146
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Baugruppen-avista_out.LQ Art-Nr"
+                    ControlSource ="[Baugruppen-avista_out].[LQ Art-Nr]"
+                    EventProcPrefix ="Baugruppen_avista_out_LQ_Art_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =4694
+                    Top =66
+                    Width =4926
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Baugruppen-avista_out.Bezeichnung 1"
+                    ControlSource ="[Baugruppen-avista_out].[Bezeichnung 1]"
+                    EventProcPrefix ="Baugruppen_avista_out_Bezeichnung_1"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =9661
+                    Top =63
+                    Width =1146
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Kunden-Nr"
+                    ControlSource ="Kunden-Nr"
+                    StatusBarText ="Kunden-Art-Nr. der Baugruppe"
+                    EventProcPrefix ="Kunden_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =10848
+                    Top =66
+                    Width =1146
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =6
+                    Name ="Artikel-all_avista_out.LQ Art-Nr"
+                    ControlSource ="[Artikel-all_avista_out].[LQ Art-Nr]"
+                    EventProcPrefix ="Artikel_all_avista_out_LQ_Art_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =12035
+                    Top =66
+                    Width =4926
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =7
+                    Name ="Artikel-all_avista_out.Bezeichnung 1"
+                    ControlSource ="[Artikel-all_avista_out].[Bezeichnung 1]"
+                    EventProcPrefix ="Artikel_all_avista_out_Bezeichnung_1"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =17002
+                    Top =66
+                    Width =1356
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =8
+                    Name ="Kd Mat-Nr"
+                    ControlSource ="Kd Mat-Nr"
+                    EventProcPrefix ="Kd_Mat_Nr"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmFrachtkostenZuordnung.cls"

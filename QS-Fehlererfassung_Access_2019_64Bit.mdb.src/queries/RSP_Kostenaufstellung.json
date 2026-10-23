@@ -1,0 +1,44 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_Kostenaufstellung"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "RSP_Ausw_Basisdaten_1.ID": {
+        "ColumnWidth": 750,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 367
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "RSP_Ausw_Basisdaten_1",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 856,
+          "Bottom": 349,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

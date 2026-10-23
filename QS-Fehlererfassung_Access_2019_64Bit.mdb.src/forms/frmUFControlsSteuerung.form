@@ -1,0 +1,169 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =3567
+    DatasheetFontHeight =11
+    ItemSuffix =13
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xa83903279453e540
+    End
+    RecordSource ="SELECT tblControls.CtrID, tblControls.FormName, tblControls.ControlName, tblCont"
+        "rols.Requery, tblControls.Refresh, tblControls.Update FROM tblControls; "
+    Caption ="frmUFControlsSteuerung"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =315
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =345
+                    Width =858
+                    Height =315
+                    Name ="Requery_Bezeichnungsfeld"
+                    Caption ="Requery"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1422
+                    Width =798
+                    Height =315
+                    Name ="Refresh_Bezeichnungsfeld"
+                    Caption ="Refresh"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2336
+                    Width =798
+                    Height =315
+                    Name ="Update_Bezeichnungsfeld"
+                    Caption ="Update"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =360
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =2835
+                    Width =261
+                    Height =315
+                    ColumnWidth =1701
+                    Name ="CtrID"
+                    ControlSource ="CtrID"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3172
+                    Width =162
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =1
+                    Name ="FormName"
+                    ControlSource ="FormName"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3405
+                    Width =162
+                    Height =315
+                    ColumnWidth =3000
+                    TabIndex =2
+                    Name ="ControlName"
+                    ControlSource ="ControlName"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =690
+                    Top =120
+                    TabIndex =3
+                    Name ="Requery"
+                    ControlSource ="Requery"
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =1654
+                    Top =120
+                    TabIndex =4
+                    Name ="Refresh"
+                    ControlSource ="Refresh"
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =2625
+                    Top =120
+                    Width =225
+                    TabIndex =5
+                    Name ="Update"
+                    ControlSource ="Update"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End

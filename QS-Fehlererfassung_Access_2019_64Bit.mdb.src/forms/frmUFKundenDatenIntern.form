@@ -1,0 +1,227 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    ViewsAllowed =1
+    BorderStyle =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11565
+    DatasheetFontHeight =11
+    ItemSuffix =15
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xab1ffddb6f53e540
+    End
+    RecordSource ="SELECT Kunden.*, tblFirma.Firma_Name, tblFirma.KndNr_Avista FROM Kunden RIGHT JO"
+        "IN tblFirma ON Kunden.FirmaID = tblFirma.Firma_ID; "
+    Caption ="frmUFKundenDaten"
+    AfterUpdate ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =15783096
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =360
+            BackColor =12632256
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =6671
+                    Top =30
+                    Width =3606
+                    Height =285
+                    ColumnWidth =3000
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =3
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDatenIntern#Firma_Name"
+                    ControlSource ="Firma_Name"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDatenIntern_Firma_Name"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Left =5430
+                            Width =1161
+                            Height =345
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblFirma_Name"
+                            Caption ="Firma:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    SpecialEffect =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =10485
+                    Width =1080
+                    Height =285
+                    FontSize =10
+                    TabIndex =2
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDatenIntern#Kunden-ID"
+                    ControlSource ="Kunden-ID"
+                    StatusBarText ="Fehlerbericht II"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDatenIntern_Kunden_ID"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1241
+                    Top =30
+                    Width =2271
+                    Height =285
+                    FontSize =10
+                    FontWeight =600
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDatenIntern#Kontaktperson"
+                    ControlSource ="Kontaktperson"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDatenIntern_Kontaktperson"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Width =1161
+                            Height =345
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblKontaktperson"
+                            Caption ="Melder:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =4346
+                    Top =30
+                    Width =1026
+                    Height =285
+                    ColumnWidth =3000
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =1
+                    BackColor =12632256
+                    BorderColor =10040115
+                    ForeColor =0
+                    Name ="qryKundenDatenIntern#Kurzzeichen"
+                    ControlSource ="Kurzzeichen"
+                    FontName ="Arial"
+                    EventProcPrefix ="qryKundenDatenIntern_Kurzzeichen"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            ReadingOrder =1
+                            Left =3570
+                            Width =696
+                            Height =345
+                            FontSize =12
+                            FontWeight =700
+                            BackColor =13209
+                            BorderColor =0
+                            ForeColor =10040115
+                            Name ="lblKurzzeichen"
+                            Caption ="Kz:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmUFKundenDatenIntern.cls"

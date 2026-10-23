@@ -1,0 +1,441 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AllowFilters = NotDefault
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MinButton = NotDefault
+    ShortcutMenu = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ScrollBars =0
+    RecordLocks =2
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =2850
+    DatasheetFontHeight =11
+    ItemSuffix =26
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15263976
+    RecSrcDt = Begin
+        0x1ac05b30ec9de540
+    End
+    RecordSource ="tblCalendar"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Aptos"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =8355711
+            ForeColor =8355711
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =4210752
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            AddColon = NotDefault
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =10921638
+            ForeColor =4210752
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =4210752
+            BorderColor =10921638
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            AddColon = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =10921638
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =10921638
+            ForeColor =2102279
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =10921638
+        End
+        Begin FormHeader
+            SpecialEffect =2
+            Height =885
+            BackColor =14606046
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    Top =600
+                    Width =405
+                    Height =285
+                    FontWeight =700
+                    BackColor =15263976
+                    BorderColor =10921638
+                    ForeColor =0
+                    Name ="L1"
+                    Caption ="Mo"
+                End
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    Left =405
+                    Top =600
+                    Width =405
+                    Height =285
+                    FontWeight =700
+                    BackColor =15263976
+                    BorderColor =10921638
+                    ForeColor =0
+                    Name ="L2"
+                    Caption ="Di"
+                End
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    Left =810
+                    Top =600
+                    Width =405
+                    Height =285
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =0
+                    Name ="L3"
+                    Caption ="Mi"
+                End
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    Left =1215
+                    Top =600
+                    Width =405
+                    Height =285
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =0
+                    Name ="L4"
+                    Caption ="Do"
+                End
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    Left =1620
+                    Top =600
+                    Width =405
+                    Height =285
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =0
+                    Name ="L5"
+                    Caption ="Fr"
+                End
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =95
+                    Left =2025
+                    Top =600
+                    Width =405
+                    Height =285
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =0
+                    Name ="L6"
+                    Caption ="Sa"
+                End
+                Begin Label
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    Left =2430
+                    Top =600
+                    Width =405
+                    Height =285
+                    FontWeight =700
+                    BorderColor =10921638
+                    ForeColor =0
+                    Name ="L7"
+                    Caption ="So"
+                End
+                Begin ComboBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ListRows =30
+                    Left =15
+                    Top =15
+                    Width =870
+                    Height =300
+                    ColumnOrder =0
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="cbYear"
+                    RowSourceType ="Value List"
+                    RowSource ="1950;1951;1952;1953;1954;1955;1956;1957;1958;1959;1960;1961;1962;1963;1964;1965;"
+                        "1966;1967;1968;1969;1970;1971;1972;1973;1974;1975;1976;1977;1978;1979;1980;1981;"
+                        "1982;1983;1984;1985;1986;1987;1988;1989;1990;1991;1992;1993;1994;1995;1996;1997;"
+                        "1998;1999;2000;2001;2002;2003;2004;2005;2006;2007;2008;2009;2010;2011;2012;2013;"
+                        "2014;2015;2016;2017;2018;2019;2020;2021;2022;2023;2024;2025;2026;2027;2028;2029;"
+                        "2030"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListRows =12
+                    Left =1125
+                    Top =15
+                    Width =1695
+                    Height =300
+                    ColumnOrder =1
+                    FontWeight =700
+                    TabIndex =1
+                    ForeColor =0
+                    Name ="cbMonth"
+                    RowSourceType ="Value List"
+                    RowSource ="1;Januar;2;Februar;3;März;4;April;5;Mai;6;Juni;7;Juli;8;August;9;September;10;Ok"
+                        "tober;11;November;12;Dezember"
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Top =330
+                    Width =435
+                    Height =210
+                    FontSize =8
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="cmdYearBack"
+                    Caption ="<"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Voriges Jahr"
+                End
+                Begin CommandButton
+                    OverlapFlags =87
+                    Left =435
+                    Top =330
+                    Width =435
+                    Height =210
+                    FontSize =8
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="cmdYearNext"
+                    Caption =">"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Nächstes Jahr"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =1125
+                    Top =330
+                    Width =435
+                    Height =210
+                    FontSize =8
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="cmdMonthBack"
+                    Caption ="<"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Voriger Monat"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =2385
+                    Top =330
+                    Width =435
+                    Height =210
+                    FontSize =8
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="cmdMonthNext"
+                    Caption =">"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ControlTipText ="Nächster Monat"
+                End
+            End
+        End
+        Begin Section
+            Height =315
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =2430
+                    Width =405
+                    Height =315
+                    ForeColor =2500134
+                    Name ="txtD7"
+                    ControlSource ="=Abs([D7])"
+                    Format ="00"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =2025
+                    Width =405
+                    Height =315
+                    TabIndex =1
+                    ForeColor =2500134
+                    Name ="txtD6"
+                    ControlSource ="=Abs([D6])"
+                    Format ="00"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =1620
+                    Width =405
+                    Height =315
+                    TabIndex =2
+                    ForeColor =2500134
+                    Name ="txtD5"
+                    ControlSource ="=Abs([D5])"
+                    Format ="00"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =1215
+                    Width =405
+                    Height =315
+                    TabIndex =3
+                    ForeColor =2500134
+                    Name ="txtD4"
+                    ControlSource ="=Abs([D4])"
+                    Format ="00"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =810
+                    Width =405
+                    Height =315
+                    TabIndex =4
+                    ForeColor =2500134
+                    Name ="txtD3"
+                    ControlSource ="=Abs([D3])"
+                    Format ="00"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =405
+                    Width =405
+                    Height =315
+                    TabIndex =5
+                    ForeColor =2500134
+                    Name ="txtD2"
+                    ControlSource ="=Abs([D2])"
+                    Format ="00"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    FontUnderline = NotDefault
+                    IsHyperlink = NotDefault
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Width =405
+                    Height =315
+                    TabIndex =6
+                    ForeColor =2500134
+                    Name ="txtD1"
+                    ControlSource ="=Abs([D1])"
+                    Format ="00"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =315
+            Name ="Formularfuß"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =-15
+                    Top =30
+                    Width =2865
+                    Height =285
+                    FontWeight =700
+                    ForeColor =0
+                    Name ="LblDate"
+                    Caption ="Mittwoch, 10.03.2021"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmCalendar.cls"

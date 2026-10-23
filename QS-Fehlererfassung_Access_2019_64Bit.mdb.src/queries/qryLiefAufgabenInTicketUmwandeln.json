@@ -1,0 +1,100 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryLiefAufgabenInTicketUmwandeln"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "MailCC": {
+        "ColumnWidth": 2610,
+        "AggregateType": -1
+      },
+      "MailTo": {
+        "ColumnWidth": 4500,
+        "AggregateType": -1
+      },
+      "MailVon": {
+        "ColumnWidth": 2610,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Status]": {
+        "ColumnWidth": 2625,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Lieferant_Soll": {
+        "ColumnWidth": 3075,
+        "AggregateType": -1
+      },
+      "Mastertab.Rückmeldung_Lieferant_Verlängertl": {
+        "ColumnWidth": 3780,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 617
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 355,
+          "Bottom": 682,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 477,
+          "Top": 47,
+          "Right": 621,
+          "Bottom": 191,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 469,
+          "Top": 289,
+          "Right": 652,
+          "Bottom": 646,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 709,
+          "Top": 376,
+          "Right": 930,
+          "Bottom": 585,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_LieferantAnsprechpartner",
+          "Alias": "",
+          "Left": 736,
+          "Top": 35,
+          "Right": 930,
+          "Bottom": 282,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,132 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =8333
+    DatasheetFontHeight =11
+    ItemSuffix =12
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x117fd80bb255e540
+    End
+    RecordSource ="SELECT tblNotizen.ReklID, tblNotizen.NotizFeldFrei, tblNotizen.BearbeiterKz, tbl"
+        "Notizen.ErledigenBis, tblNotizen.Erledigt FROM tblNotizen GROUP BY tblNotizen.Re"
+        "klID, tblNotizen.NotizFeldFrei, tblNotizen.BearbeiterKz, tblNotizen.ErledigenBis"
+        ", tblNotizen.Erledigt ORDER BY tblNotizen.ErledigenBis DESC; "
+    Caption ="frmUFNotizen"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =330
+            BackColor =15527148
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Width =741
+                    Height =330
+                    ColumnWidth =1530
+                    BackColor =15527148
+                    BorderColor =0
+                    Name ="ReklID"
+                    ControlSource ="ReklID"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =6180
+                    Width =693
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =1
+                    BackColor =15527148
+                    BorderColor =0
+                    Name ="BearbeiterKz"
+                    ControlSource ="BearbeiterKz"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =87
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =735
+                    Width =5448
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =2
+                    BackColor =15527148
+                    BorderColor =0
+                    Name ="NotizFeldFrei"
+                    ControlSource ="NotizFeldFrei"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =6870
+                    Width =1086
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =3
+                    BackColor =15527148
+                    BorderColor =0
+                    Name ="ErledigenBis"
+                    ControlSource ="ErledigenBis"
+                End
+                Begin CheckBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =8050
+                    TabIndex =4
+                    Name ="Erledigt"
+                    ControlSource ="Erledigt"
+                End
+            End
+        End
+    End
+End

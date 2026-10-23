@@ -1,0 +1,61 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_AnzahlTageRücklieferungBisAuslieferungLief"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "RSP_Ausw_Basisdaten_1.[WE-Datum]": {
+        "ColumnWidth": 1140,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_Basisdaten_1.ID": {
+        "ColumnWidth": 750,
+        "AggregateType": -1
+      },
+      "RSP_Ausw_Basisdaten_1.Sachbearbeiter": {
+        "ColumnWidth": 2040,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 601
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 13,
+          "Right": 353,
+          "Bottom": 566,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "RSP_Ausw_Basisdaten_1",
+          "Alias": "",
+          "Left": 714,
+          "Top": 13,
+          "Right": 976,
+          "Bottom": 581,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,278 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =16092
+    DatasheetFontHeight =11
+    ItemSuffix =21
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xd2becc2a0c1ce640
+    End
+    RecordSource ="tblTempLager"
+    Caption ="frmWarenEingang"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin ListBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontSize =11
+            ForeColor =2102279
+            BorderColor =13750737
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =999
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Top =684
+                    Width =1689
+                    Height =315
+                    Name ="ArtNr_Bezeichnungsfeld"
+                    Caption ="ArtNr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =1695
+                    Top =684
+                    Width =4419
+                    Height =315
+                    Name ="Bez_Bezeichnungsfeld"
+                    Caption ="Bez"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =2
+                    Left =6123
+                    Top =684
+                    Width =624
+                    Height =315
+                    Name ="St_Bezeichnungsfeld"
+                    Caption ="St"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =223
+                    TextAlign =2
+                    Left =6738
+                    Top =684
+                    Width =1539
+                    Height =315
+                    Name ="Eingang_Bezeichnungsfeld"
+                    Caption ="Zugang"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =8277
+                    Top =684
+                    Width =3234
+                    Height =315
+                    Name ="Lager_Bezeichnungsfeld"
+                    Caption ="Lager"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =11523
+                    Top =684
+                    Width =4344
+                    Height =315
+                    Name ="BuchText_Bezeichnungsfeld"
+                    Caption ="BuchText"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =56
+                    Top =56
+                    Width =3258
+                    Height =579
+                    FontSize =20
+                    Name ="Bezeichnungsfeld16"
+                    Caption ="Waren-Eingang"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =6686
+                    Top =120
+                    Width =2960
+                    Height =315
+                    ColumnOrder =0
+                    Name ="cboWareneingangs_Lager"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblLager.AvistaLagerID, tblLager.Lagerbezeichnung FROM tblLager GROUP BY "
+                        "tblLager.AvistaLagerID, tblLager.Lagerbezeichnung HAVING (((tblLager.AvistaLager"
+                        "ID) Is Not Null)); "
+                    ColumnWidths ="0;1701"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =3798
+                            Top =113
+                            Width =2805
+                            Height =315
+                            ForeColor =0
+                            Name ="txt_Wareneingangs_Lager"
+                            Caption ="Wareneingangs-Lager"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =375
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Top =57
+                    Width =1914
+                    Height =315
+                    TabIndex =5
+                    Name ="ArtNr"
+                    ControlSource ="ArtNr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =95
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1920
+                    Top =60
+                    Width =4419
+                    Height =315
+                    TabIndex =4
+                    Name ="Bez"
+                    ControlSource ="Bez"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =95
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =6348
+                    Top =60
+                    Width =624
+                    Height =315
+                    TabIndex =3
+                    Name ="St"
+                    ControlSource ="St"
+                End
+                Begin TextBox
+                    OverlapFlags =255
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =6963
+                    Top =60
+                    Width =1539
+                    Height =315
+                    TabIndex =2
+                    Name ="Eingang"
+                    ControlSource ="Zugang"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =119
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =8502
+                    Top =60
+                    Width =3234
+                    Height =315
+                    TabIndex =1
+                    Name ="Lager"
+                    ControlSource ="Lager"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =11748
+                    Top =60
+                    Width =4344
+                    Height =315
+                    Name ="BuchText"
+                    ControlSource ="BuchText"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmBestandServiceLager.cls"

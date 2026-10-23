@@ -1,0 +1,1798 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =18538
+    DatasheetFontHeight =10
+    ItemSuffix =190
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x7164a9ce000be440
+    End
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnMouseMove ="[Event Procedure]"
+    OnActivate ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Arial"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+        End
+        Begin FormHeader
+            Height =1036
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    Left =113
+                    Top =56
+                    Width =2537
+                    Height =510
+                    FontSize =18
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Konfigurator"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =3628
+                    Top =623
+                    Width =1017
+                    Height =284
+                    ColumnOrder =2
+                    Name ="Von_1"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =3061
+                            Top =623
+                            Width =525
+                            Height =255
+                            Name ="Bezeichnungsfeld2"
+                            Caption ="Von:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =5442
+                    Top =623
+                    Width =1017
+                    Height =284
+                    ColumnOrder =3
+                    TabIndex =1
+                    Name ="Bis_1"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =4875
+                            Top =623
+                            Width =525
+                            Height =255
+                            Name ="Bezeichnungsfeld4"
+                            Caption ="Bis:"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =6973
+                    Top =566
+                    Width =681
+                    Height =400
+                    TabIndex =2
+                    Name ="OpenDatumVonBis"
+                    Caption ="Set"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =13606
+                    Top =56
+                    Width =666
+                    Height =636
+                    TabIndex =3
+                    Name ="Übernehmen"
+                    Caption ="Übernehmen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadad0000adadaddadada0660dadadaadadad0660adadaddadada0f80dadada ,
+                        0xadadad0f80adadaddadad088860adadaadad06888660adaddad068f888660ada ,
+                        0xad068f88888660add068fff88886660aa00000000000000ddadadadadadadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =93
+                    Left =7766
+                    Top =91
+                    Width =1531
+                    Height =283
+                    ColumnOrder =4
+                    TabIndex =4
+                    Name ="RueckmeldedatumAnKunde"
+                    DefaultValue ="0"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =7994
+                            Top =56
+                            Width =2130
+                            Height =240
+                            Name ="Bezeichnungsfeld28"
+                            Caption ="Rückmeldung a.K. mit Datum"
+                            FontName ="Tahoma"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =87
+                    Left =7766
+                    Top =376
+                    Width =1531
+                    Height =283
+                    ColumnOrder =5
+                    TabIndex =5
+                    Name ="MeldenummerVorhanden"
+                    DefaultValue ="0"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =7994
+                            Top =340
+                            Width =1890
+                            Height =240
+                            Name ="Bezeichnungsfeld31"
+                            Caption ="Meldenummer vorhanden"
+                            FontName ="Tahoma"
+                        End
+                    End
+                End
+                Begin OptionGroup
+                    OverlapFlags =85
+                    Left =10828
+                    Top =56
+                    Width =1982
+                    Height =955
+                    ColumnOrder =6
+                    TabIndex =6
+                    Name ="Fehlerquelle"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="2"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =215
+                            Left =10714
+                            Width =945
+                            Height =255
+                            BackColor =-2147483633
+                            Name ="Bezeichnungsfeld63"
+                            Caption ="Fehlerquelle"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =11792
+                            Top =141
+                            OptionValue =1
+                            Name ="Option64"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =12019
+                                    Top =113
+                                    Width =735
+                                    Height =255
+                                    Name ="Bezeichnungsfeld65"
+                                    Caption ="LQ intern"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =11792
+                            Top =424
+                            TabIndex =1
+                            OptionValue =4
+                            Name ="Option108"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =12019
+                                    Top =396
+                                    Width =735
+                                    Height =255
+                                    Name ="Bezeichnungsfeld109"
+                                    Caption ="Int.-Lief"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =10941
+                            Top =708
+                            TabIndex =2
+                            OptionValue =3
+                            Name ="Option71"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =11168
+                                    Top =680
+                                    Width =510
+                                    Height =255
+                                    Name ="Bezeichnungsfeld72"
+                                    Caption ="Alle"
+                                End
+                            End
+                        End
+                        Begin OptionButton
+                            OverlapFlags =87
+                            Left =11792
+                            Top =708
+                            TabIndex =3
+                            OptionValue =2
+                            Name ="Option66"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =12019
+                                    Top =680
+                                    Width =735
+                                    Height =255
+                                    Name ="Bezeichnungsfeld67"
+                                    Caption ="extern"
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =14400
+                    Top =56
+                    Width =696
+                    Height =636
+                    TabIndex =7
+                    Name ="Schließen"
+                    Caption ="Befehl101"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin CheckBox
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    Left =2211
+                    Top =483
+                    ColumnOrder =7
+                    TabIndex =8
+                    Name ="LQIntern"
+                    DefaultValue ="False"
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =247
+                            Left =2441
+                            Top =453
+                            Width =795
+                            Height =255
+                            Name ="Bezeichnungsfeld103"
+                            Caption ="LQ Intern"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Visible = NotDefault
+                    OverlapFlags =85
+                    Left =2211
+                    Top =796
+                    ColumnOrder =8
+                    TabIndex =9
+                    Name ="LQExtern"
+                    DefaultValue ="False"
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            OverlapFlags =247
+                            Left =2441
+                            Top =766
+                            Width =795
+                            Height =255
+                            Name ="Bezeichnungsfeld106"
+                            Caption ="Extern"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =3004
+                    Top =170
+                    Width =525
+                    Height =255
+                    Name ="Bezeichnungsfeld169"
+                    Caption ="Von:"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =4818
+                    Top =170
+                    Width =525
+                    Height =255
+                    Name ="Bezeichnungsfeld170"
+                    Caption ="Bis:"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =5385
+                    Top =113
+                    Width =1185
+                    Height =300
+                    ColumnOrder =0
+                    TabIndex =10
+                    Name ="Bis"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3570
+                    Top =120
+                    Width =1185
+                    Height =300
+                    ColumnOrder =1
+                    TabIndex =11
+                    Name ="Von"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =10887
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin Rectangle
+                    SpecialEffect =1
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =10230
+                    Top =5159
+                    Width =4852
+                    Height =4257
+                    BackColor =8816262
+                    Name ="Rechteck73"
+                End
+                Begin Rectangle
+                    SpecialEffect =1
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =283
+                    Top =115
+                    Width =14797
+                    Height =4932
+                    BackColor =8816262
+                    Name ="Rechteck24"
+                End
+                Begin ListBox
+                    OverlapFlags =215
+                    MultiSelect =2
+                    Left =453
+                    Top =1425
+                    Width =2721
+                    Height =2103
+                    Name ="Kundenauswahl"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblFirma.Firma_Name FROM tblFirma GROUP BY tblFirma.Firma_Name; "
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =454
+                            Top =680
+                            Width =1410
+                            Height =255
+                            Name ="Bezeichnungsfeld8"
+                            Caption ="Kunden"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =2097
+                    Top =680
+                    Width =1077
+                    Height =320
+                    TabIndex =1
+                    Name ="AlleKunden"
+                    Caption ="Alle"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin ListBox
+                    OverlapFlags =215
+                    MultiSelect =2
+                    ColumnCount =2
+                    Left =3288
+                    Top =1020
+                    Width =2721
+                    Height =1473
+                    TabIndex =2
+                    Name ="Status"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Vorgangstatus].[Kategorie-Vorgangstatus], [Kategorien-Vorgang"
+                        "status].Anzeige FROM [Kategorien-Vorgangstatus] GROUP BY [Kategorien-Vorgangstat"
+                        "us].[Kategorie-Vorgangstatus], [Kategorien-Vorgangstatus].Anzeige; "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =3289
+                            Top =680
+                            Width =1410
+                            Height =255
+                            Name ="Bezeichnungsfeld11"
+                            Caption ="Status"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =223
+                    Left =4932
+                    Top =680
+                    Width =1077
+                    Height =320
+                    TabIndex =3
+                    Name ="StatusAlle"
+                    Caption ="Alle"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =4932
+                    Top =2551
+                    Width =1077
+                    Height =320
+                    TabIndex =4
+                    Name ="KlassifizierungAlle"
+                    Caption ="Alle"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin ListBox
+                    OverlapFlags =215
+                    MultiSelect =2
+                    ColumnCount =2
+                    Left =6122
+                    Top =1020
+                    Width =2721
+                    Height =1473
+                    TabIndex =5
+                    Name ="Qualifizierung"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Problemstatus].[Kategorie-Problemstatus], [Kategorien-Problem"
+                        "status].Anzeige FROM [Kategorien-Problemstatus]; "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =6123
+                            Top =680
+                            Width =1410
+                            Height =255
+                            Name ="Bezeichnungsfeld22"
+                            Caption ="Qualifizierung"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =223
+                    Left =7767
+                    Top =680
+                    Width =1077
+                    Height =320
+                    TabIndex =6
+                    Name ="QualifizierungAlle"
+                    Caption ="Alle"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =340
+                    Top =226
+                    Width =2551
+                    Height =340
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld25"
+                    Caption ="Allgemeine Filterung"
+                End
+                Begin Rectangle
+                    SpecialEffect =1
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =283
+                    Top =5159
+                    Width =9742
+                    Height =4257
+                    BackColor =8816262
+                    Name ="Rechteck26"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =396
+                    Top =5213
+                    Width =2551
+                    Height =340
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld27"
+                    Caption ="Spezifische Filterung"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =3231
+                    Top =6007
+                    Width =2891
+                    Height =227
+                    TabIndex =8
+                    Name ="Meldungsnummer"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =6007
+                            Width =1335
+                            Height =255
+                            Name ="Bezeichnungsfeld29"
+                            Caption ="Meldungsnummer"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    ListWidth =1440
+                    Left =3231
+                    Top =7155
+                    Width =2886
+                    Height =227
+                    TabIndex =9
+                    Name ="KombiServiceMA"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Bearbeiter.Name, Bearbeiter.Aktiv FROM Bearbeiter WHERE (((Bearbeiter.Akt"
+                        "iv)=True)); "
+                    ColumnWidths ="1440"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =7155
+                            Width =1125
+                            Height =255
+                            Name ="Name_Bezeichnungsfeld"
+                            Caption ="Service-MA"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    ListWidth =1440
+                    Left =3231
+                    Top =7438
+                    Width =2886
+                    Height =227
+                    TabIndex =10
+                    Name ="KombiSachbearbeiter"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Name FROM Sachbearbeiter WHERE (((Sachbearbeiter.Aktiv)=Tr"
+                        "ue)) GROUP BY Sachbearbeiter.Name ORDER BY Sachbearbeiter.Name; "
+                    ColumnWidths ="1441"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =7438
+                            Width =1185
+                            Height =255
+                            Name ="Bezeichnungsfeld34"
+                            Caption ="Sachbearbeiter"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    ColumnCount =3
+                    ListWidth =1440
+                    Left =3236
+                    Top =8005
+                    Width =5721
+                    Height =227
+                    TabIndex =11
+                    Name ="KombiAnsprechpartner"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Kunden.Kontaktperson, Kunden.Kurzzeichen, Kunden.Firma FROM Kunden GROUP "
+                        "BY Kunden.[Kunden-ID], Kunden.Kontaktperson, Kunden.Kurzzeichen, Kunden.Firma OR"
+                        "DER BY Kunden.Kontaktperson; "
+                    ColumnWidths ="1445;1445;1445"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =8005
+                            Width =1830
+                            Height =255
+                            Name ="Bezeichnungsfeld37"
+                            Caption ="Ansprechpartner Kunde"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =3231
+                    Top =8289
+                    Width =2886
+                    Height =227
+                    TabIndex =12
+                    Name ="KombiLieferant"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Lieferanten].[Lieferant-ID], [Lieferanten].[Lieferantenname] FROM Liefer"
+                        "anten ORDER BY [Lieferanten].[Lieferant-ID]; "
+                    ColumnWidths ="0;1445"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =8289
+                            Width =1185
+                            Height =255
+                            Name ="Bezeichnungsfeld39"
+                            Caption ="Lieferant"
+                        End
+                    End
+                End
+                Begin OptionGroup
+                    OverlapFlags =215
+                    Left =2665
+                    Top =5895
+                    Width =490
+                    Height =3405
+                    TabIndex =13
+                    Name ="OptionFilterauswahl"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =2666
+                            Top =5610
+                            Width =840
+                            Height =255
+                            BackColor =-2147483633
+                            Name ="Bezeichnungsfeld41"
+                            Caption ="Filter"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =6063
+                            OptionValue =1
+                            Name ="OptionMeldungsnummer"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =6347
+                            TabIndex =1
+                            OptionValue =8
+                            Name ="Option152"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =6630
+                            TabIndex =2
+                            OptionValue =7
+                            Name ="Option115"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2895
+                            Top =6930
+                            TabIndex =3
+                            OptionValue =10
+                            Name ="Option181"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =7211
+                            TabIndex =4
+                            OptionValue =2
+                            Name ="OptionServiceMA"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =7494
+                            TabIndex =5
+                            OptionValue =3
+                            Name ="OptionSachbearbeiter"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =7778
+                            TabIndex =6
+                            OptionValue =6
+                            Name ="Option110"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =8061
+                            TabIndex =7
+                            OptionValue =4
+                            Name ="OptionAnsprechpartner"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =8345
+                            TabIndex =8
+                            OptionValue =5
+                            Name ="OptionLieferant"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =8665
+                            TabIndex =9
+                            OptionValue =9
+                            Name ="OptionFA_Nummer"
+                        End
+                        Begin OptionButton
+                            OverlapFlags =215
+                            Left =2893
+                            Top =8985
+                            TabIndex =10
+                            OptionValue =11
+                            Name ="OptionMaschNr"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =1134
+                    Top =5667
+                    Width =964
+                    Height =284
+                    TabIndex =14
+                    Name ="Befehl48"
+                    Caption ="Kein Filter"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =7371
+                    Top =8289
+                    Width =1316
+                    Height =227
+                    TabIndex =15
+                    Name ="MatchLieferant"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =6293
+                            Top =8289
+                            Width =960
+                            Height =255
+                            Name ="Bezeichnungsfeld50"
+                            Caption ="Matchcode"
+                        End
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =1
+                    BackStyle =1
+                    OverlapFlags =93
+                    Left =285
+                    Top =9525
+                    Width =14797
+                    Height =1362
+                    BackColor =8816262
+                    Name ="Rechteck51"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =392
+                    Top =9641
+                    Width =3180
+                    Height =345
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld52"
+                    Caption ="Artikelspezifische Filterung"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =568
+                    Top =10375
+                    Width =2891
+                    Height =280
+                    TabIndex =16
+                    Name ="Baugruppe"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =568
+                            Top =10091
+                            Width =1335
+                            Height =255
+                            Name ="Bezeichnungsfeld54"
+                            Caption ="Baugruppe"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =3573
+                    Top =10375
+                    Width =2891
+                    Height =280
+                    TabIndex =17
+                    Name ="Untergruppe"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =3573
+                            Top =10091
+                            Width =1335
+                            Height =255
+                            Name ="Bezeichnungsfeld56"
+                            Caption ="Untergruppe"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =6578
+                    Top =10375
+                    Width =2891
+                    Height =280
+                    TabIndex =18
+                    Name ="Artikel1"
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            Left =6578
+                            Top =10091
+                            Width =1335
+                            Height =255
+                            Name ="Bezeichnungsfeld58"
+                            Caption ="Artikel 1"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =9585
+                    Top =10365
+                    Width =1759
+                    Height =344
+                    TabIndex =19
+                    Name ="Befehl61"
+                    Caption ="Kein Filter"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Label
+                    OverlapFlags =215
+                    Left =10350
+                    Top =5279
+                    Width =4170
+                    Height =345
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld74"
+                    Caption =" Zuordnung (Verursacher)  Filterung"
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =12245
+                    Top =5780
+                    Width =964
+                    Height =284
+                    TabIndex =20
+                    Name ="KeinFilterVerursacher"
+                    Caption ="Kein Filter"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =6236
+                    Top =7464
+                    TabIndex =21
+                    Name ="PEbezogen"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =6461
+                            Top =7438
+                            Width =2745
+                            Height =255
+                            Name ="Bezeichnungsfeld87"
+                            Caption ="bezieht sich auf die PE-Zugehörigkeit"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =215
+                    TextAlign =4
+                    Left =10601
+                    Top =5780
+                    Width =1575
+                    Height =345
+                    FontSize =12
+                    FontWeight =700
+                    BackColor =13209
+                    Name ="Bezeichnungsfeld335"
+                    Caption ="Verursacher:"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    AutoExpand = NotDefault
+                    DisplayWhen =2
+                    SpecialEffect =0
+                    BorderWidth =1
+                    OverlapFlags =215
+                    TextAlign =1
+                    ColumnCount =2
+                    ListRows =26
+                    ListWidth =2130
+                    Left =10658
+                    Top =6176
+                    Width =2346
+                    Height =340
+                    FontSize =12
+                    TabIndex =22
+                    BorderColor =255
+                    Name ="FilterVerursacher"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Verursacher.Verursacher, Verursacher.Anzeige FROM Verursacher; "
+                    ColumnWidths ="0;2133"
+                    FontName ="Arial"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =12075
+                    Top =6800
+                    Width =2436
+                    Height =270
+                    TabIndex =23
+                    Name ="FilterVerantwSachbLief"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Sachbearbeiter.Kurzzeichen, Sachbearbeiter.Name FROM Sachbearbeiter WHERE"
+                        " (((Sachbearbeiter.Einheit)=\"Einkauf\")); "
+                    ColumnWidths ="0;1443"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =10665
+                            Top =6629
+                            Width =1320
+                            Height =510
+                            Name ="Bezeichnungsfeld98"
+                            Caption ="Verantw. Sachb. Lieferant"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    Visible = NotDefault
+                    TripleState = NotDefault
+                    OverlapFlags =215
+                    Left =12075
+                    Top =7227
+                    TabIndex =24
+                    Name ="FilterLiefVerantwLQ"
+                    DefaultValue ="Null"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =10658
+                            Top =7197
+                            Width =1245
+                            Height =255
+                            Name ="Bezeichnungsfeld100"
+                            Caption ="Verantw. LQ"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =3231
+                    Top =7722
+                    Width =2886
+                    Height =227
+                    TabIndex =25
+                    Name ="ErfasserIntern"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Kunden.[Kunden-ID], Kunden.Kontaktperson FROM (Kunden LEFT JOIN tblFirma "
+                        "ON Kunden.FirmaID = tblFirma.Firma_ID) LEFT JOIN tblZuordnung ON tblFirma.Zurodn"
+                        "ung_ID = tblZuordnung.Zuordnung_ID WHERE (((tblZuordnung.Zuordnung)=\"LQ\")) ORD"
+                        "ER BY Kunden.Kontaktperson; "
+                    ColumnWidths ="0;1443"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =7722
+                            Width =1185
+                            Height =255
+                            Name ="Bezeichnungsfeld112"
+                            Caption ="Erfasser Intern"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =3231
+                    Top =6574
+                    Width =2891
+                    Height =227
+                    TabIndex =26
+                    Name ="Bestellnummer"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =6574
+                            Width =1335
+                            Height =255
+                            Name ="Bezeichnungsfeld114"
+                            Caption ="Bestellnummer"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =223
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =10256
+                    Top =850
+                    Width =2946
+                    TabIndex =27
+                    Name ="KombEinheitErfasser"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.ID, LQEinheit.LQEinheit FROM LQEinheit ORDER BY [LQEinheit]; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            Left =9235
+                            Top =850
+                            Width =1020
+                            Height =255
+                            Name ="Bezeichnungsfeld117"
+                            Caption ="Einheit"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    Enabled = NotDefault
+                    OverlapFlags =223
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =10256
+                    Top =1225
+                    Width =2946
+                    TabIndex =28
+                    Name ="KombBereichErfasser"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.ID, LQBereich.LQBereich FROM LQBereich WHERE (((LQBereich.[ID-L"
+                        "QEinheit])=[KombEinheitErfasser])) GROUP BY LQBereich.ID, LQBereich.LQBereich; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            Left =9235
+                            Top =1225
+                            Width =1020
+                            Height =255
+                            Name ="Bezeichnungsfeld119"
+                            Caption ="Bereich"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    Enabled = NotDefault
+                    OverlapFlags =223
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =10256
+                    Top =1984
+                    Width =2946
+                    TabIndex =29
+                    Name ="KombWorkstationErfasser"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation WHERE (("
+                        "(LQWorkstation.[ID-LQBereich])=[KombBereichErfasser])) GROUP BY LQWorkstation.ID"
+                        ", LQWorkstation.LQWorkstation; "
+                    ColumnWidths ="0"
+                    Begin
+                        Begin Label
+                            OverlapFlags =223
+                            Left =9235
+                            Top =1997
+                            Width =1020
+                            Height =255
+                            Name ="Bezeichnungsfeld121"
+                            Caption ="Workstation"
+                        End
+                    End
+                End
+                Begin Rectangle
+                    OverlapFlags =255
+                    Left =8957
+                    Top =454
+                    Width =6009
+                    Height =2050
+                    Name ="Rechteck128"
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =247
+                    Left =9411
+                    Top =566
+                    Width =1530
+                    Height =225
+                    FontSize =9
+                    BackColor =8816262
+                    ForeColor =16777215
+                    Name ="Bezeichnungsfeld130"
+                    Caption ="Melde-/Fehlerort"
+                End
+                Begin CommandButton
+                    OverlapFlags =247
+                    Left =11049
+                    Top =283
+                    Width =1077
+                    Height =320
+                    TabIndex =30
+                    Name ="ButtonAlleErfasser"
+                    Caption ="Alle"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin OptionGroup
+                    SpecialEffect =4
+                    BorderWidth =3
+                    OverlapFlags =247
+                    Left =13317
+                    Top =680
+                    Width =1551
+                    Height =1273
+                    TabIndex =31
+                    Name ="OptionFehlerort"
+                    DefaultValue ="3"
+                    Begin
+                        Begin CheckBox
+                            OverlapFlags =247
+                            Left =13503
+                            Top =918
+                            OptionValue =1
+                            Name ="Kontrollkästchen139"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =13733
+                                    Top =890
+                                    Width =705
+                                    Height =255
+                                    Name ="Bezeichnungsfeld140"
+                                    Caption ="Erfasser"
+                                End
+                            End
+                        End
+                        Begin CheckBox
+                            OverlapFlags =247
+                            Left =13503
+                            Top =1248
+                            OptionValue =2
+                            Name ="Kontrollkästchen141"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =13733
+                                    Top =1220
+                                    Width =675
+                                    Height =255
+                                    Name ="Bezeichnungsfeld142"
+                                    Caption ="Analyse"
+                                End
+                            End
+                        End
+                        Begin CheckBox
+                            OverlapFlags =247
+                            Left =13503
+                            Top =1578
+                            OptionValue =3
+                            Name ="Kontrollkästchen143"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =13733
+                                    Top =1550
+                                    Width =480
+                                    Height =255
+                                    Name ="Bezeichnungsfeld144"
+                                    Caption ="Beide"
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =10256
+                    Top =1587
+                    Width =2946
+                    TabIndex =32
+                    Name ="KombFunktionErfasser"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQFunktion.ID, LQFunktion.LQFunktion FROM LQFunktion LEFT JOIN LQBereich "
+                        "ON LQFunktion.[ID-LQBereich] = LQBereich.ID WHERE (((LQBereich.[ID-LQEinheit])=["
+                        "KombEinheitErfasser])) GROUP BY LQFunktion.ID, LQFunktion.LQFunktion; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =255
+                            Left =9235
+                            Top =1600
+                            Width =1020
+                            Height =255
+                            Name ="Bezeichnungsfeld146"
+                            Caption ="Funktion"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =215
+                    MultiSelect =2
+                    ColumnCount =2
+                    Left =3288
+                    Top =2891
+                    Width =2721
+                    Height =1428
+                    TabIndex =33
+                    Name ="ListTaetigkeiten"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Taetigkeiten.ID, Taetigkeiten.Anzeige FROM Taetigkeiten GROUP BY Taetigke"
+                        "iten.ID, Taetigkeiten.Anzeige; "
+                    ColumnWidths ="0"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =3289
+                            Top =2551
+                            Width =1410
+                            Height =255
+                            Name ="BezTätigkeit"
+                            Caption ="Tätigkeiten"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =215
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =7710
+                    Top =10049
+                    Width =1746
+                    Height =225
+                    TabIndex =34
+                    Name ="KombAvistaArtikelTyp"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT AvistaArtikelTyp.[AvistaArtikelTyp-ID], AvistaArtikelTyp.AvistaArtikelTyp"
+                        "Bez FROM AvistaArtikelTyp; "
+                    ColumnWidths ="0;1443"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =7711
+                            Top =9765
+                            Width =1305
+                            Height =255
+                            Name ="Bezeichnungsfeld149"
+                            Caption ="Avista ArtikelTyp"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =7766
+                    Top =2551
+                    Width =1077
+                    Height =320
+                    TabIndex =35
+                    Name ="FehlerbildAlle"
+                    Caption ="Alle"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin ListBox
+                    OverlapFlags =215
+                    MultiSelect =2
+                    ColumnCount =2
+                    Left =6122
+                    Top =2891
+                    Width =2721
+                    Height =1428
+                    TabIndex =36
+                    Name ="ListFehlerbild"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT ZuordnungDefTaetigkeit.ID, ZuordnungDefTaetigkeit.Anzeige, ZuordnungDefTa"
+                        "etigkeit.TaetigkeitID FROM ZuordnungDefTaetigkeit GROUP BY ZuordnungDefTaetigkei"
+                        "t.ID, ZuordnungDefTaetigkeit.Anzeige, ZuordnungDefTaetigkeit.TaetigkeitID HAVING"
+                        " (((ZuordnungDefTaetigkeit.TaetigkeitID)=fctComboCol(\"Reklamationen_Übersicht_K"
+                        "onfigurator\",\"ListTaetigkeiten\",0))); "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =6123
+                            Top =2551
+                            Width =1410
+                            Height =255
+                            Name ="BezFehlerbild"
+                            Caption ="Fehlerbild"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =215
+                    MultiSelect =2
+                    ColumnCount =2
+                    Left =8957
+                    Top =2891
+                    Width =2721
+                    Height =1428
+                    TabIndex =37
+                    Name ="ListVorgangstyp"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Vorgangstyp.VorgangstypID, Vorgangstyp.Vorgangstyp, Vorgangstyp.Aktiv FRO"
+                        "M Vorgangstyp GROUP BY Vorgangstyp.VorgangstypID, Vorgangstyp.Vorgangstyp, Vorga"
+                        "ngstyp.Aktiv HAVING (((Vorgangstyp.Aktiv)=True)); "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =8958
+                            Top =2551
+                            Width =1410
+                            Height =255
+                            Name ="BezVorgangstyp"
+                            Caption ="Vorgangstyp"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =10601
+                    Top =2551
+                    Width =1077
+                    Height =320
+                    TabIndex =38
+                    Name ="VorgangstypAlle"
+                    Caption ="Alle"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin ListBox
+                    OverlapFlags =215
+                    MultiSelect =2
+                    ColumnCount =2
+                    Left =11792
+                    Top =2891
+                    Width =2721
+                    Height =1428
+                    TabIndex =39
+                    Name ="ListTag"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT RSP_ReklTag.TagID, RSP_ReklTag.Tag FROM RSP_ReklTag GROUP BY RSP_ReklTag."
+                        "TagID, RSP_ReklTag.Tag; "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =11793
+                            Top =2551
+                            Width =1410
+                            Height =255
+                            Name ="BezTag"
+                            Caption ="Tag"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =13436
+                    Top =2551
+                    Width =1077
+                    Height =320
+                    TabIndex =40
+                    Name ="TagAlle"
+                    Caption ="Alle"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =3231
+                    Top =6290
+                    Width =2891
+                    Height =227
+                    TabIndex =41
+                    Name ="txtRMA"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =737
+                            Top =6290
+                            Width =1335
+                            Height =255
+                            Name ="BezRMA"
+                            Caption ="RMA"
+                        End
+                    End
+                End
+                Begin OptionGroup
+                    SpecialEffect =4
+                    BorderWidth =3
+                    OverlapFlags =215
+                    Left =1474
+                    Top =3685
+                    Width =1747
+                    Height =1273
+                    TabIndex =42
+                    Name ="optKundenFilter"
+                    AfterUpdate ="[Event Procedure]"
+                    DefaultValue ="3"
+                    Begin
+                        Begin CheckBox
+                            OverlapFlags =215
+                            Left =1660
+                            Top =3923
+                            OptionValue =1
+                            Name ="chkTrumpfGruppe"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =1890
+                                    Top =3900
+                                    Width =1185
+                                    Height =255
+                                    Name ="Bezeichnungsfeld157"
+                                    Caption ="Trumpf-Gruppe"
+                                End
+                            End
+                        End
+                        Begin CheckBox
+                            OverlapFlags =215
+                            Left =1660
+                            Top =4253
+                            OptionValue =2
+                            Name ="chkSonstigeKunden"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =1886
+                                    Top =4218
+                                    Width =1305
+                                    Height =255
+                                    Name ="Bezeichnungsfeld159"
+                                    Caption ="Sonstige Kunden"
+                                End
+                            End
+                        End
+                        Begin CheckBox
+                            OverlapFlags =215
+                            Left =1660
+                            Top =4583
+                            OptionValue =3
+                            Name ="chkLQ"
+                            Begin
+                                Begin Label
+                                    OverlapFlags =247
+                                    Left =1890
+                                    Top =4555
+                                    Width =480
+                                    Height =255
+                                    Name ="Bezeichnungsfeld161"
+                                    Caption ="LQ"
+                                End
+                            End
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =453
+                    Top =3685
+                    Width =964
+                    Height =284
+                    TabIndex =43
+                    Name ="ButSelectKundeAuswListe"
+                    Caption ="Kein Filter"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =3229
+                    Top =8622
+                    Width =2891
+                    Height =227
+                    TabIndex =44
+                    Name ="txtFA_Nummer"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =735
+                            Top =8622
+                            Width =1335
+                            Height =255
+                            Name ="BezFA_Nummer"
+                            Caption ="FA Nummer"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =3229
+                    Top =6870
+                    Width =2891
+                    Height =227
+                    TabIndex =45
+                    Name ="txtRepBestellnummer"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =735
+                            Top =6870
+                            Width =1890
+                            Height =255
+                            Name ="lblRepBestellnummer"
+                            Caption ="Bestellnummer Reparatur"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =6015
+                    Top =5420
+                    Width =1246
+                    Height =283
+                    TabIndex =7
+                    Name ="AlleReklamationen2"
+                    DefaultValue ="0"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =6243
+                            Top =5385
+                            Width =3633
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld36"
+                            Caption ="Alle offene Vorgänge anzeigen"
+                            FontName ="Tahoma"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =445
+                    Top =1077
+                    Width =2741
+                    Height =280
+                    TabIndex =46
+                    Name ="filKundenauswahl"
+                    OnChange ="[Event Procedure]"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =3229
+                    Top =8955
+                    Width =2891
+                    Height =227
+                    TabIndex =47
+                    Name ="txtMaschNr"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =215
+                            Left =735
+                            Top =8955
+                            Width =1815
+                            Height =255
+                            Name ="BezMaschNr"
+                            Caption ="Maschinen-Nummer"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "Reklamationen_Übersicht_Konfigurator.cls"

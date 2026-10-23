@@ -1,0 +1,354 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11812
+    DatasheetFontHeight =10
+    ItemSuffix =39
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x593a47b45432e440
+    End
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =793
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =345
+                    Top =165
+                    Width =6570
+                    Height =570
+                    FontSize =16
+                    Name ="Bezeichnungsfeld21"
+                    Caption ="Zuordnung Tätigkeiten -> Workstation"
+                    FontName ="Arial Black"
+                End
+            End
+        End
+        Begin Section
+            Height =3911
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin ComboBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =1984
+                    Top =453
+                    Width =4206
+                    Height =300
+                    FontSize =12
+                    Name ="ListLQEinheit2"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQEinheit.ID, LQEinheit.LQEinheit FROM LQEinheit ORDER BY [LQEinheit]; "
+                    ColumnWidths ="0;1441"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =226
+                            Top =453
+                            Width =1875
+                            Height =300
+                            FontSize =10
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld23"
+                            Caption ="LQ Einheit:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =1984
+                    Top =850
+                    Width =4206
+                    Height =300
+                    FontSize =12
+                    TabIndex =1
+                    Name ="ListLQBereich2"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQBereich.ID, LQBereich.LQBereich FROM LQBereich WHERE (((LQBereich.[ID-L"
+                        "QEinheit])=[ListLQEinheit2])) GROUP BY LQBereich.LQBereich, LQBereich.ID; "
+                    ColumnWidths ="0;1442"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =226
+                            Top =850
+                            Width =1875
+                            Height =300
+                            FontSize =10
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld25"
+                            Caption ="LQ Bereich:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =215
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =1984
+                    Top =1247
+                    Width =4206
+                    Height =300
+                    FontSize =12
+                    TabIndex =2
+                    Name ="ListLQFunktion2"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQFunktion.ID, LQFunktion.LQFunktion FROM LQFunktion WHERE (((LQFunktion."
+                        "[ID-LQBereich])=[ListLQBereich2])) GROUP BY LQFunktion.ID, LQFunktion.LQFunktion"
+                        "; "
+                    ColumnWidths ="0;1443"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =226
+                            Top =1246
+                            Width =1875
+                            Height =300
+                            FontSize =10
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld28"
+                            Caption ="LQ Funktion:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =6519
+                    Top =450
+                    Width =1875
+                    Height =3181
+                    FontSize =10
+                    TabIndex =3
+                    Name ="ListOffeneTaetigkeiten"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Taetigkeiten.ID, Taetigkeiten.Taetigkeit FROM Taetigkeiten WHERE Taetigke"
+                        "iten.ID Not IN (Select TaetigkeitID from ZuordnungWsTaetigkeit where [WsID] = [L"
+                        "istLQWorkstation2]) ORDER BY Taetigkeiten.Taetigkeit; "
+                    ColumnWidths ="0;1440"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6521
+                            Top =174
+                            Width =2265
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            Name ="Taetigkeit_Bezeichnungsfeld"
+                            Caption ="Offene Tätigkeiten"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =9642
+                    Top =450
+                    Width =1755
+                    Height =3181
+                    FontSize =10
+                    TabIndex =4
+                    Name ="ListWsTaetigkeiten"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT ZuordnungWsTaetigkeit.TaetigkeitID, Taetigkeiten.Taetigkeit FROM Zuordnun"
+                        "gWsTaetigkeit INNER JOIN Taetigkeiten ON ZuordnungWsTaetigkeit.TaetigkeitID=Taet"
+                        "igkeiten.ID WHERE (((ZuordnungWsTaetigkeit.WsID)=[ListLQWorkstation2])) GROUP BY"
+                        " ZuordnungWsTaetigkeit.TaetigkeitID, Taetigkeiten.Taetigkeit; "
+                    ColumnWidths ="0;1441"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =9637
+                            Top =170
+                            Width =2175
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld34"
+                            Caption ="WS-Tätigkeiten"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8730
+                    Top =623
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="InsertWsAuswahl"
+                    Caption =">"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =8730
+                    Top =1416
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =6
+                    Name ="DeleteWsAuswahl"
+                    Caption ="<"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =1984
+                    Top =1644
+                    Width =3970
+                    Height =1984
+                    FontSize =12
+                    TabIndex =7
+                    Name ="ListLQWorkstation2"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation WHERE (("
+                        "(LQWorkstation.[ID-LQFunktion])=[ListLQFunktion2])) GROUP BY LQWorkstation.ID, L"
+                        "QWorkstation.LQWorkstation; "
+                    ColumnWidths ="0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =226
+                            Top =1644
+                            Width =1695
+                            Height =285
+                            FontSize =10
+                            FontWeight =600
+                            Name ="Bezeichnungsfeld38"
+                            Caption ="LQ Workstation:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =793
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =10204
+                    Top =113
+                    Width =576
+                    Height =576
+                    FontSize =12
+                    FontWeight =500
+                    ForeColor =16777215
+                    Name ="Objekt schließen - Formular"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    EventProcPrefix ="Objekt_schließen___Formular"
+                    ControlTipText ="Objekt schließen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "DialogZuordnungWS-Taetigkeit.cls"

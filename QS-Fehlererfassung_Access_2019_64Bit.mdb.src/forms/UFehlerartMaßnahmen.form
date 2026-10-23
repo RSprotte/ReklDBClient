@@ -1,0 +1,139 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =12336
+    DatasheetFontHeight =10
+    ItemSuffix =13
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x0d68866b1451e540
+    End
+    RecordSource ="SELECT MaßnahmenFehlerarten.Fehlerklasse, MaßnahmenFehlerarten.MaßnahmeID, Maßna"
+        "hmenFehlerarten.Aktiv, Maßnahmen.Maßnahme, Maßnahmen.Beschreibung, Maßnahmen.[Zi"
+        "el der Maßnahme], Maßnahmen.StartUmsetzung, Maßnahmen.EndeUmsetzung, Maßnahmen.V"
+        "erantwortlich FROM MaßnahmenFehlerarten RIGHT JOIN Maßnahmen ON MaßnahmenFehlera"
+        "rten.MaßnahmeID=Maßnahmen.MaßnahmeID WHERE (((Maßnahmen.StartUmsetzung) Is Not N"
+        "ull) And ((Maßnahmen.EndeUmsetzung)>Formulare![Fehlererfassung - Register].Auftr"
+        "agsdatum Or (Maßnahmen.EndeUmsetzung) Is Null)); "
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =300
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =165
+                    Top =60
+                    Width =1635
+                    Height =210
+                    Name ="Bezeichnungsfeld9"
+                    Caption ="Maßnahme"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3270
+                    Top =45
+                    Width =1635
+                    Height =210
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Beschreibung"
+                End
+            End
+        End
+        Begin Section
+            Height =630
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =135
+                    Top =90
+                    Width =3006
+                    Name ="Text2"
+                    ControlSource ="Maßnahme"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =3300
+                    Top =105
+                    Width =8181
+                    Height =465
+                    TabIndex =1
+                    Name ="Text4"
+                    ControlSource ="Beschreibung"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =2535
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin Subform
+                    OverlapFlags =85
+                    OldBorderStyle =0
+                    SpecialEffect =0
+                    Left =30
+                    Top =30
+                    Width =6990
+                    Height =2505
+                    Name ="UMaßnahmen"
+                    SourceObject ="Form.UMaßnahmen"
+                    LinkChildFields ="MaßnahmeID"
+                    LinkMasterFields ="MaßnahmeID"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "UFehlerartMaßnahmen.cls"

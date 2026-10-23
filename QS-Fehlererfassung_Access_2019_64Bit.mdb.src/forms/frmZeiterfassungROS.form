@@ -1,0 +1,356 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =3628
+    DatasheetFontHeight =11
+    ItemSuffix =28
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x3d01d8e1d413e540
+    End
+    RecordSource ="SELECT tblZeiterfassung.* FROM tblZeiterfassung; "
+    Caption ="Zeiterfassung"
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CustomControl
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+            BorderColor =13750737
+        End
+        Begin Section
+            Height =2494
+            BackColor =15527148
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2401
+                    Top =1913
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    BackColor =15709952
+                    Name ="txtTätigkeitEinkauf"
+                    ControlSource ="ZeitaufwandEinkauf"
+                    Format ="Short Time"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =1910
+                            Width =2085
+                            Height =225
+                            FontSize =9
+                            FontWeight =500
+                            BackColor =15709952
+                            ForeColor =0
+                            Name ="BezTätigkeitEinkauf"
+                            Caption ="Andere Tätig. h,mm:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2386
+                    Top =453
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =1
+                    Name ="txtUhrzeitKommen"
+                    ControlSource ="UhrzeitKommen"
+                    Format ="Short Time"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =120
+                            Top =450
+                            Width =2085
+                            Height =225
+                            FontSize =9
+                            FontWeight =500
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld17"
+                            Caption ="Uhrzeit Kommen:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2386
+                    Top =745
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =2
+                    Name ="txtUhrzeitGehen"
+                    ControlSource ="UhrzeitGehen"
+                    Format ="Short Time"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =745
+                            Width =2085
+                            Height =225
+                            FontSize =9
+                            FontWeight =500
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld19"
+                            Caption ="Uhrzeit Gehen:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2386
+                    Top =1037
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =3
+                    BackColor =5167783
+                    Name ="txtZeitaufwandReklamationen"
+                    Format ="Short Time"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =1037
+                            Width =2085
+                            Height =225
+                            FontSize =9
+                            FontWeight =500
+                            BackColor =5167783
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld21"
+                            Caption ="Zeit Meldungen h,mm:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2386
+                    Top =2205
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =4
+                    BackColor =6709235
+                    Name ="txtFehlzeit"
+                    Format ="Short Time"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =2205
+                            Width =2085
+                            Height =225
+                            FontSize =9
+                            FontWeight =500
+                            BackColor =6709235
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld23"
+                            Caption ="Fehlzeit h,mm:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2386
+                    Top =1329
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =5
+                    BackColor =967423
+                    Name ="txtZeitaufwandGU"
+                    Format ="Short Time"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =120
+                            Top =1329
+                            Width =2085
+                            Height =225
+                            FontSize =9
+                            FontWeight =500
+                            BackColor =967423
+                            ForeColor =0
+                            Name ="bezZeitaufwandGU"
+                            Caption ="Zeit GU h,mm:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2386
+                    Top =1621
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =6
+                    BackColor =62207
+                    Name ="txtZeitaufwandRep"
+                    Format ="Short Time"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =-15
+                            Top =1620
+                            Width =2220
+                            Height =240
+                            FontSize =9
+                            FontWeight =500
+                            BackColor =62207
+                            ForeColor =0
+                            Name ="bezZeitaufwandRep"
+                            Caption ="Zeit Rep./Serv-Ein h,mm:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =215
+                    Left =795
+                    Top =150
+                    Width =396
+                    Height =340
+                    TabIndex =7
+                    Name ="chkMittagspause"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            Left =1025
+                            Top =120
+                            Width =1185
+                            Height =225
+                            FontSize =9
+                            FontWeight =500
+                            ForeColor =0
+                            Name ="lblMittagspause"
+                            Caption ="Mittagspause"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =2386
+                    Top =120
+                    Width =1146
+                    Height =225
+                    FontSize =9
+                    FontWeight =500
+                    TabIndex =8
+                    Name ="txtDatum"
+                    FontName ="Arial"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmZeiterfassungROS.cls"

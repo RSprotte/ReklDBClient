@@ -1,0 +1,48 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage2"
+  },
+  "Items": {
+    "QueryType": 48,
+    "QueryProperties": {
+      "RecordLocks": {
+        "Type": 2,
+        "Value": 2
+      },
+      "FailOnError": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 495
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 579,
+      "Tables": [
+        {
+          "Name": "AufwandVorgangPositionen",
+          "Alias": "",
+          "Left": 177,
+          "Top": 83,
+          "Right": 321,
+          "Bottom": 406,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

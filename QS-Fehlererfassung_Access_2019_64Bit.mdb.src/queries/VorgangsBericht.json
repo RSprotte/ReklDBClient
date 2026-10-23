@@ -1,0 +1,79 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "VorgangsBericht"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Kunden.Kontaktperson": {
+        "ColumnWidth": 2745,
+        "AggregateType": -1
+      },
+      "Mastertab.[Bestellnummer Kunde]": {
+        "ColumnWidth": 1860,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1245,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 731
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 23,
+          "Top": 18,
+          "Right": 289,
+          "Bottom": 389,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 516,
+          "Top": 41,
+          "Right": 660,
+          "Bottom": 185,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 329,
+          "Top": 54,
+          "Right": 473,
+          "Bottom": 198,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Artikel-all_avista_out",
+          "Alias": "",
+          "Left": 708,
+          "Top": 12,
+          "Right": 852,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

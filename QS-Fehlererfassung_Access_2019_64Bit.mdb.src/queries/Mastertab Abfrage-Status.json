@@ -1,0 +1,177 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Mastertab Abfrage-Status"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "DatasheetFontName": {
+        "Type": 10,
+        "Value": "Arial"
+      },
+      "DatasheetFontHeight": {
+        "Type": 3,
+        "Value": 7
+      },
+      "DatasheetFontWeight": {
+        "Type": 3,
+        "Value": 400
+      },
+      "DatasheetFontItalic": {
+        "Type": 1,
+        "Value": false
+      },
+      "DatasheetFontUnderline": {
+        "Type": 1,
+        "Value": false
+      },
+      "TabularCharSet": {
+        "Type": 2,
+        "Value": 0
+      },
+      "TabularFamily": {
+        "Type": 2,
+        "Value": 34
+      },
+      "DatasheetForeColor": {
+        "Type": 4,
+        "Value": 33554432
+      },
+      "RowHeight": {
+        "Type": 3,
+        "Value": 2520
+      },
+      "DatasheetForeColor12": {
+        "Type": 4,
+        "Value": 33554432
+      }
+    },
+    "Columns": {
+      "[Mastertab].[Auftragsdatum]": {
+        "ColumnWidth": 900,
+        "AggregateType": -1
+      },
+      "[Mastertab].[Hersteller-Teilenummer]": {
+        "ColumnWidth": 1650,
+        "AggregateType": -1
+      },
+      "[Mastertab].[ID]": {
+        "ColumnOrder": 8,
+        "ColumnWidth": 570,
+        "AggregateType": -1
+      },
+      "[Mastertab].[Seriennummer]": {
+        "ColumnWidth": 1140,
+        "AggregateType": -1
+      },
+      "[Mastertab].[Welcher Fehler tritt auf]": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 2340,
+        "AggregateType": -1
+      },
+      "[Mastertab].[Welches Teil ist betroffen]": {
+        "ColumnWidth": 675,
+        "AggregateType": -1
+      },
+      "[Mastertab].[Wie Warum passierte der Fehler]": {
+        "ColumnWidth": 2040,
+        "AggregateType": -1
+      },
+      "Mastertab.[Hersteller-Teilenummer]": {
+        "ColumnOrder": 1,
+        "ColumnWidth": 1650,
+        "AggregateType": -1
+      },
+      "Mastertab.[Kategorie-Fehleranalyse]": {
+        "ColumnWidth": 1755,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnOrder": 3,
+        "AggregateType": -1
+      },
+      "Mastertab.[Sofortmaßnahmen (Aktion)]": {
+        "ColumnWidth": 1380,
+        "AggregateType": -1
+      },
+      "Mastertab.[Welcher Fehler tritt auf]": {
+        "ColumnOrder": 4,
+        "ColumnWidth": 2340,
+        "AggregateType": -1
+      },
+      "Mastertab.[Welches Teil ist betroffen]": {
+        "ColumnOrder": 6,
+        "ColumnWidth": 675,
+        "AggregateType": -1
+      },
+      "Mastertab.[Wie Warum passierte der Fehler]": {
+        "ColumnOrder": 11,
+        "ColumnWidth": 2040,
+        "AggregateType": -1
+      },
+      "Mastertab.Auftragsdatum": {
+        "ColumnOrder": 1,
+        "ColumnWidth": 900,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnOrder": 8,
+        "ColumnWidth": 570,
+        "AggregateType": -1
+      },
+      "Mastertab.Seriennummer": {
+        "ColumnOrder": 9,
+        "ColumnWidth": 1140,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 448
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 240,
+          "Bottom": 349,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 476,
+          "Top": 17,
+          "Right": 620,
+          "Bottom": 161,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 283,
+          "Top": 11,
+          "Right": 427,
+          "Bottom": 155,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

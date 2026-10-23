@@ -1,0 +1,135 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5540
+    DatasheetFontHeight =11
+    ItemSuffix =10
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xaa6625272c06e540
+    End
+    RecordSource ="ROS_ReklamationUnterposition"
+    Caption ="frmReklamationUnterposition"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =315
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =56
+                    Width =855
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    BackColor =-2147483633
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =93
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =4308
+                    Width =795
+                    Height =315
+                    ColumnWidth =3000
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =-2147483633
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="Referenznummer"
+                    ControlSource ="Referenznummer"
+                    StatusBarText ="Fehlerbericht II"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =907
+                    Width =3396
+                    Height =315
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    BackColor =-2147483633
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="Kategorie-Status"
+                    ControlSource ="Kategorie-Status"
+                    StatusBarText ="Fehlerbericht II"
+                    FontName ="Arial"
+                    EventProcPrefix ="Kategorie_Status"
+                End
+                Begin TextBox
+                    DecimalPlaces =0
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5159
+                    Width =381
+                    Height =315
+                    ColumnWidth =1575
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =3
+                    BackColor =-2147483633
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="Fehlerpositionen"
+                    ControlSource ="Fehlerpositionen"
+                    FontName ="Arial"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmReklamationUnterposition.cls"

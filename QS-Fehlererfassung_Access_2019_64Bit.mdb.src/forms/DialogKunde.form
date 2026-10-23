@@ -1,0 +1,180 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =119
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7937
+    DatasheetFontHeight =10
+    ItemSuffix =192
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x9aecee232fcbe440
+    End
+    OnOpen ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =1700
+            BackColor =16760767
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2834
+                    Top =623
+                    Width =861
+                    Height =255
+                    ColumnWidth =3240
+                    Name ="SKundenNr"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =623
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="Kunden-Nr"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =2834
+                    Top =963
+                    Width =3408
+                    Height =256
+                    TabIndex =1
+                    Name ="SFirmierung"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =570
+                            Top =960
+                            Width =825
+                            Height =240
+                            Name ="Bezeichnungsfeld18"
+                            Caption ="Firmierung"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =566
+                    Top =170
+                    Width =1080
+                    Height =345
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld185"
+                    Caption ="Kunde"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6519
+                    Top =623
+                    Width =1191
+                    Height =454
+                    TabIndex =2
+                    Name ="Speichern"
+                    Caption ="Speichern"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6519
+                    Top =1133
+                    Width =1191
+                    Height =454
+                    TabIndex =3
+                    Name ="Abbrechen"
+                    Caption ="Abbrechen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =2834
+                    Top =1303
+                    TabIndex =4
+                    Name ="SZuordnung"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblZuordnung.Zuordnung_ID, tblZuordnung.Zuordnung FROM tblZuordnung ORDER"
+                        " BY tblZuordnung.Zuordnung; "
+                    ColumnWidths ="0;1441"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1303
+                            Width =1245
+                            Height =245
+                            Name ="Sp1_Bezeichnungsfeld"
+                            Caption ="Zuordnung"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "DialogKunde.cls"

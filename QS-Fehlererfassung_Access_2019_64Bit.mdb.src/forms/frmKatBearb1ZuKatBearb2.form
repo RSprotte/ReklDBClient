@@ -1,0 +1,265 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9297
+    DatasheetFontHeight =10
+    ItemSuffix =62
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xaa9e5635aee4e440
+    End
+    RecordSource ="SELECT [Kategorien-Vorgangstatus].* FROM [Kategorien-Vorgangstatus]; "
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =570
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =345
+                    Width =6690
+                    Height =570
+                    FontSize =16
+                    Name ="BezZuordnungFolgeStatus"
+                    Caption ="Zuordnung Kat.Bearb.1 zu Kat.Bearb.2"
+                    FontName ="Arial Black"
+                End
+            End
+        End
+        Begin Section
+            Height =4365
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =3170
+                    Top =113
+                    Width =4191
+                    Height =330
+                    FontSize =12
+                    Name ="ListVorgangstyp"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Bearbeitung I].[Kategorie-Bearbeitung I], [Kategorien-Bearbei"
+                        "tung I].Anzeige, [Kategorien-Bearbeitung I].Aktiv FROM [Kategorien-Bearbeitung I"
+                        "] WHERE ((([Kategorien-Bearbeitung I].Aktiv)=True)); "
+                    ColumnWidths ="0;1987"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =1247
+                            Top =113
+                            Width =1800
+                            Height =330
+                            FontSize =12
+                            FontWeight =600
+                            Name ="BezVorgangsTyp"
+                            Caption ="Vorgangstyp:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =226
+                    Top =899
+                    Width =3690
+                    Height =3226
+                    FontSize =10
+                    TabIndex =1
+                    Name ="ListVorgangsTypStatusAuswahl"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Bearbeitung II].[Kategorie-Bearbeitung II], [Kategorien-Bearb"
+                        "eitung II].Anzeige FROM [Kategorien-Bearbeitung II] WHERE ((([Kategorien-Bearbei"
+                        "tung II].Aktiv)=True)); "
+                    ColumnWidths ="0;1444"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =225
+                            Top =630
+                            Width =3690
+                            Height =255
+                            FontSize =10
+                            FontWeight =600
+                            Name ="BezVorgangsTypStatusAuswahl"
+                            Caption ="Vorganstyp Status Auswahl"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =5220
+                    Top =899
+                    Width =3855
+                    Height =3226
+                    FontSize =10
+                    TabIndex =2
+                    Name ="ListVorgangsTypStatus"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT [Kategorien-Bearbeitung II].Anzeige FROM [Kategorien-Bearbeitung II] LEFT"
+                        " JOIN (tblKat1ZuKat2 LEFT JOIN [Kategorien-Bearbeitung I] ON tblKat1ZuKat2.[Kate"
+                        "gorien-Bearbeitung_1] = [Kategorien-Bearbeitung I].[Kategorie-Bearbeitung I]) ON"
+                        " [Kategorien-Bearbeitung II].[Kategorie-Bearbeitung II] = tblKat1ZuKat2.[Kategor"
+                        "ien-Bearbeitung_2] GROUP BY [Kategorien-Bearbeitung II].Anzeige, [Kategorien-Bea"
+                        "rbeitung I].[Kategorie-Bearbeitung I], [Kategorien-Bearbeitung I].Aktiv HAVING ("
+                        "(([Kategorien-Bearbeitung I].[Kategorie-Bearbeitung I])=[ListVorgangstyp]) AND ("
+                        "([Kategorien-Bearbeitung I].Aktiv)=True)); "
+                    ColumnWidths ="1446;0"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =5215
+                            Top =623
+                            Width =3855
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            Name ="BezVorgangsTypStatus"
+                            Caption ="Vorgangstyp Status"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4195
+                    Top =1072
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Befehl59"
+                    Caption =">"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4195
+                    Top =1865
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="Befehl60"
+                    Caption ="<"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =793
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =8503
+                    Top =113
+                    Width =576
+                    Height =576
+                    FontSize =12
+                    FontWeight =500
+                    ForeColor =16777215
+                    Name ="Objekt schließen - Formular"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    EventProcPrefix ="Objekt_schließen___Formular"
+                    ControlTipText ="Objekt schließen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmKatBearb1ZuKatBearb2.cls"

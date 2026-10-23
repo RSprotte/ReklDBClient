@@ -1,0 +1,336 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11338
+    DatasheetFontHeight =10
+    ItemSuffix =83
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x05c8bdfe8a53e540
+    End
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =13750737
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+            BorderColor =13750737
+        End
+        Begin FormHeader
+            Height =680
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =283
+                    Top =60
+                    Width =6570
+                    Height =570
+                    FontSize =16
+                    Name ="lblControlsSteuerung"
+                    Caption ="Controls Steuerung"
+                    FontName ="Arial Black"
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =5839
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin ListBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =225
+                    Top =1701
+                    Width =4935
+                    Height =3226
+                    FontSize =10
+                    Name ="lstControlAktivForm"
+                    RowSourceType ="Value List"
+                    RowSource ="Mastertab#Wie Warum passierte der Fehler;ROS_Daten_Einkauf#TaetigkeitLieferantID"
+                        ";Mastertab#DefTaetigkeitAnalyseID;Mastertab#Fertigungsauftrag-FA#1;Mastertab#Mit"
+                        "arbeiter-Kurzzeichen#1;Mastertab#Verursacher#1;Mastertab#LQEinheitID#1;Mastertab"
+                        "#Lieferanten-Code 1;Mastertab#LQBereichID#1;Mastertab#LQWorkstationID#1;Masterta"
+                        "b#Zuständig;Mastertab#Sachbearbeiter#1;Kzz-Sachbearbeiter;Mastertab#Rückliefer-N"
+                        "ummer;ReklMemo#FertigungsDatum;Mastertab#TaetigkeitID#1;Mastertab#DefTaetigkeitI"
+                        "D#1;Mastertab#LiefAnsprechp-ID#2;Mastertab#LiefAnsprechp-ID#3;Mastertab#Wie Waru"
+                        "m passierte der Fehler;ROS_Daten_Einkauf#TaetigkeitLieferantID;Mastertab#DefTaet"
+                        "igkeitAnalyseID;Mastertab#Fertigungsauftrag-FA#1;Mastertab#Mitarbeiter-Kurzzeich"
+                        "en#1;Mastertab#Verursacher#1;Mastertab#LQEinheitID#1;Mastertab#Lieferanten-Code "
+                        "1;Mastertab#LQBereichID#1;Mastertab#LQWorkstationID#1;Mastertab#Zuständig;Master"
+                        "tab#Sachbearbeiter#1;Kzz-Sachbearbeiter;Mastertab#Rückliefer-Nummer;ReklMemo#Fer"
+                        "tigungsDatum;Mastertab#TaetigkeitID#1;Mastertab#DefTaetigkeitID#1;Mastertab#Lief"
+                        "Ansprechp-ID#2;Mastertab#LiefAnsprechp-ID#3;Mastertab#Wie Warum passierte der Fe"
+                        "hler;ROS_Daten_Einkauf#TaetigkeitLieferantID;Mastertab#DefTaetigkeitAnalyseID;Ma"
+                        "stertab#Fertigungsauftrag-FA#1;Mastertab#Mitarbeiter-Kurzzeichen#1;Mastertab#Ver"
+                        "ursacher#1;Mastertab#LQEinheitID#1;Mastertab#Lieferanten-Code 1;Mastertab#LQBere"
+                        "ichID#1;Mastertab#LQWorkstationID#1;Mastertab#Zuständig;Mastertab#Sachbearbeiter"
+                        "#1;Kzz-Sachbearbeiter;Mastertab#Rückliefer-Nummer;ReklMemo#FertigungsDatum;Maste"
+                        "rtab#TaetigkeitID#1;Mastertab#DefTaetigkeitID#1;Mastertab#LiefAnsprechp-ID#2;Mas"
+                        "tertab#LiefAnsprechp-ID#3"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =225
+                            Top =1432
+                            Width =3690
+                            Height =255
+                            FontSize =10
+                            FontWeight =600
+                            Name ="lblControlList"
+                            Caption ="Control List"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin ListBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =6185
+                    Top =1701
+                    Width =4935
+                    Height =3226
+                    FontSize =10
+                    TabIndex =1
+                    Name ="lstAbControlAktivForm"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblControls_1.ControlName, tblControls.ControlName FROM (tblAbControls LE"
+                        "FT JOIN tblControls ON tblAbControls.CtrID = tblControls.CtrID) LEFT JOIN tblCon"
+                        "trols AS tblControls_1 ON tblAbControls.AbCtrID = tblControls_1.CtrID WHERE (((t"
+                        "blControls.ControlName)=[Forms]![frmControlsSteuerung]![txtAktivControll])); "
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =6180
+                            Top =1425
+                            Width =3855
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            Name ="lblAbControlList"
+                            Caption ="Abhängige Controls"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5325
+                    Top =1890
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Befehl59"
+                    Caption =">"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5325
+                    Top =2683
+                    Width =642
+                    Height =623
+                    FontSize =14
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="Befehl60"
+                    Caption ="<"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =2613
+                    Top =225
+                    Width =4935
+                    Height =330
+                    FontSize =12
+                    TabIndex =3
+                    Name ="txtAktivControll"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =690
+                            Top =225
+                            Width =1800
+                            Height =330
+                            FontSize =12
+                            FontWeight =600
+                            Name ="lblAktivControl"
+                            Caption ="Aktiv Control:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    BorderWidth =2
+                    OverlapFlags =255
+                    Left =283
+                    Top =113
+                    Width =10828
+                    Height =1185
+                    BorderColor =0
+                    Name ="Rechteck74"
+                End
+                Begin Subform
+                    OverlapFlags =85
+                    Left =225
+                    Top =5040
+                    Width =4935
+                    Height =675
+                    TabIndex =5
+                    Name ="frmUFControlsSteuerung"
+                    SourceObject ="Form.frmUFControlsSteuerung"
+                End
+                Begin Subform
+                    OverlapFlags =247
+                    Left =2607
+                    Top =623
+                    Width =4935
+                    Height =570
+                    TabIndex =6
+                    Name ="frmUFControlsSteuerungAktiv"
+                    SourceObject ="Form.frmUFControlsSteuerungAktiv"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =7937
+                    Top =283
+                    Width =2891
+                    Height =450
+                    TabIndex =7
+                    Name ="txtAktivFormName"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =793
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =10204
+                    Top =113
+                    Width =576
+                    Height =576
+                    FontSize =12
+                    FontWeight =500
+                    ForeColor =16777215
+                    Name ="Objekt schließen - Formular"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    EventProcPrefix ="Objekt_schließen___Formular"
+                    ControlTipText ="Objekt schließen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmControlsSteuerung.cls"

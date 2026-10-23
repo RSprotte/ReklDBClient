@@ -1,0 +1,80 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryUFTicketStautusReklÜbersicht"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "tblTicketListe.VerlängertBis": {
+        "ColumnWidth": 1680,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 651
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 300,
+          "Bottom": 446,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketTyp",
+          "Alias": "",
+          "Left": 348,
+          "Top": 12,
+          "Right": 492,
+          "Bottom": 156,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketStatus",
+          "Alias": "",
+          "Left": 349,
+          "Top": 165,
+          "Right": 493,
+          "Bottom": 309,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketMahnwesen",
+          "Alias": "",
+          "Left": 348,
+          "Top": 323,
+          "Right": 584,
+          "Bottom": 473,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketMahnungStatus",
+          "Alias": "",
+          "Left": 650,
+          "Top": 360,
+          "Right": 875,
+          "Bottom": 534,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

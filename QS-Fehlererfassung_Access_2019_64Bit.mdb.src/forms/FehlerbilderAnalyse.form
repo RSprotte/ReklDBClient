@@ -1,0 +1,236 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =10815
+    DatasheetFontHeight =10
+    ItemSuffix =30
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x10751f38d092e640
+    End
+    RecordSource ="SELECT ZuordnungAnalyseFehlerbild.AnalyseFehlerbild, ZuordnungAnalyseFehlerbild."
+        "ID AS [AnalyseFehlerbild-ID], ZuordnungDefTaetigkeit.ID FROM ZuordnungDefTaetigk"
+        "eit LEFT JOIN ZuordnungAnalyseFehlerbild ON ZuordnungDefTaetigkeit.ID = Zuordnun"
+        "gAnalyseFehlerbild.FehlerbildID GROUP BY ZuordnungAnalyseFehlerbild.AnalyseFehle"
+        "rbild, ZuordnungAnalyseFehlerbild.ID, ZuordnungDefTaetigkeit.ID HAVING (((Zuordn"
+        "ungDefTaetigkeit.ID)=[Forms]![Fehlerbilder].[Einzeltaetigkeit-ID])); "
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin FormHeader
+            Height =960
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    SpecialEffect =1
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    Left =195
+                    Top =135
+                    Width =4005
+                    Height =405
+                    FontSize =16
+                    FontWeight =700
+                    ForeColor =255
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Fehlerbild-Analysen"
+                    FontName ="Arial"
+                End
+                Begin ComboBox
+                    LimitToList = NotDefault
+                    OverlapFlags =93
+                    ColumnCount =2
+                    ListWidth =1440
+                    Left =5102
+                    Top =453
+                    Width =4731
+                    Height =360
+                    FontSize =12
+                    FontWeight =700
+                    Name ="ListFehlerbilder"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT ZuordnungDefTaetigkeit.ID, ZuordnungDefTaetigkeit.Anzeige FROM ZuordnungD"
+                        "efTaetigkeit GROUP BY ZuordnungDefTaetigkeit.ID, ZuordnungDefTaetigkeit.Anzeige;"
+                        " "
+                    ColumnWidths ="0;1444"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =270
+                    Top =645
+                    Width =2940
+                    Height =315
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Fehlerbid-Analyse"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    Left =5100
+                    Top =120
+                    Width =1215
+                    Height =315
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld16"
+                    Caption ="Fehlerbild"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =465
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =255
+                    Top =75
+                    Width =6576
+                    Height =315
+                    FontSize =10
+                    Name ="FehlerbildAnalyse"
+                    ControlSource ="AnalyseFehlerbild"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =2805
+            BackColor =-2147483633
+            Name ="Formularfuß"
+            Begin
+                Begin Subform
+                    OverlapFlags =85
+                    Left =690
+                    Top =300
+                    Width =7980
+                    Height =1755
+                    Name ="UF01"
+                    SourceObject ="Form.UF_FehlerbildAnalyse_Beschreibung"
+                    LinkChildFields ="ID"
+                    LinkMasterFields ="AnalyseFehlerbild-ID"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9075
+                    Top =195
+                    Width =1455
+                    Height =390
+                    TabIndex =1
+                    Name ="Neu"
+                    Caption ="Neu"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9075
+                    Top =705
+                    Width =1455
+                    Height =390
+                    TabIndex =2
+                    Name ="Bearbeiten"
+                    Caption ="Bearbeiten"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9075
+                    Top =1215
+                    Width =1455
+                    Height =390
+                    TabIndex =3
+                    Name ="Übernehmen"
+                    Caption ="Übernehmen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9060
+                    Top =2220
+                    Width =1455
+                    Height =390
+                    TabIndex =4
+                    Name ="Schließen"
+                    Caption ="Schließen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9045
+                    Top =1725
+                    Width =1455
+                    Height =390
+                    TabIndex =5
+                    Name ="Löschen"
+                    Caption ="Löschen"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "FehlerbilderAnalyse.cls"

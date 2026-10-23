@@ -1,0 +1,861 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    TabularFamily =55
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =16951
+    DatasheetFontHeight =10
+    ItemSuffix =83
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    Filter ="[intern] = True AND [ErfasserIntern] Is Not Null AND ([Auftragsdatum] between #0"
+        "4/26/2021# and #04/26/2022#)"
+    RecSrcDt = Begin
+        0x032b60008ea1e540
+    End
+    RecordSource ="qryÜbersichtIntern"
+    OnCurrent ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnMouseMove ="[Event Procedure]"
+    OnTimer ="[Event Procedure]"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin Line
+            BorderLineStyle =0
+            Width =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin CustomControl
+            SpecialEffect =2
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =1279
+            BackColor =14211288
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =113
+                    Top =113
+                    Width =3675
+                    Height =390
+                    FontSize =14
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Übersicht Reklamationen"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =1153
+                    Top =1020
+                    Width =906
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld5"
+                    Caption ="Rekl.-Nr"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =60
+                    Top =1024
+                    Width =1083
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld7"
+                    Caption ="A.-Datum"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Locked = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    Left =11604
+                    Top =117
+                    Width =3126
+                    Height =735
+                    ColumnOrder =1
+                    Name ="FilterView"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =4367
+                    Top =1020
+                    Width =2550
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld44"
+                    Caption ="Rekl.-Status"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =623
+                    Top =566
+                    Width =1071
+                    ColumnOrder =2
+                    TabIndex =1
+                    Name ="Von"
+                    OnClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Top =566
+                            Width =645
+                            Height =240
+                            Name ="Bezeichnungsfeld48"
+                            Caption ="Von:"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =9870
+                    Top =120
+                    Width =741
+                    Height =741
+                    TabIndex =2
+                    Name ="Befehl60"
+                    Caption ="Befehl60"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddad0d0d0d0dadada ,
+                        0xadadadada00dadaddadadadad000dadaadadadada0b70daddadadadad0b80ada ,
+                        0xadadadadad0b70addada000ada0b80daadad060dada0b70ddada080adad0b00a ,
+                        0xadad080dadad0110dad08860dada000aad0888860dadadadd06ff88860dadada ,
+                        0x00000000000dadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =2775
+                    Top =1020
+                    Width =885
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld65"
+                    Caption ="Erfasser"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =2040
+                    Top =1020
+                    Width =735
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld67"
+                    Caption ="Melder"
+                End
+                Begin TextBox
+                    OverlapFlags =215
+                    Left =2663
+                    Top =566
+                    Width =1071
+                    ColumnOrder =3
+                    TabIndex =3
+                    Name ="Bis"
+                    OnClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =93
+                            Left =2040
+                            Top =566
+                            Width =645
+                            Height =240
+                            Name ="Bezeichnungsfeld50"
+                            Caption ="Bis:"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =7369
+                    Top =113
+                    Width =801
+                    Height =741
+                    TabIndex =4
+                    Name ="ExportExcel"
+                    Caption ="Befehl69"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff002727272727272727727272727272727227ffffffffffff27 ,
+                        0x72fffffff727277227f2727272f2722772f727272f272f7227f27272f2727f27 ,
+                        0x72ff272f27272f7227fff2f2727fff2772ff2f272727ff7227f2f27272727f27 ,
+                        0x72f72727f7272f7227f2727fff727f2772ffffffffffff722727272727272727 ,
+                        0x7272727272727272000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz suchen"
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =8220
+                    Top =113
+                    Width =741
+                    Height =741
+                    FontSize =10
+                    FontWeight =500
+                    TabIndex =5
+                    ForeColor =65280
+                    Name ="Kommentar"
+                    Caption ="Kommentar"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadada0000000dadadadadd00000dadadadada ,
+                        0xad000dad777777addad0dad00000077aadadad0ffffff07ddad000000888807a ,
+                        0xad0e8e8e80fff07dda08e8e8e088807aad0e8e8e8e0ff07ddad0e0000808807a ,
+                        0xada08e8e8e80f07ddada080000e0807aadad0e8e8e8e007ddadad0f0f0f000da ,
+                        0xadadad0d0d0d0dad
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Fehlerbericht drucken"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =12931
+                    Top =1020
+                    Width =1413
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld72"
+                    Caption ="Verursacher"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =14348
+                    Top =1020
+                    Width =2373
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld74"
+                    Caption ="Lieferant"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =10714
+                    Top =113
+                    Width =726
+                    Height =741
+                    FontSize =10
+                    FontWeight =500
+                    TabIndex =6
+                    ForeColor =65280
+                    Name ="FilterLoeschen"
+                    Caption ="Kommentar"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadada17dadadad7 ,
+                        0xadadad117dadad17dadada711adad71aadadada117ad117ddada0007117711da ,
+                        0xadad060811111daddada08087111dadaadad087711117daddad081111ad117da ,
+                        0xad0881167dad117dd06ff88860dad11aa000000000adadaddadadadadadadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Filter löschen"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =6066
+                    Top =113
+                    Width =741
+                    Height =741
+                    TabIndex =7
+                    Name ="UpdateForm"
+                    Caption ="Befehl69"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xa0a0adadadadadaddadadadadadad000a0a0a07dadada000dadad007dadadada ,
+                        0xa0a0a0007dada000dadad0bb07dad000adada0bb077da000dadada0bb077d000 ,
+                        0xadadad0b0077a000dadadad0110ad000adadada000adadaddadadadadadadada ,
+                        0xadadadadadadadad
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular aktualsieren"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =4081
+                    Top =113
+                    Width =741
+                    Height =726
+                    FontSize =12
+                    FontWeight =500
+                    TabIndex =8
+                    ForeColor =16777215
+                    Name ="Objekt schließen - Formular"
+                    Caption ="Objekt schließen"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadad0dadadadadaadad00adadadadaddad030dadadadada ,
+                        0xad0330adadadadad0033300000000adaa03330ff0dadadadd03300ff0adad4da ,
+                        0xa03330ff0dad44add03330ff0ad44444a03330ff0d444444d03330ff0ad44444 ,
+                        0xa0330fff0dad44add030ffff0adad4daa00fffff0dadadadd00000000adadada ,
+                        0xadadadadadadadad
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    EventProcPrefix ="Objekt_schließen___Formular"
+                    ControlTipText ="Objekt schließen"
+                End
+                Begin CommandButton
+                    Enabled = NotDefault
+                    OverlapFlags =85
+                    Left =5272
+                    Top =113
+                    Width =741
+                    Height =741
+                    TabIndex =9
+                    Name ="IntervallOFF"
+                    Caption ="OFF"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                    ControlTipText ="Formular aktualsieren"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =8736
+                    Top =1020
+                    Width =1815
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="BezTaetigkeiten"
+                    Caption ="Taetigkeit"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =10493
+                    Top =1020
+                    Width =2433
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="BezFehlerbild"
+                    Caption ="Fehlerbild"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =6918
+                    Top =1020
+                    Width =1815
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="Bezeichnungsfeld79"
+                    Caption ="Fehlerort-Einheit"
+                End
+                Begin ComboBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    ColumnCount =2
+                    Left =11625
+                    Top =565
+                    Width =3383
+                    Height =285
+                    ColumnOrder =0
+                    FontSize =10
+                    TabIndex =10
+                    Name ="cboFilterForm"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT tblFilterForm.FilterBezeichnung, tblFilterForm.FilterFormID FROM tblFilte"
+                        "rForm WHERE (((tblFilterForm.Aktiv)=True) AND ((tblFilterForm.SachbearbeiterID)="
+                        "get_SachbearbeiterID()) AND ((tblFilterForm.FormName)=\"Reklamationen_ÜbersichtI"
+                        "ntern\")) GROUP BY tblFilterForm.FilterBezeichnung, tblFilterForm.FilterFormID O"
+                        "RDER BY tblFilterForm.FilterBezeichnung; "
+                    ColumnWidths ="1701;0"
+                    OnClick ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            TextAlign =1
+                            Left =11625
+                            Top =225
+                            Width =3383
+                            Height =270
+                            FontSize =10
+                            Name ="BezFilterForm"
+                            Caption ="Persönlichen Filter setzten"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =15300
+                    Top =120
+                    Width =726
+                    Height =741
+                    TabIndex =11
+                    Name ="cboPersFilterSpeichern"
+                    Caption ="Befehl162"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddddddddddddddddd0d0d0d0ddddddddddddddd00ddddd ,
+                        0xddddddddd000ddddddddddddd0b70dddddddddddd0b80ddddddddddddd0b70dd ,
+                        0xd00000000d0b80dd033000330dd0b70d033000330dd0b00d033333330ddd0110 ,
+                        0x033333330ddd000d033000030ddddddd030888030ddddddd030888030ddddddd ,
+                        0x000000000ddddddd
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Persönlichen Filter speichern"
+                End
+                Begin Label
+                    BackStyle =1
+                    OldBorderStyle =1
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =3630
+                    Top =1020
+                    Width =735
+                    Height =255
+                    FontSize =10
+                    FontWeight =700
+                    BackColor =12632256
+                    Name ="BezSachbearbeiter"
+                    Caption ="Sachb."
+                End
+            End
+        End
+        Begin Section
+            CanGrow = NotDefault
+            Height =270
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            OnMouseMove ="[Event Procedure]"
+            Begin
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =2
+                    BackStyle =0
+                    Left =1142
+                    Width =906
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    Name ="Text3"
+                    ControlSource ="ID"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =4365
+                    Width =2556
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =1
+                    Name ="Text12"
+                    ControlSource ="Kategorie-Status"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    TextAlign =2
+                    BackStyle =0
+                    Left =56
+                    Width =1086
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =2
+                    Name ="Text46"
+                    ControlSource ="Auftragsdatum"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =2
+                    BackStyle =0
+                    Left =2775
+                    Width =885
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =3
+                    Name ="Text66"
+                    ControlSource ="KZ-Erfasser"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =247
+                    TextAlign =2
+                    BackStyle =0
+                    Left =2040
+                    Width =735
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =4
+                    Name ="Text68"
+                    ControlSource ="KZ-Melder"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =1
+                    BackStyle =0
+                    Left =12929
+                    Width =1416
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =5
+                    Name ="Text73"
+                    ControlSource ="Verursacher-Anzeige"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    TextAlign =1
+                    BackStyle =0
+                    Left =14346
+                    Width =2376
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =6
+                    Name ="Text75"
+                    ControlSource ="Lieferantenname"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =93
+                    TextAlign =1
+                    BackStyle =0
+                    Left =8728
+                    Width =1761
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =7
+                    Name ="Text63"
+                    ControlSource ="Taetigkeit-Anzeige"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    TextAlign =1
+                    BackStyle =0
+                    Left =10489
+                    Width =2436
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =8
+                    Name ="Text78"
+                    ControlSource ="Fehlerbild-Anzeige"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =87
+                    TextAlign =1
+                    BackStyle =0
+                    Left =6914
+                    Width =1815
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =9
+                    Name ="Text80"
+                    ControlSource ="LQEinheit"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OldBorderStyle =1
+                    OverlapFlags =247
+                    TextAlign =2
+                    BackStyle =0
+                    Left =3630
+                    Width =735
+                    Height =270
+                    FontSize =10
+                    FontWeight =700
+                    TabIndex =10
+                    Name ="Text82"
+                    ControlSource ="KZ-Sachbearbeiter"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            CanGrow = NotDefault
+            Height =4081
+            BackColor =14211288
+            Name ="Formularfuß"
+            Begin
+                Begin Subform
+                    OverlapFlags =87
+                    SpecialEffect =4
+                    BorderWidth =3
+                    Top =396
+                    Width =15587
+                    Height =3574
+                    Name ="Eingebettet1"
+                    SourceObject ="Form.UF_Reklamationen_ÜbersichtIntern"
+                    LinkChildFields ="ID"
+                    LinkMasterFields ="ID"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =120
+                    Top =60
+                    Width =3510
+                    Height =315
+                    FontSize =12
+                    FontWeight =700
+                    Name ="Bezeichnungsfeld9"
+                    Caption ="Detailansicht Reklamation"
+                    FontName ="Arial"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "Reklamationen_ÜbersichtIntern.cls"

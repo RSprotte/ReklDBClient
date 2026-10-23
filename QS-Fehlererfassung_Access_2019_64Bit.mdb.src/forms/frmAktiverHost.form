@@ -1,0 +1,189 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    RecordSelectors = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    AllowUpdating =2
+    ScrollBars =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6292
+    DatasheetFontHeight =11
+    ItemSuffix =11
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x6c2d43c5ca8ce640
+    End
+    RecordSource ="SELECT qryAktiverHost.HostID, qryAktiverHost.HostName, qryAktiverHost.KZ, qryAkt"
+        "iverHost.Datum, qryAktiverHost.ClientVersion, qryAktiverHost.Angemeldet FROM qry"
+        "AktiverHost ORDER BY qryAktiverHost.KZ;"
+    OnOpen ="[Event Procedure]"
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1005
+            BackColor =14211288
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Left =60
+                    Top =690
+                    Width =2075
+                    Height =270
+                    FontSize =10
+                    FontWeight =600
+                    Name ="lblHostName"
+                    Caption ="HostName:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =2135
+                    Top =690
+                    Width =840
+                    Height =270
+                    FontSize =10
+                    FontWeight =600
+                    Name ="lblKZ"
+                    Caption ="KZ:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =2975
+                    Top =690
+                    Width =1475
+                    Height =270
+                    FontSize =10
+                    FontWeight =600
+                    Name ="lblDatum"
+                    Caption ="Datum:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =4450
+                    Top =690
+                    Width =1695
+                    Height =270
+                    FontSize =10
+                    FontWeight =600
+                    Name ="lblClientVersion"
+                    Caption ="ClientVersion:"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin Section
+            Height =330
+            BackColor =15527148
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =60
+                    Top =60
+                    Width =2075
+                    Height =270
+                    FontSize =10
+                    Name ="txtHostName"
+                    ControlSource ="HostName"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2135
+                    Top =60
+                    Width =840
+                    Height =270
+                    FontSize =10
+                    TabIndex =1
+                    Name ="txtKZ"
+                    ControlSource ="KZ"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2975
+                    Top =60
+                    Width =1475
+                    Height =270
+                    FontSize =10
+                    TabIndex =2
+                    Name ="txtDatum"
+                    ControlSource ="Datum"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =87
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =4450
+                    Top =60
+                    Width =1380
+                    Height =270
+                    FontSize =10
+                    TabIndex =3
+                    Name ="txtClientVersion"
+                    ControlSource ="ClientVersion"
+                    FontName ="Arial"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =15527148
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmAktiverHost.cls"

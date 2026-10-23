@@ -1,0 +1,66 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "RSP_AnsprechpartnerLiefUndEinkauf"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "LieferantAnsprechpartner.AnsprechpartnerID": {
+        "ColumnWidth": 2250,
+        "AggregateType": -1
+      },
+      "NameAP": {
+        "ColumnWidth": 1785,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 588
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "LieferantAnsprechpartner",
+          "Alias": "",
+          "Left": 62,
+          "Top": 7,
+          "Right": 236,
+          "Bottom": 282,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 339,
+          "Top": 6,
+          "Right": 582,
+          "Bottom": 516,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Sachbearbeiter",
+          "Alias": "",
+          "Left": 654,
+          "Top": 5,
+          "Right": 1048,
+          "Bottom": 243,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,277 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    AllowAdditions = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    AllowUpdating =2
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6294
+    DatasheetFontHeight =10
+    ItemSuffix =10
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xde0dca43f5aee440
+    End
+    RecordSource ="SELECT Maßnahmen.*, MaßnahmeUmsetzungFrist.MaßnahmeFrist FROM Maßnahmen LEFT JOI"
+        "N MaßnahmeUmsetzungFrist ON Maßnahmen.ArtDerMaßnahme=MaßnahmeUmsetzungFrist.[ID-"
+        "UmsetzungMaßnahme]; "
+    Caption ="UMaßnahmen"
+    DatasheetFontName ="Arial"
+    Begin
+        Begin Label
+            BackStyle =0
+            BackColor =-2147483633
+            ForeColor =-2147483630
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+        End
+        Begin Line
+            BorderLineStyle =0
+            SpecialEffect =3
+            Width =1701
+        End
+        Begin Image
+            BackStyle =0
+            OldBorderStyle =0
+            BorderLineStyle =0
+            PictureAlignment =2
+            Width =1701
+            Height =1701
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin OptionButton
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin OptionGroup
+            SpecialEffect =3
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin BoundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            BackStyle =0
+            Width =4536
+            Height =2835
+            LabelX =-1701
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            BackColor =-2147483643
+            ForeColor =-2147483640
+        End
+        Begin Subform
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1701
+        End
+        Begin UnboundObjectFrame
+            SpecialEffect =2
+            OldBorderStyle =1
+            Width =4536
+            Height =2835
+        End
+        Begin ToggleButton
+            Width =283
+            Height =283
+            FontSize =8
+            FontWeight =400
+            FontName ="MS Sans Serif"
+        End
+        Begin Tab
+            BackStyle =0
+            Width =5103
+            Height =3402
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =2985
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1677
+                    Top =114
+                    Width =900
+                    Height =255
+                    ColumnWidth =900
+                    Name ="MaßnahmeID"
+                    ControlSource ="MaßnahmeID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =114
+                            Width =1560
+                            Height =255
+                            Name ="MaßnahmeID_Bezeichnungsfeld"
+                            Caption ="MaßnahmeID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1677
+                    Top =456
+                    Width =1335
+                    Height =255
+                    ColumnWidth =825
+                    TabIndex =1
+                    Name ="StartUmsetzung"
+                    ControlSource ="StartUmsetzung"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =456
+                            Width =1560
+                            Height =255
+                            Name ="StartUmsetzung_Bezeichnungsfeld"
+                            Caption ="StartUmsetzung"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1677
+                    Top =798
+                    Width =1320
+                    Height =255
+                    ColumnWidth =825
+                    TabIndex =2
+                    Name ="EndeUmsetzung"
+                    ControlSource ="EndeUmsetzung"
+                    InputMask ="00,00,0000;0;_"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =798
+                            Width =1560
+                            Height =255
+                            Name ="EndeUmsetzung_Bezeichnungsfeld"
+                            Caption ="EndeUmsetzung"
+                        End
+                    End
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    Left =1677
+                    Top =1140
+                    Width =2145
+                    Height =270
+                    ColumnWidth =3000
+                    TabIndex =3
+                    Name ="StatusUmsetzung"
+                    ControlSource ="StatusUmsetzung"
+                    StatusBarText ="Bescheibt den Fortschritt der Umsetzung (Blog)"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =57
+                            Top =1140
+                            Width =1560
+                            Height =255
+                            Name ="StatusUmsetzung_Bezeichnungsfeld"
+                            Caption ="StatusUmsetzung"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    Left =1695
+                    Top =1500
+                    Width =720
+                    Height =255
+                    ColumnWidth =2310
+                    TabIndex =4
+                    Name ="ArtDerMaßnahme"
+                    ControlSource ="MaßnahmeFrist"
+                    StatusBarText ="KM = kurfriste Maßmnahme - MM = mittelfristige Maßanhme - LM = langfristige Maßn"
+                        "ahme"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =75
+                            Top =1500
+                            Width =1560
+                            Height =255
+                            Name ="ArtDerMaßnahme_Bezeichnungsfeld"
+                            Caption ="ArtDerMaßnahme"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End

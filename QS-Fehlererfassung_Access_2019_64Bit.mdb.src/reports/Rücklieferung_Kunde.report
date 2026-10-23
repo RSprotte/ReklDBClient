@@ -1,0 +1,299 @@
+﻿Version =19
+VersionRequired =19
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15749
+    DatasheetFontHeight =11
+    ItemSuffix =26
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x4ad58a3eae4de540
+    End
+    RecordSource ="SELECT Mastertab.ID, Mastertab.[Meldungsnummer Kunde], Mastertab.[Bestellnummer "
+        "Kunde], Kunden.Kontaktperson, tblFirma.Firma_Name, [Baugruppen-avista_out].[LQ A"
+        "rt-Nr], [Baugruppen-avista_out].[Kunden-Nr], [Artikel-all_avista_out].[LQ Art-Nr"
+        "], [Artikel-all_avista_out].[Kd Mat-Nr], Mastertab.[WE-Datum], Mastertab.[Rückli"
+        "efer-Menge] AS Menge, Last(tblLager.Lagerbezeichnung) AS Werk FROM ((((Kunden IN"
+        "NER JOIN Mastertab ON Kunden.[Kunden-ID] = Mastertab.[Kunden-ID]) INNER JOIN tbl"
+        "Firma ON Kunden.FirmaID = tblFirma.Firma_ID) LEFT JOIN [Artikel-all_avista_out] "
+        "ON Mastertab.[Artikel-ID 1] = [Artikel-all_avista_out].[Artikel-ID]) LEFT JOIN ["
+        "Baugruppen-avista_out] ON Mastertab.[Baugruppen-ID] = [Baugruppen-avista_out].[B"
+        "augruppen-ID]) LEFT JOIN tblLager ON Mastertab.LQEinheitID = tblLager.LQEinheitI"
+        "D WHERE (((Mastertab.[Umbau/Reparatur])=True) AND ((Mastertab.Auftragsdatum)>#1/"
+        "1/2018#)) GROUP BY Mastertab.ID, Mastertab.[Meldungsnummer Kunde], Mastertab.[Be"
+        "stellnummer Kunde], Kunden.Kontaktperson, tblFirma.Firma_Name, [Baugruppen-avist"
+        "a_out].[LQ Art-Nr], [Baugruppen-avista_out].[Kunden-Nr], [Artikel-all_avista_out"
+        "].[LQ Art-Nr], [Artikel-all_avista_out].[Kd Mat-Nr], Mastertab.[WE-Datum], Maste"
+        "rtab.[Rückliefer-Menge] HAVING (((tblFirma.Firma_Name) Not Like \"LQCN\" And (tb"
+        "lFirma.Firma_Name) Not Like \"LQUS\") AND ((Mastertab.[WE-Datum]) Is Null)); "
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin PageHeader
+            Height =315
+            Name ="Seitenkopfbereich"
+            Begin
+                Begin Label
+                    Width =741
+                    Height =315
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="ReklNr:"
+                End
+                Begin Label
+                    Left =814
+                    Width =1455
+                    Height =315
+                    Name ="Bezeichnungsfeld11"
+                    Caption ="Meldung:"
+                End
+                Begin Label
+                    Left =2342
+                    Width =1530
+                    Height =315
+                    Name ="Bezeichnungsfeld12"
+                    Caption ="Bestellnummer:"
+                End
+                Begin Label
+                    Left =3945
+                    Width =1305
+                    Height =315
+                    Name ="Bezeichnungsfeld13"
+                    Caption ="Firma_Name:"
+                End
+                Begin Label
+                    Left =5323
+                    Width =1956
+                    Height =315
+                    Name ="Bezeichnungsfeld14"
+                    Caption ="Kontaktperson:"
+                End
+                Begin Label
+                    Left =10300
+                    Width =1401
+                    Height =315
+                    Name ="Bezeichnungsfeld15"
+                    Caption ="LQ Art-Nr:"
+                End
+                Begin Label
+                    Left =11774
+                    Width =1401
+                    Height =315
+                    Name ="Bezeichnungsfeld16"
+                    Caption ="Kd Mat-Nr:"
+                End
+                Begin Label
+                    Left =13248
+                    Width =1125
+                    Height =315
+                    Name ="Bezeichnungsfeld17"
+                    Caption ="WE-Datum:"
+                End
+                Begin Label
+                    TextAlign =2
+                    Left =14446
+                    Width =495
+                    Height =315
+                    Name ="Bezeichnungsfeld18"
+                    Caption ="St."
+                End
+                Begin Label
+                    Left =15014
+                    Width =735
+                    Height =315
+                    Name ="Bezeichnungsfeld19"
+                    Caption ="Werk:"
+                End
+                Begin Label
+                    Left =7352
+                    Width =1401
+                    Height =315
+                    Name ="Bezeichnungsfeld24"
+                    Caption ="BG LQ-Nr.:"
+                End
+                Begin Label
+                    Left =8826
+                    Width =1401
+                    Height =315
+                    Name ="Bezeichnungsfeld25"
+                    Caption ="BG-Nr.:"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            Height =315
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    IMESentenceMode =3
+                    Width =741
+                    Height =315
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =814
+                    Width =1455
+                    Height =315
+                    ColumnWidth =855
+                    TabIndex =1
+                    Name ="Meldungsnummer Kunde"
+                    ControlSource ="Meldungsnummer Kunde"
+                    StatusBarText ="Fehlerbericht I+II - Meldungsnummer"
+                    EventProcPrefix ="Meldungsnummer_Kunde"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =2342
+                    Width =1530
+                    Height =315
+                    ColumnWidth =1200
+                    TabIndex =2
+                    Name ="Bestellnummer Kunde"
+                    ControlSource ="Bestellnummer Kunde"
+                    StatusBarText ="Fehlerbericht I+II - Bestellnummer"
+                    EventProcPrefix ="Bestellnummer_Kunde"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =3945
+                    Width =1305
+                    Height =315
+                    ColumnWidth =3750
+                    TabIndex =3
+                    Name ="Firma_Name"
+                    ControlSource ="Firma_Name"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =5323
+                    Width =1956
+                    Height =315
+                    ColumnWidth =2610
+                    TabIndex =4
+                    Name ="Kontaktperson"
+                    ControlSource ="Kontaktperson"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =10300
+                    Width =1401
+                    Height =315
+                    ColumnWidth =1800
+                    TabIndex =5
+                    Name ="LQ Art-Nr"
+                    ControlSource ="[Artikel-all_avista_out].[LQ Art-Nr]"
+                    EventProcPrefix ="LQ_Art_Nr"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =11774
+                    Width =1401
+                    Height =315
+                    ColumnWidth =1230
+                    TabIndex =6
+                    Name ="Kd Mat-Nr"
+                    ControlSource ="Kd Mat-Nr"
+                    EventProcPrefix ="Kd_Mat_Nr"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =13248
+                    Width =1125
+                    Height =315
+                    ColumnWidth =975
+                    TabIndex =7
+                    Name ="WE-Datum"
+                    ControlSource ="WE-Datum"
+                    StatusBarText ="Fehlerbericht I - WE Datum"
+                    EventProcPrefix ="WE_Datum"
+                End
+                Begin TextBox
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =14446
+                    Width =495
+                    Height =315
+                    TabIndex =8
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                    StatusBarText ="Fehlerbericht I+II"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =15014
+                    Width =735
+                    Height =315
+                    TabIndex =9
+                    Name ="Werk"
+                    ControlSource ="Werk"
+                    StatusBarText ="Fehlerbericht I+II - Fehleranalyse"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =8826
+                    Width =1401
+                    Height =315
+                    ColumnWidth =1545
+                    TabIndex =10
+                    Name ="Kunden-Nr"
+                    ControlSource ="Kunden-Nr"
+                    StatusBarText ="Kunden-Art-Nr. der Baugruppe"
+                    EventProcPrefix ="Kunden_Nr"
+                End
+                Begin TextBox
+                    IMESentenceMode =3
+                    Left =7352
+                    Width =1401
+                    Height =315
+                    TabIndex =11
+                    Name ="Baugruppen-avista_out.LQ Art-Nr"
+                    ControlSource ="[Baugruppen-avista_out].[LQ Art-Nr]"
+                    EventProcPrefix ="Baugruppen_avista_out_LQ_Art_Nr"
+                End
+            End
+        End
+        Begin PageFooter
+            Height =0
+            Name ="Seitenfußbereich"
+        End
+    End
+End
+CodeBehindForm
+' See "Rücklieferung_Kunde.cls"

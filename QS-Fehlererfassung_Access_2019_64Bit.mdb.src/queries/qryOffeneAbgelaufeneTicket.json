@@ -1,0 +1,74 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryOffeneAbgelaufeneTicket"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "tblTicketListe.VerlängertBis": {
+        "ColumnWidth": 1680,
+        "AggregateType": -1
+      },
+      "tblTicketTyp.ErinnerungTage": {
+        "ColumnWidth": 1875,
+        "AggregateType": -1
+      },
+      "tblTicketTyp.Mahnung1Tage": {
+        "ColumnWidth": 2235,
+        "AggregateType": -1
+      },
+      "tblTicketTyp.Mahnung2Tage": {
+        "ColumnWidth": 2355,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 480
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "tblTicketListe",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 498,
+          "Bottom": 365,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketTyp",
+          "Alias": "",
+          "Left": 611,
+          "Top": 12,
+          "Right": 755,
+          "Bottom": 282,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblTicketStatus",
+          "Alias": "",
+          "Left": 612,
+          "Top": 292,
+          "Right": 756,
+          "Bottom": 436,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,568 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =14568
+    DatasheetFontHeight =11
+    ItemSuffix =33
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x0f3007b11399e540
+    End
+    RecordSource ="qryRücklieferungKunde"
+    Caption ="Rücklieferung Kunde"
+    DatasheetFontName ="Calibri"
+    OnDblClick ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin Rectangle
+            SpecialEffect =3
+            BackStyle =0
+            BorderLineStyle =0
+            Width =850
+            Height =850
+            BorderColor =13750737
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =999
+            BackColor =15783096
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =60
+                    Top =630
+                    Width =798
+                    Height =315
+                    ForeColor =0
+                    Name ="ID_Bezeichnungsfeld"
+                    Caption ="ReklNr"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =915
+                    Top =630
+                    Width =1413
+                    Height =315
+                    ForeColor =0
+                    Name ="Meldungsnummer Kunde_Bezeichnungsfeld"
+                    Caption ="Meldung"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Meldungsnummer_Kunde_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =2433
+                    Top =630
+                    Width =1314
+                    Height =315
+                    ForeColor =0
+                    Name ="Bestellnummer Kunde_Bezeichnungsfeld"
+                    Caption ="Bestellnr."
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Bestellnummer_Kunde_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =3798
+                    Top =630
+                    Width =2238
+                    Height =315
+                    ForeColor =0
+                    Name ="Kontaktperson_Bezeichnungsfeld"
+                    Caption ="Kontaktperson"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =6063
+                    Top =630
+                    Width =1824
+                    Height =315
+                    ForeColor =0
+                    Name ="Firma_Name_Bezeichnungsfeld"
+                    Caption ="Firma_Name"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =7944
+                    Top =630
+                    Width =1023
+                    Height =315
+                    ForeColor =0
+                    Name ="Baugruppen-avista_out.LQ Art-Nr_Bezeichnungsfeld"
+                    Caption ="LQ BG-Nr."
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Baugruppen_avista_out_LQ_Art_Nr_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =9018
+                    Top =630
+                    Width =1068
+                    Height =315
+                    ForeColor =0
+                    Name ="Kunden-Nr_Bezeichnungsfeld"
+                    Caption ="KD BG-Nr."
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Kunden_Nr_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =10143
+                    Top =630
+                    Width =1098
+                    Height =315
+                    ForeColor =0
+                    Name ="Artikel-all_avista_out.LQ Art-Nr_Bezeichnungsfeld"
+                    Caption ="LQ Art-Nr."
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Artikel_all_avista_out_LQ_Art_Nr_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =11292
+                    Top =630
+                    Width =1068
+                    Height =315
+                    ForeColor =0
+                    Name ="Kd Mat-Nr_Bezeichnungsfeld"
+                    Caption ="KD Art-Nr."
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="Kd_Mat_Nr_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =3
+                    Left =12414
+                    Top =630
+                    Width =1125
+                    Height =315
+                    ForeColor =0
+                    Name ="WE-Datum_Bezeichnungsfeld"
+                    Caption ="WE-Datum"
+                    Tag ="DetachedLabel"
+                    EventProcPrefix ="WE_Datum_Bezeichnungsfeld"
+                End
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =2
+                    Left =13596
+                    Top =630
+                    Width =798
+                    Height =315
+                    ForeColor =0
+                    Name ="Menge_Bezeichnungsfeld"
+                    Caption ="St"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =57
+                    Top =57
+                    Width =4986
+                    Height =504
+                    FontSize =20
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld24"
+                    Caption ="Rücklieferung Kunde"
+                End
+                Begin CommandButton
+                    OverlapFlags =87
+                    Left =13890
+                    Top =60
+                    Width =576
+                    Height =576
+                    Name ="cmbFrmSchließen"
+                    Caption ="Befehl25"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+                Begin CommandButton
+                    OverlapFlags =87
+                    TextFontFamily =34
+                    Left =13155
+                    Top =59
+                    Width =577
+                    Height =577
+                    TabIndex =1
+                    Name ="cmbDrucken"
+                    Caption ="Befehl15"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+        Begin Section
+            Height =793
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =60
+                    Top =64
+                    Width =798
+                    Height =330
+                    ColumnWidth =1530
+                    FontSize =10
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =915
+                    Top =64
+                    Width =1413
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =1
+                    Name ="Meldungsnummer Kunde"
+                    ControlSource ="Meldungsnummer Kunde"
+                    StatusBarText ="Fehlerbericht I+II - Meldungsnummer"
+                    EventProcPrefix ="Meldungsnummer_Kunde"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =2385
+                    Top =60
+                    Width =1314
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =2
+                    Name ="Bestellnummer Kunde"
+                    ControlSource ="Bestellnummer Kunde"
+                    StatusBarText ="Fehlerbericht I+II - Bestellnummer"
+                    EventProcPrefix ="Bestellnummer_Kunde"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =3750
+                    Top =60
+                    Width =2238
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =3
+                    Name ="Kontaktperson"
+                    ControlSource ="Kontaktperson"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =6060
+                    Top =64
+                    Width =1824
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =4
+                    Name ="Firma_Name"
+                    ControlSource ="Firma_Name"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =7941
+                    Top =64
+                    Width =1023
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =5
+                    Name ="Baugruppen-avista_out.LQ Art-Nr"
+                    ControlSource ="BG"
+                    EventProcPrefix ="Baugruppen_avista_out_LQ_Art_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =9015
+                    Top =64
+                    Width =1068
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =6
+                    Name ="Kunden-Nr"
+                    ControlSource ="Kunden-Nr"
+                    StatusBarText ="Kunden-Art-Nr. der Baugruppe"
+                    EventProcPrefix ="Kunden_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =10155
+                    Top =64
+                    Width =1083
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =7
+                    Name ="Artikel-all_avista_out.LQ Art-Nr"
+                    ControlSource ="ArtNr"
+                    EventProcPrefix ="Artikel_all_avista_out_LQ_Art_Nr"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =11289
+                    Top =64
+                    Width =1068
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =8
+                    Name ="Kd Mat-Nr"
+                    ControlSource ="Kd Mat-Nr"
+                    EventProcPrefix ="Kd_Mat_Nr"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =12414
+                    Top =64
+                    Width =1125
+                    Height =330
+                    ColumnWidth =1620
+                    FontSize =10
+                    TabIndex =9
+                    Name ="WE-Datum"
+                    StatusBarText ="Fehlerbericht I - WE Datum"
+                    EventProcPrefix ="WE_Datum"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =13593
+                    Top =64
+                    Width =798
+                    Height =330
+                    ColumnWidth =1530
+                    FontSize =10
+                    TabIndex =10
+                    Name ="Menge"
+                    ControlSource ="Menge"
+                    StatusBarText ="Fehlerbericht I+II"
+                End
+                Begin TextBox
+                    OverlapFlags =93
+                    IMESentenceMode =3
+                    Left =8790
+                    Top =405
+                    Width =2262
+                    Height =330
+                    ColumnWidth =3000
+                    FontSize =10
+                    TabIndex =11
+                    Name ="LagerBG"
+                    ControlSource ="LagerBG"
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    IMESentenceMode =3
+                    Left =60
+                    Top =397
+                    Width =2259
+                    Height =315
+                    ColumnWidth =2055
+                    FontSize =10
+                    TabIndex =12
+                    Name ="Anzeige"
+                    ControlSource ="Anzeige"
+                End
+                Begin Rectangle
+                    SpecialEffect =0
+                    OverlapFlags =255
+                    Top =60
+                    Width =14458
+                    Height =681
+                    BorderColor =0
+                    Name ="Rechteck27"
+                End
+                Begin TextBox
+                    OverlapFlags =247
+                    IMESentenceMode =3
+                    Left =12129
+                    Top =410
+                    Width =2262
+                    Height =315
+                    ColumnWidth =1725
+                    FontSize =10
+                    TabIndex =13
+                    Name ="LagerArt"
+                    ControlSource ="LagerArt"
+                    Begin
+                        Begin Label
+                            OverlapFlags =247
+                            TextAlign =1
+                            Left =11225
+                            Top =400
+                            Width =852
+                            Height =315
+                            FontSize =10
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld28"
+                            Caption ="LagerArt:"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =247
+                    TextAlign =1
+                    Left =7875
+                    Top =405
+                    Width =852
+                    Height =315
+                    FontSize =10
+                    ForeColor =0
+                    Name ="Werk_Bezeichnungsfeld"
+                    Caption ="LagerBG:"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =1360
+            Name ="Formularfuß"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    TextFontFamily =34
+                    IMESentenceMode =3
+                    Left =60
+                    Top =450
+                    Width =14395
+                    Height =795
+                    FontSize =10
+                    Name ="txtNotizen"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            TextAlign =1
+                            TextFontFamily =34
+                            Left =60
+                            Top =60
+                            Width =855
+                            Height =315
+                            FontSize =10
+                            ForeColor =0
+                            Name ="lblNotiz"
+                            Caption ="Notizen:"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "frmRücklieferung_Kunde.cls"

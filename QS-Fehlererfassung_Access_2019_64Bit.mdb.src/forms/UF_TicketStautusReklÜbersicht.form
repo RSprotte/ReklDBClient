@@ -1,0 +1,192 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =0
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =7086
+    DatasheetFontHeight =11
+    ItemSuffix =11
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xe1d00c380b06e540
+    End
+    RecordSource ="qryUFTicketStautusReklÜbersicht"
+    Caption ="UF_TicketStautusReklÜbersicht"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =340
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    TextAlign =1
+                    Width =690
+                    Height =315
+                    ForeColor =0
+                    Name ="ReklID_Bezeichnungsfeld"
+                    Caption ="ReklID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =690
+                    Width =2415
+                    Height =315
+                    ForeColor =0
+                    Name ="TicketTyp_Bezeichnungsfeld"
+                    Caption ="TicketTyp"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =3105
+                    Width =1047
+                    Height =315
+                    ForeColor =0
+                    Name ="BearbeitungBis_Bezeichnungsfeld"
+                    Caption ="BearbBis"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =95
+                    TextAlign =1
+                    Left =4152
+                    Width =1047
+                    Height =315
+                    ForeColor =0
+                    Name ="VerlängertBis_Bezeichnungsfeld"
+                    Caption ="VerlBis"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =87
+                    TextAlign =1
+                    Left =5199
+                    Width =1573
+                    Height =315
+                    ForeColor =0
+                    Name ="Mahnstufe_Bezeichnungsfeld"
+                    Caption ="Mahnstufe"
+                    Tag ="DetachedLabel"
+                End
+            End
+        End
+        Begin Section
+            Height =330
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =93
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Width =690
+                    Height =330
+                    ColumnWidth =1530
+                    ForeColor =0
+                    Name ="ReklID"
+                    ControlSource ="ReklID"
+                    StatusBarText ="Reklamations ID"
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =690
+                    Width =2415
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =1
+                    ForeColor =0
+                    Name ="TicketTyp"
+                    ControlSource ="Anzeige"
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =3105
+                    Width =1047
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =2
+                    ForeColor =0
+                    Name ="BearbeitungBis"
+                    ControlSource ="BearbeitungBis"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    OverlapFlags =95
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =4152
+                    Width =1047
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =3
+                    ForeColor =0
+                    Name ="VerlängertBis"
+                    ControlSource ="VerlängertBis"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =87
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5199
+                    Width =1573
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =4
+                    ForeColor =0
+                    Name ="Mahnstufe"
+                    ControlSource ="Mahnstufe"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End

@@ -1,0 +1,293 @@
+﻿Version =19
+VersionRequired =19
+Begin Report
+    LayoutForPrint = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DateGrouping =1
+    GrpKeepTogether =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =11186
+    DatasheetFontHeight =11
+    ItemSuffix =14
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x22259eab95d8e440
+    End
+    RecordSource ="VorgangsBericht"
+    Caption ="VorgangsBericht"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin BreakLevel
+            ControlSource ="ID"
+        End
+        Begin FormHeader
+            KeepTogether = NotDefault
+            Height =0
+            BackColor =15783096
+            Name ="Berichtskopf"
+        End
+        Begin PageHeader
+            Height =1134
+            BackColor =12566463
+            Name ="Seitenkopfbereich"
+            Begin
+                Begin Label
+                    Left =3344
+                    Top =226
+                    Width =5340
+                    Height =675
+                    FontSize =26
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="Bezeichnungsfeld10"
+                    Caption ="Vorgangs-Begleitschein"
+                End
+            End
+        End
+        Begin Section
+            KeepTogether = NotDefault
+            ForceNewPage =2
+            Height =3458
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =3798
+                    Top =340
+                    Width =1530
+                    Height =435
+                    FontSize =16
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="ID"
+                    ControlSource ="ID"
+                    StatusBarText ="Manuell erzeugte ReklID"
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =2757
+                            Top =342
+                            Width =960
+                            Height =435
+                            FontSize =16
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="ID_Bezeichnungsfeld"
+                            Caption ="ReklNr"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =3796
+                    Top =1362
+                    Width =1530
+                    Height =435
+                    ColumnWidth =1245
+                    FontSize =16
+                    FontWeight =600
+                    TabIndex =1
+                    ForeColor =0
+                    Name ="Meldungsnummer Kunde"
+                    ControlSource ="Meldungsnummer Kunde"
+                    StatusBarText ="Fehlerbericht I+II - Meldungsnummer"
+                    EventProcPrefix ="Meldungsnummer_Kunde"
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =2455
+                            Top =1362
+                            Width =1260
+                            Height =435
+                            FontSize =16
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="Meldungsnummer Kunde_Bezeichnungsfeld"
+                            Caption ="Meldung"
+                            EventProcPrefix ="Meldungsnummer_Kunde_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =3796
+                    Top =1873
+                    Width =1530
+                    Height =435
+                    ColumnWidth =1860
+                    FontSize =16
+                    FontWeight =600
+                    TabIndex =2
+                    ForeColor =0
+                    Name ="Bestellnummer Kunde"
+                    ControlSource ="Bestellnummer Kunde"
+                    StatusBarText ="Fehlerbericht I+II - Bestellnummer"
+                    EventProcPrefix ="Bestellnummer_Kunde"
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =1630
+                            Top =1873
+                            Width =2085
+                            Height =435
+                            FontSize =16
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="Bestellnummer Kunde_Bezeichnungsfeld"
+                            Caption ="Bestellnummer"
+                            EventProcPrefix ="Bestellnummer_Kunde_Bezeichnungsfeld"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =3796
+                    Top =2384
+                    Width =1530
+                    Height =435
+                    ColumnWidth =3750
+                    FontSize =16
+                    FontWeight =600
+                    TabIndex =3
+                    ForeColor =0
+                    Name ="Firma_Name"
+                    ControlSource ="Firma_Name"
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =1945
+                            Top =2384
+                            Width =1770
+                            Height =435
+                            FontSize =16
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="Firma_Name_Bezeichnungsfeld"
+                            Caption ="Firma"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =3796
+                    Top =2895
+                    Width =1530
+                    Height =435
+                    ColumnWidth =2745
+                    FontSize =16
+                    FontWeight =600
+                    TabIndex =4
+                    ForeColor =0
+                    Name ="Kontaktperson"
+                    ControlSource ="Kontaktperson"
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =105
+                            Top =2895
+                            Width =3615
+                            Height =435
+                            FontSize =16
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="Kontaktperson_Bezeichnungsfeld"
+                            Caption ="Kontaktperson"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    IMESentenceMode =3
+                    Left =3798
+                    Top =851
+                    Width =1530
+                    Height =435
+                    ColumnWidth =1800
+                    FontSize =16
+                    FontWeight =600
+                    TabIndex =5
+                    ForeColor =0
+                    Name ="LQ Art-Nr"
+                    ControlSource ="LQ Art-Nr"
+                    EventProcPrefix ="LQ_Art_Nr"
+                    Begin
+                        Begin Label
+                            TextAlign =3
+                            Left =340
+                            Top =851
+                            Width =3375
+                            Height =435
+                            FontSize =16
+                            FontWeight =600
+                            ForeColor =0
+                            Name ="Bezeichnungsfeld13"
+                            Caption ="LQ Art-Nr"
+                        End
+                    End
+                End
+            End
+        End
+        Begin PageFooter
+            Height =558
+            Name ="Seitenfußbereich"
+            Begin
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =57
+                    Top =228
+                    Width =5040
+                    Height =330
+                    Name ="Text11"
+                    ControlSource ="=Now()"
+                    Format ="Long Date"
+                End
+                Begin TextBox
+                    OldBorderStyle =0
+                    TextAlign =3
+                    IMESentenceMode =3
+                    Left =6089
+                    Top =228
+                    Width =5040
+                    Height =330
+                    TabIndex =1
+                    Name ="Text12"
+                    ControlSource ="=\"Seite \" & [Page] & \" von \" & [Pages]"
+                End
+            End
+        End
+        Begin FormFooter
+            KeepTogether = NotDefault
+            Height =0
+            Name ="Berichtsfuß"
+        End
+    End
+End

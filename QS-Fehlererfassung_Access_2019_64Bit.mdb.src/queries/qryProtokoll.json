@@ -1,0 +1,52 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qryProtokoll"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "tblProtokoll.Datum": {
+        "ColumnWidth": 1935,
+        "AggregateType": -1
+      },
+      "tblProtokoll.Feld": {
+        "ColumnWidth": 3675,
+        "AggregateType": -1
+      },
+      "tblProtokoll.Vorgang_ID": {
+        "ColumnWidth": 1485,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 478
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "tblProtokoll",
+          "Alias": "",
+          "Left": 25,
+          "Top": 19,
+          "Right": 381,
+          "Bottom": 348,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

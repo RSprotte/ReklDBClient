@@ -1,0 +1,93 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "ROS_Report_QO"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "LQEinheit.LQEinheit": {
+        "ColumnWidth": 1770,
+        "AggregateType": -1
+      },
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 1140,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 555
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 312,
+          "Bottom": 574,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 431,
+          "Top": 214,
+          "Right": 585,
+          "Bottom": 362,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "ReklMemo",
+          "Alias": "",
+          "Left": 604,
+          "Top": 6,
+          "Right": 789,
+          "Bottom": 244,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Vorgangstyp",
+          "Alias": "",
+          "Left": 893,
+          "Top": 39,
+          "Right": 989,
+          "Bottom": 127,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 634,
+          "Top": 321,
+          "Right": 766,
+          "Bottom": 484,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 887,
+          "Top": 264,
+          "Right": 1031,
+          "Bottom": 408,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

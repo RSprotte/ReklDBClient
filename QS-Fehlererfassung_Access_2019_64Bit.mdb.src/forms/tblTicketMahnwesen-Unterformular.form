@@ -1,0 +1,154 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoCenter = NotDefault
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =2
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =4650
+    DatasheetFontHeight =11
+    ItemSuffix =8
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x12434ad495ebe440
+    End
+    RecordSource ="SELECT [tblTicketMahnwesen].[TicketMahnungID], [tblTicketMahnwesen].[TicketID], "
+        "[tblTicketMahnwesen].[TicketMahnungStatusID], [tblTicketMahnwesen].[Datum] FROM "
+        "tblTicketMahnwesen; "
+    Caption ="tblTicketMahnwesen-Unterformular"
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =0
+            BackColor =15783096
+            Name ="Formularkopf"
+        End
+        Begin Section
+            Height =1983
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2892
+                    Top =342
+                    Height =315
+                    ColumnWidth =1701
+                    Name ="TicketMahnungID"
+                    ControlSource ="TicketMahnungID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =342
+                            Width =2460
+                            Height =330
+                            Name ="TicketMahnungID_Bezeichnungsfeld"
+                            Caption ="TicketMahnungID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2892
+                    Top =741
+                    Width =1530
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =1
+                    Name ="TicketID"
+                    ControlSource ="TicketID"
+                    StatusBarText ="Reklamations ID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =741
+                            Width =2460
+                            Height =330
+                            Name ="TicketID_Bezeichnungsfeld"
+                            Caption ="TicketID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2892
+                    Top =1140
+                    Width =1530
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =2
+                    Name ="TicketMahnungStatusID"
+                    ControlSource ="TicketMahnungStatusID"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1140
+                            Width =2460
+                            Height =330
+                            Name ="TicketMahnungStatusID_Bezeichnungsfeld"
+                            Caption ="TicketMahnungStatusID"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =2892
+                    Top =1539
+                    Width =1620
+                    Height =330
+                    ColumnWidth =1620
+                    TabIndex =3
+                    Name ="Datum"
+                    ControlSource ="Datum"
+                    Format ="Short Date"
+                    InputMask ="00,00,00;0;*"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =342
+                            Top =1539
+                            Width =2460
+                            Height =330
+                            Name ="Datum_Bezeichnungsfeld"
+                            Caption ="Datum"
+                        End
+                    End
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End

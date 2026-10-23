@@ -1,0 +1,88 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage_Fehlergruppen_Fehlertexte"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "Mastertab.[Meldungsnummer Kunde]": {
+        "ColumnWidth": 2190,
+        "AggregateType": -1
+      },
+      "Mastertab.Auftragsdatum": {
+        "ColumnWidth": 1530,
+        "AggregateType": -1
+      },
+      "Mastertab.ID": {
+        "ColumnWidth": 720,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 290
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 741,
+          "Top": 16,
+          "Right": 878,
+          "Bottom": 143,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Fehlertexte",
+          "Alias": "",
+          "Left": 880,
+          "Top": 78,
+          "Right": 976,
+          "Bottom": 166,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Fehlergruppen",
+          "Alias": "",
+          "Left": 740,
+          "Top": 153,
+          "Right": 836,
+          "Bottom": 241,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 426,
+          "Bottom": 304,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblFirma",
+          "Alias": "",
+          "Left": 474,
+          "Top": 12,
+          "Right": 618,
+          "Bottom": 156,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

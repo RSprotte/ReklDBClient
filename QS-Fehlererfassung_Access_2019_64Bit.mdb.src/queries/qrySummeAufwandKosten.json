@@ -1,0 +1,53 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "qrySummeAufwandKosten"
+  },
+  "Items": {
+    "QueryType": 0,
+    "Columns": {
+      "SummevonKosten": {
+        "ColumnWidth": 2115,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 568
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 543,
+      "Tables": [
+        {
+          "Name": "tblKostenaufstellung",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 522,
+          "Bottom": 338,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "tblKostenTyp",
+          "Alias": "",
+          "Left": 692,
+          "Top": 78,
+          "Right": 836,
+          "Bottom": 222,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

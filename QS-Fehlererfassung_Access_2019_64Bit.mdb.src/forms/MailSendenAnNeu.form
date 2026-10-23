@@ -1,0 +1,616 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    AutoResize = NotDefault
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    KeyPreview = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =15309
+    DatasheetFontHeight =10
+    ItemSuffix =43
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0xfe02ca9d0d08e440
+    End
+    OnClose ="[Event Procedure]"
+    DatasheetFontName ="Arial"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ListBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            Height =1417
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin ComboBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin FormHeader
+            Height =2437
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =93
+                    Left =113
+                    Top =226
+                    Width =4422
+                    Height =411
+                    FontSize =12
+                    FontWeight =700
+                    Name ="BezUeberschrift"
+                    Caption ="Mail - Nachricht"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    Locked = NotDefault
+                    OverlapFlags =87
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =623
+                    Width =6696
+                    Height =255
+                    ColumnOrder =4
+                    Name ="txtVon"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =87
+                            TextAlign =3
+                            Left =1485
+                            Top =623
+                            Width =780
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =12566463
+                            Name ="BezVon"
+                            Caption ="Von:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =1384
+                    Width =6696
+                    ColumnOrder =5
+                    TabIndex =2
+                    Name ="txtCC"
+                    AfterUpdate ="[Event Procedure]"
+                    OnLostFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =1470
+                            Top =1375
+                            Width =795
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =12566463
+                            Name ="BezCC"
+                            Caption ="CC:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =87
+                    Left =623
+                    Top =623
+                    Width =576
+                    Height =576
+                    FontSize =10
+                    FontWeight =500
+                    TabIndex =3
+                    ForeColor =65535
+                    Name ="SendXDRanLiefMail"
+                    Caption ="Senden"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000020000000200000000100080000000000000400000000000000000000 ,
+                        0x0000000000000000000000000000bf0000bf000000bfbf00bf000000bf00bf00 ,
+                        0xbfbf0000c0c0c000c0dcc000f0c8a40000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0xf0fbff00a4a0a000808080000000ff0000ff000000ffff00ff000000ff00ff00 ,
+                        0xffff0000ffffff00070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x070707070707070707f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8 ,
+                        0xf8f8f8f8f8f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000ff000000fffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffb000000000000000000000000fffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbff000000000000000000000000000000fffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff ,
+                        0xfbfffbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb0505 ,
+                        0x0505fffb00f8070700fffbfffbfffbfffbfffbfffbfffbfffbfffbfffbff0505 ,
+                        0x0505fbff00f8070700fbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffbfffb ,
+                        0xfffbfffb00f80707000000000000000000000000000000000000000000000000 ,
+                        0x0000000000070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707070707070707070707070707070707070707070707070707 ,
+                        0x0707070707070707
+                    End
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Reklamationsbericht versenden"
+                End
+                Begin ListBox
+                    RowSourceTypeInt =1
+                    OverlapFlags =87
+                    IMESentenceMode =3
+                    Left =11499
+                    Top =793
+                    Width =3465
+                    Height =1361
+                    ColumnOrder =6
+                    TabIndex =4
+                    Name ="ListAnhaenge"
+                    RowSourceType ="Value List"
+                    ColumnWidths ="1440"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =11508
+                            Top =510
+                            Width =1245
+                            Height =245
+                            Name ="BezAnhaenge"
+                            Caption ="Anhänge"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =13436
+                    Top =453
+                    Width =576
+                    Height =336
+                    TabIndex =5
+                    Name ="BefNeuerAnhang"
+                    Caption ="Neuer Anhang"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadaddcdadadadadadadaaccdadadada4adaddcccdadad4d4d4da ,
+                        0xaccccdadad444daddcccccda4444444aaccccdadad444daddcccdadad4d4d4da ,
+                        0xaccdadadada4adaddcdadadadadadadaadadadadadadadaddadadadadadadada ,
+                        0xadadadadadadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    OnMouseMove ="[Event Procedure]"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz hinzufügen"
+                End
+                Begin CommandButton
+                    OverlapFlags =93
+                    Left =14229
+                    Top =453
+                    Width =576
+                    Height =336
+                    TabIndex =6
+                    Name ="BefLoescheAnhang"
+                    Caption ="Löschen Anhang"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00dadadadadadadadaadad0000000dadaddad0f0f0f0f0dada ,
+                        0xada0f0f0f0f0adaddad0f0f0f0f0dadaada0f0f0f0f0adaddad0f0f0f0f0dada ,
+                        0xada0f0f0f0f0adaddad0f0f0f0f0dadaada0f0f0f0f0adaddad0f0f0f0f0dada ,
+                        0xada0f0f0f0f0adadda00000000000adaad0fffffffff0daddad000000000dada ,
+                        0xadadad000dadadad000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Datensatz hinzufügen"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =999
+                    Width =6696
+                    Height =255
+                    ColumnOrder =2
+                    TabIndex =7
+                    Name ="txtAn"
+                    AfterUpdate ="[Event Procedure]"
+                    OnLostFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =1485
+                            Top =999
+                            Width =780
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =12566463
+                            Name ="BezAn"
+                            Caption ="An:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2376
+                    Top =2097
+                    Width =8961
+                    Height =255
+                    ColumnOrder =1
+                    TabIndex =1
+                    Name ="txtBetreff"
+                    AfterUpdate ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =1455
+                            Top =2102
+                            Width =810
+                            Height =255
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =12566463
+                            Name ="BezBetreff"
+                            Caption ="Betreff:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =2381
+                    Top =1745
+                    Width =6696
+                    ColumnOrder =3
+                    TabIndex =8
+                    Name ="txtBCC"
+                    AfterUpdate ="[Event Procedure]"
+                    OnLostFocus ="[Event Procedure]"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =93
+                            TextAlign =3
+                            Left =1455
+                            Top =1740
+                            Width =810
+                            Height =255
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =12566463
+                            Name ="BezBCC"
+                            Caption ="BCC:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =1417
+                    Top =969
+                    Width =840
+                    Height =285
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =9
+                    ForeColor =0
+                    Name ="cmbKontaktpersonAuswählen"
+                    Caption ="An:"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =1417
+                    Top =1339
+                    Width =840
+                    Height =285
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =10
+                    ForeColor =0
+                    Name ="cmbKontaktpersonAuswählenCC"
+                    Caption ="CC:"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =215
+                    Left =1417
+                    Top =1700
+                    Width =840
+                    Height =285
+                    FontSize =10
+                    FontWeight =600
+                    TabIndex =11
+                    ForeColor =0
+                    Name ="cmbKontaktpersonAuswählenBCC"
+                    Caption ="BCC:"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    OnMouseMove ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =8120
+                    Top =113
+                    Width =6696
+                    Height =255
+                    ColumnOrder =0
+                    TabIndex =12
+                    Name ="txtTicketID"
+                    Begin
+                        Begin Label
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =7029
+                            Top =120
+                            Width =975
+                            Height =255
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =12566463
+                            Name ="BezTicketID"
+                            Caption ="TicketID:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+            End
+        End
+        Begin Section
+            Height =6973
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3409
+                    Top =113
+                    Width =11565
+                    Height =5558
+                    Name ="txtBody"
+                    AfterUpdate ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Locked = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3401
+                    Top =6576
+                    Width =11573
+                    TabIndex =1
+                    Name ="txtLinkZumVorgangsordner"
+                    Begin
+                        Begin Label
+                            Visible = NotDefault
+                            BackStyle =1
+                            OverlapFlags =85
+                            TextAlign =3
+                            Left =453
+                            Top =6576
+                            Width =2835
+                            Height =240
+                            FontSize =10
+                            FontWeight =600
+                            BackColor =12566463
+                            Name ="BezLinkZumVorgangsordner"
+                            Caption ="Link zum Vorgangsordner:"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    Locked = NotDefault
+                    EnterKeyBehavior = NotDefault
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3409
+                    Top =5791
+                    Width =11565
+                    Height =668
+                    TabIndex =2
+                    Name ="txtHTMLText"
+                End
+                Begin Label
+                    Visible = NotDefault
+                    BackStyle =1
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =453
+                    Top =5782
+                    Width =2835
+                    Height =240
+                    FontSize =10
+                    FontWeight =600
+                    BackColor =12566463
+                    Name ="BezHTMLText"
+                    Caption ="HTML Text:"
+                    FontName ="Arial"
+                End
+                Begin Label
+                    BackStyle =1
+                    OverlapFlags =85
+                    TextAlign =3
+                    Left =453
+                    Top =113
+                    Width =2835
+                    Height =240
+                    FontSize =10
+                    FontWeight =600
+                    BackColor =12566463
+                    Name ="BezFreiText"
+                    Caption ="Frei Text"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =396
+                    Top =623
+                    Width =2892
+                    Height =284
+                    TabIndex =3
+                    Name ="cmbKorkenzieher"
+                    Caption ="Text Abwicklung GU Korkenzieher"
+                    OnClick ="[Event Procedure]"
+                    OnMouseMove ="[Event Procedure]"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            BackColor =-2147483633
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "MailSendenAnNeu.cls"

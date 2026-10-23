@@ -1,0 +1,292 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    Modal = NotDefault
+    RecordSelectors = NotDefault
+    MaxButton = NotDefault
+    MinButton = NotDefault
+    ControlBox = NotDefault
+    AutoCenter = NotDefault
+    NavigationButtons = NotDefault
+    CloseButton = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    ScrollBars =0
+    TabularFamily =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =5952
+    DatasheetFontHeight =10
+    ItemSuffix =10
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =12632256
+    RecSrcDt = Begin
+        0x85c545ccce5ee540
+    End
+    RecordSource ="SELECT Mastertab.ID, Mastertab.[Annahme mit Nacharbeit], Mastertab.[Annahme mit "
+        "Prüfausnahme], Mastertab.[Rücklieferung an Lieferant], Mastertab.Rückmeldung_Lie"
+        "ferant_Soll, Mastertab.Rückmeldung_Lieferant_Verlängertl, ReklMemo.WEBestellnumm"
+        "er, ReklMemo.WELieferschein FROM Mastertab LEFT JOIN ReklMemo ON Mastertab.ID = "
+        "ReklMemo.ID WHERE (((Mastertab.ID)=[Forms]![Fehlererfassung - Register]![Mastert"
+        "ab#ID])); "
+    DatasheetFontName ="Arial"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontName ="Tahoma"
+        End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =8
+            FontWeight =400
+            ForeColor =-2147483630
+            FontName ="Tahoma"
+        End
+        Begin CheckBox
+            SpecialEffect =2
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            SpecialEffect =2
+            OldBorderStyle =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontName ="Tahoma"
+        End
+        Begin Section
+            Height =2267
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3400
+                    Top =850
+                    Width =231
+                    Height =225
+                    Name ="AnnahmeMitPrüfaufnahme"
+                    ControlSource ="Annahme mit Prüfausnahme"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =165
+                            Top =834
+                            Width =3000
+                            Height =240
+                            FontSize =9
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="Bezeichnungsfeld41"
+                            Caption ="Annahme mit Prüfausnahme"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3400
+                    Top =1133
+                    TabIndex =1
+                    Name ="RücklieferungWareLief"
+                    ControlSource ="Rücklieferung an Lieferant"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =165
+                            Top =1134
+                            Width =3000
+                            Height =240
+                            FontSize =9
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="Bezeichnungsfeld43"
+                            Caption ="Die Ware wird zurückgeschickt"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =3400
+                    Top =566
+                    Width =283
+                    Height =227
+                    TabIndex =2
+                    Name ="AnnahmeMitNacharbeit"
+                    ControlSource ="Annahme mit Nacharbeit"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =165
+                            Top =510
+                            Width =3015
+                            Height =240
+                            FontSize =9
+                            BackColor =-2147483633
+                            ForeColor =-2147483630
+                            Name ="Bezeichnungsfeld88"
+                            Caption ="Annahme mit Nacharbeit"
+                            FontName ="Arial"
+                        End
+                    End
+                End
+                Begin Label
+                    OverlapFlags =93
+                    Left =165
+                    Top =120
+                    Width =4530
+                    Height =330
+                    FontSize =12
+                    FontWeight =600
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Detailinformationen zur Reklamation"
+                    FontName ="Arial"
+                End
+                Begin CommandButton
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    Left =3690
+                    Width =501
+                    TabIndex =3
+                    Name ="ButOK"
+                    Caption ="OK"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin TextBox
+                    Visible = NotDefault
+                    TabStop = NotDefault
+                    SpecialEffect =0
+                    OverlapFlags =215
+                    TextAlign =2
+                    Left =2325
+                    Width =1295
+                    Height =340
+                    FontSize =10
+                    TabIndex =4
+                    BackColor =-2147483643
+                    BorderColor =12632256
+                    ForeColor =-2147483640
+                    Name ="BefundLiefIst"
+                    ControlSource ="Rückmeldung_Lieferant_Soll"
+                    Format ="Short Date"
+                    AfterUpdate ="[Event Procedure]"
+                    FontName ="Arial"
+                    InputMask ="00,00,00;0;*"
+                End
+                Begin Label
+                    Visible = NotDefault
+                    OverlapFlags =215
+                    TextAlign =1
+                    Left =165
+                    Top =17
+                    Width =1935
+                    Height =345
+                    FontSize =11
+                    FontWeight =700
+                    BackColor =13209
+                    ForeColor =255
+                    Name ="Bezeichnungsfeld6099"
+                    Caption ="Bearbeitungsfrist"
+                    FontName ="Arial"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1916
+                    Top =1489
+                    TabIndex =5
+                    Name ="BezBestellNrLQ"
+                    ControlSource ="WEBestellnummer"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =165
+                            Top =1485
+                            Width =1485
+                            Height =240
+                            Name ="Bezeichnungsfeld3"
+                            Caption ="Bestellnummer-LQ:"
+                        End
+                    End
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =1916
+                    Top =1853
+                    TabIndex =6
+                    Name ="BezLieferscheinNrLieferant"
+                    ControlSource ="WELieferschein"
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =165
+                            Top =1845
+                            Width =1695
+                            Height =240
+                            Name ="Bezeichnungsfeld5"
+                            Caption ="Lieferschein-Lieferant:"
+                        End
+                    End
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3915
+                    Top =510
+                    Width =1805
+                    Height =332
+                    TabIndex =7
+                    Name ="cmbReklamationsbericht"
+                    Caption ="Reklamation-Bericht"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3915
+                    Top =1370
+                    Width =1805
+                    Height =347
+                    TabIndex =8
+                    Name ="cmbRepAuftrag"
+                    Caption ="Reparatur-Auftrag"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3915
+                    Top =1815
+                    Width =1805
+                    Height =347
+                    TabIndex =9
+                    Name ="cmbAbrechen"
+                    Caption ="Abrechen"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =3915
+                    Top =940
+                    Width =1805
+                    Height =332
+                    TabIndex =10
+                    Name ="cmbReklamationsbericht_E"
+                    Caption ="Reklamation-Bericht-EN"
+                    OnClick ="[Event Procedure]"
+                End
+            End
+        End
+    End
+End
+CodeBehindForm
+' See "DetailinformationenReklamationLief.cls"

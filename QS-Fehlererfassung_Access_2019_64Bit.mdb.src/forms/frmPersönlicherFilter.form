@@ -1,0 +1,294 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    PopUp = NotDefault
+    NavigationButtons = NotDefault
+    AllowDeletions = NotDefault
+    CloseButton = NotDefault
+    DividingLines = NotDefault
+    AllowAdditions = NotDefault
+    KeyPreview = NotDefault
+    AllowEdits = NotDefault
+    AllowDesignChanges = NotDefault
+    ScrollBars =2
+    ViewsAllowed =1
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =9996
+    DatasheetFontHeight =11
+    ItemSuffix =21
+    Left =1000
+    Top =1000
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0x8e1d055e362ce540
+    End
+    RecordSource ="SELECT tblFilterForm.FilterFormID, Sachbearbeiter.Kurzzeichen, tblFilterForm.Fil"
+        "terBezeichnung, tblFilterForm.Aktiv, tblFilterForm.FormName, tblFilterForm.Sachb"
+        "earbeiterID FROM tblFilterForm INNER JOIN Sachbearbeiter ON tblFilterForm.Sachbe"
+        "arbeiterID = Sachbearbeiter.[SB-ID] WHERE (((tblFilterForm.SachbearbeiterID)=get"
+        "_SachbearbeiterID())); "
+    Caption ="frmPersönlicherFilter"
+    DatasheetFontName ="Calibri"
+    OnKeyDown ="[Event Procedure]"
+    OnKeyUp ="[Event Procedure]"
+    OnLoad ="[Event Procedure]"
+    Begin
+        Begin Label
+            BackStyle =0
+            TextFontFamily =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin CommandButton
+            TextFontFamily =0
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin CheckBox
+            BorderLineStyle =0
+            LabelX =230
+            LabelY =-30
+            BorderColor =13750737
+        End
+        Begin TextBox
+            FELineBreak = NotDefault
+            TextFontFamily =0
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin FormHeader
+            Height =1005
+            BackColor =-2147483633
+            Name ="Formularkopf"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Top =690
+                    Width =795
+                    Height =315
+                    ForeColor =0
+                    Name ="BezFilterFormID"
+                    Caption ="FilterID"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =850
+                    Top =684
+                    Width =861
+                    Height =315
+                    ForeColor =0
+                    Name ="BezKuerzel"
+                    Caption ="Kürzel"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =1766
+                    Top =684
+                    Width =3390
+                    Height =315
+                    ForeColor =0
+                    Name ="FormName_Bezeichnungsfeld"
+                    Caption ="FormName"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =1
+                    Left =5211
+                    Top =684
+                    Width =4095
+                    Height =315
+                    ForeColor =0
+                    Name ="FilterBezeichnung_Bezeichnungsfeld"
+                    Caption ="FilterBezeichnung"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    TextAlign =2
+                    Left =9360
+                    Top =684
+                    Width =636
+                    Height =315
+                    ForeColor =0
+                    Name ="Aktiv_Bezeichnungsfeld"
+                    Caption ="Aktiv"
+                    Tag ="DetachedLabel"
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =57
+                    Top =57
+                    Width =3738
+                    Height =519
+                    FontSize =20
+                    FontWeight =600
+                    ForeColor =0
+                    Name ="BezPersönlicherFilter"
+                    Caption ="Persönlicher Filter"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =5211
+                    Top =56
+                    Width =2940
+                    Height =576
+                    Name ="cmbFilterBearbeiten"
+                    Caption ="Filter bearbeiten"
+                    OnClick ="[Event Procedure]"
+                End
+                Begin CommandButton
+                    OverlapFlags =85
+                    Left =4081
+                    Top =56
+                    Width =576
+                    Height =576
+                    TabIndex =1
+                    Name ="cmbClose"
+                    Caption ="Befehl20"
+                    OnClick ="[Event Procedure]"
+                    PictureData = Begin
+                        0x2800000010000000100000000100040000000000800000000000000000000000 ,
+                        0x0000000000000000000000000000800000800000008080008000000080008000 ,
+                        0x8080000080808000c0c0c0000000ff00c0c0c00000ffff00ff000000c0c0c000 ,
+                        0xffff0000ffffff00ddddd0dddddddddddddd00ddddddddddddd030dddddddddd ,
+                        0xdd0330dddddddddd0033300000000dddd03330ff0dddddddd03300ff0dddd4dd ,
+                        0xd03330ff0ddd44ddd03330ff0dd44444d03330ff0d444444d03330ff0dd44444 ,
+                        0xd0330fff0ddd44ddd030ffff0dddd4ddd00fffff0dddddddd00000000ddddddd ,
+                        0xdddddddddddddddd000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000000000000000000000000000000000000000000000000000 ,
+                        0x0000000000000000
+                    End
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Formular schließen"
+                End
+            End
+        End
+        Begin Section
+            Height =330
+            BackColor =-2147483633
+            Name ="Detailbereich"
+            Begin
+                Begin CheckBox
+                    OverlapFlags =85
+                    Left =9599
+                    Top =60
+                    Width =351
+                    Name ="Aktiv"
+                    ControlSource ="Aktiv"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =5208
+                    Width =4095
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =1
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="FilterBezeichnung"
+                    ControlSource ="FilterBezeichnung"
+                End
+                Begin TextBox
+                    EnterKeyBehavior = NotDefault
+                    ScrollBars =2
+                    OverlapFlags =85
+                    TextAlign =1
+                    IMESentenceMode =3
+                    Left =1765
+                    Width =3390
+                    Height =330
+                    ColumnWidth =3000
+                    TabIndex =2
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="FormName"
+                    ControlSource ="FormName"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Left =851
+                    Width =861
+                    Height =330
+                    ColumnWidth =1530
+                    TabIndex =3
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="SachbearbeiterID"
+                    ControlSource ="Kurzzeichen"
+                End
+                Begin TextBox
+                    OverlapFlags =85
+                    TextAlign =2
+                    IMESentenceMode =3
+                    Width =798
+                    Height =330
+                    ColumnWidth =1701
+                    TabIndex =4
+                    BorderColor =0
+                    ForeColor =0
+                    Name ="FilterFormID"
+                    ControlSource ="FilterFormID"
+                End
+            End
+        End
+        Begin FormFooter
+            Height =0
+            Name ="Formularfuß"
+        End
+    End
+End
+CodeBehindForm
+' See "frmPersönlicherFilter.cls"

@@ -1,0 +1,82 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "TB_Lieferanten für Fertigung-Abfrage"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "RowHeight": {
+        "Type": 3,
+        "Value": 390
+      }
+    },
+    "Columns": {
+      "[Lieferanten].[Lieferantenname]": {
+        "ColumnWidth": 5145,
+        "AggregateType": -1
+      },
+      "[Lieferanten].[L-Nummer/AVISTA]": {
+        "ColumnWidth": 1395,
+        "AggregateType": -1
+      },
+      "[Lieferanten].[Matchcode]": {
+        "ColumnWidth": 2685,
+        "AggregateType": -1
+      },
+      "[Lieferanten].Lieferantenname": {
+        "ColumnWidth": 5220,
+        "AggregateType": -1
+      },
+      "[Lieferanten].Matchcode": {
+        "ColumnWidth": 2835,
+        "AggregateType": -1
+      },
+      "L-Code": {
+        "ColumnWidth": 870,
+        "AggregateType": -1
+      },
+      "Lieferanten.[L-Nummer/AVISTA]": {
+        "ColumnWidth": 1170,
+        "AggregateType": -1
+      },
+      "Lieferanten.Lieferantenname": {
+        "ColumnWidth": 5040,
+        "AggregateType": -1
+      },
+      "Lieferanten.Matchcode": {
+        "ColumnWidth": 2535,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 808
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1592,
+        "bottom": 110
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Lieferanten",
+          "Alias": "",
+          "Left": 38,
+          "Top": 6,
+          "Right": 134,
+          "Bottom": 94,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}
