@@ -4011,6 +4011,7 @@ Public Function IsControlFormCtl(fCtl As Object) As Boolean
 End Function
 
 Public Function LoadControlsFormAfterOpen(ByRef fForm As Form, ByVal fRecordsource As String, fCriterium As String) As Boolean
+On Error GoTo err_handler
 
     Dim ldb As DAO.Database
     Dim lrs As DAO.Recordset
@@ -4035,6 +4036,12 @@ Public Function LoadControlsFormAfterOpen(ByRef fForm As Form, ByVal fRecordsour
     Next
     Set lrs = Nothing
     LoadControlsFormAfterOpen = True
+    Exit Function
+
+err_handler:
+    If Err Then
+        Resume Next
+    End If
 
 End Function
 Public Function LoadControlsPageAfterOpen(ByRef fForm As Form, ByVal fRecordsource As String, ByRef fCtrlList As Object, fCriterium As String) As Boolean
