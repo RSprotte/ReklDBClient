@@ -9,7 +9,7 @@ Begin Form
     GridY =10
     Width =6994
     DatasheetFontHeight =11
-    ItemSuffix =3
+    ItemSuffix =4
     Right =50000
     Bottom =50000
     DatasheetGridlinesColor =15062992
@@ -69,6 +69,15 @@ Begin Form
                             Caption ="Kombinationsfeld1:"
                         End
                     End
+                End
+                Begin Label
+                    OverlapFlags =85
+                    Left =3458
+                    Top =510
+                    Width =1185
+                    Height =315
+                    Name ="Bezeichnungsfeld3"
+                    Caption ="2. Testlabel"
                 End
             End
         End
