@@ -1,0 +1,76 @@
+﻿Version =19
+VersionRequired =19
+Begin Form
+    DividingLines = NotDefault
+    AllowDesignChanges = NotDefault
+    DefaultView =0
+    PictureAlignment =2
+    DatasheetGridlinesBehavior =3
+    GridY =10
+    Width =6994
+    DatasheetFontHeight =11
+    ItemSuffix =3
+    Right =50000
+    Bottom =50000
+    DatasheetGridlinesColor =15062992
+    RecSrcDt = Begin
+        0xd25ae531929ee640
+    End
+    DatasheetFontName ="Calibri"
+    Begin
+        Begin Label
+            BackStyle =0
+            FontSize =11
+            BorderColor =16777215
+            ForeColor =13598509
+            FontName ="Aptos"
+        End
+        Begin ComboBox
+            BorderLineStyle =0
+            Width =1701
+            LabelX =-1701
+            FontSize =11
+            BorderColor =13750737
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
+        Begin Section
+            Height =5952
+            Name ="Detailbereich"
+            Begin
+                Begin Label
+                    OverlapFlags =85
+                    Left =566
+                    Top =566
+                    Width =1695
+                    Height =315
+                    Name ="Bezeichnungsfeld0"
+                    Caption ="Test Form for Git"
+                End
+                Begin ComboBox
+                    OverlapFlags =85
+                    IMESentenceMode =3
+                    Left =3288
+                    Top =1700
+                    Width =2886
+                    Height =315
+                    Name ="Kombinationsfeld1"
+                    RowSourceType ="Table/Query"
+                    RowSource ="SELECT Mastertab.ReklIDA, Mastertab.ID FROM Mastertab WHERE (((Mastertab.ID) Bet"
+                        "ween 83300 And 83350)); "
+                    Begin
+                        Begin Label
+                            OverlapFlags =85
+                            Left =566
+                            Top =1757
+                            Width =1980
+                            Height =315
+                            Name ="Bezeichnungsfeld2"
+                            Caption ="Kombinationsfeld1:"
+                        End
+                    End
+                End
+            End
+        End
+    End
+End
