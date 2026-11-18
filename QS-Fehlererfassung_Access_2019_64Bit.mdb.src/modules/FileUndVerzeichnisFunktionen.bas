@@ -15,12 +15,12 @@ End Function
 Public Function getDirectoryExists(ByVal f_Dir As String) As Boolean
 
     Dim fs As New FileSystemObject
-    Dim F
+    Dim f
 
     getDirectoryExists = False
     Set fs = CreateObject("Scripting.FileSystemObject")
-    Set F = fs.GetFolder(f_Dir)
-    If Not F Is Nothing Then getDirectoryExists = True
+    Set f = fs.GetFolder(f_Dir)
+    If Not f Is Nothing Then getDirectoryExists = True
 
     Set fs = Nothing
 

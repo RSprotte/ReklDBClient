@@ -233,10 +233,13 @@ Begin Form
                     TabIndex =3
                     Name ="ListTaetigkeiten"
                     RowSourceType ="Table/Query"
-                    RowSource ="SELECT Taetigkeiten.ID, Taetigkeiten.Anzeige, Taetigkeiten.Zuordnung_ID FROM Tae"
-                        "tigkeiten GROUP BY Taetigkeiten.ID, Taetigkeiten.Anzeige, Taetigkeiten.Zuordnung"
-                        "_ID HAVING (((Taetigkeiten.Zuordnung_ID)=3)) OR (((Taetigkeiten.Zuordnung_ID)=5)"
-                        ") ORDER BY Taetigkeiten.Anzeige; "
+                    RowSource ="SELECT Taetigkeiten.ID, Taetigkeiten.Anzeige, tblZuordnungTätigkeiten.Zuordnung_"
+                        "ID, tblZuordnungTätigkeiten.Zuordnung FROM Taetigkeiten LEFT JOIN tblZuordnungTä"
+                        "tigkeiten ON Taetigkeiten.Zuordnung_ID = tblZuordnungTätigkeiten.Zuordnung_ID GR"
+                        "OUP BY Taetigkeiten.ID, Taetigkeiten.Anzeige, tblZuordnungTätigkeiten.Zuordnung_"
+                        "ID, tblZuordnungTätigkeiten.Zuordnung HAVING (((tblZuordnungTätigkeiten.Zuordnun"
+                        "g_ID)=3 Or (tblZuordnungTätigkeiten.Zuordnung_ID)=5)) ORDER BY Taetigkeiten.Anze"
+                        "ige; "
                     ColumnWidths ="285;1443"
                     Begin
                         Begin Label

@@ -51,6 +51,12 @@ Private Sub cboWareneingangs_Lager_AfterUpdate()
 
 End Sub
 
+Private Sub cmbDrucken_Click()
+
+    PrintForm (Me.Name)
+
+End Sub
+
 Private Sub Form_Close()
     Dim ldb As DAO.Database
 

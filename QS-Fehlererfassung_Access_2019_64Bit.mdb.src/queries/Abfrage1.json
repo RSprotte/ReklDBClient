@@ -1,0 +1,95 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage1"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "NoFormat": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "Columns": {
+      "Mastertab.[Kategorie-Status]": {
+        "ColumnWidth": 2340,
+        "AggregateType": -1
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 1608,
+        "bottom": 809
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 1322,
+        "bottom": 564
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "Mastertab",
+          "Alias": "",
+          "Left": 48,
+          "Top": 12,
+          "Right": 281,
+          "Bottom": 522,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "Kunden",
+          "Alias": "",
+          "Left": 332,
+          "Top": 17,
+          "Right": 525,
+          "Bottom": 406,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQEinheit",
+          "Alias": "",
+          "Left": 587,
+          "Top": 33,
+          "Right": 731,
+          "Bottom": 177,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQBereich",
+          "Alias": "",
+          "Left": 594,
+          "Top": 193,
+          "Right": 738,
+          "Bottom": 337,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "LQWorkstation",
+          "Alias": "",
+          "Left": 595,
+          "Top": 360,
+          "Right": 739,
+          "Bottom": 504,
+          "ScrollTop": 0
+        },
+        {
+          "Name": "MIDZuReklID",
+          "Alias": "",
+          "Left": 820,
+          "Top": 39,
+          "Right": 964,
+          "Bottom": 193,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -5,19 +5,25 @@
   },
   "Items": {
     "QueryType": 0,
+    "QueryProperties": {
+      "NoFormat": {
+        "Type": 1,
+        "Value": false
+      }
+    },
     "DesignLayout": {
       "State": 0,
       "Window": {
         "left": 0,
         "top": 0,
-        "right": 1608,
-        "bottom": 808
+        "right": 1168,
+        "bottom": 816
       },
       "DesignerPane": {
         "left": -1,
         "top": -1,
-        "right": 1592,
-        "bottom": 548
+        "right": 1152,
+        "bottom": 499
       },
       "GridLeft": 0,
       "GridTop": 0,
@@ -26,19 +32,19 @@
         {
           "Name": "Mastertab",
           "Alias": "",
-          "Left": 48,
-          "Top": -5,
-          "Right": 356,
-          "Bottom": 582,
+          "Left": 18,
+          "Top": 21,
+          "Right": 326,
+          "Bottom": 515,
           "ScrollTop": 0
         },
         {
           "Name": "ReklMemo",
           "Alias": "",
-          "Left": 394,
-          "Top": 45,
-          "Right": 749,
-          "Bottom": 564,
+          "Left": 363,
+          "Top": 19,
+          "Right": 718,
+          "Bottom": 538,
           "ScrollTop": 0
         }
       ]

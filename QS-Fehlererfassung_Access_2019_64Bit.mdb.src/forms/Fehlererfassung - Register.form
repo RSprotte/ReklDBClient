@@ -16,7 +16,7 @@ Begin Form
     GridY =10
     Width =16894
     DatasheetFontHeight =10
-    ItemSuffix =6613
+    ItemSuffix =6614
     Left =1000
     Top =1000
     Right =50000
@@ -1435,8 +1435,9 @@ Begin Form
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation WHERE (("
                                         "(LQWorkstation.Aktiv)=Yes) And ((LQWorkstation.[ID-LQBereich])=Forms![Fehlererfa"
-                                        "ssung - Register].[Mastertab#LQBereichID])) GROUP BY LQWorkstation.ID, LQWorksta"
-                                        "tion.LQWorkstation ORDER BY LQWorkstation.LQWorkstation; "
+                                        "ssung - Register].[Mastertab#LQBereichID]) And ((LQWorkstation.AktivFehleranalys"
+                                        "e)=Yes)) GROUP BY LQWorkstation.ID, LQWorkstation.LQWorkstation ORDER BY LQWorks"
+                                        "tation.LQWorkstation; "
                                     ColumnWidths ="0;1134"
                                     AfterUpdate ="[Event Procedure]"
                                     FontName ="Arial"
@@ -3235,6 +3236,20 @@ Begin Form
                                     OnClick ="[Event Procedure]"
                                     OnMouseMove ="[Event Procedure]"
                                 End
+                                Begin CommandButton
+                                    OverlapFlags =247
+                                    Left =3344
+                                    Top =4251
+                                    Width =1641
+                                    Height =396
+                                    TabIndex =39
+                                    Name ="cmbVorgangKopieren"
+                                    Caption ="Vorgang kopieren"
+                                    OnClick ="[Event Procedure]"
+                                    FontName ="Arial"
+                                    OnMouseMove ="[Event Procedure]"
+                                    ControlTipText ="Neuer Reklamationsvorgang anlgen"
+                                End
                             End
                         End
                         Begin Page
@@ -3532,6 +3547,7 @@ Begin Form
                                     Caption ="Fehlertext Korkenzieher Lynxeo"
                                     OnClick ="[Event Procedure]"
                                     FontName ="Arial"
+                                    OnMouseMove ="[Event Procedure]"
                                     ObjectPalette = Begin
                                         0x000301000000000000000000
                                     End
@@ -4707,7 +4723,6 @@ Begin Form
                                     StatusBarText ="Wie Warum passierte der Fehler"
                                     AfterUpdate ="[Event Procedure]"
                                     EventProcPrefix ="Mastertab_Wie_Warum_passierte_der_Fehler"
-                                    ControlTipText ="Mastertab#Wie Warum passierte der Fehler"
                                     Begin
                                         Begin Label
                                             OverlapFlags =255
@@ -5257,9 +5272,10 @@ Begin Form
                                     Name ="Mastertab#LQWorkstationID#1"
                                     RowSourceType ="Table/Query"
                                     RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation WHERE (("
-                                        "(LQWorkstation.[ID-LQBereich])=[Mastertab#LQBereichID#1])) GROUP BY LQWorkstatio"
-                                        "n.ID, LQWorkstation.LQWorkstation, LQWorkstation.Aktiv HAVING (((LQWorkstation.A"
-                                        "ktiv)=Yes)) ORDER BY LQWorkstation.LQWorkstation; "
+                                        "(LQWorkstation.[ID-LQBereich])=[Mastertab#LQBereichID#1]) AND ((LQWorkstation.Ak"
+                                        "tivFehleranalyse)=Yes)) GROUP BY LQWorkstation.ID, LQWorkstation.LQWorkstation, "
+                                        "LQWorkstation.Aktiv HAVING (((LQWorkstation.Aktiv)=Yes)) ORDER BY LQWorkstation."
+                                        "LQWorkstation; "
                                     ColumnWidths ="0;2133"
                                     AfterUpdate ="[Event Procedure]"
                                     FontName ="Arial"

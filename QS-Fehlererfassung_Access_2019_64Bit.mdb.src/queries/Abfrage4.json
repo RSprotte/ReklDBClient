@@ -1,0 +1,44 @@
+﻿{
+  "Info": {
+    "Class": "clsDbQuery",
+    "Description": "Abfrage4"
+  },
+  "Items": {
+    "QueryType": 0,
+    "QueryProperties": {
+      "NoFormat": {
+        "Type": 1,
+        "Value": false
+      }
+    },
+    "DesignLayout": {
+      "State": 0,
+      "Window": {
+        "left": 0,
+        "top": 0,
+        "right": 437,
+        "bottom": 655
+      },
+      "DesignerPane": {
+        "left": -1,
+        "top": -1,
+        "right": 421,
+        "bottom": 410
+      },
+      "GridLeft": 0,
+      "GridTop": 0,
+      "ColumnsShown": 539,
+      "Tables": [
+        {
+          "Name": "TAB_Koordinaten",
+          "Alias": "",
+          "Left": 172,
+          "Top": 152,
+          "Right": 316,
+          "Bottom": 296,
+          "ScrollTop": 0
+        }
+      ]
+    }
+  }
+}

@@ -38,6 +38,14 @@ Begin Form
             ForeColor =13598509
             FontName ="Aptos"
         End
+        Begin CommandButton
+            Width =1701
+            Height =283
+            FontSize =11
+            FontWeight =400
+            ForeColor =2102279
+            FontName ="Aptos"
+        End
         Begin TextBox
             FELineBreak = NotDefault
             TextFontFamily =0
@@ -79,7 +87,7 @@ Begin Form
                     OverlapFlags =93
                     TextAlign =1
                     Top =684
-                    Width =1689
+                    Width =1914
                     Height =315
                     Name ="ArtNr_Bezeichnungsfeld"
                     Caption ="ArtNr"
@@ -88,7 +96,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =95
                     TextAlign =1
-                    Left =1695
+                    Left =1920
                     Top =684
                     Width =4419
                     Height =315
@@ -99,7 +107,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =95
                     TextAlign =2
-                    Left =6123
+                    Left =6348
                     Top =684
                     Width =624
                     Height =315
@@ -110,7 +118,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =223
                     TextAlign =2
-                    Left =6738
+                    Left =6963
                     Top =684
                     Width =1539
                     Height =315
@@ -119,9 +127,9 @@ Begin Form
                     Tag ="DetachedLabel"
                 End
                 Begin Label
-                    OverlapFlags =87
+                    OverlapFlags =95
                     TextAlign =1
-                    Left =8277
+                    Left =8502
                     Top =684
                     Width =3234
                     Height =315
@@ -132,7 +140,7 @@ Begin Form
                 Begin Label
                     OverlapFlags =85
                     TextAlign =1
-                    Left =11523
+                    Left =11748
                     Top =684
                     Width =4344
                     Height =315
@@ -179,6 +187,17 @@ Begin Form
                             Caption ="Wareneingangs-Lager"
                         End
                     End
+                End
+                Begin CommandButton
+                    OverlapFlags =87
+                    Left =10995
+                    Top =60
+                    Width =624
+                    Height =624
+                    TabIndex =1
+                    Name ="cmbDrucken"
+                    Caption ="Befehl15"
+                    OnClick ="[Event Procedure]"
                 End
             End
         End

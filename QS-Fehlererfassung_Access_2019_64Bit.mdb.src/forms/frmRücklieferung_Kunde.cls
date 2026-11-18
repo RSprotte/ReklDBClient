@@ -9,8 +9,9 @@ Option Explicit
 
 Private Sub cmbDrucken_Click()
 
-        Forms("frmRücklieferung_Kunde").Printer.Orientation = acPRORLandscape
-        DoCmd.PrintOut acPrintAll
+        PrintForm (Me.Name)
+'        Forms("frmRücklieferung_Kunde").Printer.Orientation = acPRORLandscape
+'        DoCmd.PrintOut acPrintAll
 
 End Sub
 

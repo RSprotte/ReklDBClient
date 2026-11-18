@@ -212,6 +212,8 @@ Begin Form
                                     Height =585
                                     TabIndex =8
                                     Name ="Text20"
+                                    ControlSource ="=getAnzeigefromTable(\"Baugruppen-avista_out\",\"Baugruppen-ID\",[Mastertab#Baug"
+                                        "ruppen-ID#4],\"LQ Art-Nr\")"
                                 End
                                 Begin TextBox
                                     OverlapFlags =215

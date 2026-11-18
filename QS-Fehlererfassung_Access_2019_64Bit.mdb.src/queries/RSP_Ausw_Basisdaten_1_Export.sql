@@ -5,13 +5,14 @@ FROM
 WHERE
   (
     (
-      [Kategorie-Status] in (
-        'Bearbeitung: Service', 'zurück an: Service'
-      )
+      [Firma_Name] in ('INDEX-Werke GmbH & Co. KG')
     )
     And ([extern] = True)
     And (
-      [Auftragsdatum] between #10/13/2025#
-      and #10/13/2026#
+      [VorgangstypID] in (7)
+    )
+    And (
+      [Auftragsdatum] between #11/18/2025#
+      and #11/18/2026#
     )
   );

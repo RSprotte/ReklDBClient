@@ -12,7 +12,9 @@ End Sub
 
 Private Sub cmbDrucken_Click()
 
-    PrintForm Me
+    PrintForm (Me.Name)
+'    Forms("frmBestandServiceLager").Printer.Orientation = acPRORLandscape
+'    DoCmd.PrintOut acPrintAll
 
 End Sub
 

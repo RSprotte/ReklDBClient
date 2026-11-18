@@ -22,7 +22,8 @@ Begin Form
     Right =50000
     Bottom =50000
     DatasheetGridlinesColor =12632256
-    Filter ="(((((((((((((((((([Kontaktperson] like 't*'))))))))))))))))))"
+    Filter ="(((((((((((((((((((((((((((([Kontaktperson] like 't*')))))))))))))))))))))))))))"
+        ")"
     OrderBy ="[Kunden-ID] DESC"
     RecSrcDt = Begin
         0x4436551d728ee640

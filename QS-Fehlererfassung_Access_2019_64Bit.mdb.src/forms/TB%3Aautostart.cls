@@ -302,6 +302,7 @@ Dim iVorgang As Integer
         ldb.Execute ("Update Mastertab set [Datum] = #9999-01-01#  where ID = " & p_ReklNr & ";")
         ldb.Execute ("Update Mastertab set [Kategorie-Status] = 'Platzhalter' where ID = " & p_ReklNr & ";")
         ldb.Execute ("Update Mastertab set [Verursacher] = 'LQ' where ID = " & p_ReklNr & ";")
+        ldb.Execute ("Update ReklMemo set [VorgangstypID] = '' where ID = " & p_ReklNr & ";")
     Next i
 Exit Sub
 

@@ -17,14 +17,15 @@ Begin Form
     GridY =10
     Width =18366
     DatasheetFontHeight =10
-    ItemSuffix =163
+    ItemSuffix =165
+    Left =1000
     Top =1000
     Right =50000
     Bottom =50000
     TimerInterval =600000
     DatasheetGridlinesColor =12632256
-    Filter ="(([Firma_Name] in ('INDEX-Werke GmbH & Co. KG')) And ([extern] = True) And ([Auf"
-        "tragsdatum] between #08/25/2025# and #08/25/2026#))"
+    Filter ="([Extern] = True  AND ([Auftragsdatum] between #01/01/2026# and #12/31/2026#)) a"
+        "nd ([Kategorie-Status]<> 'Platzhalter')"
     RecSrcDt = Begin
         0x061e68048ea1e540
     End
@@ -203,7 +204,7 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =9844
+                    Left =9904
                     Top =120
                     Width =741
                     Height =741
@@ -257,8 +258,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =7369
-                    Top =113
+                    Left =8044
+                    Top =120
                     Width =801
                     Height =741
                     TabIndex =4
@@ -274,7 +275,7 @@ Begin Form
                 Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =85
-                    Left =10649
+                    Left =10709
                     Top =120
                     Width =726
                     Height =741
@@ -312,8 +313,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =6179
-                    Top =113
+                    Left =6974
+                    Top =120
                     Width =741
                     Height =741
                     TabIndex =6
@@ -339,8 +340,8 @@ Begin Form
                 Begin CommandButton
                     TabStop = NotDefault
                     OverlapFlags =85
-                    Left =4081
-                    Top =113
+                    Left =4920
+                    Top =120
                     Width =741
                     Height =726
                     FontSize =12
@@ -370,8 +371,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =5385
-                    Top =113
+                    Left =6180
+                    Top =120
                     Width =741
                     Height =741
                     TabIndex =8
@@ -640,8 +641,8 @@ Begin Form
                 End
                 Begin CommandButton
                     OverlapFlags =85
-                    Left =8234
-                    Top =113
+                    Left =8909
+                    Top =120
                     Width =741
                     Height =741
                     TabIndex =12
@@ -775,6 +776,26 @@ Begin Form
                         0x000301000000000000000000
                     End
                     ControlTipText ="Persönlichen Filter speichern"
+                End
+                Begin CommandButton
+                    TabStop = NotDefault
+                    OverlapFlags =85
+                    Left =4025
+                    Top =113
+                    Width =741
+                    Height =726
+                    FontSize =12
+                    FontWeight =500
+                    TabIndex =15
+                    ForeColor =16777215
+                    Name ="cmbAkuellesJahr"
+                    Caption ="Akuelles Jahr"
+                    OnClick ="[Event Procedure]"
+                    FontName ="Arial"
+                    ObjectPalette = Begin
+                        0x000301000000000000000000
+                    End
+                    ControlTipText ="Akuelles Jahr"
                 End
             End
         End

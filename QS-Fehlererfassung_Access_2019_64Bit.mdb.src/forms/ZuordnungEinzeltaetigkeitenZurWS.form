@@ -203,10 +203,12 @@ Begin Form
                     TabIndex =2
                     Name ="ListLQWorkstation"
                     RowSourceType ="Table/Query"
-                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation FROM LQWorkstation WHERE (("
-                        "(LQWorkstation.[ID-LQBereich])=[ListLQBereich])) GROUP BY LQWorkstation.ID, LQWo"
-                        "rkstation.LQWorkstation, LQWorkstation.Aktiv HAVING (((LQWorkstation.Aktiv)=True"
-                        ")); "
+                    RowSource ="SELECT LQWorkstation.ID, LQWorkstation.LQWorkstation, LQWorkstation.AktivFehlera"
+                        "nalyse, LQWorkstation.Aktiv FROM LQWorkstation WHERE (((LQWorkstation.[ID-LQBere"
+                        "ich])=[ListLQBereich])) GROUP BY LQWorkstation.ID, LQWorkstation.LQWorkstation, "
+                        "LQWorkstation.AktivFehleranalyse, LQWorkstation.Aktiv HAVING (((LQWorkstation.Ak"
+                        "tivFehleranalyse)=True) AND ((LQWorkstation.Aktiv)=True)) ORDER BY LQWorkstation"
+                        ".LQWorkstation; "
                     ColumnWidths ="567;1443"
                     AfterUpdate ="[Event Procedure]"
                     Begin
@@ -234,10 +236,11 @@ Begin Form
                     TabIndex =3
                     Name ="ListTaetigkeiten"
                     RowSourceType ="Table/Query"
-                    RowSource ="SELECT Taetigkeiten.ID, Taetigkeiten.Anzeige, tblZuordnung.Zuordnung FROM Taetig"
-                        "keiten LEFT JOIN tblZuordnung ON Taetigkeiten.Zuordnung_ID = tblZuordnung.Zuordn"
-                        "ung_ID WHERE (((tblZuordnung.Zuordnung) Is Null)) ORDER BY Taetigkeiten.Anzeige;"
-                        " "
+                    RowSource ="SELECT Taetigkeiten.ID, Taetigkeiten.Anzeige, tblZuordnungTätigkeiten.Zuordnung_"
+                        "ID, tblZuordnungTätigkeiten.Zuordnung FROM Taetigkeiten LEFT JOIN tblZuordnungTä"
+                        "tigkeiten ON Taetigkeiten.Zuordnung_ID = tblZuordnungTätigkeiten.Zuordnung_ID WH"
+                        "ERE (((tblZuordnungTätigkeiten.Zuordnung_ID)=3 Or (tblZuordnungTätigkeiten.Zuord"
+                        "nung_ID)=5)) ORDER BY Taetigkeiten.Anzeige; "
                     ColumnWidths ="284;1442"
                     Begin
                         Begin Label

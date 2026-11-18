@@ -25,7 +25,7 @@ Begin Form
     Right =50000
     Bottom =50000
     DatasheetGridlinesColor =12632256
-    Filter ="[Maßnahmen].[MaßnahmeID] = 837"
+    Filter ="[Maßnahmen].[MaßnahmeID] = 930"
     RecSrcDt = Begin
         0x9c6e282e740ae540
     End

@@ -170,6 +170,11 @@ Private Sub Befehl6559_Click()
 End Sub
 
 
+
+Private Sub Befehl6613_MouseMove(Button As Integer, Shift As Integer, X As Single, Y As Single)
+
+End Sub
+
 Private Sub cmbBGUebersicht_Click()
 
     DoCmd.OpenForm ("frmBGUebersichtBMK")
@@ -562,7 +567,58 @@ Private Sub cmbTVNArt_Click()
 
 End Sub
 
+Private Sub cmbVorgangKopieren_Click()
 
+    Dim ldb As DAO.Database
+    Dim rs As DAO.Recordset
+    Dim rsneu As DAO.Recordset
+    Dim reklnummer As String
+    Dim sPfadDatei As String
+    Dim Auftragsdatum As String
+
+    '1. Inhalt Dictionary sichern und anschließend leeren
+    UpdatetFormTab Me, "[ID]=" & Me.Controls("Mastertab#ID")
+
+    Set ldb = openAccDBConnection("openDB")
+
+    unlockDataset Me.Controls("Mastertab#ID")
+
+    Set rs = ldb.OpenRecordset("Select * from ROS_DatensatzKopieren where [ID] = " & Me.Controls("Mastertab#ID") & ";", dbOpenSnapshot)
+
+    NewReklamationE "Erfassen", ""
+
+    'Neu angelegte Rekla bearbeiten
+    Set rsneu = ldb.OpenRecordset("Select * from ROS_DatensatzKopieren where ID = " & get_p_ReklNr() & ";")
+            rsneu.Edit
+'            rsneu("Meldungsnummer Kunde") = InputBox("Eingabe Meldungsnummer Kunde", "Meldungsnummer Kunde")
+'            rsneu("Welcher Fehler tritt auf") = InputBox("Eingabe Fehlertext", "Fehlertext")
+'            rsneu("Welcher Fehler tritt auf") = rs("Welcher Fehler tritt auf")
+'            rsneu("Vorgangs_Eingang") = rs("Vorgangs_Eingang")
+            rsneu("Auftragsdatum") = rs("Auftragsdatum")
+            rsneu("Kunden-ID") = rs("Kunden-ID")
+            rsneu("Bestellnummer Kunde") = rs("Bestellnummer Kunde")
+            rsneu("VorgangstypID") = rs("VorgangstypID")
+            rsneu("Maschinennummer") = rs("Maschinennummer")
+            rsneu("Rückmeldung_Kunde_Soll") = rs("Rückmeldung_Kunde_Soll")
+            rsneu("Rückmeldung_Kunde_Verschiebung") = rs("Rückmeldung_Kunde_Verschiebung")
+            rsneu("per Telefon") = rs("per Telefon")
+            rsneu("per E-Mail/Fax") = rs("per E-Mail/Fax")
+            rsneu("mit Rücksendung") = rs("mit Rücksendung")
+            rsneu("BestellnrRepAuftrag") = rs("BestellnrRepAuftrag")
+            rsneu("AnlieferterminRep") = rs("AnlieferterminRep")
+            rsneu("Fehlergruppe") = rs("Fehlergruppe")
+            rsneu("Fehlertexte") = rs("Fehlertexte")
+            rsneu("LQEinheitID") = rs("LQEinheitID")
+            rsneu.Update
+
+    Set rs = Nothing
+    Set rsneu = Nothing
+
+    Call RegisterStr246_Change
+    Me.Requery
+
+
+End Sub
 
 Private Sub Form_Unload(Cancel As Integer)
 
@@ -3707,6 +3763,8 @@ Dim Test As String
             li_backColor = Me.Bezeichnungsfeld296.BackColor
             setActivePage (9)
             lb_setRS = setRecordSource("qryDictKostenrechnung-Daten")
+            Me.lstZeitaufwändeBereich.Requery
+            Me.frmKostenServiceEinsatz.Requery
         Case 10
             li_caption = Me.Bezeichnungsfeld297.Caption
             li_backColor = Me.Bezeichnungsfeld297.BackColor

@@ -217,6 +217,28 @@ Private Sub BezVerursacher_Click()
 End Sub
 
 
+Private Sub cmbAkuellesJahr_Click()
+
+    Dim sAuftrag As String
+    Dim sVon As Date
+    Dim sBis As Date
+
+    sVon = DateSerial(Year(Date), 1, 1)
+    sBis = DateSerial(Year(Date), 12, 31)
+
+    sAuftrag = " AND ([Auftragsdatum] between #" & format(sVon, "mm\/dd\/yyyy") & "# and #" & format(sBis, "mm\/dd\/yyyy") & "#)"
+
+'    Forms("Reklamationen_Übersicht").Filter = "([ErfasserIntern] Is Null" & sAuftrag & ")"
+    Forms("Reklamationen_Übersicht").Filter = "([Extern] = True " & sAuftrag & ") and ([Kategorie-Status]<> 'Platzhalter')"
+    Me.FilterView = Me.Filter
+    Me.Von = sVon
+    Me.Bis = sBis
+    Me.Refresh
+
+
+
+End Sub
+
 Private Sub cmbReklMappe_Click()
 
     Dim ReklnrKnd As String
@@ -320,7 +342,8 @@ Private Sub FilterLoeschen_Click()
     Me.Bis = format(Date, "dd\/mm\/yyyy")
 
 '    Me.Filter = "([ErfasserIntern] Is Null)"
-    Forms("Reklamationen_Übersicht").Filter = "([ErfasserIntern] Is Null" & sAuftrag & ")"
+'    Forms("Reklamationen_Übersicht").Filter = "([ErfasserIntern] Is Null" & sAuftrag & ")"
+    Forms("Reklamationen_Übersicht").Filter = "([Extern] = True " & sAuftrag & ")"
     Me.FilterView = Me.Filter
     Me.cboFilterForm = ""
     Me.Requery
@@ -397,7 +420,8 @@ Private Sub Form_Load()
 
     Select Case Application.CurrentProject.Name
         Case "QS-FehlererfassungIntern.mdb"
-            Me.Filter = "[intern] = True AND [ErfasserIntern] Is Not Null"
+'            Me.Filter = "[intern] = True AND [ErfasserIntern] Is Not Null"
+            Me.Filter = "[Extern] = True"
             Me.FilterOn = True
         Case Else
             Me.Filter = ""
@@ -418,7 +442,8 @@ Private Sub Form_Open(Cancel As Integer)
 
     Select Case Application.CurrentProject.Name
         Case "QS-FehlererfassungIntern.mdb"
-            Me.Filter = "[intern] = True AND [ErfasserIntern] Is Not Null"
+'            Me.Filter = "[intern] = True AND [ErfasserIntern] Is Not Null"
+            Me.Filter = "[Extern] = True"
             Me.FilterOn = True
         Case Else
             Me.Filter = ""
@@ -550,11 +575,11 @@ End Sub
 Private Sub UpdateForm_Click()
 On Error GoTo err_UpdateForm_Click
 
-Call OpenForm_Reklamationen_Übersicht
+'Call OpenForm_Reklamationen_Übersicht
 
 'If Screen.ActiveForm.Name = "Reklamationen_Übersicht" Then
 '    Me.Refresh
-'    Me.Requery
+    Me.Requery
 'End If
 '
 err_UpdateForm_Click:

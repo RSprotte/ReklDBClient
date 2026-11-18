@@ -63,6 +63,8 @@ Private Sub Form_Load()
 
 End Sub
 
+
+
 Private Sub txtInfoPos_DblClick(Cancel As Integer)
 
     If Forms("Fehlererfassung - Register").Controls("Mastertab#Kategorie-Status") = "Abgeschlossen" Then

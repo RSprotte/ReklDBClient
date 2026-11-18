@@ -17,7 +17,13 @@
   Mastertab.[per Telefon],
   Mastertab.[per E-Mail/Fax],
   Mastertab.[mit Rücksendung],
-  Mastertab.[Welcher Fehler tritt auf]
+  Mastertab.[Welcher Fehler tritt auf],
+  ReklMemo.BestellnrRepAuftrag,
+  ReklMemo.AnlieferterminRep,
+  Mastertab.Fehlergruppe,
+  Mastertab.Fehlertexte,
+  Mastertab.LQEinheitID,
+  Mastertab.[Meldungsnummer Kunde]
 FROM
   Mastertab
   LEFT JOIN ReklMemo ON Mastertab.ID = ReklMemo.ID

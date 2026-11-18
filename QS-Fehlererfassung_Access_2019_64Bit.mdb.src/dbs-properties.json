@@ -45,7 +45,7 @@
       "Type": 4
     },
     "Build": {
-      "Value": 1126,
+      "Value": 30,
       "Type": 4
     },
     "CollatingOrder": {
@@ -60,10 +60,6 @@
       "Value": 0,
       "Type": 4
     },
-    "Default Zoom Level": {
-      "Value": 100,
-      "Type": 4
-    },
     "DesignMasterID": {
       "Value": "",
       "Type": 15
@@ -71,10 +67,6 @@
     "DesignWithData": {
       "Value": true,
       "Type": 1
-    },
-    "Disable Zoom": {
-      "Value": 0,
-      "Type": 4
     },
     "Name": {
       "Value": "rel:QS-Fehlererfassung_Access_2019_64Bit.mdb",
@@ -98,10 +90,6 @@
     },
     "NavPane Width": {
       "Value": 312,
-      "Type": 4
-    },
-    "Option to enable Monaco SQL Editor": {
-      "Value": 1,
       "Type": 4
     },
     "Picture Property Storage Format": {

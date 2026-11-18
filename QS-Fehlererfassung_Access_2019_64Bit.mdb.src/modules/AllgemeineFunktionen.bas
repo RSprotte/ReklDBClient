@@ -4011,7 +4011,6 @@ Public Function IsControlFormCtl(fCtl As Object) As Boolean
 End Function
 
 Public Function LoadControlsFormAfterOpen(ByRef fForm As Form, ByVal fRecordsource As String, fCriterium As String) As Boolean
-On Error GoTo err_handler
 
     Dim ldb As DAO.Database
     Dim lrs As DAO.Recordset
@@ -4036,12 +4035,6 @@ On Error GoTo err_handler
     Next
     Set lrs = Nothing
     LoadControlsFormAfterOpen = True
-    Exit Function
-
-err_handler:
-    If Err Then
-        Resume Next
-    End If
 
 End Function
 Public Function LoadControlsPageAfterOpen(ByRef fForm As Form, ByVal fRecordsource As String, ByRef fCtrlList As Object, fCriterium As String) As Boolean
@@ -5419,9 +5412,9 @@ Public Sub UebernahmeP4T()
         rs_2.MoveLast
         rs_2.MoveFirst
         Do While Not rs_2.EOF
-            If rs_2("Meldungsnummer Kunde") = 6296507 Or rs_2("Meldungsnummer Kunde") = 6312817 Then
-                Debug.Print rs_2("Meldungsnummer Kunde")
-            End If
+'            If rs_2("Meldungsnummer Kunde") = 6296507 Or rs_2("Meldungsnummer Kunde") = 6312817 Then
+'                Debug.Print rs_2("Meldungsnummer Kunde")
+'            End If
             If IsNull(rs_2("Meldungsnummer Kunde")) Then
                 rs_2.MoveNext
             Else
@@ -5881,33 +5874,89 @@ Public Sub ExportRecordSourceNachExcel(ByVal strRecordSource As String, ByVal st
 End Sub
 
 
-Public Sub PrintForm(ByVal lForm As Form)
+Public Sub PrintForm(ByVal lForm As String)
 
-    Dim origOrientation As Long
-
-    ' 1. Aktuelle Druckerausrichtung sichern
-    origOrientation = Application.Printer.Orientation
-
-    ' 2. Globalen Access-Drucker für diesen Moment auf QUERFORMAT zwingen
-    ' (2 = acPRORLandscape)
-    Application.Printer.Orientation = 2
-
-    ' 3. Ränder des Formulars anpassen für die Zentrierung (in Twips: 567 Twips = 1 cm)
-    With lForm.Printer
-        .LeftMargin = 1440   ' ca. 2,5 cm linker Rand
-        .RightMargin = 1440  ' ca. 2,5 cm rechter Rand
-        .TopMargin = 1134    ' ca. 2,0 cm oberer Rand
-    End With
-
-    ' 4. Aktuelles Formular fest im Fokus verankern
-    lForm.SetFocus
-    DoCmd.SelectObject acForm, lForm.Name, False
-
-    ' 5. ALLE DATENSÄTZE DRUCKEN
-    ' acPrintAll zwingt Access, die gesamte Datenbasis auszugeben
+    Forms(lForm).Printer.Orientation = acPRORLandscape
     DoCmd.PrintOut acPrintAll
 
-    ' 6. Drucker-Einstellung wieder auf den Ursprungswert zurücksetzen
-    Application.Printer.Orientation = origOrientation
+'    Dim origOrientation As Long
+'
+'    ' 1. Aktuelle Druckerausrichtung sichern
+'    origOrientation = Application.Printer.Orientation
+'
+'    ' 2. Globalen Access-Drucker für diesen Moment auf QUERFORMAT zwingen
+'    ' (2 = acPRORLandscape)
+'    Application.Printer.Orientation = 2
+'
+'    ' 3. Ränder des Formulars anpassen für die Zentrierung (in Twips: 567 Twips = 1 cm)
+'    With lForm.Printer
+'        .LeftMargin = 1440   ' ca. 2,5 cm linker Rand
+'        .RightMargin = 1440  ' ca. 2,5 cm rechter Rand
+'        .TopMargin = 1134    ' ca. 2,0 cm oberer Rand
+'    End With
+'
+'    ' 4. Aktuelles Formular fest im Fokus verankern
+'    lForm.SetFocus
+'    DoCmd.SelectObject acForm, lForm.Name, False
+'
+'    ' 5. ALLE DATENSÄTZE DRUCKEN
+'    ' acPrintAll zwingt Access, die gesamte Datenbasis auszugeben
+'    DoCmd.PrintOut acPrintAll
+'
+'    ' 6. Drucker-Einstellung wieder auf den Ursprungswert zurücksetzen
+'    Application.Printer.Orientation = origOrientation
 
 End Sub
+
+Public Sub VtArtikelAbrufen(ByVal fArtNr As String, Optional ByVal fVarNr As String)
+'Abrufen des VT für hinterlegte Kunden aus Avista
+
+    Dim adbprov As clsAvistaProvider 'Declaration Avista DB provider
+    Dim rsAvista As ADODB.Recordset
+    Dim ls_sql As String
+
+    If fVarNr = "" Then fVarNr = "00000"
+
+    ls_sql = "SELECT ta_preisgruppe_bez.preisgr_bez as Kunde, tm_vkpreis_prgrp.vkpg_ab_menge as St, tm_vkpreis_prgrp.vkpg_preis_netto as Preis, " & _
+            " tm_artikel.ast_nummer as Art_Nr, tm_artikel_var.avar_nummer as Var_Nr " & _
+            "FROM ((DBA.tm_artikel INNER JOIN DBA.tm_artikel_var ON tm_artikel.ast_id = tm_artikel_var.ast_id) " & _
+            "INNER JOIN DBA.tm_artikelvar_text ON tm_artikel_var.ast_id = tm_artikelvar_text.ast_id AND tm_artikel_var.avar_id = tm_artikelvar_text.avar_id ) " & _
+            "INNER JOIN DBA.tm_vkpreis_prgrp ON tm_artikel_var.avar_id = tm_vkpreis_prgrp.avar_id AND tm_artikel.ast_id = tm_vkpreis_prgrp.ast_id " & _
+            "INNER JOIN ta_preisgruppe_bez ON tm_vkpreis_prgrp.preisgr_id = ta_preisgruppe_bez.preisgr_id " & _
+            "WHERE tm_artikelvar_text.sprach_id = 1 AND atxt_typ = 2 AND vkpg_gueltig_bis >= {fn CURDATE()} and ta_preisgruppe_bez.sprach_id = 1 " & _
+            "AND tm_artikel.ast_nummer = '###ART###'AND tm_artikel_var.avar_nummer = '###VAR###' " & _
+            "ORDER BY ST ASC"
+
+    'Variabel in sql-Abfrage ersetzten
+    ls_sql = Replace(ls_sql, "###ART###", fArtNr)
+    ls_sql = Replace(ls_sql, "###VAR###", fVarNr)
+
+    Set adbprov = New clsAvistaProvider
+    Set rsAvista = New ADODB.Recordset
+    Set rsAvista = adbprov.getRecordsetAvista(ls_sql)
+
+    If rsAvista.RecordCount Then
+        'Erstellen Temp-Tabelle
+        Call ErstelleTempTabellen_ADODBSource(rsAvista, "TBL_TEMP")
+        'Erstellen Temp-Formular
+        Call FormularEinrichten("TEMP", "TBL_TEMP")
+        DoCmd.OpenForm "frmTEMP", acFormDS
+    Else
+        MsgBox ("Keine Artikel oder Preise gefunden")
+    End If
+
+    Set rsAvista = Nothing
+    Set adbprov = Nothing
+
+End Sub
+
+
+Public Function WertAusLetztenDatensatz(ByVal fFeld As String, ByVal fTab As String, ByVal fID As String, ByVal fSuchID As String) As String
+' Holt den maximalen Wert aus Tabelle, erster Wert gesuchtes Feld, zweiter Wert Tabelle, dritter Wert ID, vierter Wert übergebene ID
+
+    Dim letzterWert As Variant
+
+    letzterWert = DMax(fFeld, fTab, " " & fID & " = " & fSuchID)
+    WertAusLetztenDatensatz = letzterWert
+
+End Function

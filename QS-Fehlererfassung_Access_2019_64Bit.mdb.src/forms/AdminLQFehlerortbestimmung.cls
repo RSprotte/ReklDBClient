@@ -308,6 +308,7 @@ If (MsgBox(getTC_FCFromCode("TC0223", ldb), vbYesNo, getTC_FCFromCode("TC0292", 
     If Me.ListLQWorkstation.ItemsSelected.Count Then
         For Each varElem In Me.ListLQWorkstation.ItemsSelected
             ldb.Execute ("Update LQWorkstation set [Aktiv] = False where [ID] = " & Me.ListLQWorkstation.ItemData(varElem) & ";")
+            ldb.Execute ("Update LQWorkstation set [AktivFehleranalyse] = False where [ID] = " & Me.ListLQWorkstation.ItemData(varElem) & ";")
         Next varElem
     End If
 End If

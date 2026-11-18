@@ -115,107 +115,40 @@ Private Const VK_SHIFT As Byte = &H10      ' Shift-Taste
 Private Const VK_F23 As Byte = &H86        ' F23-Taste
 Private Const KEYEVENTF_KEYUP As Long = &H2
 
-
-' Hilfsfunktion: Extrahiert den übersetzten Text sauber aus der JSON-Antwort
-Private Function ExtrahiereLibreText(ByVal jsonText As String) As String
-    Dim startPos As Long
-    Dim endPos As Long
-    Dim schluessel As String
-
-    schluessel = """translatedText"":"""
-    startPos = InStr(jsonText, schluessel)
-
-    If startPos > 0 Then
-        startPos = startPos + Len(schluessel)
-        endPos = InStr(startPos, jsonText, """")
-        If endPos > startPos Then
-            ExtrahiereLibreText = MID(jsonText, startPos, endPos - startPos)
-            Exit Function
-        End If
-    End If
-    ExtrahiereLibreText = "Fehler: Text konnte nicht extrahiert werden."
-End Function
-
-' Hilfsfunktion: Bereinigt Zeilenumbrüche und Anführungszeichen, damit das JSON nicht bricht
-Private Function CleanJsonString(ByVal Text As String) As String
-    Dim res As String
-    res = Replace(Text, "\", "\\")
-    res = Replace(res, """", "\""")
-    res = Replace(res, vbCrLf, "\n")
-    res = Replace(res, vbCr, "\n")
-    res = Replace(res, vbLf, "\n")
-    CleanJsonString = res
-End Function
-
-Public Function GoogleTranslate(Text As String, SourceLang As String, TargetLang As String) As String
-    Dim objHTTP As Object
-    Dim objJS As Object
-    Dim URL As String
-    Dim Response As String
-    Dim CleanText As String
-
-    ' WICHTIG: Absolut sicheres URL-Encoding für Umlaute, Sonderzeichen und Zeilenumbrüche
-    On Error Resume Next
-    Set objJS = CreateObject("ScriptControl")
-    If objJS Is Nothing Then
-        ' Alternative für moderne Windows-Systeme via htmlfile-Objekt
-        Set objJS = CreateObject("htmlfile")
-        objJS.parentWindow.execScript "function encode(s) { return encodeURIComponent(s); }", "JScript"
-        CleanText = objJS.parentWindow.encode(Text)
-    Else
-        objJS.Language = "JScript"
-        CleanText = objJS.Run("encodeURIComponent", Text)
-    End If
-    On Error GoTo ErrorHandler
-
-    ' Falls das Encoding fehlschlägt, rudimentäre Notfall-Maskierung
-    If CleanText = "" Then
-        CleanText = Replace(Text, " ", "%20")
-    End If
-
-    ' URL zusammensetzen
-    URL = "https://googleapis.com" & _
-          SourceLang & "&tl=" & TargetLang & "&dt=t&q=" & CleanText
-
-    ' Verbindung aufbauen
-    Set objHTTP = CreateObject("MSXML2.XMLHTTP")
-
-    objHTTP.Open "GET", URL, False
-    objHTTP.setRequestHeader "User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-    objHTTP.send
-
-    ' Antwort auswerten
-    If objHTTP.Status = 200 Then
-        Response = objHTTP.responseText
-        If InStr(Response, """") > 0 Then
-            GoogleTranslate = Split(Split(Response, """")(1), """")(0)
-        End If
-    Else
-        GoogleTranslate = "Fehler: Status " & objHTTP.Status
-    End If
-
-    Set objHTTP = Nothing
-    Set objJS = Nothing
-    Exit Function
-
-ErrorHandler:
-    GoogleTranslate = "Verbindungsfehler: " & Err.Description
-    Set objHTTP = Nothing
-    Set objJS = Nothing
-End Function
-
-
-
-
 Private Sub zum_Testen_Click()
 'zum_Testen
 
-'    If Not IsNull(Me.txtOriginal) Then
-'        ' Übersetzt von Deutsch ("de") nach Englisch ("en")
-'        Me.txtUebersetzung = GoogleTranslate(Me.txtOriginal, "de", "en")
-'    End If
+VtArtikelAbrufen "1100077", "00050t"
+'VtArtikelAbrufen "1241998"
 
-    Debug.Print GoogleTranslate("Wie hoch ist der Eifelturm", "de", "en")
+'Dim ldb As DAO.Database
+'Dim rsl As DAO.Recordset
+'Dim letzterWert As Variant
+'Dim i As Integer
+'
+'    Set ldb = openAccDBConnection("openDB")
+'    Set rsl = ldb.OpenRecordset("Select * from AbfrageTrumpfLogo;", dbOpenSnapshot)
+'
+'    rsl.MoveFirst
+'    While Not rsl.EOF
+'        letzterWert = WertAusLetztenDatensatz("Pos", "AufwandVorgangPositionen", "MID", rsl("ID"))
+'        Debug.Print rsl("ID") & " = " & letzterWert
+'        i = letzterWert + 10
+'        Debug.Print rsl("ID") & " = " & i
+'        ldb.Execute ("Insert into AufwandVorgangPositionen ([MID], [Pos], [Datum], [Zeit], [Vorgang], [Kürzel], [StdSatzID], [StdSatz], [DatumStdSatz], [Aufwand], [InfoPos]) " & _
+'                    " values(" & rsl("ID") & ", " & i & ", '29.10.2026',0,  86,'MAF', 1, 45, '29.10.2026',0, 'Zeit in Rekla 83315, betroffenen Drucker / Arbeitsplatz identifiziert und richtig gestellt') ;")
+'        i = i + 10
+'        ldb.Execute ("Insert into AufwandVorgangPositionen ([MID], [Pos], [Datum], [Zeit], [Vorgang], [Kürzel], [StdSatzID], [StdSatz], [DatumStdSatz], [Aufwand], [InfoPos]) " & _
+'            " values(" & rsl("ID") & ", " & i & ", '10.11.2026',0, 76,'MAF', 1, 45, '10.11.2026',0, 'Zeit in Rekla 83315') ;")
+'
+'        i = i + 10
+'        ldb.Execute ("Insert into AufwandVorgangPositionen ([MID], [Pos], [Datum], [Zeit], [Vorgang], [Kürzel], [StdSatzID], [StdSatz], [DatumStdSatz], [Aufwand], [InfoPos]) " & _
+'            " values(" & rsl("ID") & ", " & i & ", '11.11.2026',0, 78,'ROS', 1, 45, '11.11.2026',0, 'Zeit in Rekla 83315') ;")
+'
+'        rsl.MoveNext
+'    Wend
+'
+'    Set rsl = Nothing
 
 End Sub
 

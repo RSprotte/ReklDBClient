@@ -88,7 +88,6 @@ Begin Form
                     FontName ="Arial"
                 End
                 Begin TextBox
-                    Locked = NotDefault
                     OverlapFlags =87
                     TextAlign =1
                     IMESentenceMode =3

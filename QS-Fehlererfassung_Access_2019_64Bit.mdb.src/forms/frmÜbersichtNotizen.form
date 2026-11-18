@@ -22,7 +22,7 @@ Begin Form
     Right =50000
     Bottom =50000
     DatasheetGridlinesColor =15062992
-    Filter ="[Erledigt] = False"
+    Filter ="Erledigt = False"
     RecSrcDt = Begin
         0x444a15b12d8de640
     End

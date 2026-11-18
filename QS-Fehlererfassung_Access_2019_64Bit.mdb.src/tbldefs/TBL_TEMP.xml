@@ -14,7 +14,7 @@
     </xsd:annotation>
     <xsd:complexType>
       <xsd:sequence>
-        <xsd:element name="Matchcode" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+        <xsd:element name="ID" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
           <xsd:annotation>
             <xsd:appinfo>
               <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
@@ -27,7 +27,7 @@
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="Art_Nr" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+        <xsd:element name="Firma_Name" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
           <xsd:annotation>
             <xsd:appinfo>
               <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
@@ -40,7 +40,7 @@
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="Variante" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+        <xsd:element name="Soll_Kunde" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
           <xsd:annotation>
             <xsd:appinfo>
               <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
@@ -53,150 +53,7 @@
             </xsd:restriction>
           </xsd:simpleType>
         </xsd:element>
-        <xsd:element name="Bezeichnung" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="Bezeichnung_2" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="Hersteller" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="Hersteller_Nr" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="Status" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="ast_merkmal_1" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="ast_merkmal_2" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="ast_merkmal_3" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="ast_merkmal_4" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="ast_merkmal_5" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="ast_merkmal_6" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
-          <xsd:annotation>
-            <xsd:appinfo>
-              <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>
-              <od:fieldProperty name="Required" type="1" value="0"></od:fieldProperty>
-            </xsd:appinfo>
-          </xsd:annotation>
-          <xsd:simpleType>
-            <xsd:restriction base="xsd:string">
-              <xsd:maxLength value="536870910"></xsd:maxLength>
-            </xsd:restriction>
-          </xsd:simpleType>
-        </xsd:element>
-        <xsd:element name="ast_merkmal_7" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
+        <xsd:element name="Ist_QS" minOccurs="0" od:jetType="memo" od:sqlSType="ntext">
           <xsd:annotation>
             <xsd:appinfo>
               <od:fieldProperty name="AllowZeroLength" type="1" value="0"></od:fieldProperty>

@@ -288,7 +288,7 @@ Begin Form
                         "(LQWorkstation.[ID-LQBereich])=[ListLQBereich])) GROUP BY LQWorkstation.ID, LQWo"
                         "rkstation.LQWorkstation, LQWorkstation.Aktiv HAVING (((LQWorkstation.Aktiv)=True"
                         ")) ORDER BY LQWorkstation.LQWorkstation; "
-                    ColumnWidths ="0;1441"
+                    ColumnWidths ="567;1443"
                     AfterUpdate ="[Event Procedure]"
                     Begin
                         Begin Label
